@@ -1,3 +1,5 @@
+import styles from './speakers.module.css'
+
 export default function Page() {
-    return <h1>Speaker Page!</h1>
+    return <h1 className={styles.thisH1}>speakers Page!</h1>
   }

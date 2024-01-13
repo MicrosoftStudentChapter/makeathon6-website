@@ -3,6 +3,6 @@ import styles from './page.module.css'
 
 export default function Home() {
   return (
-    <div>Makeathon 6 </div>
+    <h1 className={styles.thisH1}>Makeathon 6 </h1>
   )
 }
