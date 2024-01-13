@@ -7,7 +7,7 @@ Open your terminal and perform the following steps
    git clone https://github.com/MicrosoftStudentChapter/makeathon6-website.git
    ```
 2. ```bash
-   cd ./makethon6-website
+   cd ./makeathon6-website
    ```
 3. Install the necessary packages
    ```bash
