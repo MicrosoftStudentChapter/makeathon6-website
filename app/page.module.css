@@ -1,19 +1,129 @@
+
 .thisH1{
     color: rgb(229, 255, 0);
 }
 .home{
-    background-image: url('./images/king.png');
-    height: 100vh;
-    width: 100%;
+    background-image: url('./images/HOMEPAGE.png');
+    height: 120vh;
+    width: 100vw;
     /* object-fit: fill; */
-    object-position: center;
+    background-size: 100% 100%;
     background-repeat: no-repeat;
-    background-size: auto;
+    background-position: center center;
+    margin-top: -20vh;
+
+    
 }
 
-.tilthome{
+.tiltHomeLeft1{
     /* transition: background-color 0.3s ease, box-shadow 0.3s ease; */
     cursor: pointer;
-    transform: rotateY(58deg) rotateZ(5deg);
+    transform: rotateY(42deg) rotateZ(5deg);
+    /* position: absolute;
+    top: 11rem;
+    left: 24rem; */
+}
+.tiltHomeLeft2{
+    /* transition: background-color 0.3s ease, box-shadow 0.3s ease; */
+    cursor: pointer;
+    transform: rotateY(48deg) rotateZ(2deg);
+    /* position: absolute;
+    top: 21rem;
+    left: 17rem; */
+}
+.tiltHomeLeft3{
+    /* transition: background-color 0.3s ease, box-shadow 0.3s ease; */
+    cursor: pointer;
+    transform: rotateY(48deg) rotateZ(2deg);
+    /* position: absolute;
+    top: 33rem;
+    left: 20rem; */
+}
+
+.tiltHomeRight1{
+    cursor: pointer;
+    transform: rotateY(-42deg) rotateZ(-5deg);
+    /* position: absolute;
+    top: 11rem;
+    right: 24rem; */
+}
+.tiltHomeRight2{
+    cursor: pointer;
+    transform: rotateY(-48deg) rotateZ(-2deg);
+    /* position: absolute;
+    top: 21rem;
+    right: 17rem; */
+}
+.tiltHomeRight3{
+    cursor: pointer;
+    transform: rotateY(-48deg) rotateZ(-2deg);
+    /* position: absolute;
+    top: 33rem;
+    right: 20rem; */
+}
+.logo{
+    /* background-image: url('./images/MLSClogo.png'); */
+    height: 19.28vh;
+    width: 10.09vw;
     position: absolute;
+    left: 44rem;
+    top: 3rem;
+}
+
+.row1{
+    display: flex;
+    /* background-color: brown; */
+    height: 24.4vh;
+    justify-content: space-evenly;
+    padding: 0 16.6875em;
+    margin-bottom: 2.375em;
+}
+.row2{
+    display: flex;
+    /* background-color: blue; */
+    height: 24.46vh;
+    justify-content: space-around;
+    /* margin-left: 245px;
+    margin-right: 245px; */
+    margin: 0 0.5em;
+    margin-bottom: -2.25em;
+    padding: 0 7.438em;
+    z-index: 10;
+}
+.row3{
+    display: flex;
+    /* background-color: yellow; */
+    height: 24.46vh;
+    justify-content: space-around;
+    /* margin-left: 245px;
+    margin-right: 245px; */
+    margin: 0 0.5em;
+    z-index: 10;
+}
+.allButtons{
+    position: relative;
+    top: 27.875em;
+    z-index: 10;
+}
+/* .parallelBtns{
+
+} */
+
+/* .btnHover:hover{
+    transform: scale(1.1);
+    box-shadow: 0 0 18px 0 rgb(167 202 225 / 70%);
+
+} */
+.throne{
+    height: 74vh;
+    /* width: 50px; */
+    z-index: 1;
+    position: fixed;
+    /* top: 282px;
+    left: 116px; */
+    object-fit: contain;
+    transform: translateX(-51%);
+    top: 17.15vh;
+    left: 50.75%;
+    /* height: 76vh; */
 }

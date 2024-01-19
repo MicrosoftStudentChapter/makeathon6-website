@@ -1,7 +1,11 @@
+.homeButton{
+   transition: all ease-in-out 0.5s;
+ }
+
 .home{
-    background-color: #55b8e196;
+    background-color: rgb(25 89 154 / 80%);
     text-align: center;
-    width : 215px;
+    width : 23.6vw;
     border:2px solid rgb(148 214 214);
     
     color: rgba(234, 255, 255, 1);
@@ -13,15 +17,11 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    box-shadow: 0 0 18px 0 rgb(167 202 217 / 70%);;
+    /* box-shadow:  22px 78px 14px rgb(190 221 235 / 70%); */
+    box-shadow: 2px 13px 76px 14px rgb(72 129 187);
     font-family: "Oswald", sans-serif;
-    /* transition: background-color 0.3s ease, box-shadow 0.3s ease;
-      cursor: pointer;
-      transform: rotateY(75deg);
-    */
-    /* transition: background-color 0.3s ease, box-shadow 0.3s ease;
-      cursor: pointer;
-      transform: rotateY(75deg); */
+    font-size: 1.10rem;
+    z-index: 10;
 }
 /* .home span{
     transform: rotateY(-0deg); 
@@ -33,39 +33,57 @@
 } */
 
 .box{
-    height: 1px;
-    width: 170px;
-    margin: 10px;
+    height: 0.1vh;
+    width: 22.667vw;
+    margin: 0.625em;
     border: 1px solid rgb(148 214 214);
     border-radius: 5px;
     background-color: rgb(148 214 214);
     /* box-shadow: 2px 2px 2px 2px rgb(166 223 223); */
 }
 .top{ 
-    height: 10px; 
-    width: 215px; 
+    height: 1vh; 
+    width: 23.6vw; 
     border: 2px solid rgb(148 214 214);
     /*border-radius: 5px;*/
     border-top-left-radius: 5px;
     border-top-right-radius: 5px;
-    margin-top: 12px;
+    margin-top: 0.75em;
     background-color: #55b8e138;
-    box-shadow: 0 0 18px 0 rgb(167 202 217 / 70%);;
+    box-shadow: 0 0 18px 0 rgb(167 202 217 / 70%);
 
  } 
  .description{
     position: relative;
-    left: -7px;
+    left: -0.4375em;
     display: flex;
     justify-content: center;
     align-items: center;
+ }
+ .description span{
+  position: relative;
+    top: -0.3125em;
+    left: 1.5em;
+ }
+
+ .description img{
+  position: relative;
+  right: -1.813em;
  }
  /* .description h4{
     position: relative;
     left: ;
  } */
  .description img{
-    width: 61px;
-    height: 28px;
+    width: 8.133vw;
+    height: 2.8vh;
     filter: invert(1);
+  }
+ 
+ .homeButton:hover{
+    transform: scale(1.1);
+    box-shadow: 0 0 18px 0 rgb(255,255,255);
+    clip-path: inset(0px,-15px,0px,0px);
  }
+
+ 
