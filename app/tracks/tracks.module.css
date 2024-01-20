@@ -8,9 +8,24 @@
     position: relative;
   }
 
+@media (min-width: 768px) {
+    .main {
+      overflow: hidden;
+      font-size:medium;
+    }
+  }
+
   @media (min-width: 768px) {
     .main {
       overflow: hidden;
+      font-size:medium;
+    }
+  }
+
+  @media (min-width: 768px) {
+    .main {
+      overflow: hidden;
+      font-size:medium;
     }
   }
   
@@ -39,8 +54,6 @@
 
 .Ev:hover{
     transform: scale(1.1);
-    box-shadow: 0 0 40px 20px black inset;
-    border-radius: 5px;
 }
 
 .heading{
@@ -87,6 +100,7 @@
     transform: translate(-50%, -50%) rotateY(0deg);
     border-radius: 10px;
     z-index: 2;
+    overflow-y: scroll;
   }
 
   .center{
