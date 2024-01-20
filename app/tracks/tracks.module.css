@@ -1,3 +1,50 @@
-.thisH1{
-    color: rgb(155, 235, 135);
+.main
+{   
+    background-image: url(./assets/img1.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    
+}
+
+.container .cont{
+    display: flex;
+    flex-wrap: wrap;
+    gap:15px;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-top: 50px;
+   padding-top: 100px;
+}
+
+.common{
+    background-image:url(./assets/frame.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    height: 600px;
+    width: 300px;
+    text-align: center;
+    margin: auto;
+    transition: transform .2s;
+    cursor: pointer;
+   
+}
+.common:hover{
+    transform: scale(1.1);
+}
+
+.para{
+    color: white;
+    padding: 40px ;
+}
+
+.Subtitle{
+    padding: 20px;
+    color: white;
+}
+
+.click{
+    border-radius: 10px;
+    background-color: navajowhite;
+    font-size: 15px;
+    width: 50%;
 }
