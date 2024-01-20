@@ -1,43 +1,123 @@
-.main
-{   
-    background-image: url(./assets/img1.jpg);
+.main {
+    background-image: url('./assets/img1.jpg');
     background-size: cover;
     background-repeat: no-repeat;
-    
-}
+    background-position: center center;
+    background-attachment: fixed;
+    flex-wrap: wrap;
+    position: relative;
+  }
 
-.container .cont{
+  @media (min-width: 768px) {
+    .main {
+      overflow: hidden;
+    }
+  }
+  
+.container{
     display: flex;
     flex-wrap: wrap;
     gap:15px;
     justify-content: space-evenly;
     align-items: center;
     margin-top: 50px;
-   padding-top: 100px;
+    padding-top: 50px;
+    height: 500px;
 }
 
-.common{
-    background-image:url(./assets/frame.png);
+.Ev{
+    background-image: url('./assets/Union.png');
     background-repeat: no-repeat;
     background-size: contain;
-    height: 600px;
+    height: 500px;
     width: 300px;
     text-align: center;
     margin: auto;
     transition: transform .2s;
     cursor: pointer;
-   
 }
-.common:hover{
+
+.Ev:hover{
     transform: scale(1.1);
+    box-shadow: 0 0 40px 20px black inset;
+    border-radius: 5px;
+}
+
+.heading{
+    padding-top:20px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    text-align: center;
+    color: rgb(255, 255, 255);
+}
+
+.mainheading{
+    padding-top:20px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    text-align: center;
+    color:black;
 }
 
 .para{
     color: white;
-    padding: 40px ;
-}
+    text-align: center;
+} 
 
-.Subtitle{
-    padding: 20px;
+.overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5); 
+    z-index: 1;
+  }
+
+  .popup {
     color: white;
-}
+    padding-left: 20px;
+    padding-right: 20px;
+    backdrop-filter: blur(10px);
+    width: 95%;
+    height: 80%;
+    justify-content: left;
+    align-items: top;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) rotateY(0deg);
+    border-radius: 10px;
+    z-index: 2;
+  }
+
+  .center{
+    padding-top: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .btn {
+    color:white;
+    background-color: black;
+    border-radius: 50px;
+    width: 50px;
+    height: 50px;
+    opacity: 1;;
+  }
+  .btn:hover {
+    opacity: .7;
+  }
+  .btn:before, .btn:after {
+    left: 15px;
+    content: ' ';
+    height: 33px;
+    width: 2px;
+    background-color: #333;
+  }
+  .btn:before {
+    transform: rotate(45deg);
+  }
+  .btn:after {
+    transform: rotate(-45deg);
+  }

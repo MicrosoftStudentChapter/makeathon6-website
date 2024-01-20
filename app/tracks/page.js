@@ -1,30 +1,60 @@
 "use client"
-import styles from './tracks.module.css'
+import React, { useState } from 'react';
+import styles from './tracks.module.css';
+import Content from './data.json';
 
 export default function Page() {
-    return <>
-    <body className={styles.main}>
-       
-    <div className={styles.container}>
-      <div className={styles.cont}>
-       
-       <div className={styles.common}>
-        <h1 className={styles.Subtitle}>Event 1</h1>
-        <p className={styles.para}>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sed architecto natus tempora, ex pariatur accusantium rem, ullam delectus cumque, cupiditate id temporibus! Perspiciatis nisi, aut voluptates quidem non nostrum aperiam!</p>
-       </div>
-        
-       <div className={styles.common} >
-        <h1 className={styles.Subtitle}>Event 2</h1>
-        <p className={styles.para}>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officia, quos nisi ad autem enim nam doloribus necessitatibus tempora iste perferendis vero deleniti voluptatem quam, eos ex, minima atque consectetur blanditiis!</p>
-       </div>
-        
-       <div className={styles.common}>
-        <h1 className={styles.Subtitle}>Event 3</h1>
-        <p className={styles.para}>Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero deserunt, doloremque tenetur cupiditate exercitationem temporibus tempore eligendi maiores, provident ut quos, facere velit ratione necessitatibus voluptas ullam inventore dolores sit.</p>
-       </div>
-      </div>  
-    </div>
-    
-    </body>
+  const [selectedEvent, setSelectedEvent] = useState(null);
+
+  const handleEventClick = (event) => {
+    setSelectedEvent(event);
+  };
+
+  const handleGoBack = () => {
+    setSelectedEvent(null);
+  };
+
+  const generateEventDiv = (event) => {
+    const { id, title, description } = event;
+    return (
+      <div key={id} className={styles.Ev} onClick={() => handleEventClick(event)}>
+        <h1 className={styles.heading}>{title}</h1>
+        <p className={styles.para}>{description}</p>
+      </div>
+
+    );
+  };
+
+  return (
+    <>
+      <body className={styles.main}>
+        <h1 className={styles.mainheading}>Tracks</h1>
+          <div className={styles.container}>
+            {Content.map((event) => generateEventDiv(event))}
+          </div>
+      </body>
+      {selectedEvent && (
+        <>
+        <div className={styles.overlay}>
+          <div className={`${styles.popup} ${styles.popup.active}`}>
+            <h1>Brief:</h1>
+            <p>{selectedEvent.brief}</p>
+            <h1>Problem statements:</h1>
+            <ul>
+              <li>{selectedEvent.problem_line1}</li><p></p>
+              <li>{selectedEvent.problem_line2}</li><p></p>
+              <li>{selectedEvent.problem_line3}</li><p></p>
+              <li>{selectedEvent.problem_line4}</li><p></p>
+            </ul>
+            <div className={styles.center}>
+            <button className={styles.btn} onClick={handleGoBack}>
+              X
+            </button>
+            </div>
+          </div>
+        </div>
+        </>
+      )}
     </>
-  }
+  );
+}
