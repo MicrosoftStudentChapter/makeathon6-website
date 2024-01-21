@@ -8,24 +8,21 @@
     position: relative;
   }
 
-@media (min-width: 768px) {
+@media (min-width: 1151px) {
     .main {
-      overflow: hidden;
-      font-size:medium;
+      font-size:large;
     }
   }
 
-  @media (min-width: 768px) {
+  @media (min-width: 761px) and (max-width:1150px) {
     .main {
-      overflow: hidden;
-      font-size:medium;
+      font-size:large;
     }
   }
 
-  @media (min-width: 768px) {
+  @media (max-width: 760px) {
     .main {
-      overflow: hidden;
-      font-size:medium;
+      font-size:22px;
     }
   }
   
@@ -53,7 +50,8 @@
 }
 
 .Ev:hover{
-    transform: scale(1.1);
+    /* transform: scale(1.1); */
+    transform: translateY(-50px);
 }
 
 .heading{
