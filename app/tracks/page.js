@@ -15,13 +15,13 @@ export default function Page() {
   };
 
   const generateEventDiv = (event) => {
-    const { id, title, description } = event;
+    const { id, title, description, image } = event;
     return (
       <div key={id} className={styles.Ev} onClick={() => handleEventClick(event)}>
+        <img src={image} alt={title} className={styles.eventImage} />
         <h1 className={styles.heading}>{title}</h1>
         <p className={styles.para}>{description}</p>
       </div>
-
     );
   };
 
@@ -35,24 +35,29 @@ export default function Page() {
       </body>
       {selectedEvent && (
         <>
-        <div className={styles.overlay}>
-          <div className={`${styles.popup} ${styles.popup.active}`}>
-            <h1>Brief:</h1>
-            <p>{selectedEvent.brief}</p>
-            <h1>Problem statements:</h1>
-            <ul>
-              <li>{selectedEvent.problem_line1}</li><p></p>
-              <li>{selectedEvent.problem_line2}</li><p></p>
-              <li>{selectedEvent.problem_line3}</li><p></p>
-              <li>{selectedEvent.problem_line4}</li><p></p>
-            </ul>
-            <div className={styles.center}>
-            <button className={styles.btn} onClick={handleGoBack}>
-              X
-            </button>
+          <div className={styles.overlay}>
+            <div className={styles.popup}>
+              <div className={styles.flex}>
+                <div className={styles.popupimage}><div className={styles.card}></div></div>
+                <div className={styles.content}>
+                  <h1>Brief:</h1>
+                  <p>{selectedEvent.brief}</p>
+                  <h1>Problem statements:</h1>
+                  <ul>
+                    <li>{selectedEvent.problem_line1}</li><p></p>
+                    <li>{selectedEvent.problem_line2}</li><p></p>
+                    <li>{selectedEvent.problem_line3}</li><p></p>
+                    <li>{selectedEvent.problem_line4}</li><p></p>
+                  </ul>
+                </div>
+              </div>
+                <div className={styles.center}>
+                  <button className={styles.btn} onClick={handleGoBack}>
+                    X
+                  </button>
+                </div>
             </div>
           </div>
-        </div>
         </>
       )}
     </>
