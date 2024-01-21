@@ -6,9 +6,10 @@
     background-attachment: fixed;
     flex-wrap: wrap;
     position: relative;
+    overflow-y: scroll;
   }
 
-@media (min-width: 768px) {
+/*@media (min-width: 768px) {
     .main {
       overflow: hidden;
       font-size:medium;
@@ -27,7 +28,7 @@
       overflow: hidden;
       font-size:medium;
     }
-  }
+  }*/
   
 .container{
     display: flex;
@@ -97,7 +98,7 @@
     position: absolute;
     top: 50%;
     left: 50%;
-    transform: translate(-50%, -50%) rotateY(0deg);
+    transform: translate(-50%, -50%);
     border-radius: 10px;
     z-index: 2;
     overflow-y: scroll;
@@ -135,3 +136,45 @@
   .btn:after {
     transform: rotate(-45deg);
   }
+
+  .flex{
+    display:flex;
+    height:100%;
+    width:100%;
+  }
+
+  .popupimage{
+    background-image: url('./assets/Union.png');
+    background-size:contain;
+    height:100%;
+    width: 30%;
+    background-repeat: no-repeat;
+    background-position: center center;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap:wrap;
+
+  }
+  .card{
+    background-image: url('./assets/Mask_group.png');
+    background-size: contain;
+    width: 100%;
+    height: 90%;
+    background-repeat: no-repeat;
+    background-position: center center;
+  }
+
+  .content{
+    max-width: 70%;
+    box-sizing: border-box;
+  }
+
+  .eventImage {
+    width: 100%; /* Set the width as per your design */
+    height: 100%; /* Set the height as per your design */
+    object-fit: cover; /* This property ensures the image maintains its aspect ratio */
+    border-radius: 10px; /* Add any border-radius or other styling as needed */
+  }
+
+  
