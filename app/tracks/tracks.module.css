@@ -11,21 +11,18 @@
 
 /*@media (min-width: 768px) {
     .main {
-      overflow: hidden;
       font-size:medium;
     }
   }
 
   @media (min-width: 768px) {
     .main {
-      overflow: hidden;
       font-size:medium;
     }
   }
 
   @media (min-width: 768px) {
     .main {
-      overflow: hidden;
       font-size:medium;
     }
   }*/
@@ -55,6 +52,9 @@
 
 .Ev:hover{
     transform: scale(1.1);
+    box-shadow: 0px 0px 500px 10px black;
+    border-radius: 10px;
+    backdrop-filter: blur(2px);
 }
 
 .heading{
