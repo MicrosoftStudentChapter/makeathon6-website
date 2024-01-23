@@ -11,18 +11,21 @@
 
 /*@media (min-width: 768px) {
     .main {
+      overflow: hidden;
       font-size:medium;
     }
   }
 
   @media (min-width: 768px) {
     .main {
+      overflow: hidden;
       font-size:medium;
     }
   }
 
   @media (min-width: 768px) {
     .main {
+      overflow: hidden;
       font-size:medium;
     }
   }*/
@@ -52,9 +55,6 @@
 
 .Ev:hover{
     transform: scale(1.1);
-    box-shadow: 0px 0px 500px 10px black;
-    border-radius: 10px;
-    backdrop-filter: blur(2px);
 }
 
 .heading{
@@ -105,21 +105,23 @@
   }
 
   .center{
-    padding-top: 20px;
+    padding-top: 100px;
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
+    justify-content: baseline;
+    
   }
-
   .btn {
     color:white;
     background-color: black;
     border-radius: 50px;
     width: 50px;
     height: 50px;
-    opacity: 1;;
+    opacity: 1;
+    justify-content: flex-end;
   }
+  
   .btn:hover {
     opacity: .7;
   }
@@ -137,6 +139,7 @@
     transform: rotate(-45deg);
   }
 
+  
   .flex{
     display:flex;
     height:100%;
@@ -163,6 +166,7 @@
     height: 90%;
     background-repeat: no-repeat;
     background-position: center center;
+
   }
 
   .content{
@@ -171,10 +175,57 @@
   }
 
   .eventImage {
-    width: 100%; /* Set the width as per your design */
-    height: 100%; /* Set the height as per your design */
-    object-fit: cover; /* This property ensures the image maintains its aspect ratio */
-    border-radius: 10px; /* Add any border-radius or other styling as needed */
+    width: 100%; 
+    height: 100%; 
+    object-fit: cover; 
+    border-radius: 10px; 
   }
 
+  
+
+  @media (min-width: 1151px) {
+    .main {
+      font-size:large;}
+      .card{
+        width: 85%;
+      }
+      .popupimage{
+        width: 100%;
+      }
+    
+  }
+  
+  @media (min-width: 761px) and (max-width:1150px) {
+    .main {
+      font-size:large;
+    }
+    .card{
+      width: 85%;
+    }
+    .popupimage{
+      width: 100%;
+    }
+  }
+  
+  @media (max-width: 760px) {
+    .main {
+      font-size:22px;
+    }
+    .card{
+      width: 50%;
+    }
+    .popupimage{
+      width: 100%;
+      height: 50%;
+      
+    }
+    .content{
+      max-width: max-content;
+      padding: 10px;
+    }
+    .flex{
+      display: block;
+      padding: 10px;
+    }
+  }
   
