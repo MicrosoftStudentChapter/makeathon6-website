@@ -215,12 +215,12 @@
     }
 }
 
-@media screen and (mix-width : 1000px){
+@media screen and (max-width : 1000px){
     .astrobox{
         flex-direction: column;
     }
     .textbox{
-        width: 90%;
+        width: 70%;
     }
 }
 
