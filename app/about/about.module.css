@@ -1,3 +1,269 @@
+@import url('https://fonts.googleapis.com/css2?family=Inika&family=Russo+One&family=Rye&display=swap');
+
 .thisH1{
-    color: rgb(155, 235, 135);
+    color: white;
+    font-family: 'Rye';
+    text-align: center;
+    font-size: 40px;
+    font-weight: 100;
 }
+
+.major{
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+    
+}
+
+.A,.B,.C{
+    flex: 1;
+    width: 100%;
+}
+
+.B{
+    margin-top: 70px;
+}
+
+.menu{
+    position: fixed;
+}
+
+.navButton{
+    background-color: grey;
+    color: white;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+}
+
+.menuContent{
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.menuContent .title{
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.menuContent .title:hover {
+    background-color: #f1f1f1;
+}
+
+.menu:hover .menuContent {
+    display: block;
+}
+
+.menu:hover .navButton {
+    opacity: 0.75;
+}
+
+
+
+
+
+.mainbox{
+    margin-top: 50px;
+    border-radius: 12px;
+    height: 400px;
+    margin-left: 35px;
+    margin-right: 35px;
+    box-shadow:
+    0 0 18px 0px rgb(140, 140, 140),
+    0 0 18px 0px rgb(140, 140, 140),
+    0 0 18px 0px rgb(140, 140, 140);
+}
+
+.abText1{
+    color: white;
+    float: right;
+    width: 700px;
+    font-size: 18px;
+    font-family: 'Inika';
+    margin-right: 25px;
+    text-align: justify;
+}
+
+.abText2{
+    color: white;
+    float: left;
+    width: 700px;
+    font-size: 18px;
+    font-family: 'Inika';
+    margin-left: 25px;
+    text-align: justify;
+}
+
+@media (max-width: 850px) {
+    .abText1{
+        margin-left: 10px;
+    }
+
+    .mainbox{
+        width: 750px;
+    }
+}
+
+@media (min-width: 100px) and (max-width: 850px) {
+    .abText1{
+        width: 400px;
+        margin-right: 10px;
+    }
+
+    .abText2{
+        width: 400px;
+        margin-left: 10px;
+    }
+
+    .mainbox{
+        height: 670px;
+        width: 90%
+    }
+}
+
+.logo{
+    float: right;
+    margin-right: 120px;
+}
+
+@media (max-width: 1150px) {
+    .logo{
+        display: none;
+    }
+}
+
+
+
+
+
+.prizes{
+    display:flex;
+    flex-wrap: wrap;
+    justify-content:space-evenly; /*for getting space between boxes*/
+    background-color: black;
+    margin-bottom: 0px;
+    margin-top:0px;
+}
+.heading{
+    color:white;
+    font-size: 25px;
+    text-align:center;
+    align-content: center;
+    justify-content: center;
+    margin-left: 40px;
+    font-family: 'Russo One';
+    font-weight: 100;
+}
+.box{
+    height:300px;
+    width:15%;
+    background-color :black;
+    padding:20px 0px 15px;
+    margin-top:25px;
+    margin-bottom: 200px;
+}
+
+.boximg{
+    background-size: cover;
+}
+
+.boxcontent{
+    margin-left:1rem;
+    margin-right:1rem;
+}
+
+.prizeBox{
+    height: 300px;
+    width: 200px;
+    color: black;
+    cursor: pointer;
+    transition: box-shadow 0.5s;
+}
+
+.prizeBox .prizeName{
+    opacity: 0;
+    margin-top: -280px;
+    text-align: center;
+    font-size: 50px;
+    transition: opacity 1s;
+}
+
+.prizeBox .prizeInfo{
+    opacity: 0;
+    text-align: center;
+    font-weight:bolder;
+    margin-top: 135px;
+    transition: opacity 1s;
+}
+
+.prizeBox:hover .prizeName, .prizeBox:hover .prizeInfo{
+    opacity: 1;
+}
+
+.prizeBox:hover{
+    box-shadow:
+    0 0 14px 0px goldenrod,
+    0 0 14px 0px goldenrod,
+    0 0 14px 0px goldenrod;
+}
+
+
+
+
+
+
+.accordion {
+    background-color: #101010;
+    color: whitesmoke;
+    cursor: pointer;
+    padding: 18px;
+    width: 95%;
+    margin-bottom: 20px;
+    height: 70px;
+    margin-left: 30px;
+    text-align: left;
+    border: 2px solid #585858;
+    outline: none;
+    transition: 0.4s;
+    font-family: 'Russo One';
+    font-size: 20px;
+}
+  
+.accordion:hover {
+    background-color: #181818;
+}
+  
+.panel {
+    padding: 0 18px;
+    background-color: #202020;
+    width: 92.1%;
+    color: whitesmoke;
+    display: none;
+    margin-left: 30px;
+    overflow: hidden;
+    margin-bottom: 20px;
+    margin-top: -7px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 18px;
+}
+  
+.active {
+    background-color: #181818;
+}
+
+
+
+
+.last{
+    height: 100px;
+} 
+
+
+
