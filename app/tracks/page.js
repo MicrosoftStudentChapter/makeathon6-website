@@ -2,6 +2,7 @@
 import React, { useState } from 'react';
 import styles from './tracks.module.css';
 import Content from './data.json';
+import Image from "next/image";
 
 export default function Page() {
   const [selectedEvent, setSelectedEvent] = useState(null);
@@ -18,10 +19,14 @@ export default function Page() {
     const { id, title, description, image } = event;
     return (
       <div key={id} className={styles.Ev} onClick={() => handleEventClick(event)}>
-        <img src={image} alt={title} className={styles.eventImage} />
+      <div className={styles.eventContent}>
         <h1 className={styles.heading}>{title}</h1>
         <p className={styles.para}>{description}</p>
       </div>
+      <div className={styles.eventImage}>
+        <Image src={image} alt={title} height={455} width={250} style={{ borderRadius: '5px' }}/>
+      </div>
+    </div>
     );
   };
 
@@ -47,15 +52,12 @@ export default function Page() {
                     <li>{selectedEvent.problem_line1}</li><p></p>
                     <li>{selectedEvent.problem_line2}</li><p></p>
                     <li>{selectedEvent.problem_line3}</li><p></p>
-                    <li>{selectedEvent.problem_line4}</li><p></p>
                   </ul>
                 </div>
               </div>
-                <div className={styles.center}>
-                  <button className={styles.btn} onClick={handleGoBack}>
-                    X
-                  </button>
-                </div>
+                <button className={styles.btn} onClick={handleGoBack}>
+                  X
+                </button>
             </div>
           </div>
         </>
