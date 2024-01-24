@@ -1,129 +1,288 @@
-
-.thisH1{
+.thisH1 {
     color: rgb(229, 255, 0);
 }
-.home{
-    background-image: url('./images/HOMEPAGE.png');
+
+.home {
+    background-image: url('./images/bgFinal.png');
     height: 120vh;
     width: 100vw;
-    /* object-fit: fill; */
-    background-size: 100% 100%;
+    
+    background-size: cover;
     background-repeat: no-repeat;
     background-position: center center;
     margin-top: -20vh;
 
+
+}
+
+.tiltHomeLeft1 {
+   
+    cursor: pointer;
+
+    transform: translateZ(8vw);
+    transform: rotateY(-45deg);
+   
+}
+
+.tiltHomeLeft2 {
+    
+    cursor: pointer;
+   
+    transform: translateZ(8vw);
+    transform: rotateY(-45deg);
+
+   
+}
+
+.tiltHomeLeft3 {
+   
+    cursor: pointer;
+   
+    transform: translateZ(8vw);
+    transform: rotateY(-45deg);
+   
+}
+
+.tiltHomeRight1 {
+    cursor: pointer;
+    transform: rotateY(-42deg) rotateZ(-5deg);
+   
+}
+
+.tiltHomeRight2 {
+    cursor: pointer;
+    transform: rotateY(-48deg) rotateZ(-2deg);
     
 }
 
-.tiltHomeLeft1{
-    /* transition: background-color 0.3s ease, box-shadow 0.3s ease; */
-    cursor: pointer;
-    transform: rotateY(42deg) rotateZ(5deg);
-    /* position: absolute;
-    top: 11rem;
-    left: 24rem; */
-}
-.tiltHomeLeft2{
-    /* transition: background-color 0.3s ease, box-shadow 0.3s ease; */
-    cursor: pointer;
-    transform: rotateY(48deg) rotateZ(2deg);
-    /* position: absolute;
-    top: 21rem;
-    left: 17rem; */
-}
-.tiltHomeLeft3{
-    /* transition: background-color 0.3s ease, box-shadow 0.3s ease; */
-    cursor: pointer;
-    transform: rotateY(48deg) rotateZ(2deg);
-    /* position: absolute;
-    top: 33rem;
-    left: 20rem; */
-}
-
-.tiltHomeRight1{
-    cursor: pointer;
-    transform: rotateY(-42deg) rotateZ(-5deg);
-    /* position: absolute;
-    top: 11rem;
-    right: 24rem; */
-}
-.tiltHomeRight2{
+.tiltHomeRight3 {
     cursor: pointer;
     transform: rotateY(-48deg) rotateZ(-2deg);
-    /* position: absolute;
-    top: 21rem;
-    right: 17rem; */
-}
-.tiltHomeRight3{
-    cursor: pointer;
-    transform: rotateY(-48deg) rotateZ(-2deg);
-    /* position: absolute;
-    top: 33rem;
-    right: 20rem; */
-}
-.logo{
-    /* background-image: url('./images/MLSClogo.png'); */
-    height: 19.28vh;
-    width: 10.09vw;
-    position: absolute;
-    left: 44rem;
-    top: 3rem;
+  
 }
 
-.row1{
+
+
+
+.row2 {
     display: flex;
-    /* background-color: brown; */
-    height: 24.4vh;
-    justify-content: space-evenly;
-    padding: 0 16.6875em;
-    margin-bottom: 2.375em;
-}
-.row2{
-    display: flex;
-    /* background-color: blue; */
+   
     height: 24.46vh;
     justify-content: space-around;
-    /* margin-left: 245px;
-    margin-right: 245px; */
+    
     margin: 0 0.5em;
-    margin-bottom: -2.25em;
-    padding: 0 7.438em;
+    margin-bottom: -5.25vh;
+    padding: 0 14.438vh;
     z-index: 10;
 }
-.row3{
+
+.row3 {
     display: flex;
-    /* background-color: yellow; */
+   
     height: 24.46vh;
     justify-content: space-around;
-    /* margin-left: 245px;
-    margin-right: 245px; */
-    margin: 0 0.5em;
+    
+    margin: 0 0.5vh;
     z-index: 10;
 }
-.allButtons{
+
+.allButtons {
     position: relative;
-    top: 27.875em;
+    top: 66.875vh;
     z-index: 10;
 }
-/* .parallelBtns{
 
-} */
-
-/* .btnHover:hover{
-    transform: scale(1.1);
-    box-shadow: 0 0 18px 0 rgb(167 202 225 / 70%);
-
-} */
-.throne{
+.throne {
     height: 74vh;
-    /* width: 50px; */
+    width: auto;
     z-index: 1;
     position: fixed;
-    /* top: 282px;
-    left: 116px; */
+   
     object-fit: contain;
     transform: translateX(-51%);
-    top: 17.15vh;
-    left: 50.75%;
-    /* height: 76vh; */
+    top: 21.15vh;
+    left: 51.2vw;
+    
+}
+
+
+.blur{
+    filter: blur(8px);
+    -webkit-filter: blur(8px);
+}
+.logo{
+    position: fixed;
+    top: 7vh;
+    left: 50vw;
+    height: 26vh;
+    width: auto;
+    transform: translateX(-50%);
+    object-fit: contain;
+}
+
+.animation{
+    transform: translateZ(8vw);
+    transform: rotateY(-45deg);
+    /* transform: rotateY(-48deg) rotateZ(-2deg); */
+}
+.tiltHomeLeft2,
+.tiltHomeRight2,
+.row3,
+.tiltHomeLeft3,
+.tiltHomeRight3
+{
+  position: relative;
+  animation: floatAnimation 3s infinite alternate ease-in-out;
+  
+}
+
+@keyframes floatAnimation {
+  0% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(-4px);
+  }
+}
+
+@media screen and (max-width : 1460px) {
+    .row2 {
+        padding: 0 4.438em;
+    }
+
+    .row3 {
+        justify-content: space-between;
+        padding: 0 5.1em;
+    }
+}
+
+@media screen and (max-width : 1000px) {
+    .throne {
+        height: 67vh;
+        top: 22.15vh;
+    }
+
+    .row2 {
+        padding: 0 0.438em;
+    }
+
+    .row3 {
+        padding: 0 2.1em;
+    }
+
+}
+
+@media screen and (max-width:775px) {
+    .row2 {
+        justify-content: space-between;
+        padding: 0 4.438em;
+    }
+
+    .row3 {
+        padding: 0 0.1em;
+    }
+}
+
+@media screen and (max-width:640px) {
+    .row2 {
+        padding: 0 2.438em;
+    }
+
+    .row3 {
+        margin: 0 0;
+
+    }
+
+}
+
+@media screen and (max-width: 571px) {
+    .throne {
+        height: 65vh;
+        top: 23.15vh;
+    }
+
+}
+
+@media screen and (max-width: 460px) {
+    .row2 {
+        display: none;
+
+    }
+
+    .row3 {
+        display: none;
+    }
+
+    .throne {
+      
+         height: 81vh;
+        top: 9vh; 
+        left: 53.65vw;
+    } 
+
+    .menu {
+        display: inline-block;
+        top: 9em;
+        left: 2em; 
+       
+
+    }
+    
+} 
+
+
+@media screen and (max-height: 1368px){
+   
+    .row2{
+        justify-content: space-between;
+        padding: 0 3.438em;
+
+    }
+    .row3{
+        padding: 0 0.1em;
+    }
+    .throne{
+        top: 16.15vh;
+        left: 52.2%;
+    }
+}
+
+@media screen and (max-height: 1180px)
+{
+    .throne{
+        height: 96vh;
+        top: 20.15vh;
+        left: 51%
+    }
+}
+
+
+@media screen and (max-height: 1025px)
+{
+    .throne{
+        top: 0.15vh;
+    }
+
+}
+@media screen and (max-height: 850px){
+    .throne{
+        /* top: -4.125vh; */
+        height: 81vh;
+        top: 9vh;
+    }
+}
+/* @media screen and (max-width: 2560px){
+    .throne{
+        top: 2.15vh;
+    }
+} */
+@media screen and (max-width: 650px){
+    .throne{
+        height: 80vh;
+        top: 10vh;
+    }
+    .logo{
+        height: 21vh;
+        top:14vh ;
+}
 }

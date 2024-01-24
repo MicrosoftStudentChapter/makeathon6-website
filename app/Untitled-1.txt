@@ -1,9 +1,0 @@
-background-size: cover;
-background-repeat: no-repeat;
-background-position: center center;
-{used in .home className to in page.module.css to fill background with image}
-
-postion: absolute;
-top: x rem;
-left: y rem;
-{used to give relative position to the element}
