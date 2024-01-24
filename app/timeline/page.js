@@ -51,12 +51,11 @@ export default function Page() {
             </div>
             <div className={styles.minibox}>
                 <ul className={styles.para}>  
-                    <li>shjdkhdahs</li>
-                    <li>jhASJHSADASHDJHAGJHD</li>
-                    <li>shjdkhdahs</li>
-                    <li>jhASJHSADASHDJHAGJHD</li>
-                    <li>shjdkhdahs</li>
-                    <li>jhASJHSADASHDJHAGJHD</li>
+                    <li>Voluptate exercitation aliquip pariatur in voluptate duis esse irure occaecat. Cillum dolore velit occaecat aute duis dolor. Duis qui id aliquip cillum incididunt in. Nisi mollit do nostrud sunt Lorem ullamco cillum fugiat ut sint. Aute laboris incididunt elit et anim..</li>
+                    <li>Veniam cupidatat commodo elit pariatur adipisicing. Adipisicing esse in dolore excepteur. Deserunt magna eiusmod culpa mollit duis.</li>
+                    <li>Consectetur nisi amet consectetur aute sunt ea proident consectetur excepteur pariatur id sint voluptate nostrud. Exercitation dolore sunt in laboris sint aute irure mollit laborum. Quis do qui laborum Lorem consequat labore voluptate.</li>
+                    <li>Consectetur nisi amet consectetur aute sunt ea proident consectetur excepteur pariatur id sint voluptate nostrud. Exercitation dolore sunt in laboris sint aute irure mollit laborum. Quis do qui laborum Lorem consequat labore voluptate.</li>
+                    <li>Consectetur nisi amet consectetur aute sunt ea proident consectetur excepteur pariatur id sint voluptate nostrud. Exercitation dolore sunt in laboris sint aute irure mollit laborum. Quis do qui laborum Lorem consequat labore voluptate.</li>
                 </ul>
             </div>
             </div>

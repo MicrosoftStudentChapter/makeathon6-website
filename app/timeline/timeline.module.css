@@ -156,16 +156,20 @@
 
 }
 
+
+/* text css begins here */
+
+
 .textbox{
     display: flex;
     justify-content: space-around;
     align-items: left;
-    width: 325px;
+    width: 40%;
     flex-direction: column;
     font-family: myFirstFont;
     z-index: 33;
-
-
+    border: 1.5px solid aliceblue;
+    border-radius: 15px;
 
 }
 
@@ -173,7 +177,15 @@
 .para{
     font-family: 'Times New Roman', Times, serif;
     color: white;
-    text-align: center;
+    text-align:justify;
+    justify-content: space-around;
+}
+
+.minibox{
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 2em;
+    margin-right: 2em;
 }
 
 
@@ -203,6 +215,15 @@
     }
 }
 
+@media screen and (mix-width : 1000px){
+    .astrobox{
+        flex-direction: column;
+    }
+    .textbox{
+        width: 90%;
+    }
+}
+
 /* @media screen and (max-width : 500px){
     .para {
         font-size: 50px;
@@ -212,6 +233,21 @@
     .stackbox {
         height: 75vw;
         width: 75vw;
-        justify-content: flex-start;
+        /* justify-content: flex-start; */
  }
-}
+ .astrobox{
+    flex-direction: column;
+ }
+ .textbox{
+    width: 95%;
+    overflow: scroll;
+ }
+ .mikibox{
+    margin-top: 3.5rem;
+    padding: 3rem;
+    padding-bottom: 2rem;
+ }
+ /* .heading{
+    flex-wrap: wrap;
+ } */
+ }
