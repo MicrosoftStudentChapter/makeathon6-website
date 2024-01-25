@@ -1,0 +1,70 @@
+/* General styles */
+.thisH1 {
+    color: rgb(229, 255, 0);
+}
+
+.home {
+    background-image: url('./images/king.png');
+    height: 100vh;
+    width: 100vw;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+.logo {
+    height: 19.28vh;
+    width: 10.09vw;
+    position: absolute;
+    left: 5%;
+    top: 3%;
+}
+
+/* Tilted elements */
+.tiltHomeLeft1,
+.tiltHomeLeft2,
+.tiltHomeLeft3,
+.tiltHomeRight1,
+.tiltHomeRight2,
+.tiltHomeRight3 {
+    cursor: pointer;
+    position: absolute;
+}
+
+.tiltHomeLeft1 { transform: rotateY(42deg) rotateZ(5deg); }
+.tiltHomeLeft2 { transform: rotateY(48deg) rotateZ(2deg); }
+.tiltHomeLeft3 { transform: rotateY(48deg) rotateZ(2deg); }
+
+.tiltHomeRight1 { transform: rotateY(-42deg) rotateZ(-5deg); }
+.tiltHomeRight2 { transform: rotateY(-48deg) rotateZ(-2deg); }
+.tiltHomeRight3 { transform: rotateY(-48deg) rotateZ(-2deg); }
+
+/* Rows */
+.row1, .row2, .row3 {
+    display: flex;
+    justify-content: space-around;
+    margin: 0 8px;
+    height: 24.46vh;
+}
+
+.allButtons {
+    position: relative;
+    top: 10vh; /* Adjust as needed */
+}
+
+/* Responsive adjustments using media queries */
+@media only screen and (max-width: 768px) {
+    .logo {
+        left: 2%;
+        top: 2%;
+    }
+
+    .row1, .row2, .row3 {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .allButtons {
+        top: 5vh;
+    }
+}
