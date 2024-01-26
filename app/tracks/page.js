@@ -45,13 +45,13 @@ export default function Page() {
               <div className={styles.flex}>
                 <div className={styles.popupimage}><div className={styles.card}></div></div>
                 <div className={styles.content}>
-                  <h1>Brief:</h1>
-                  <p>{selectedEvent.brief}</p>
-                  <h1>Problem statements:</h1>
+                  <h1 className={styles.spacing2}>Brief:</h1>
+                  <p className={styles.spacing2}>{selectedEvent.brief}</p>
+                  <h1 className={styles.spacing2}>Problem statements:</h1>
                   <ul>
-                    <li>{selectedEvent.problem_line1}</li><p></p>
-                    <li>{selectedEvent.problem_line2}</li><p></p>
-                    <li>{selectedEvent.problem_line3}</li><p></p>
+                    <li className={styles.spacing1}>{selectedEvent.problem_line1}</li><p></p>
+                    <li className={styles.spacing1}>{selectedEvent.problem_line2}</li><p></p>
+                    <li className={styles.spacing1}>{selectedEvent.problem_line3}</li><p></p>
                   </ul>
                 </div>
               </div>
