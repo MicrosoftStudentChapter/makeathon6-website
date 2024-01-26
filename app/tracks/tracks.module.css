@@ -1,3 +1,8 @@
+@font-face {
+  font-family: Heading;
+  src: url('./Canterbury.ttf');
+}
+
 .main {
     background-image: url('./assets/img1.jpg');
     background-size: cover;
@@ -44,7 +49,7 @@
 
 .heading{
     padding-top:20px;
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-family: Heading;
     text-align: center;
     color: rgb(255, 255, 255);
 }
@@ -52,9 +57,11 @@
 .mainheading{
     margin:20px;
     padding:20px;
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-family: Heading;
     text-align: center;
-    color:black;
+    color:  rgb(195, 149, 93);
+    font-size: 60px;
+    text-shadow: 5px 5px 2px black;
 }
 
 .para{
