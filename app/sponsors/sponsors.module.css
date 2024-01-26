@@ -1,3 +1,153 @@
-.thisH1{
-    color: skyblue;
+
+.text{
+  color: #FFE8D3;
+  font-size: 3rem;
+  font-style: normal;
+  font-weight: 400;
+  text-transform: capitalize;
+  margin-top: 60px;
+  margin-bottom: 60px;
+  display: flex; justify-content: center;
 }
+
+.heading{
+  font-weight: 300;
+  color: #FFE8D3;
+  font-size: 90px;
+  text-align: center;
+  margin-bottom: 50px;
+   /* margin-left: 500px; */
+   margin-top: -70px;
+}
+
+.text{
+color: #FFE8D3;
+font-family: "Merienda One";
+font-size: 70px;
+font-style: normal;
+font-weight: 400;
+text-align: center;
+}
+
+.ameer,
+.gareeb,
+.more {
+  width: 100%;
+  object-fit: contain;
+  z-index: 0;
+
+}
+
+.flaglogo {
+  z-index: 1;
+  position: absolute;
+  object-fit: contain;
+  /* left: 50%;
+  top: 50%;
+  transform: translateX(-50%) translateY(-50%); */
+}
+
+.flaglogo1 {
+  z-index: 1;
+  position: absolute;
+  object-fit: contain;
+}
+
+.flaglogo2 {
+  z-index: 1;
+  position: absolute;
+  object-fit: contain;
+}
+
+ .overlap{
+ display: flex;
+ justify-content: center;
+ align-items: center;
+ margin-left: 50px;
+ margin-right: 50px;
+ margin-bottom: 50px;
+ }
+
+.flex{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.bg{
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  z-index: -1;
+  background-size: cover;
+  filter: brightness(50%)
+}
+
+
+.Logo{
+  width: 117px;
+  height: 158px;
+  margin-right: 12.5%;
+}
+
+
+/* Add these styles for smaller screens */
+@media screen and (max-width: 860px) {
+  .heading {
+    font-size: 60px;
+    margin-left: 0;
+  }
+
+  .text {
+    font-size: 40px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+  }
+
+  .marginBawa {
+    justify-content: center;
+  }
+
+
+  .sideLine {
+    margin: 10px;
+  }
+
+  .Logo {
+    width: 80px;
+    height: 100px;
+  }
+
+  .text {
+    margin-top: 30px;
+    margin-bottom: 30px;
+  }
+}
+
+/* Add these styles for even smaller screens */
+@media screen and (max-width: 586px) {
+  .heading {
+    font-size: 35px;
+  }
+
+  .text  {
+    font-size: 30px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+
+  .Logo {
+    width: 60px;
+    height: 80px;
+  }
+
+  .overlay{
+  width:70%;
+  height: 70%;
+  }
+
+}
+
+
