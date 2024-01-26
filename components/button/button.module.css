@@ -1,0 +1,66 @@
+.homeButton {
+  transition: all ease-in-out 0.5s;
+}
+
+.home {
+  background-color: rgb(25 89 154 / 80%);
+  text-align: center;
+  width: 23.6vw;
+  border: 2px solid rgb(148 214 214);
+
+  color: rgba(234, 255, 255, 1);
+
+  border-bottom-right-radius: 3px;
+  border-bottom-left-radius: 3px;
+  height: 83px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  box-shadow: 2px 13px 76px 14px rgb(72 129 187);
+
+  font-family: 'Kingvoon';
+
+  z-index: 10;
+}
+
+
+.box {
+  height: 0.1vh;
+  width: 22.667vw;
+  margin: 0.625em;
+  border: 1px solid rgb(148 214 214);
+  border-radius: 5px;
+  background-color: rgb(148 214 214);
+
+}
+
+.top {
+  height: 1vh;
+  width: 23.6vw;
+  border: 2px solid rgb(148 214 214);
+
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+  margin-top: 0.75em;
+  background-color: #55b8e138;
+  box-shadow: 0 0 18px 0 rgb(167 202 217 / 70%);
+
+}
+
+.homeButton:hover {
+  transform: scale(1.1);
+  box-shadow: 0 0 18px 0 rgb(255, 255, 255);
+  clip-path: inset(0px, -15px, 0px, 0px);
+}
+
+.home h3 {
+  font-size: 2em;
+}
+
+@media screen and (min-width: 2560px) {
+  .home {
+    height: 109px;
+  }
+}

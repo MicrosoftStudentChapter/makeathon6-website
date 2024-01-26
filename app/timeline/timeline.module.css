@@ -1,3 +1,253 @@
 .thisH1{
     color: salmon;
 }
+
+
+@font-face {
+    font-family: myFirstFont;
+    src: url(https://fonts.googleapis.com/css2?family=Coming+Soon&family=Jacques+Francois+Shadow&family=Roboto:wght@100&display=swap);
+  }
+  
+  
+
+.bgbox{
+    height: 100vh;
+    width: 100vw;
+   
+    
+    /* background-image: url(./assets/bg.svg.svg); */
+}
+
+
+
+/* .astrobox{
+    display: flex;
+    justify-content: center;
+    height: 100%;
+    width: 100%;
+    background-image: url(./assets/bg.svg.svg);
+    flex-wrap: wrap;
+    align-items: center;
+    z-index: 1;
+    overflow: clip;
+    gap: 8vw;
+    
+} */
+
+.astrobox{
+    display: flex;
+    justify-content: center; 
+    height: 100%;
+    width: 100%;
+    background-image: url(./assets/bg.svg.svg);
+    /* flex-wrap: wrap; */
+    align-items: center;
+    z-index: 1;
+    overflow: clip;
+    /* gap: 8vw; */
+    flex-direction: column;
+}
+
+
+#imgbox{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width:40vw ;
+    height: 50vh;
+    position: relative;
+    border-radius: 50%;
+}
+
+
+.stackbox{
+    position: relative;
+    border-radius: 50%;
+
+}
+
+
+.astroimage {
+    height: 100% ;
+    width: 100%;
+}
+
+.astroimage2{
+    animation: rotate 6s;
+    animation-fill-mode: forwards;
+}
+
+.astroimage2, .astroimage3{
+    position: absolute;
+    left: 10%;
+    top: 10%;
+    height: 80% ;
+    width: 80%;
+    z-index: 1;
+}
+
+.astroimage3 {
+   
+    left: -20%;
+    top: -7%;
+    height: 90%;
+    width: 90%;
+    transform: rotate(15deg);
+    z-index: 0;
+    
+}
+
+.astroimage4, .astroimage5, .astroimage6, .astroimage7, .astroimage8, .astroimage9, .astroimage10, .astroimage11{
+    position: absolute;
+    z-index: 22;
+    height: 3.2%;
+    width: 3.2%;
+    transition: 0.5s;
+    border-radius: 100%;
+    
+}
+
+.astroimage4{
+    left: 0%;
+    top: 76%;
+}
+
+
+.astroimage5{
+    left: -5%;
+    top: 64.75%;
+}
+
+.astroimage6{
+    left:-7%;
+    top: 53.5%;
+}
+
+.astroimage7{
+    left: -6.5%;
+    top: 42.25%;
+}
+
+.astroimage8{
+    left: -3%;
+    top: 31%;
+}
+
+.astroimage9{
+    left: 2.5%;
+    top: 21%;
+}
+
+.astroimage10{
+    left: 12%;
+    top: 11%;
+}
+
+.astroimage11{
+    left: 25%;
+    top: 3%;
+}
+
+.astroimage4:hover, .astroimage5:hover, .astroimage6:hover, .astroimage7:hover, .astroimage8:hover, .astroimage9:hover, .astroimage10:hover, .astroimage11:hover{
+    color: white;
+      box-shadow: 0 0 1em  #b7e7fc , 0 0 1em  #fefefe inset;
+
+
+}
+
+
+/* text css begins here */
+
+
+.textbox{
+    display: flex;
+    justify-content: space-around;
+    align-items: left;
+    width: 40%;
+    flex-direction: column;
+    font-family: myFirstFont;
+    z-index: 33;
+    border: 1.5px solid aliceblue;
+    border-radius: 15px;
+
+}
+
+
+.para{
+    font-family: 'Times New Roman', Times, serif;
+    color: white;
+    text-align:justify;
+    justify-content: space-around;
+}
+
+.minibox{
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 2em;
+    margin-right: 2em;
+}
+
+
+.heading{
+    font-family: 'Times New Roman', Times, serif;
+    color: #ffffff;
+    text-align: center;
+    display: block;
+}
+
+
+.mikibox{
+    padding: 2em;
+}
+
+@keyframes rotate {
+    0% {transform: rotate(0deg);}
+    100%{transform: rotate(90deg);}
+    
+}
+
+@media screen and (min-width : 1000px) {
+    .astrobox {
+        flex-direction: row;
+        gap: 8vw;
+
+    }
+}
+
+@media screen and (max-width : 1000px){
+    .astrobox{
+        flex-direction: column;
+    }
+    .textbox{
+        width: 70%;
+    }
+}
+
+/* @media screen and (max-width : 500px){
+    .para {
+        font-size: 50px;
+    }
+} */
+@media screen and (max-width : 500px){
+    .stackbox {
+        height: 75vw;
+        width: 75vw;
+        /* justify-content: flex-start; */
+ }
+ .astrobox{
+    flex-direction: column;
+ }
+ .textbox{
+    width: 95%;
+    overflow: scroll;
+ }
+ .mikibox{
+    margin-top: 3.5rem;
+    padding: 3rem;
+    padding-bottom: 2rem;
+ }
+ /* .heading{
+    flex-wrap: wrap;
+ } */
+ }
