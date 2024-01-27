@@ -168,7 +168,7 @@
 
   .eventImage {
     object-fit: cover; 
-    border-radius: 20px; 
+    border-radius: 5px; 
     margin:20px;
   }
 
@@ -219,9 +219,42 @@
       display: block;
       padding: 10px;
     }
+    .container {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 10px;
+    }
+    .Ev {
+      width: 45%;
+      height: 45%;
+      box-sizing: border-box;
+      background-position: center;
+    }
+    .eventImage {
+      width: 100%;
+      max-height: 200px;
+      overflow: hidden;
+      margin: 10px;
+    }
+    .eventImage img {
+      height: 204.75px;
+      width: 112.5px; 
+      box-sizing: border-box;
+      object-fit: cover;
+    }
+    .eventContent {
+      width: 100%;
+    }
     .btn{
       right: 7.5%;
       margin: 0px;
+    }
+    .heading{
+      font-size: 22px;
+    }
+    .para{
+      font-size: 10px;
     }
   }
 
