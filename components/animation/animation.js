@@ -7,7 +7,7 @@ const HologramThrone = () => {
 
 
 const getRandomCharacter = () => {
-  const characters = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789';
+  const characters = 'ol1';
   return characters.charAt(Math.floor(Math.random() * characters.length));
 };
 
