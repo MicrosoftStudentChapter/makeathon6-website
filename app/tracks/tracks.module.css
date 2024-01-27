@@ -1,3 +1,229 @@
-.thisH1{
-    color: rgb(155, 235, 135);
+.main {
+    background-image: url('./assets/img1.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-attachment: fixed;
+    flex-wrap: wrap;
+    position: relative;
+    overflow-y: auto;
+  }
+
+.container{
+    display: flex;
+    flex-wrap: wrap;
+    gap:15px;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 25px;
+    height: 500px;
 }
+
+.Ev{
+    background-image: url('./assets/Union.svg');
+    background-repeat: no-repeat;
+    background-size: contain;
+    height: 500px;
+    width: 300px;
+    text-align: center;
+    margin: auto;
+    transition: transform .2s;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: top;
+    position: relative;
+}
+
+.Ev:hover{
+    transform: scale(1.1);
+    box-shadow: 0 0 100px 10px black ;
+    backdrop-filter: blur(5px);
+    border-radius: 5px;
+}
+
+.heading{
+    padding-top:20px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    text-align: center;
+    color: rgb(255, 255, 255);
+}
+
+.mainheading{
+    margin:20px;
+    padding:20px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    text-align: center;
+    color:black;
+}
+
+.para{
+    color: white;
+    text-align: center;
+} 
+
+.overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5); 
+    z-index: 1;
+  }
+
+  .popup {
+    color: white;
+    padding-left: 40px;
+    padding-right: 40px;
+    backdrop-filter: blur(10px);
+    width: 95%;
+    height: 80%;
+    justify-content: left;
+    align-items: top;
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 10px;
+    z-index: 2;
+    overflow-y: auto;
+    display: flex;
+    padding:20px;
+  }
+
+  .btn {
+    color:white;
+    background-color: black;
+    border-radius: 50px;
+    width: 50px;
+    height: 50px;
+    opacity: 1;
+    position: absolute;
+    right: 20px;
+    margin: 15px;
+  }
+  
+  .btn:hover {
+    opacity: .7;
+  }
+  .btn:before, .btn:after {
+    left: 15px;
+    content: ' ';
+    height: 33px;
+    width: 2px;
+    background-color: #333;
+  }
+  .btn:before {
+    transform: rotate(45deg);
+  }
+  .btn:after {
+    transform: rotate(-45deg);
+  }
+
+  
+  .flex{
+    display:flex;
+    height:100%;
+    width:100%;
+  }
+
+  .popupimage{
+    background-image: url('./assets/Union.svg');
+    background-size:contain;
+    height:100%;
+    width: 30%;
+    background-repeat: no-repeat;
+    background-position: center center;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap:wrap;
+
+  }
+  .card{
+    background-image: url('./assets/Mask_group.png');
+    background-size: contain;
+    width: 100%;
+    height: 90%;
+    background-repeat: no-repeat;
+    background-position: center center;
+
+  }
+
+  .content{
+    padding-top: 30px;
+    padding-left: 20px;
+    padding-right: 20px;
+    max-width: 70%;
+    box-sizing: border-box;
+  }
+
+  .eventImage {
+    object-fit: cover; 
+    border-radius: 20px; 
+    margin:20px;
+  }
+
+  .eventContent{
+    position:absolute;
+  }
+
+  @media (min-width: 1151px) {
+    .main {
+      font-size:large;}
+      .card{
+        width: 85%;
+      }
+      .popupimage{
+        width: 100%;
+      }  
+  }
+  
+  @media (min-width: 761px) and (max-width:1150px) {
+    .main {
+      font-size:large;
+    }
+    .card{
+      width: 85%;
+    }
+    .popupimage{
+      width: 100%;
+    }
+  }
+  
+  @media (max-width: 760px) {
+    .main {
+      font-size:16px;
+    }
+    .card{
+      width: 50%;
+    }
+    .popupimage{
+      width: 100%;
+      height: 50%;
+      
+    }
+    .content{
+      max-width: max-content;
+      padding: 10px;
+    }
+    .flex{
+      display: block;
+      padding: 10px;
+    }
+    .btn{
+      right: 7.5%;
+      margin: 0px;
+    }
+  }
+
+  .spacing1
+  {
+    margin-bottom: 15px;
+  }
+
+  .spacing2
+  {
+    margin-bottom: 25px;
+  }
