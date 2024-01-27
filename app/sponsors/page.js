@@ -7,15 +7,18 @@ import Image from 'next/image'
 import bgImage from '/public/sponsors/bgImg.png'
 import Logo from '/public/sponsors/mlscLogo.png'
 import Flaglogo from '/public/sponsors/flogo.png'
+import { myFont } from '@/components/font/myfont'
 
 export default function Page() {
       return (
         <>
           <Image className={styles.bg} src={bgImage} alt='/' />
           {/* <div className={styles.marginBawa}>*/}
-          <Image className={styles.Logo} src={Logo} alt='/' /><h1 className={styles.heading}>OUR SPONSORS</h1>
+          <Image className={styles.Logo} src={Logo} alt='/' /><h1 className={`${styles.heading}  ${myFont.className}`}>OUR SPONSORS</h1>
           {/* </div>*/}
+          <div className={myFont.className}>
           <Flag /><Power /><Associate />
+          </div>
         </>
       );
     }
@@ -23,7 +26,7 @@ export default function Page() {
   function Flag(){
     return (
     <><div className={styles.sideLine}>
-    <h1 className={styles.text}>TITLE SPONSORS</h1>
+    <h1 className={`${styles.text} ${myFont.className}`}>TITLE SPONSORS</h1>
     <div className={styles.flex}>
     <div className={styles.overlap}>
         <Image className={styles.ameer} src={flag} alt='/' />
