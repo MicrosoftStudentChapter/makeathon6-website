@@ -1,0 +1,69 @@
+.hologramThrone {
+    position: fixed;
+    width: 350px;
+    height: 300px;
+    color: skyblue;
+    top: 49vh;
+    left: 50%;
+    transform: translateX(-50%);
+    /* clip-path: polygon(47% 0%, 64% 4%, 80% 13%, 92% 26%, 99% 100%, 0% 99%, 8% 28%, 16% 15%, 29% 6%); */
+}
+
+  
+  .character {
+    position: absolute;
+    bottom: 0;
+   
+    opacity: 0;
+   
+
+  }
+  @keyframes moveUpFadeOut {
+    0% { transform: translateY(0vh); opacity: 1; }
+    100% { transform: translateY(-60vh); opacity: 0; } 
+  }
+  
+  .character {
+    
+    animation-name: moveUpFadeOut;
+    animation-timing-function: linear;
+    animation-fill-mode: forwards;
+    animation-iteration-count: infinite;
+    will-change: transform, opacity;
+  }
+  
+  @media screen and (max-width : 1460px) {
+    .hologramThrone{
+      top: 35vh;
+    }
+  }
+  @media screen and (max-height: 650px){
+    .hologramThrone{
+      top: 46vh;
+      width: 257px;
+    height: 251px;
+    }
+   
+    }
+  
+  @media screen and (max-width: 376px){
+    .hologramThrone{
+      width: 257px;
+    }
+  }
+  @media screen and (max-width: 426px){
+    .hologramThrone{
+      top: 56vh;
+    width: 257px;
+    height: 156px;
+    }
+  }
+  @media screen and (min-width: 2559px){
+    .hologramThrone{ 
+      width: 478px; 
+      top: 53vh;
+    }
+  } 
+  /* @media screen and (max-width){
+    
+  } */
