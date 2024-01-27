@@ -40,10 +40,11 @@ export default function Page() {
                 <Image src={ell34} className={styles.astroimage9} />
                 <Image src={ell35} className={styles.astroimage10} />
                 <Image src={ell36} className={styles.astroimage11} />
+                <p className={styles.parag}>{date()}</p>
                 
             </div>
      
-            <p className={styles.para}>{date()}</p>
+            
         </div>
         <div className={styles.textbox}>
             <div className={styles.mikibox}>
@@ -58,6 +59,7 @@ export default function Page() {
                     <li>Consectetur nisi amet consectetur aute sunt ea proident consectetur excepteur pariatur id sint voluptate nostrud. Exercitation dolore sunt in laboris sint aute irure mollit laborum. Quis do qui laborum Lorem consequat labore voluptate.</li>
                 </ul>
             </div>
+            
             </div>
             
         </div>
