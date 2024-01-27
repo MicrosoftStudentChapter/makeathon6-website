@@ -27,7 +27,7 @@
     width: 300px;
     text-align: center;
     margin: auto;
-    transition: transform .2s;
+    transition: transform .5s;
     cursor: pointer;
     display: flex;
     justify-content: center;
@@ -36,9 +36,11 @@
 }
 
 .Ev:hover{
-    transform: scale(1.1);
-    box-shadow: 0 0 100px 10px black ;
+    transform: scale(1.05);
+    box-shadow: 0 0 60px 8px black ;
+    transition: box-shadow 1.5s;
     backdrop-filter: blur(5px);
+    transition: backdrop-filter 1.5s;
     border-radius: 5px;
 }
 
