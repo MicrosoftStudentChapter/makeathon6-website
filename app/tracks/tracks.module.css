@@ -15,7 +15,7 @@
     gap:15px;
     justify-content: space-evenly;
     align-items: center;
-    padding-top: 50px;
+    padding: 25px;
     height: 500px;
 }
 
@@ -50,7 +50,8 @@
 }
 
 .mainheading{
-    padding-top:20px;
+    margin:20px;
+    padding:20px;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     text-align: center;
     color:black;
@@ -100,6 +101,7 @@
     opacity: 1;
     position: absolute;
     right: 20px;
+    margin: 15px;
   }
   
   .btn:hover {
@@ -150,6 +152,9 @@
   }
 
   .content{
+    padding-top: 30px;
+    padding-left: 20px;
+    padding-right: 20px;
     max-width: 70%;
     box-sizing: border-box;
   }
@@ -208,6 +213,17 @@
       padding: 10px;
     }
     .btn{
-      right: 10%;
+      right: 7.5%;
+      margin: 0px;
     }
+  }
+
+  .spacing1
+  {
+    margin-bottom: 15px;
+  }
+
+  .spacing2
+  {
+    margin-bottom: 25px;
   }

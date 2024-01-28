@@ -7,15 +7,17 @@ import Image from 'next/image'
 import bgImage from '/public/sponsors/bgImg.png'
 import Logo from '/public/sponsors/mlscLogo.png'
 import Flaglogo from '/public/sponsors/flogo.png'
+import { myFont } from '@/components/font/myfont'
 
 export default function Page() {
       return (
         <>
           <Image className={styles.bg} src={bgImage} alt='/' />
-          {/* <div className={styles.marginBawa}>*/}
-          <Image className={styles.Logo} src={Logo} alt='/' /><h1 className={styles.heading}>OUR SPONSORS</h1>
-          {/* </div>*/}
+          <Image className={styles.Logo} src={Logo} alt='/' /><h1 className={`${styles.heading}  ${myFont.className}`}>OUR SPONSORS</h1>
           <Flag /><Power /><Associate />
+          {/* <div className={styles.buttonContainer}>
+            <div className={styles.button}><a href='#' className={styles.ignore}>Want to Sponsor us?</a></div>
+        </div> */}
         </>
       );
     }
@@ -23,7 +25,7 @@ export default function Page() {
   function Flag(){
     return (
     <><div className={styles.sideLine}>
-    <h1 className={styles.text}>TITLE SPONSORS</h1>
+    <h1 className={styles.text}>Title Sponsors</h1>
     <div className={styles.flex}>
     <div className={styles.overlap}>
         <Image className={styles.ameer} src={flag} alt='/' />
@@ -51,26 +53,26 @@ export default function Page() {
   function Power(){
     return(
       <><div className={styles.sideLine}>
-    <h2 className={styles.text}>POWER SPONSORS</h2>
+    <h2 className={styles.text}>Power Sponsors</h2>
     <div className={styles.flex}>
     <div className={styles.overlap}>
     <Image className={styles.gareeb} src={power} alt='/' />
-    <Image className={styles.flaglogo1} src={Flaglogo} alt='/' /></div>
+    <Image className={styles.flaglogo} src={Flaglogo} alt='/' /></div>
     <div className={styles.overlap}>
     <Image className={styles.gareeb} src={power} alt='/' />
-    <Image className={styles.flaglogo1} src={Flaglogo} alt='/' /></div>
+    <Image className={styles.flaglogo} src={Flaglogo} alt='/' /></div>
     <div className={styles.overlap}>
     <Image className={styles.gareeb} src={power} alt='/' />
-    <Image className={styles.flaglogo1} src={Flaglogo} alt='/' /></div>
+    <Image className={styles.flaglogo} src={Flaglogo} alt='/' /></div>
     <div className={styles.overlap}>
     <Image className={styles.gareeb} src={power} alt='/' />
-    <Image className={styles.flaglogo1} src={Flaglogo} alt='/' /></div>
+    <Image className={styles.flaglogo} src={Flaglogo} alt='/' /></div>
     <div className={styles.overlap}>
     <Image className={styles.gareeb} src={power} alt='/' />
-    <Image className={styles.flaglogo1} src={Flaglogo} alt='/' /></div>
+    <Image className={styles.flaglogo} src={Flaglogo} alt='/' /></div>
     <div className={styles.overlap}>
     <Image className={styles.gareeb} src={power} alt='/' />
-    <Image className={styles.flaglogo1} src={Flaglogo} alt='/' /></div>
+    <Image className={styles.flaglogo} src={Flaglogo} alt='/' /></div>
     </div></div> </>
     )
   }
@@ -78,26 +80,26 @@ export default function Page() {
   function Associate(){
     return(
       <><div className={styles.sideLine}>
-      <h2 className={styles.text}>ASSOCIATE SPONSORS</h2>
+      <h2 className={styles.text}>Associate Sponsors</h2>
      <div className={styles.flex}>
      <div className={styles.overlap}>
      <Image className={styles.more} src={associate} alt='/' />
-    <Image className={styles.flaglogo2} src={Flaglogo} alt='/' /></div>
+    <Image className={styles.flaglogo} src={Flaglogo} alt='/' /></div>
     <div className={styles.overlap}>
      <Image className={styles.more} src={associate} alt='/' />
-    <Image className={styles.flaglogo2} src={Flaglogo} alt='/' /></div>
+    <Image className={styles.flaglogo} src={Flaglogo} alt='/' /></div>
     <div className={styles.overlap}>
      <Image className={styles.more} src={associate} alt='/' />
-    <Image className={styles.flaglogo2} src={Flaglogo} alt='/' /></div>
+    <Image className={styles.flaglogo} src={Flaglogo} alt='/' /></div>
     <div className={styles.overlap}>
      <Image className={styles.more} src={associate} alt='/' />
-    <Image className={styles.flaglogo2} src={Flaglogo} alt='/' /></div>
+    <Image className={styles.flaglogo} src={Flaglogo} alt='/' /></div>
     <div className={styles.overlap}>
      <Image className={styles.more} src={associate} alt='/' />
-    <Image className={styles.flaglogo2} src={Flaglogo} alt='/' /></div>
+    <Image className={styles.flaglogo} src={Flaglogo} alt='/' /></div>
     <div className={styles.overlap}>
      <Image className={styles.more} src={associate} alt='/' />
-    <Image className={styles.flaglogo2} src={Flaglogo} alt='/' /></div>
+    <Image className={styles.flaglogo} src={Flaglogo} alt='/' /></div>
     </div></div></>
     )
   }

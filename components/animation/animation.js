@@ -22,7 +22,7 @@ const calculatePositions = (count) => {
   return positions;
 };
 useEffect(() => {
-    const characterCount = 500; 
+    const characterCount = 100; 
     const interval = 200; 
     const widthSegments = 50; 
   

@@ -53,10 +53,11 @@
     width: 100vw;
     z-index: 2;
     top: 0vh;
+    display: none;
    
 }
 @media screen and (max-width : 450px){
-   .menu{
-    display: inline-block;
+   .menu, .HamburgerMain{
+    display: block;
    }
 }
