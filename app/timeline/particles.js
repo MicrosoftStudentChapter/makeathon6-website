@@ -37,7 +37,7 @@ const App = () => {
             fullScreen: { enable: true, zIndex: 0 },
             detectRetina: true,
             duration: 0,
-            fpsLimit: 60,
+            fpsLimit: 120,
             interactivity: {
               detectsOn: "window",
               events: {
@@ -49,7 +49,7 @@ const App = () => {
                   type: "circle",
                 },
                 onHover: {
-                  enable: true,
+                  enable: false,
                   mode: "bubble",
                   parallax: { enable: false, force: 2, smooth: 10 },
                 },
@@ -87,18 +87,18 @@ const App = () => {
                 push: { default: true, groups: [], quantity: 4 },
                 remove: { quantity: 2 },
                 repulse: {
-                  distance: 400,
-                  duration: 0.4,
+                  distance: 200,
+                  duration: 0.3,
                   factor: 100,
                   speed: 1,
-                  maxSpeed: 50,
+                  maxSpeed: 1,
                   easing: "ease-out-quad",
                   divs: {
                     distance: 200,
                     duration: 0.4,
                     factor: 100,
                     speed: 1,
-                    maxSpeed: 50,
+                    maxSpeed: 1,
                     easing: "ease-out-quad",
                     selectors: [],
                   },
@@ -175,10 +175,10 @@ const App = () => {
                 drift: 0,
                 enable: true,
                 gravity: {
-                  acceleration: 9.81,
+                  acceleration: 1,
                   enable: false,
                   inverse: false,
-                  maxSpeed: 50,
+                  maxSpeed: 1,
                 },
                 path: {
                   clamp: true,
@@ -189,7 +189,7 @@ const App = () => {
                 outModes: { default: "out" },
                 random: false,
                 size: false,
-                speed: { min: 0.1, max: 1 },
+                speed: { min: 0.1, max: 0 },
                 spin: { acceleration: 0, enable: false },
                 straight: false,
                 trail: { enable: false, length: 10, fill: {} },
@@ -224,11 +224,11 @@ const App = () => {
               },
               shape: { close: true, fill: true, options: {}, type: "circle" },
               size: {
-                value: { min: 1, max: 3 },
+                value: { min: 1, max: 2 },
                 animation: {
                   count: 0,
                   enable: false,
-                  speed: 5,
+                  speed: 0,
                   decay: 0,
                   delay: 0,
                   sync: false,
