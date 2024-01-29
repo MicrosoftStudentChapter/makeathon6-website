@@ -48,8 +48,8 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    width:40vw ;
-    height: 50vh;
+    width:35vw ;
+    height: 35vh;
     position: relative;
     border-radius: 50%;
 }
@@ -103,33 +103,33 @@
 }
 
 .astroimage4{
-    left: 0%;
+    left: -1%;
     top: 76%;
 }
 
 
 .astroimage5{
-    left: -5%;
+    left: -6%;
     top: 64.75%;
 }
 
 .astroimage6{
-    left:-7%;
+    left:-8%;
     top: 53.5%;
 }
 
 .astroimage7{
-    left: -6.5%;
+    left: -7.5%;
     top: 42.25%;
 }
 
 .astroimage8{
-    left: -3%;
+    left: -3.4%;
     top: 31%;
 }
 
 .astroimage9{
-    left: 2.5%;
+    left: 2%;
     top: 21%;
 }
 
@@ -161,7 +161,9 @@
     width: 40%;
     flex-direction: column;
     font-family: myFirstFont;
-    z-index: 3;
+
+    z-index: 33;
+
     /* border: 1.5px solid aliceblue;
     border-radius: 15px; */
 
@@ -175,13 +177,21 @@
     justify-content: space-around;
     display: flex;
     flex-wrap: wrap;
+
+}
+
+.parag{
+    text-align:center;
+    color: #ffffff;
+
+
 }
 
 .minibox{
     display: flex;
     justify-content: space-around;
     margin-bottom: 1em;
-    /*margin-right: 2em; */
+
 }
 
 
@@ -199,7 +209,7 @@
 
 @keyframes rotate {
     0% {transform: rotate(0deg);}
-    100%{transform: rotate(90deg);}
+    100%{transform: rotate(68deg);}
     
 }
 
@@ -235,16 +245,27 @@
  }
  .textbox{
     width: 80%;
+
     overflow: scroll;
     margin-bottom: 2rem;
  }
+
  .mikibox{
-    margin-top: 4rem;
-    padding: 4.5rem;
-    padding-bottom: 2rem;
+    padding: 5rem;
+    padding-top: 2rem;
+    padding-bottom: 1.5rem;
+    /* position: sticky; */
+
  }
  .heading{
     display: flex;
     flex-wrap: wrap;
+
+    justify-content: center;
+    padding: 0 5rem;
+ }
+ .minibox{
+    position:sticky;
+
  }
  }
