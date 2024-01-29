@@ -1,0 +1,1 @@
+export const headings = ["Registrations", "Bootcamp 1", "Bootcamp 2" ,"Bootcamp 3" , "Makeathon " , "results"]
