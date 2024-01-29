@@ -19,17 +19,17 @@
    
     cursor: pointer;
 
-    transform: translateZ(8vw);
-    transform: rotateY(-45deg);
-   
+    transform: rotateY(35deg) rotateX(9deg) rotateZ(6deg);
+  transform-style: preserve-3d;
 }
 
 .tiltHomeLeft2 {
     
     cursor: pointer;
-   
-    transform: translateZ(8vw);
-    transform: rotateY(-45deg);
+    /* transform: rotateY(35deg) rotateX(0deg) rotateZ(2deg);
+    transform-style: preserve-3d; */
+    transform: perspective(1500px) rotateY(30deg) rotateZ(2.3deg);
+
 
    
 }
@@ -38,8 +38,10 @@
    
     cursor: pointer;
    
-    transform: translateZ(8vw);
-    transform: rotateY(-45deg);
+    /* transform: translateZ(8vw); */
+    /* transform: rotateY(-45deg); */
+    /* transform: rotateY(35deg) rotateX(0deg) rotateZ(2deg); */
+    transform: perspective(1500px) rotateY(30deg);
    
 }
 
@@ -51,13 +53,21 @@
 
 .tiltHomeRight2 {
     cursor: pointer;
-    transform: rotateY(-48deg) rotateZ(-2deg);
+    /* transform: rotateY(-48deg) rotateZ(-2deg); */
+    /* transform: rotateY(-35deg) rotateX(0) rotateZ(-2deg);
+    transform-style: preserve-3d; */
+    transform: perspective(1500px) rotateY(-30deg) rotateZ(-2.5deg);
+
     
 }
 
 .tiltHomeRight3 {
     cursor: pointer;
-    transform: rotateY(-48deg) rotateZ(-2deg);
+    /* transform: rotateY(-48deg) rotateZ(-2deg); */
+    /* transform: rotateY(-35deg) rotateX(0) rotateZ(-2deg);
+  transform-style: preserve-3d; */
+  transform: perspective(1500px) rotateY(-30deg);
+
   
 }
 
@@ -99,7 +109,7 @@
     position: fixed;
    
     object-fit: contain;
-    transform: translateX(-51%);
+    transform: translateX(-51.2%);
     top: 21.15vh;
     left: 51.2vw;
     
@@ -122,9 +132,10 @@
 
 .animation{
     transform: translateZ(8vw);
-    transform: rotateY(-45deg);
+    /* transform: rotateY(-45deg); */
     /* transform: rotateY(-48deg) rotateZ(-2deg); */
-}
+    
+} 
 .tiltHomeLeft2,
 .tiltHomeRight2,
 .row3,
@@ -132,18 +143,18 @@
 .tiltHomeRight3
 {
   position: relative;
-  animation: floatAnimation 3s infinite alternate ease-in-out;
+  /* animation: floatAnimation 3s infinite alternate ease-in-out; */
   
 }
 
-@keyframes floatAnimation {
+/* @keyframes floatAnimation {
   0% {
     transform: translateY(0);
   }
   100% {
     transform: translateY(-4px);
   }
-}
+} */
 
 @media screen and (max-width : 1460px) {
     .row2 {
@@ -268,7 +279,7 @@
     .throne{
         /* top: -4.125vh; */
         height: 81vh;
-        top: 9vh;
+        top: 13vh;
     }
 }
 /* @media screen and (max-width: 2560px){
@@ -285,4 +296,9 @@
         height: 21vh;
         top:14vh ;
 }
+}
+@media screen and (min-width: 2560px){
+    .throne{
+        top: -3vh;
+    }
 }

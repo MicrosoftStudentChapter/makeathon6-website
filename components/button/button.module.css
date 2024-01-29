@@ -1,7 +1,20 @@
 .homeButton {
   transition: all ease-in-out 0.5s;
-}
+  /* transform: rotateY(35deg) rotateX(9deg) rotateZ(6deg);
+  transform-style: preserve-3d; */
+  /* transform: rotateY(35deg) perspective(800px); */
+  animation: floatAnimation 3s infinite alternate ease-in-out;
 
+
+}
+@keyframes floatAnimation {
+  0% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(-4px);
+  }
+}
 .home {
   background-color: rgb(25 89 154 / 80%);
   text-align: center;
@@ -20,7 +33,7 @@
 
   box-shadow: 2px 13px 76px 14px rgb(72 129 187);
 
-  font-family: 'Kingvoon';
+  font-family: '--kingvoon';
 
   z-index: 10;
 }

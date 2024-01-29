@@ -8,7 +8,6 @@
 .bgbox{
     height: 100vh;
     width: 100vw;
-   
     
     /* background-image: url(./assets/bg.svg.svg); */
 }
@@ -162,7 +161,9 @@
     width: 40%;
     flex-direction: column;
     font-family: myFirstFont;
+
     z-index: 33;
+
     /* border: 1.5px solid aliceblue;
     border-radius: 15px; */
 
@@ -176,11 +177,13 @@
     justify-content: space-around;
     display: flex;
     flex-wrap: wrap;
+
 }
 
 .parag{
     text-align:center;
     color: #ffffff;
+
 
 }
 
@@ -188,6 +191,7 @@
     display: flex;
     justify-content: space-around;
     margin-bottom: 1em;
+
 }
 
 
@@ -235,30 +239,33 @@
     .stackbox {
         height: 75vw;
         width: 75vw;
-        /* justify-content: flex-start; */
  }
  .astrobox{
     flex-direction: column;
  }
  .textbox{
     width: 80%;
-    /* overflow: scroll; */
+
+    overflow: scroll;
     margin-bottom: 2rem;
-    position: sticky;
  }
+
  .mikibox{
     padding: 5rem;
     padding-top: 2rem;
     padding-bottom: 1.5rem;
     /* position: sticky; */
+
  }
  .heading{
     display: flex;
     flex-wrap: wrap;
+
     justify-content: center;
     padding: 0 5rem;
  }
  .minibox{
     position:sticky;
+
  }
  }
