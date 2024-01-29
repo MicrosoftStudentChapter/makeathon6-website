@@ -6,8 +6,8 @@
   font-style: normal;
   font-family: 'Merienda', cursive;
   font-weight: 400;
-  margin-top: 60px;
-  margin-bottom: 60px;
+  margin-top: 80px;
+  margin-bottom: 80px;
   display: flex;
   justify-content: center;
 }
@@ -27,7 +27,16 @@
   width: 100%;
   object-fit: contain;
   z-index: 0;
+}
 
+.ameer{
+  width: 280px;
+  height: 190px;
+}
+
+.more{
+  width:230px;
+  height: 160px;
 }
 
 .flaglogo {
@@ -46,7 +55,13 @@
 
 }
 
-.flex{
+.flaglogo:hover{
+  /* box-shadow: 5px 5px 10px rgba(0,0,0,0.25); */
+  filter: drop-shadow(10px 10px 5px rgba(0,0,0,0.5));
+}
+
+.flex,
+.flexs{
   display: flex;
   flex-direction: row;
   justify-content: space-around;
@@ -64,13 +79,16 @@
 }
 
 
+
 .Logo{
+  /* display: flex;
+  justify-content: space-around; */
   width: 117px;
   height: 158px;
-  margin-right: 12.5%;
+  margin-left: 90%;
 }
 
-@media screen and (max-width: 860px) {
+@media screen and (max-width: 900px) {
   .heading {
     font-size: 60px;
     margin-left: 0;
@@ -90,6 +108,7 @@
   .Logo {
     width: 80px;
     height: 100px;
+    margin-left: 85%;
   }
 }
 
@@ -113,7 +132,9 @@
   .Logo {
     width: 80px;
     height: 100px;
+    margin-left: 85%;
   }
+  
 
   .flex{
     display: grid;
@@ -124,7 +145,7 @@
 
 @media screen and (max-width: 650px) {
   .heading {
-    font-size: 35px;
+    font-size: 33px;
   }
 
   .text  {
@@ -136,6 +157,7 @@
   .Logo {
     width: 60px;
     height: 80px;
+    margin-left: 85%;
   }
 
 .flex{
@@ -144,11 +166,21 @@
   grid-gap: 10px;
 }
 
+.ameer{
+  width: 250px;
+  height: 190px;
+}
+
  .overlap{
   margin-bottom: 0px;
   margin-right: 0px;
   margin-left: 0px;
  }
+
+ .more{
+  width: 170px;
+  height: 190px;
+}
 }
 
 
