@@ -25,29 +25,31 @@
 }
 
 .Ev{
-    background-image: url('./assets/Union.svg');
-    background-repeat: no-repeat;
-    background-size: contain;
-    height: 500px;
-    width: 300px;
-    text-align: center;
-    margin: auto;
-    transition: transform .5s;
-    cursor: pointer;
-    display: flex;
-    justify-content: center;
-    align-items: top;
-    position: relative;
+  background-image: url('./assets/Union.svg');
+  background-repeat: no-repeat;
+  background-size: contain;
+  height: 500px;
+  width: 300px;
+  text-align: center;
+  margin: auto;
+  transition: transform .5s;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: top;
+  position: relative;
+  transition: ease-in-out 0.2s;
 }
 
 .Ev:hover{
-    transform: scale(1.05);
-    box-shadow: 0 0 60px 8px black ;
-    transition: box-shadow 1.5s;
-    backdrop-filter: blur(5px);
-    transition: backdrop-filter 1.5s;
-    border-radius: 5px;
+  transform: scale(1.05);
+  box-shadow: 0 0 60px 8px black ;
+  transition: box-shadow 1.5s;
+  backdrop-filter: blur(5px);
+  transition: ease-in-out 0.5s;
+  border-radius: 5px;
 }
+
 
 .heading{
     padding-top:20px;
