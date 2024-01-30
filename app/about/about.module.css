@@ -113,7 +113,7 @@
 }
 
 .panel {
-    padding: 0 18px;
+    padding: 20px 18px;
     background-color: #202020;
     width: 92.1%;
     color: whitesmoke;
@@ -122,7 +122,8 @@
     overflow: hidden;
     margin-bottom: 20px;
     margin-top: -7px;
-    font-size: 18px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 20px;
 }
 
 .active {
