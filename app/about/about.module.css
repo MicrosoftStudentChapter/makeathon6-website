@@ -1,9 +1,5 @@
-@import url('https://fonts.googleapis.com/css2?family=Inika&family=Russo+One&family=Rye&display=swap');
-
-
-.thisH1 {
+.thisH1{
     color: white;
-    font-family: 'Rye';
     text-align: center;
     font-size: 40px;
     font-weight: 100;
@@ -148,7 +144,6 @@
     border: 2px solid #585858;
     outline: none;
     transition: 0.4s;
-    font-family: 'Russo One';
     font-size: 20px;
 }
 
@@ -166,7 +161,6 @@
     overflow: hidden;
     margin-bottom: 20px;
     margin-top: -7px;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     font-size: 18px;
 }
 

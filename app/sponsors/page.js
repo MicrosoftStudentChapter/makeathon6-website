@@ -13,12 +13,13 @@ export default function Page() {
       return (
         <>
           <Image className={styles.bg} src={bgImage} alt='/' />
-          <div className={styles.gandaChange}>
+
+          {/* <div className={styles.marginBawa}>*/}
           <Image className={styles.Logo} src={Logo} alt='/' /><h1 className={`${styles.heading}  ${myFont.className}`}>OUR SPONSORS</h1>
-          <Flag /><Power /><Associate /></div>
-          {/* <div className={styles.buttonContainer}>
-            <div className={styles.button}><a href='#' className={styles.ignore}>Want to Sponsor us?</a></div>
-        </div> */}
+          {/* </div>*/}
+          <div className={myFont.className}>
+          <Flag /><Power /><Associate />
+          </div>
         </>
       );
     }
@@ -26,8 +27,9 @@ export default function Page() {
   function Flag(){
     return (
     <><div className={styles.sideLine}>
-    <h1 className={styles.text}>Title Sponsors</h1>
+    <h1 className={`${styles.text} ${myFont.className}`}>Title Sponsors</h1>
     <div className={styles.flexs}>
+
     <div className={styles.overlap}>
         <Image className={styles.ameer} src={flag} alt='/' />
         <Image className={styles.flaglogo} src={Flaglogo} alt='/' /></div>

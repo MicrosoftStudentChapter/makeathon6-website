@@ -3,6 +3,7 @@
 import React, { useState } from 'react';
 import styles from './Hamburger.module.css';
 import Image from 'next/image';
+import Link from 'next/link';
 
 function Hamburger() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -43,10 +44,21 @@ function Hamburger() {
         />
         <div className={`${styles.hamburger} ${isMenuOpen ? styles.show : ''}`}>
           <div className={styles.buttons}>
+          <Link href="/" style={{textDecoration: "none"}}>
             <h1>Home</h1>
-            <h1>about</h1>
-            <h1>timeline</h1>
-            <h1>sponsors</h1>
+          </Link>
+          <Link href="/about" style={{textDecoration: "none "}}>
+            <h1>About</h1>
+          </Link>
+          <Link href="/timeline" style={{textDecoration: "none"}}>
+            <h1>Timeline</h1>
+          </Link>
+          <Link href="/sponsors" style={{textDecoration: "none"}}>
+            <h1>Sponsors</h1>
+          </Link>
+          <Link href="/tracks" style={{textDecoration: "none"}}>
+          <h1>Tracks</h1>
+          </Link>
           </div>
         </div>
       </div>

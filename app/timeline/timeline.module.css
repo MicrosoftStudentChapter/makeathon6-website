@@ -1,8 +1,3 @@
-.thisH1{
-    color: salmon;
-}
-
-
 @font-face {
     font-family: myFirstFont;
     src: url(https://fonts.googleapis.com/css2?family=Coming+Soon&family=Jacques+Francois+Shadow&family=Roboto:wght@100&display=swap);
@@ -13,7 +8,6 @@
 .bgbox{
     height: 100vh;
     width: 100vw;
-   
     
     /* background-image: url(./assets/bg.svg.svg); */
 }
@@ -54,8 +48,8 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    width:40vw ;
-    height: 50vh;
+    width:35vw ;
+    height: 35vh;
     position: relative;
     border-radius: 50%;
 }
@@ -109,33 +103,33 @@
 }
 
 .astroimage4{
-    left: 0%;
+    left: -1%;
     top: 76%;
 }
 
 
 .astroimage5{
-    left: -5%;
+    left: -6%;
     top: 64.75%;
 }
 
 .astroimage6{
-    left:-7%;
+    left:-8%;
     top: 53.5%;
 }
 
 .astroimage7{
-    left: -6.5%;
+    left: -7.5%;
     top: 42.25%;
 }
 
 .astroimage8{
-    left: -3%;
+    left: -3.4%;
     top: 31%;
 }
 
 .astroimage9{
-    left: 2.5%;
+    left: 2%;
     top: 21%;
 }
 
@@ -167,9 +161,11 @@
     width: 40%;
     flex-direction: column;
     font-family: myFirstFont;
+
     z-index: 33;
-    border: 1.5px solid aliceblue;
-    border-radius: 15px;
+
+    /* border: 1.5px solid aliceblue;
+    border-radius: 15px; */
 
 }
 
@@ -179,13 +175,23 @@
     color: white;
     text-align:justify;
     justify-content: space-around;
+    display: flex;
+    flex-wrap: wrap;
+
+}
+
+.parag{
+    text-align:center;
+    color: #ffffff;
+
+
 }
 
 .minibox{
     display: flex;
     justify-content: space-around;
-    margin-bottom: 2em;
-    margin-right: 2em;
+    margin-bottom: 1em;
+
 }
 
 
@@ -203,7 +209,7 @@
 
 @keyframes rotate {
     0% {transform: rotate(0deg);}
-    100%{transform: rotate(90deg);}
+    100%{transform: rotate(329deg);}
     
 }
 
@@ -215,7 +221,7 @@
     }
 }
 
-@media screen and (max-width : 1000px){
+@media screen and (max-width : 1025px){
     .astrobox{
         flex-direction: column;
     }
@@ -233,21 +239,33 @@
     .stackbox {
         height: 75vw;
         width: 75vw;
-        /* justify-content: flex-start; */
  }
  .astrobox{
     flex-direction: column;
  }
  .textbox{
-    width: 95%;
+    width: 80%;
+
     overflow: scroll;
+    margin-bottom: 2rem;
  }
+
  .mikibox{
-    margin-top: 3.5rem;
-    padding: 3rem;
-    padding-bottom: 2rem;
+    padding: 5rem;
+    padding-top: 2rem;
+    padding-bottom: 1.5rem;
+    /* position: sticky; */
+
  }
- /* .heading{
+ .heading{
+    display: flex;
     flex-wrap: wrap;
- } */
+
+    justify-content: center;
+    padding: 0 5rem;
+ }
+ .minibox{
+    position:sticky;
+
+ }
  }
