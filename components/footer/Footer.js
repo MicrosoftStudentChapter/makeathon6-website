@@ -58,19 +58,19 @@ export const Footer = () => {
           <div className={styles.boxer}>
             <div className={styles.rightL}>
 
-              <a href='mailto: msc@thapar.edu' target='_blank'>
+              <a href='mailto: msc@thapar.edu' target='_blank' style={{ textDecoration: 'none'}}>
                 <div className={styles.bleh}>
                   <Image className={styles.image} src={Mail}/> <div className={styles.side}>msc@thapar.edu</div>
                 </div>
               </a>
 
-              <a href='https://goo.gl/maps/bMSfh8uoYCVuLEjD6' target='_blank'> 
+              <a href='https://goo.gl/maps/bMSfh8uoYCVuLEjD6' target='_blank' style={{ textDecoration: 'none'}}> 
                 <div className={styles.bleh}>
                   <Image className={styles.image} src={Location}/> <div className={styles.side}>TIET Patiala</div>
                 </div>
               </a>
 
-              <Link href="/Proposal.pdf" passHref>
+              <Link href="/Proposal.pdf" passHref style={{ textDecoration: 'none'}}>
                 <div className={styles.bleh}>
                     <Image className={styles.image} src={Sr} /> <div className={styles.side}>Sponsor Us!</div>
                 </div>
@@ -79,7 +79,7 @@ export const Footer = () => {
             </div>
             
               <div className={styles.rightR}>
-              <a href='tel:+917626954725' target='_blank'>
+              <a href='tel:+917626954725' target='_blank' style={{ textDecoration: 'none'}}>
                 <div className={styles.bleh}>
                   <Image className={styles.image} src={Phone}/> <div className={styles.side}>+91 7626954725</div>
                 </div>
