@@ -33,7 +33,7 @@
 
   box-shadow: 2px 13px 76px 14px rgb(72 129 187);
 
-  font-family: 'Kingvoon';
+  font-family: '--kingvoon';
 
   z-index: 10;
 }
