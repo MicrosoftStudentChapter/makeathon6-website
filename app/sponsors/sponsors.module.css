@@ -168,7 +168,7 @@
 }
 
 .ameer{
-  width: 250px;
+  width: 240px;
   height: 190px;
 }
 
@@ -178,7 +178,8 @@
   margin-left: 0px;
  }
 
- .more{
+ .more,
+ .gareeb{
   width: 170px;
   height: 190px;
 }
