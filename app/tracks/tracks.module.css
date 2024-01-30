@@ -38,6 +38,7 @@
     justify-content: center;
     align-items: top;
     position: relative;
+    transition: ease-in-out 0.2s;
 }
 
 .Ev:hover{
@@ -45,7 +46,7 @@
     box-shadow: 0 0 60px 8px black ;
     transition: box-shadow 1.5s;
     backdrop-filter: blur(5px);
-    transition: backdrop-filter 1.5s;
+    transition: ease-in-out 0.5s;
     border-radius: 5px;
 }
 
