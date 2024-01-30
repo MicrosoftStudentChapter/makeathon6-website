@@ -14,22 +14,9 @@
     padding: 30px 0px 0px 0px;
 }
 
-/* .major {
-    background-color: black;
-    display: flex;
-    flex-direction: column;
-} */
-
-/* .mainbox {
-    margin: 50px 5%;
-    border-radius: 12px;
-    height: 400px;
-    box-shadow: 0 0 18px 0px rgb(140, 140, 140);
-} */
-
 .mainbox{
     width: 90vw;
-    height: 40vh;
+    height: 100%;
     background-color: black;
     box-shadow: 0 0 18px 0px rgb(140, 140, 140);
     position: relative;
@@ -94,6 +81,7 @@
     background-color: black;
     margin-bottom: 0;
     margin-top: 0;
+    align-items: center;
 }
 
 .heading {
@@ -102,33 +90,6 @@
     text-align: center;
     font-family: 'Russo One';
     font-weight: 100;
-}
-
-.prizeBox {
-    height: 300px;
-    width: 200px;
-    color: black;
-    cursor: pointer;
-    transition: box-shadow 0.5s;
-    padding: 10px;
-    background-color: #333;
-}
-
-.prizeBox .prizeName,
-.prizeBox .prizeInfo {
-    opacity: 0;
-    text-align: center;
-    font-size: 18px;
-    transition: opacity 1s;
-}
-
-.prizeBox:hover .prizeName,
-.prizeBox:hover .prizeInfo {
-    opacity: 1;
-}
-
-.prizeBox:hover {
-    box-shadow: 0 0 14px 0px goldenrod;
 }
 
 .accordion {
@@ -174,4 +135,309 @@
     text-align: center;
     padding: 20px;
     color: white;
+}
+
+
+
+.cards {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+  .cards .card {
+    height: 100%;
+    background: #ffffff9c;
+    border-radius: 4px;
+    box-shadow: 0px 20px 30px -10px rgba(0, 0, 0, 0.1);
+    max-width: 300px;
+    min-width: 260px;
+    overflow: hidden;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+    position: relative;
+    transition: all 0.4s ease;
+    margin: 0 4%;
+    /* margin-top:4%; */
+    margin-bottom: 20px;
+  
+  }
+  .cards .card:before {
+    height: 190px;
+    width: calc(100% + 100px);
+    content: "";
+    position: absolute;
+    background-image: linear-gradient(to top, #73219fb8 0%, #8418a8b8 100%);
+    border-radius: 4px 4px 100% 100%;
+    transition: all 0.4s ease-out;
+    top: 0;
+  }
+  .cards .card .close {
+    width: 18px;
+    height: 18px;
+    position: absolute;
+    z-index: 2;
+    cursor: pointer;
+    background-image: url("https://rafaelalvucas.github.io/assets/icons/misc/cross.svg");
+    background-size: 80%;
+    background-repeat: no-repeat;
+    background-position: center;
+    top: 0;
+    right: 0;
+    margin: 10px;
+    padding: 5px;
+    transition: all 0.2s ease;
+  }
+  .cards .card .close:hover {
+    background-size: 100%;
+    opacity: 0.8;
+  }
+  .cards .card .arrow {
+    display: none;
+  }
+  .cards .card article {
+    z-index: 1;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+  }
+  .cards .card article h2 {
+    color: white;
+    margin: 0;
+    padding: 40px 20px 10px 20px;
+    font-weight: 500;
+    font-size: 24px;
+    letter-spacing: 0.5px;
+  }
+  .cards .card article .title {
+    color: white;
+    padding: 10px 20px;
+    letter-spacing: 0.8px;
+    transition: all 0.4s ease;
+  }
+  .cards .card article .desc {
+    padding: 10px 30px;
+    font-size: 25 px;
+    font-stretch: expanded;
+    text-align: center;
+    line-height: 24px;
+    font-weight: 470;
+    color: #3c3c3c;
+    height: 90px;
+    transition: all 0.4s ease-out;
+  }
+  .cards .card article .pic {
+    width: 120px;
+    height: 100%;
+    overflow: hidden;
+    border-radius: 20%;
+    margin: 20px 0;
+    box-shadow: 0px 0px 0px 0px rgba(255, 255, 255, 0.682);
+    /* transition: all 0.6s ease; */
+  }
+  .cards .card article .pic .img {
+    width: 100%;
+    -webkit-filter: grayscale(100%);
+    filter: grayscale(100%);
+    height: auto;
+  }
+  .cards .card .actions {
+    width: 50%;
+    justify-content: space-between;
+    background: white;
+    z-index: 1;
+    margin-bottom: 6%;
+    border-radius: 20px;
+  }
+  .cards .card .actions .btn {
+    border: 0;
+    background-color: transparent;
+    box-sizing: border-box;
+    width: 100%;
+    height: 36px;
+    margin: 0;
+    text-transform: uppercase;
+    font-size: 13px;
+    transition: all 0.6s ease-in-out;
+    cursor: pointer;
+    color: #4481eb;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 500;
+    font-family: "Barlow", sans-serif;
+    letter-spacing: 0.5px;
+    background: rgba(68, 129, 235, 0.08);
+    border-radius: 20px;
+  }
+  .cards .card .actions .btn span {
+    z-index: 1;
+    opacity: 1;
+    transition: all 0.4s ease-in-out;
+  }
+  .cards .card .actions .btn .icon {
+    width: 10px;
+    opacity: 0;
+    position: absolute;
+    transition: all 0.2s ease-in-out;
+  }
+  .cards .card .actions .btn:before {
+    content: "";
+    width: 100%;
+    height: 0%;
+    position: absolute;
+    background: #4481eb;
+    transition: all 0.4s ease;
+    border-radius: 20px;
+    bottom: 0;
+    opacity: 0.2;
+  }
+  .cards .card .actions .btn:focus {
+    outline: 0;
+  }
+  .cards .card .actions .btn:hover {
+    background-color: rgba(255, 255, 255, 0.5);
+    border-radius: 20px;
+  }
+  .cards .card .actions .btn:hover span {
+    opacity: 0;
+    transition: all 0.3s ease-in-out;
+  }
+  .cards .card .actions .btn:hover .icon {
+    width: 22px;
+    opacity: 1;
+    transition: all 0.4s ease-in-out;
+  }
+  .cards .card .actions .btn:hover:nth-child(3) .icon {
+    width: 18px;
+  }
+  .cards .card .actions .btn:hover:before {
+    height: 100%;
+  }
+  .cards .card .actions .btn.clicked span {
+    display: none;
+  }
+  .cards .card .actions .btn.clicked .icon {
+    width: 22px;
+    opacity: 1;
+    animation: icon 0.5s ease forwards;
+  }
+  @keyframes icon {
+    0% {
+      width: 22px;
+    }
+    50% {
+      width: 40px;
+    }
+    100% {
+      width: 22px;
+    }
+  }
+  .cards .card .actions .btn.clicked:before {
+    opacity: 0.3;
+    height: 100%;
+  }
+  /* .cards .card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0px 5px 10px -5px rgba(0, 0, 0, 0.3);
+  } */
+  .cards .card:hover:before {
+    height: 100%;
+    border-radius: 4px;
+  }
+  .cards .card:hover .desc {
+    color: white;
+  }
+  /* .cards .card:hover .pic {
+    box-shadow: 0px 0px 0px 8px rgba(255, 255, 255, 0.3);
+  } */
+  .cards .card:hover .pic .img {
+    -webkit-filter: grayscale(0%);
+    filter: grayscale(0%);
+  }
+  .cards .card.closed {
+    min-width: 120px;
+    max-width: 120px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all 0.6s ease;
+    cursor: pointer;
+  }
+  .cards .card.closed .title,
+  .cards .card.closed .desc,
+  .cards .card.closed .actions,
+  .cards .card.closed .close {
+    display: none;
+  }
+  .cards .card.closed h2 {
+    padding: 0;
+    height: 100%;
+    transform: rotate(-90deg);
+    width: 440px;
+    z-index: 2;
+    transition: all 0.6s ease;
+  }
+  .cards .card.closed .pic {
+    border-radius: 100%;
+    height: 400px;
+    width: 400px;
+    position: absolute;
+    top: -20px;
+    margin: 0;
+    box-shadow: 0;
+    transition: all 0.6s ease;
+  }
+  .cards .card.closed .pic .img {
+    object-fit: cover;
+    height: 100%;
+    transform: translateY(20px);
+  }
+  .cards .card.closed .pic:before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    opacity: 0.5;
+    z-index: 1;
+    transition: all 0.4s ease;
+    transform: translateY(20px);
+  }
+  .cards .card.closed:before {
+    height: 100%;
+    border-radius: 4px;
+  }
+  .cards .card.closed .arrow {
+    width: 18px;
+    height: 18px;
+    position: absolute;
+    z-index: 2;
+    cursor: pointer;
+    bottom: 15px;
+    padding: 5px;
+    display: flex;
+    justify-content: center;
+    background-image: url("https://rafaelavlucas.github.io/assets/icons/misc/expand.svg");
+    background-size: 80%;
+    background-repeat: no-repeat;
+    background-position: center;
+    transition: all 0.2s ease;
+  }
+  .cards .card.closed:hover .arrow {
+    background-size: 100%;
+    opacity: 0.6;
+  }
+  .bold {
+    font-weight: 650;
+  }
+@media screen and (max-width:950px) {
+    .prize{
+        height: fit-content;
+    }
 }
