@@ -141,7 +141,7 @@
     font-family: 'Raleway', sans-serif;
     padding-top: 0.5rem;
     color: #FFCF9C;
-    padding-left: 5rem;
+    padding-left: 73px;
     font-family: 'Raleway';
     font-style: normal;
     font-weight: 500;
@@ -182,9 +182,10 @@
     margin-bottom:0.5;
     padding-left: 2.5rem;
     display: flex;
-    justify-content: center;
+    justify-content: left;
     align-items: center;
     text-decoration: none;
+    left: 0px;
 }
 
 .side{
@@ -245,11 +246,9 @@
     .right{
         display: flex;
         flex-direction: column;
-        width:100%;
-        /* width: 50vw; */
         padding-right: 2rem;
         justify-content: center;
-        align-self: flex-start;
+        align-self: center;
         /* justify-content: flex-end; */
     }
     .boxer{
@@ -265,6 +264,7 @@
          margin-left: 2rem;
          padding-right: 2.5rem;
         text-decoration: none;;
+        justify-content: center;
         }
     
     .socials{
@@ -353,7 +353,7 @@
     }
 
     .gen{
-        padding-left: 35px;
+        padding-left: 37.5px;
         display: flex;
         justify-content: center;
     }

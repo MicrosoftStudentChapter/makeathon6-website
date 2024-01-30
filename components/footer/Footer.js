@@ -16,6 +16,7 @@ import Link from 'next/link'
 export const Footer = () => {
   return (
     <>
+    <div className={styles.foot}>
     <div className={styles.line}>
 `     `
     </div>
@@ -94,6 +95,7 @@ export const Footer = () => {
         </div>
         
       </div>
+    </div>
     </div>
     </>
   )

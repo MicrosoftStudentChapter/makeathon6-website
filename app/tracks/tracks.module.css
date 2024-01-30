@@ -207,6 +207,9 @@
     .main {
       font-size:16px;
     }
+    .mainheading{
+      padding:50px;
+    }
     .card{
       width: 50%;
     }
@@ -228,12 +231,14 @@
       flex-wrap: wrap;
       justify-content: center;
       gap: 10px;
+      padding: 0px;
     }
     .Ev {
       width: 45%;
       height: 45%;
       box-sizing: border-box;
       background-position: center;
+      padding:0px;
     }
     .eventImage {
       width: 100%;
@@ -246,6 +251,7 @@
       width: 112.5px; 
       box-sizing: border-box;
       object-fit: cover;
+      padding: 0px;
     }
     .eventContent {
       width: 100%;
