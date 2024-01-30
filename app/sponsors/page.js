@@ -8,10 +8,12 @@ import bgImage from '/public/sponsors/bgImg.png'
 import Logo from '/public/sponsors/mlscLogo.png'
 import Flaglogo from '/public/sponsors/flogo.png'
 import { myFont } from '@/components/font/myfont'
+import { Footer } from '../../components/footer/Footer'
 
 export default function Page() {
       return (
         <>
+        <div>
           <Image className={styles.bg} src={bgImage} alt='/' />
           {/* <div className={styles.marginBawa}>*/}
           <Image className={styles.Logo} src={Logo} alt='/' /><h1 className={`${styles.heading}  ${myFont.className}`}>OUR SPONSORS</h1>
@@ -19,6 +21,8 @@ export default function Page() {
           <div className={myFont.className}>
           <Flag /><Power /><Associate />
           </div>
+        </div>
+        <Footer />
         </>
       );
     }

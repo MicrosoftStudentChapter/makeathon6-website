@@ -3,9 +3,11 @@ import Image from 'next/image'
 import MLSC from './assets/MLSC-logo.png'
 import Prize from './assets/prize.jpeg'
 import Faq from './components/Faq';
+import { Footer } from '../../components/footer/Footer'
 
 export default function Page() {
     return (
+      <>
     <div>
 
       <div className={styles.menu}>
@@ -98,6 +100,10 @@ export default function Page() {
       </div>
       
     </div>
+    <div>
+      <Footer />
+    </div>
+    </>
     )
   }
 

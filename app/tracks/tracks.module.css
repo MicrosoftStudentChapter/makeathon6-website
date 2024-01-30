@@ -1,5 +1,5 @@
 .main {
-    background-image: url('./assets/img1.jpg');
+    background-image: url('./assets/TracksFinalbg.jpeg');
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center center;
@@ -7,6 +7,7 @@
     flex-wrap: wrap;
     position: relative;
     overflow-y: auto;
+    min-height:100vh;
   }
 
 .container{
@@ -15,7 +16,7 @@
     gap:15px;
     justify-content: space-evenly;
     align-items: center;
-    padding: 25px;
+    padding: 50px;
     height: 500px;
 }
 
