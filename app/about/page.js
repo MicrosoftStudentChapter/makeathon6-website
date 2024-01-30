@@ -2,36 +2,34 @@ import styles from './about.module.css'
 import Image from 'next/image'
 import MLSC from './assets/MLSC-logo.png'
 import Prize from './assets/prize.jpeg'
-import Faq from './components/Faq';
+import Faq from './components/Faq'
+import Makeathon from '/public/MLSClogo.png'
 
 export default function Page() {
     return (
     <div>
 
-      <div className={styles.menu}>
+      {/* <div className={styles.menu}>
         <button className={styles.navButton}>Nav</button>
         <div className={styles.menuContent}>
           <a className={styles.title} href="#">Link 1</a>
           <a className={styles.title} href="#">Link 2</a>
           <a className={styles.title} href="#">Link 3</a>
         </div>
-      </div>
-      <div className={styles.major}>
-        
-        <div className={styles.A}>
+      </div> */}
+      <div className={styles.container}>
           <h1 className={styles.thisH1}>About Us</h1>
           <div className={styles.mainbox}>
-            <p className={styles.abText1}>about us page text goes here..Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt. about us page text goes here..Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt. about us page text goes here..Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</p>
-            <p className={styles.abText2}>about us page text goes here..Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt. about us page text goes here..Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt. about us page text goes here..Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</p>
-            <Image 
-            src={MLSC}
-            className={styles.logo}
-            width={200} 
-            height={175} 
-            alt="MLSC"
-            />
-          </div>
-        </div>
+            <div className={styles.makeathon}>
+              <Image src={Makeathon} alt='#' className={styles.makeLogo}/>
+              <p className={styles.abText}>MLSC is poised to showcase its prowess through its upcoming mega flagship event, Makethon6, slated for the end of February. This eagerly anticipated event promises to be a showcase of ingenuity, where students will come together to ideate, innovate, and create solutions to real-world problems, cementing MLSC's reputation as a hub for budding technocrats and visionaries.</p>
+            </div>
+            <div className={styles.mlsc}><p className={styles.abText}>The Microsoft Learning Student Chapter (MLSC) at Thapar Institute of Engineering and Technology, Patiala, stands as a beacon of technical excellence. 
+With a dedicated team of mentors and enthusiasts, MLSC fosters an environment of collaboration and learning, where students can engage in projects, competitions, and networking events.As a vibrant society, it fosters an environment where students can delve into the realm of technology with zeal and innovation.
+</p>
+              <Image src={MLSC} className={styles.logo} alt="MLSC"/>
+            </div>
+    </div>
 
         <div className={styles.B}>
           <h1 className={styles.thisH1}>Prizes</h1>
@@ -95,7 +93,7 @@ export default function Page() {
         </div>
 
         <div className={styles.last}></div>
-      </div>
+    </div>
       
     </div>
     )
