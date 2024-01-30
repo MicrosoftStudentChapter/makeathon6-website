@@ -1,3 +1,8 @@
+@font-face {
+  font-family: Heading;
+  src: url('./Canterbury.ttf');
+}
+
 .main {
     background-image: url('./assets/img1.jpg');
     background-size: cover;
@@ -27,24 +32,27 @@
     width: 300px;
     text-align: center;
     margin: auto;
-    transition: transform .2s;
+    transition: transform .5s;
     cursor: pointer;
     display: flex;
     justify-content: center;
     align-items: top;
     position: relative;
+    transition: ease-in-out 0.2s;
 }
 
 .Ev:hover{
-    transform: scale(1.1);
-    box-shadow: 0 0 100px 10px black ;
+    transform: scale(1.05);
+    box-shadow: 0 0 60px 8px black ;
+    transition: box-shadow 1.5s;
     backdrop-filter: blur(5px);
+    transition: ease-in-out 0.5s;
     border-radius: 5px;
 }
 
 .heading{
     padding-top:20px;
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-family: Heading;
     text-align: center;
     color: rgb(255, 255, 255);
 }
@@ -52,9 +60,11 @@
 .mainheading{
     margin:20px;
     padding:20px;
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-family: Heading;
     text-align: center;
-    color:black;
+    color:  rgb(195, 149, 93);
+    font-size: 60px;
+    text-shadow: 5px 5px 2px black;
 }
 
 .para{
@@ -161,7 +171,7 @@
 
   .eventImage {
     object-fit: cover; 
-    border-radius: 20px; 
+    border-radius: 5px; 
     margin:20px;
   }
 
@@ -212,9 +222,42 @@
       display: block;
       padding: 10px;
     }
+    .container {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 10px;
+    }
+    .Ev {
+      width: 45%;
+      height: 45%;
+      box-sizing: border-box;
+      background-position: center;
+    }
+    .eventImage {
+      width: 100%;
+      max-height: 200px;
+      overflow: hidden;
+      margin: 10px;
+    }
+    .eventImage img {
+      height: 204.75px;
+      width: 112.5px; 
+      box-sizing: border-box;
+      object-fit: cover;
+    }
+    .eventContent {
+      width: 100%;
+    }
     .btn{
       right: 7.5%;
       margin: 0px;
+    }
+    .heading{
+      font-size: 22px;
+    }
+    .para{
+      font-size: 10px;
     }
   }
 

@@ -14,6 +14,7 @@
     align-items: center;
     flex-direction: column;
     display: none;
+    font-family: 'Kingvoon';
     /* z-index: 12; */
 }
 .buttons{
