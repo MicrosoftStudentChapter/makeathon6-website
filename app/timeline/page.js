@@ -15,7 +15,7 @@ import ell35 from "./assets/ell35.svg";
 import ell36 from "./assets/ell36.svg";
 import Bg from "./particles.js";
 
-const rotations = [0, 30, 60, 90, 120, 150, 180];
+
 
 import {
   motion,
