@@ -3,6 +3,7 @@ import React, { useState } from 'react';
 import styles from './tracks.module.css';
 import Content from './data.json';
 import Image from "next/image";
+import { Footer } from '../../components/footer/Footer';
 
 export default function Page() {
   const [selectedEvent, setSelectedEvent] = useState(null);
@@ -32,12 +33,15 @@ export default function Page() {
 
   return (
     <>
-      <body className={styles.main}>
+      <div className={styles.main}>
         <h1 className={styles.mainheading}>Tracks</h1>
-          <div className={styles.container}>
-            {Content.map((event) => generateEventDiv(event))}
-          </div>
-      </body>
+        <div className={styles.container}>
+           {Content.map((event) => generateEventDiv(event))}
+        </div>
+      </div>
+      <div>
+         <Footer />
+      </div>
       {selectedEvent && (
         <>
           <div className={styles.overlay}>

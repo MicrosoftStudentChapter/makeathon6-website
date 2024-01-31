@@ -8,18 +8,26 @@ import bgImage from '/public/sponsors/bgImg.png'
 import Logo from '/public/sponsors/mlscLogo.png'
 import Flaglogo from '/public/sponsors/flogo.png'
 import { myFont } from '@/components/font/myfont'
+import { Footer } from '../../components/footer/Footer'
+import Dev from '/public/sponsors/Devfolio_Logo-Colored.png'
+import Poly from '/public/sponsors/Polygon_Logo-Colored.png'
+import Eth from '/public/sponsors/ethindia-dark.png'
 
 export default function Page() {
       return (
         <>
+        <div>
           <Image className={styles.bg} src={bgImage} alt='/' />
 
           {/* <div className={styles.marginBawa}>*/}
           <Image className={styles.Logo} src={Logo} alt='/' /><h1 className={`${styles.heading}  ${myFont.className}`}>OUR SPONSORS</h1>
           {/* </div>*/}
           <div className={myFont.className}>
-          <Flag /><Power /><Associate />
+          <Flag /><Power />
+          {/* <Associate /> */}
           </div>
+        </div>
+        <Footer />
         </>
       );
     }
@@ -32,10 +40,10 @@ export default function Page() {
 
     <div className={styles.overlap}>
         <Image className={styles.ameer} src={flag} alt='/' />
-        <Image className={styles.flaglogo} src={Flaglogo} alt='/' /></div>
+        <Image className={styles.flaglogo} src={Dev} alt='/' /></div>
     <div className={styles.overlap}>
         <Image className={styles.ameer} src={flag} alt='/' />
-        <Image className={styles.flaglogo} src={Flaglogo} alt='/' />
+        <Image className={styles.flaglogo} src={Poly} alt='/' />
         </div>
     {/* <div className={styles.overlap}>
         <Image className={styles.ameer} src={flag} alt='/' />
@@ -46,20 +54,24 @@ export default function Page() {
     <div className={styles.overlap}>
         <Image className={styles.ameer} src={flag} alt='/' />
         <Image className={styles.flaglogo} src={Flaglogo} alt='/' /></div> */}
-    <div className={styles.overlap}>
+    {/* <div className={styles.overlap}>
         <Image className={styles.ameer} src={flag} alt='/' />
-        <Image className={styles.flaglogo} src={Flaglogo} alt='/' /></div>
-    </div>
-    </div> </>
+        <Image className={styles.flaglogo} src={Flaglogo} alt='/' /></div> */}
+    </div></div> </>
      )
   }
 
   function Power(){
     return(
       <><div className={styles.sideLine}>
-    <h2 className={styles.text}>Power Sponsors</h2>
+    <h2 className={`${styles.text} ${myFont.className}`}>Power Sponsors</h2>
     <div className={styles.flex}>
+
     <div className={styles.overlap}>
+        <Image className={styles.gareeb} src={power} alt='/' />
+        <Image className={styles.flaglogo} src={Eth} alt='/' />
+        </div>
+    {/* <div className={styles.overlap}>
     <Image className={styles.gareeb} src={power} alt='/' />
     <Image className={styles.flaglogo} src={Flaglogo} alt='/' /></div>
     <div className={styles.overlap}>
@@ -76,7 +88,7 @@ export default function Page() {
     <Image className={styles.flaglogo} src={Flaglogo} alt='/' /></div>
     <div className={styles.overlap}>
     <Image className={styles.gareeb} src={power} alt='/' />
-    <Image className={styles.flaglogo} src={Flaglogo} alt='/' /></div>
+    <Image className={styles.flaglogo1} src={Flaglogo} alt='/' /></div> */}
     </div></div> </>
     )
   }
@@ -88,8 +100,8 @@ export default function Page() {
      <div className={styles.flex}>
      <div className={styles.overlap}>
      <Image className={styles.more} src={associate} alt='/' />
-    <Image className={styles.flaglogo} src={Flaglogo} alt='/' /></div>
-    <div className={styles.overlap}>
+    <Image className={styles.flaglogo2} src={Eth} alt='/' /></div>
+    {/* <div className={styles.overlap}>
      <Image className={styles.more} src={associate} alt='/' />
     <Image className={styles.flaglogo} src={Flaglogo} alt='/' /></div>
     <div className={styles.overlap}>
@@ -103,7 +115,7 @@ export default function Page() {
     <Image className={styles.flaglogo} src={Flaglogo} alt='/' /></div>
     <div className={styles.overlap}>
      <Image className={styles.more} src={associate} alt='/' />
-    <Image className={styles.flaglogo} src={Flaglogo} alt='/' /></div>
+    <Image className={styles.flaglogo2} src={Flaglogo} alt='/' /></div> */}
     </div></div></>
     )
   }

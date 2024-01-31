@@ -1,5 +1,6 @@
 import styles from './about.module.css'
 import Image from 'next/image'
+import { Footer } from '../../components/footer/Footer'
 import MLSC from '/public/About/MLSC-logo.png'
 // import Prize from './assets/prize.jpeg'
 import Faq from './components/Faq'
@@ -11,6 +12,7 @@ import { myFont } from '@/components/font/myfont'
 
 export default function Page() {
     return (
+      <>
     <div>
 
       {/* <div className={styles.menu}>
@@ -146,6 +148,10 @@ export default function Page() {
     </div>
       
     </div>
+    <div>
+      <Footer />
+    </div>
+    </>
     )
   }
 
