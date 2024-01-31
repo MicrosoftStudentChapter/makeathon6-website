@@ -31,7 +31,7 @@
 }
  
 .menu{
-    display: none;
+    display: block;
     top: 3vh;
     position: fixed;
     left: 3vh;
@@ -54,11 +54,21 @@
     width: 100vw;
     z-index: 2;
     top: 0vh;
-    display: none;
+    display: block;
    
 }
+
+.menu.specialPage {
+    display:none;
+  }
+  
+.HamburgerMain.specialPage{
+    display:none;
+}
 @media screen and (max-width : 450px){
-   .menu, .HamburgerMain{
+   .menu.menu.specialPage, .HamburgerMain.specialPage{
     display: block;
    }
 }
+
+
