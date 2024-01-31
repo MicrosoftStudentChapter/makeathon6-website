@@ -9,6 +9,9 @@ import Logo from '/public/sponsors/mlscLogo.png'
 import Flaglogo from '/public/sponsors/flogo.png'
 import { myFont } from '@/components/font/myfont'
 import { Footer } from '../../components/footer/Footer'
+import Dev from '/public/sponsors/Devfolio_Logo-Colored.png'
+import Poly from '/public/sponsors/Polygon_Logo-Colored.png'
+import Eth from '/public/sponsors/ethindia-dark.png'
 
 export default function Page() {
       return (
@@ -34,12 +37,12 @@ export default function Page() {
     <div className={styles.flex}>
     <div className={styles.overlap}>
         <Image className={styles.ameer} src={flag} alt='/' />
-        <Image className={styles.flaglogo} src={Flaglogo} alt='/' /></div>
+        <Image className={styles.flaglogo} src={Dev} alt='/' /></div>
     <div className={styles.overlap}>
         <Image className={styles.ameer} src={flag} alt='/' />
-        <Image className={styles.flaglogo} src={Flaglogo} alt='/' />
+        <Image className={styles.flaglogo} src={Poly} alt='/' />
         </div>
-    <div className={styles.overlap}>
+    {/* <div className={styles.overlap}>
         <Image className={styles.ameer} src={flag} alt='/' />
         <Image className={styles.flaglogo} src={Flaglogo} alt='/' /></div>
     <div className={styles.overlap}>
@@ -50,7 +53,7 @@ export default function Page() {
         <Image className={styles.flaglogo} src={Flaglogo} alt='/' /></div>
     <div className={styles.overlap}>
         <Image className={styles.ameer} src={flag} alt='/' />
-        <Image className={styles.flaglogo} src={Flaglogo} alt='/' /></div>
+        <Image className={styles.flaglogo} src={Flaglogo} alt='/' /></div> */}
     </div></div> </>
      )
   }
@@ -60,7 +63,7 @@ export default function Page() {
       <><div className={styles.sideLine}>
     <h2 className={styles.text}>POWER SPONSORS</h2>
     <div className={styles.flex}>
-    <div className={styles.overlap}>
+    {/* <div className={styles.overlap}>
     <Image className={styles.gareeb} src={power} alt='/' />
     <Image className={styles.flaglogo1} src={Flaglogo} alt='/' /></div>
     <div className={styles.overlap}>
@@ -77,7 +80,7 @@ export default function Page() {
     <Image className={styles.flaglogo1} src={Flaglogo} alt='/' /></div>
     <div className={styles.overlap}>
     <Image className={styles.gareeb} src={power} alt='/' />
-    <Image className={styles.flaglogo1} src={Flaglogo} alt='/' /></div>
+    <Image className={styles.flaglogo1} src={Flaglogo} alt='/' /></div> */}
     </div></div> </>
     )
   }
@@ -89,8 +92,8 @@ export default function Page() {
      <div className={styles.flex}>
      <div className={styles.overlap}>
      <Image className={styles.more} src={associate} alt='/' />
-    <Image className={styles.flaglogo2} src={Flaglogo} alt='/' /></div>
-    <div className={styles.overlap}>
+    <Image className={styles.flaglogo2} src={Eth} alt='/' /></div>
+    {/* <div className={styles.overlap}>
      <Image className={styles.more} src={associate} alt='/' />
     <Image className={styles.flaglogo2} src={Flaglogo} alt='/' /></div>
     <div className={styles.overlap}>
@@ -104,7 +107,7 @@ export default function Page() {
     <Image className={styles.flaglogo2} src={Flaglogo} alt='/' /></div>
     <div className={styles.overlap}>
      <Image className={styles.more} src={associate} alt='/' />
-    <Image className={styles.flaglogo2} src={Flaglogo} alt='/' /></div>
+    <Image className={styles.flaglogo2} src={Flaglogo} alt='/' /></div> */}
     </div></div></>
     )
   }
