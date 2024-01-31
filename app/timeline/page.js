@@ -15,8 +15,6 @@ import ell35 from "./assets/ell35.svg";
 import ell36 from "./assets/ell36.svg";
 import Bg from "./particles.js";
 
-import Hamburger from '@/components/Hamburger/Hamburger'
-
 import {
   motion,
   AnimatePresence,
@@ -53,8 +51,7 @@ export default function Page() {
   const [ci , setCi] = useState(0)
   date();
   return (
-    <>
-    <Hamburger />
+
     <div style={{height:'500vh'}}>
     <div style={{position:'sticky', top:'0px'}} className={styles.bgbox}>
       <div className={styles.astrobox}>
@@ -121,7 +118,6 @@ export default function Page() {
       </div>
     </div>
     </div>
-    </>
   );
 }
 
