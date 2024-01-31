@@ -11,6 +11,7 @@ function HomeButton(props) {
                     <h3><span className= {myFont.className}>{props.title}</span></h3>
 
                     <div className={styles.box}></div>
+                    {props.cs && <h6 className={styles.cs}>Coming Soon!</h6>}
 
                 </div>
 
