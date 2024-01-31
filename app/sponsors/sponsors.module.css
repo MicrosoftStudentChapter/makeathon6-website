@@ -41,7 +41,7 @@ text-align: center;
   z-index: 1;
   position: absolute;
   object-fit: contain;
-  max-height: 39px;
+  max-width: 175px;
   /* left: 50%;
   top: 50%;
   transform: translateX(-50%) translateY(-50%); */
@@ -57,7 +57,7 @@ text-align: center;
   z-index: 1;
   position: absolute;
   object-fit: contain;
-  max-height: 39px;
+  max-width: 170px;
 }
 
  .overlap{
