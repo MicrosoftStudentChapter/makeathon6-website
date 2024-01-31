@@ -1,13 +1,15 @@
+@import url('https://fonts.googleapis.com/css2?family=Merienda&display=swap');
 
 .text{
   color: #FFE8D3;
   font-size: 3rem;
   font-style: normal;
+  font-family: 'Merienda', cursive;
   font-weight: 400;
-  text-transform: capitalize;
-  margin-top: 60px;
-  margin-bottom: 60px;
-  display: flex; justify-content: center;
+  margin-top: 80px;
+  margin-bottom: 80px;
+  display: flex;
+  justify-content: center;
 }
 
 .heading{
@@ -16,17 +18,9 @@
   font-size: 90px;
   text-align: center;
   margin-bottom: 50px;
-   /* margin-left: 500px; */
    margin-top: -70px;
 }
 
-.text{
-color: #FFE8D3;
-font-size: 70px;
-font-style: normal;
-font-weight: 400;
-text-align: center;
-}
 
 .ameer,
 .gareeb,
@@ -34,40 +28,53 @@ text-align: center;
   width: 100%;
   object-fit: contain;
   z-index: 0;
-
 }
 
 .flaglogo {
   z-index: 1;
   position: absolute;
   object-fit: contain;
+  max-width: 175px;
   /* left: 50%;
   top: 50%;
   transform: translateX(-50%) translateY(-50%); */
 }
 
-.flaglogo1 {
+.ameer{
+  width: 280px;
+  height: 190px;
+}
+
+.more{
+  width:230px;
+  height: 160px;
+}
+
+.flaglogo {
   z-index: 1;
   position: absolute;
   object-fit: contain;
+  max-width: 170px;
+  transition: all 0.3s ease-in-out;
 }
 
-.flaglogo2 {
-  z-index: 1;
-  position: absolute;
-  object-fit: contain;
-}
-
- .overlap{
+.overlap{
  display: flex;
  justify-content: center;
  align-items: center;
  margin-left: 50px;
  margin-right: 50px;
  margin-bottom: 50px;
- }
 
-.flex{
+}
+
+.flaglogo:hover{
+  /* box-shadow: 5px 5px 10px rgba(0,0,0,0.25); */
+  filter: drop-shadow(10px 10px 5px rgba(0,0,0,0.2));
+}
+
+.flex,
+.flexs{
   display: flex;
   flex-direction: row;
   justify-content: space-around;
@@ -81,19 +88,20 @@ text-align: center;
   position: fixed;
   z-index: -1;
   background-size: cover;
-  filter: brightness(50%)
+  filter: brightness(50%);
 }
+
 
 
 .Logo{
+  /* display: flex;
+  justify-content: space-around; */
   width: 117px;
   height: 158px;
-  margin-right: 12.5%;
+  margin-left: 90%;
 }
 
-
-/* Add these styles for smaller screens */
-@media screen and (max-width: 860px) {
+@media screen and (max-width: 900px) {
   .heading {
     font-size: 60px;
     margin-left: 0;
@@ -105,8 +113,28 @@ text-align: center;
     margin-bottom: 30px;
   }
 
-  .marginBawa {
-    justify-content: center;
+
+  .sideLine {
+    margin: 10px;
+  }
+
+  .Logo {
+    width: 80px;
+    height: 100px;
+    margin-left: 85%;
+  }
+}
+
+@media screen and (max-width: 754px) {
+  .heading {
+    font-size: 60px;
+    margin-left: 0;
+  }
+
+  .text {
+    font-size: 40px;
+    margin-top: 30px;
+    margin-bottom: 30px;
   }
 
 
@@ -117,18 +145,20 @@ text-align: center;
   .Logo {
     width: 80px;
     height: 100px;
+    margin-left: 85%;
   }
+  
 
-  .text {
-    margin-top: 30px;
-    margin-bottom: 30px;
+  .flex{
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-gap: 5px;
   }
 }
 
-/* Add these styles for even smaller screens */
-@media screen and (max-width: 586px) {
+@media screen and (max-width: 650px) {
   .heading {
-    font-size: 35px;
+    font-size: 33px;
   }
 
   .text  {
@@ -140,13 +170,53 @@ text-align: center;
   .Logo {
     width: 60px;
     height: 80px;
+    margin-left: 85%;
   }
 
-  .overlay{
-  width:70%;
-  height: 70%;
-  }
+.flex{
+  display: grid;
+  grid-template-columns: auto auto;
+  grid-gap: 10px;
+}
 
+.ameer{
+  width: 240px;
+  height: 190px;
+}
+
+ .overlap{
+  margin-bottom: 0px;
+  margin-right: 0px;
+  margin-left: 0px;
+ }
+
+ .more,
+ .gareeb{
+  width: 190px;
+  height: 190px;
+}
 }
 
 
+/* .buttonContainer{
+display: flex; justify-content: center;
+}
+
+.button{
+  background-color: #fadec4;
+  
+  padding: 12px 40px; 
+  margin-bottom: 50px;
+  margin-top: 30px;
+  border-radius: 9px; 
+  cursor: pointer;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.button:hover{
+  background-color: #feefe2;
+}
+
+.ignore{
+  text-decoration: none;color: #212121;font-size: large;
+} */

@@ -58,6 +58,7 @@
 .stackbox{
     position: relative;
     border-radius: 50%;
+    display: grid;
 
 }
 
@@ -65,24 +66,40 @@
 .astroimage {
     height: 100% ;
     width: 100%;
+    grid-area: 1 / 1;
+    z-index: 1;
 }
 
 .astroimage2{
     animation: rotate 6s;
     animation-fill-mode: forwards;
+    grid-area: 1/1;
+    z-index: 3;
+    height: 80%;
+    width: 80%;
+    margin-top: 10%;
+    margin-left: 10%;
+    
 }
 
-.astroimage2, .astroimage3{
+
+.framediv{
+    grid-area: 1/1;
+    z-index: 4;
+}
+
+/* .astroimage2, .astroimage3{
     position: absolute;
     left: 10%;
     top: 10%;
     height: 80% ;
     width: 80%;
     z-index: 1;
-}
+} */
 
 .astroimage3 {
-   
+
+   position: absolute;
     left: -20%;
     top: -7%;
     height: 90%;

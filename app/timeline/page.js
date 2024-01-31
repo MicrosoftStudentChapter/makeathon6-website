@@ -3,7 +3,7 @@
 import styles from "./timeline.module.css";
 import Image from "next/image";
 import astrolab from "./assets/astroimg.png";
-import astroframe from "./assets/astroframe.svg";
+import astroframe from "/public/timeline/astroframe.svg";
 import astrotrail from "./assets/trail.svg";
 import ell29 from "./assets/ell29.svg";
 import ell30 from "./assets/ell30.svg";
@@ -25,6 +25,8 @@ import {
 
 import { headings } from "./data";
 import { useState } from "react";
+const rotations = [0, 30, 60, 90, 120, 150, 180];
+import Hamburger from "@/components/Hamburger/Hamburger";
 
 export default function Page() {
   const { scrollYProgress } = useScroll();
@@ -40,18 +42,19 @@ export default function Page() {
 
     console.log(Math.round(latest*10));
     setCi(Math.round(latest*10))
-    // if(Math.round(latest*10)%2===0)
-    // {
+    if(Math.round(latest*10)%2===0)
+    {
        
-    // //   setCi((prevCi) => (prevCi + 1) % 5);
+      setCi((prevCi) => (prevCi + 1) % 5);
       
-    // }
+    }
   })
 
   const [ci , setCi] = useState(0)
   date();
   return (
-
+    <>
+    <Hamburger/>
     <div style={{height:'500vh'}}>
     <div style={{position:'sticky', top:'0px'}} className={styles.bgbox}>
       <div className={styles.astrobox}>
@@ -59,7 +62,20 @@ export default function Page() {
           <Bg />
           <div className={styles.stackbox}>
             <Image src={astrolab} className={styles.astroimage} />
-            <Image src={astroframe} className={styles.astroimage2} />
+            {/* <motion.img 
+            src={astroframe} 
+            className={styles.astroimage2} 
+            animate={{ rotate: rotations[ci] }} 
+             /> /}
+              {/ 
+             <motion.div  style ={{height:'200px'}} animate={{ rotate: rotations[ci] }} >
+                  <Image src={astroframe} className={styles.astroimage2} />
+                </motion.div> */}
+
+               <motion.div animate={{ rotate: rotations[ci] }} className={styles.framediv} >
+                <Image src={astroframe} className={styles.astroimage2} />
+              </motion.div>
+
             <Image src={astrotrail} className={styles.astroimage3} />
             <Image src={ell29} className={styles.astroimage4} />
             <Image src={ell30} className={styles.astroimage5} />
@@ -118,6 +134,7 @@ export default function Page() {
       </div>
     </div>
     </div>
+    </>
   );
 }
 

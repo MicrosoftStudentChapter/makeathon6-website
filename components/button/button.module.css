@@ -42,7 +42,8 @@
 .box {
   height: 0.1vh;
   width: 22.667vw;
-  margin: 0.625em;
+  /* margin: 0.625em; */
+  margin-bottom:10px;
   border: 1px solid rgb(148 214 214);
   border-radius: 5px;
   background-color: rgb(148 214 214);
@@ -66,6 +67,12 @@
   transform: scale(1.1);
   box-shadow: 0 0 18px 0 rgb(255, 255, 255);
   clip-path: inset(0px, -15px, 0px, 0px);
+}
+
+.cs{
+  font-size: 18px;
+  margin-bottom: 5px;
+
 }
 
 .home h3 {
