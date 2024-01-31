@@ -68,6 +68,8 @@
 }
 
 .astroimage2{
+    height: 100% ;
+    width: 100%;
     animation: rotate 6s;
     animation-fill-mode: forwards;
 }
