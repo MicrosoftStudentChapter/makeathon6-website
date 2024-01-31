@@ -1,5 +1,6 @@
 import styles from './about.module.css'
 import Image from 'next/image'
+import { Footer } from '../../components/footer/Footer'
 import MLSC from '/public/About/MLSC-logo.png'
 // import Prize from './assets/prize.jpeg'
 import Faq from './components/Faq'
@@ -8,11 +9,13 @@ import first from '/public/About/first.png'
 import second from '/public/About/second.png'
 import third from '/public/About/third.png'
 import { myFont } from '@/components/font/myfont'
+import Hamburger from '@/components/Hamburger/Hamburger'
 
 export default function Page() {
     return (
+      <>
     <div>
-
+      <Hamburger/>
       {/* <div className={styles.menu}>
         <button className={styles.navButton}>Nav</button>
         <div className={styles.menuContent}>
@@ -54,19 +57,22 @@ export default function Page() {
                 {/* <img src="https://res.cloudinary.com/dcvqnyvvt/image/upload/v1677078787/1_yocxfh.png" /> */}
               </div>
               <div className={styles.desc}>
-              <span className={styles.bold}>₹ 20,000/- Cash</span>
-                <br />
+              <span className={styles.bold}>
+                {/* ₹ 20,000/- Cash */}
+                Revealing Soon!
+                </span>
+                {/* <br />
                 Official MLSC Merch
                 <br />
                 Devkits from Ikarus3D
                 <br />
                 CodeChef Pro Subscription
                 <br />
-                and more!
+                and more! */}
               </div>
             </article>
             <div className={styles.actions}>
-              <a className={styles.btn} href="https://www.instagram.com/p/CpCXqQerTiW/" target="blank">
+              <a className={styles.btn} href="#" target="blank">
                 <span>Know More</span>
                 <img
                   className={styles.icon}
@@ -85,19 +91,22 @@ export default function Page() {
                 {/* <img src="https://res.cloudinary.com/dcvqnyvvt/image/upload/v1677078788/3_mwkuoq.png" /> */}
               </div>
               <div className={styles.desc}>
-              <span className={styles.bold}> ₹ 15,000/- Cash</span>
-                <br />
+              <span className={styles.bold}> 
+              {/* ₹ 15,000/- Cash */}
+              Revealing Soon!
+              </span>
+                {/* <br />
                 Official MLSC Merch
                 <br />
                 Devkits from Ikarus3D
                 <br />
                 CodeChef Pro Subscription
                 <br />
-                and more!
+                and more! */}
               </div>
             </article>
             <div className={styles.actions}>
-              <a className={styles.btn}href="https://www.instagram.com/p/CpCYP0ULv6K/" target="blank">
+              <a className={styles.btn}href="#" target="blank">
                 <span>Know More</span>
                 <img
                   className={styles.icon}
@@ -117,19 +126,22 @@ export default function Page() {
                 {/* <img src="https://res.cloudinary.com/dcvqnyvvt/image/upload/v1677078788/2_f0hzt6.png" /> */}
               </div>
               <div className={styles.desc}>
-                <span className={styles.bold}>₹ 10,000/- Cash</span>
-                <br />
+                <span className={styles.bold}>
+                  {/* ₹ 10,000/- Cash */}
+                  Revealing Soon!
+                  </span>
+                {/* <br />
                 Official MLSC Merch
                 <br />
                 Devkits from Ikarus3D
                 <br />
                 CodeChef Pro Subscription
                 <br />
-                and more!
+                and more! */}
               </div>
             </article>
             <div className={styles.actions}>
-              <a className={styles.btn} href="https://www.instagram.com/p/CpCXF_gLLQ5/" target="blank">
+              <a className={styles.btn} href="#" target="blank">
                 <span>Know More</span>
                 <img
                   className={styles.icon}
@@ -146,6 +158,10 @@ export default function Page() {
     </div>
       
     </div>
+    <div>
+      <Footer />
+    </div>
+    </>
     )
   }
 

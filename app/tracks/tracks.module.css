@@ -4,7 +4,7 @@
 }
 
 .main {
-    background-image: url('./assets/img1.jpg');
+    background-image: url('./assets/TracksFinalbg.jpeg');
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center center;
@@ -12,6 +12,7 @@
     flex-wrap: wrap;
     position: relative;
     overflow-y: auto;
+    min-height:100vh;
   }
 
 .container{
@@ -20,7 +21,7 @@
     gap:15px;
     justify-content: space-evenly;
     align-items: center;
-    padding: 25px;
+    padding: 20px;
     height: 500px;
 }
 
@@ -58,8 +59,8 @@
 }
 
 .mainheading{
-    margin:20px;
-    padding:20px;
+    margin:10px;
+    padding:10px;
     font-family: Heading;
     text-align: center;
     color:  rgb(195, 149, 93);
@@ -206,6 +207,9 @@
     .main {
       font-size:16px;
     }
+    .mainheading{
+      padding:50px;
+    }
     .card{
       width: 50%;
     }
@@ -227,12 +231,14 @@
       flex-wrap: wrap;
       justify-content: center;
       gap: 10px;
+      padding: 0px;
     }
     .Ev {
       width: 45%;
       height: 45%;
       box-sizing: border-box;
       background-position: center;
+      padding:0px;
     }
     .eventImage {
       width: 100%;
@@ -245,6 +251,7 @@
       width: 112.5px; 
       box-sizing: border-box;
       object-fit: cover;
+      padding: 0px;
     }
     .eventContent {
       width: 100%;
