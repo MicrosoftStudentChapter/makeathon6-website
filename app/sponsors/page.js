@@ -12,12 +12,10 @@ import { Footer } from '../../components/footer/Footer'
 import Dev from '/public/sponsors/Devfolio_Logo-Colored.png'
 import Poly from '/public/sponsors/Polygon_Logo-Colored.png'
 import Eth from '/public/sponsors/ethindia-dark.png'
-import Hamburger from '@/components/Hamburger/Hamburger'
 
 export default function Page() {
       return (
         <>
-        <Hamburger />
         <div>
           <Image className={styles.bg} src={bgImage} alt='/' />
 
