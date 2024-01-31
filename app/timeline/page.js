@@ -27,7 +27,7 @@ import {
 
 import { headings } from "./data";
 import { useState } from "react";
-const rotations = [0, 30, 60, 90, 120, 150, 180];
+const rotations = [0, 12, 24, 36, 48, 60, 72];
 import Hamburger from "@/components/Hamburger/Hamburger";
 
 export default function Page() {
@@ -95,15 +95,17 @@ export default function Page() {
           }} className={styles.mikibox}>
             <motion.h1
               key = {headings[ci]}
-              initial={{ opacity: 0, scale: 0.5 }}
-              animate={{ opacity: 1, scale: 1 }}
-              transition={{ duration: 0.5 }}
+              initial={{ y : 50}}
+              animate={{ y : 0 }}
               className={styles.heading}
             >
              {headings[ci]}
             </motion.h1>
           </motion.div>
-          <div className={styles.minibox}>
+          <motion.div  key = {headings[ci]} initial={{ y : 100}}
+              animate={{ y : 0 }} 
+              transition={{duration:0.3}}
+              className={styles.minibox}>
             <ul className={styles.para}>
               <li>
                 Voluptate exercitation aliquip pariatur in voluptate duis esse
@@ -130,7 +132,7 @@ export default function Page() {
                 laborum. Quis do qui laborum Lorem consequat labore voluptate.
               </li>
             </ul>
-          </div>
+          </motion.div>
         </div>
       </div>
     </div>
