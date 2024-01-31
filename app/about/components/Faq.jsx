@@ -5,30 +5,30 @@ import { useState } from 'react';
 
 const faqData = [
   {
-    question: 'Q1- What is Lorem Ipsum?',
+    question: 'Q1- Do I need to have coding experience to participate?',
     answer:
-      'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s.',
+      'While coding experience can be beneficial, it is not a prerequisite for participation. Makethon welcomes participants from diverse backgrounds, including design, business, and engineering.',
   },
   {
-    question: 'Q2- Why do we use it?',
+    question: 'Q2- How can I stay updated on Makethon and related announcements?',
     answer:
-      'It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.',
+      'Stay tuned to the official MLSC social media channels and website for updates, announcements, and registration details for Makethon.',
   },
   {
-    question: 'Q3- Why do we use it?',
+    question: 'Q3- Who can participate in Makethon?',
     answer:
-      'It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.',
+      'Makethon is open to all students of Thapar Institute of Engineering and Technology, regardless of their academic background or experience level in technology.',
   },
   {
-    question: 'Q4- Why do we use it?',
+    question: 'Q4- What is the duration of Makethon?',
     answer:
-      'It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.',
+      'Participants will have a designated time period of 24 hours to work on their projects and present their solutions at the end of the event.',
   },
-  {
-    question: 'Q5- Why do we use it?',
-    answer:
-      'It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.',
-  },
+  // {
+  //   question: 'Q5- Why do we use it?',
+  //   answer:
+  //     'It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.',
+  // },
   
 ];
 
