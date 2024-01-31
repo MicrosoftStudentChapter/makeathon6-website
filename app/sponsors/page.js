@@ -23,7 +23,8 @@ export default function Page() {
           <Image className={styles.Logo} src={Logo} alt='/' /><h1 className={`${styles.heading}  ${myFont.className}`}>OUR SPONSORS</h1>
           {/* </div>*/}
           <div className={myFont.className}>
-          <Flag /><Power /><Associate />
+          <Flag /><Power />
+          {/* <Associate /> */}
           </div>
         </div>
         <Footer />
@@ -53,7 +54,7 @@ export default function Page() {
     <div className={styles.overlap}>
         <Image className={styles.ameer} src={flag} alt='/' />
         <Image className={styles.flaglogo} src={Flaglogo} alt='/' /></div> */}
-    <div className={styles.overlap}>
+    {/* <div className={styles.overlap}>
         <Image className={styles.ameer} src={flag} alt='/' />
         <Image className={styles.flaglogo} src={Flaglogo} alt='/' /></div> */}
     </div></div> </>
@@ -63,8 +64,13 @@ export default function Page() {
   function Power(){
     return(
       <><div className={styles.sideLine}>
-    <h2 className={styles.text}>Power Sponsors</h2>
+    <h2 className={`${styles.text} ${myFont.className}`}>Power Sponsors</h2>
     <div className={styles.flex}>
+
+    <div className={styles.overlap}>
+        <Image className={styles.gareeb} src={power} alt='/' />
+        <Image className={styles.flaglogo} src={Eth} alt='/' />
+        </div>
     {/* <div className={styles.overlap}>
     <Image className={styles.gareeb} src={power} alt='/' />
     <Image className={styles.flaglogo} src={Flaglogo} alt='/' /></div>

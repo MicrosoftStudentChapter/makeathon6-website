@@ -43,9 +43,9 @@ export default function Home() {
                 </Link>
               </div>
               <div className={styles.animation}>
-                <Link href="#" style={{textDecoration: "none"}}>
+                <Link href="/sponsors" style={{textDecoration: "none"}}>
                 <div className={styles.tiltHomeRight2}>
-                  <HomeButton title="Sponsors" description="description" cs = {true}/>
+                  <HomeButton title="Sponsors" description="description" />
                 </div>
                 </Link>
               </div>

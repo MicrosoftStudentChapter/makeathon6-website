@@ -38,6 +38,7 @@
   /* left: 50%;
   top: 50%;
   transform: translateX(-50%) translateY(-50%); */
+}
 
 .ameer{
   width: 280px;
@@ -54,6 +55,7 @@
   position: absolute;
   object-fit: contain;
   max-width: 170px;
+  transition: all 0.3s ease-in-out;
 }
 
 .overlap{
@@ -68,7 +70,7 @@
 
 .flaglogo:hover{
   /* box-shadow: 5px 5px 10px rgba(0,0,0,0.25); */
-  filter: drop-shadow(10px 10px 5px rgba(0,0,0,0.5));
+  filter: drop-shadow(10px 10px 5px rgba(0,0,0,0.2));
 }
 
 .flex,
@@ -190,7 +192,7 @@
 
  .more,
  .gareeb{
-  width: 170px;
+  width: 190px;
   height: 190px;
 }
 }
