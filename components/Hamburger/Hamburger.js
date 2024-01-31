@@ -18,11 +18,7 @@ function Hamburger({ isSpecialPage }) {
 
   return (
     <>
-      <div className={`${styles.HamburgerMain} ${isSpecialPage ? styles.specialPage : ''}`} style={{
-        backgroundColor: bgBlur,
-        transition: 'all 0.3s ease'
-      }}>
-        <Image
+        {!isSpecialPage && <Image
           src="/dragon.png"
           height={50}
           width={50}
@@ -33,7 +29,11 @@ function Hamburger({ isSpecialPage }) {
             transition: 'transform 0.5s ease',
           }}
           onClick={toggleMenu}
-        />
+        />}
+      {isMenuOpen && <div className={`${styles.HamburgerMain} ${isSpecialPage ? styles.specialPage : ''}`} style={{
+        backgroundColor: bgBlur,
+        transition: 'all 0.3s ease'
+      }}>
         <div className={`${styles.hamburger} ${isMenuOpen ? styles.show : ''}`}>
           <div className={styles.buttons}>
             <Link href="/" style={{ textDecoration: "none" }}>
@@ -53,7 +53,7 @@ function Hamburger({ isSpecialPage }) {
             </Link>
           </div>
         </div>
-      </div>
+      </div>}
     </>
   );
 }
