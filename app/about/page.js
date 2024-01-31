@@ -9,12 +9,13 @@ import first from '/public/About/first.png'
 import second from '/public/About/second.png'
 import third from '/public/About/third.png'
 import { myFont } from '@/components/font/myfont'
+import Hamburger from '@/components/Hamburger/Hamburger'
 
 export default function Page() {
     return (
       <>
     <div>
-
+      <Hamburger/>
       {/* <div className={styles.menu}>
         <button className={styles.navButton}>Nav</button>
         <div className={styles.menuContent}>

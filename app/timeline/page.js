@@ -25,6 +25,7 @@ import {
 
 import { headings } from "./data";
 import { useState } from "react";
+import Hamburger from "@/components/Hamburger/Hamburger";
 
 export default function Page() {
   const { scrollYProgress } = useScroll();
@@ -51,7 +52,8 @@ export default function Page() {
   const [ci , setCi] = useState(0)
   date();
   return (
-
+    <>
+    <Hamburger/>
     <div style={{height:'500vh'}}>
     <div style={{position:'sticky', top:'0px'}} className={styles.bgbox}>
       <div className={styles.astrobox}>
@@ -118,6 +120,7 @@ export default function Page() {
       </div>
     </div>
     </div>
+    </>
   );
 }
 

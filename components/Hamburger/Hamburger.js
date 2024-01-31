@@ -5,27 +5,37 @@ import styles from './Hamburger.module.css';
 import Image from 'next/image';
 import Link from 'next/link';
 
-function Hamburger() {
+function Hamburger({isSpecialPage}) {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [rotationAngle, setRotationAngle] = useState(0);
-  const [bgBlur, setbgBlur] = useState("transparent")
+  const [bgBlur, setBgBlur] = useState("transparent")
 
   const toggleMenu = () => {
     setIsMenuOpen(!isMenuOpen);
     setRotationAngle(rotationAngle + 180);
-    if (isMenuOpen) {
-
-      setbgBlur("transparent");
-    } else {
-
-      setbgBlur("rgb(0 0 0 / 66%)");
-    }
+    setBgBlur(isMenuOpen ? "transparent" : "rgb(0 0 0 / 66%)");
   };
 
 
   return (
     <>
         {!isSpecialPage && <Image
+          src="/dragon.png"
+          height={50}
+          width={50}
+          alt='error'
+          className={styles.menu}
+          style={{
+            transform: `rotate(${rotationAngle}deg)`,
+            transition: 'transform 0.5s ease',
+          }}
+          onClick={toggleMenu}
+        />}
+        
+        {isSpecialPage && 
+        typeof window !== 'undefined' && 
+        window.innerWidth < 450 &&
+        <Image
           src="/dragon.png"
           height={50}
           width={50}
