@@ -4,7 +4,6 @@ import styles from './tracks.module.css';
 import Content from './data.json';
 import Image from "next/image";
 import { Footer } from '../../components/footer/Footer';
-import Hamburger from '@/components/Hamburger/Hamburger'
 
 export default function Page() {
   const [selectedEvent, setSelectedEvent] = useState(null);
@@ -34,7 +33,6 @@ export default function Page() {
 
   return (
     <>
-      <Hamburger />
       <div className={styles.main}>
         <h1 className={styles.mainheading}>Tracks</h1>
         <div className={styles.container}>

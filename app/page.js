@@ -19,7 +19,7 @@ export default function Home() {
     <>
       {/* <DevfolioButton /> */}
       {/* <DynamicClientComponent /> */}
-      <Hamburger isSpecialPage={true}/>
+      <Hamburger />
       {/* <Script src="https://apply.devfolio.co/v2/sdk.js" async={true} defer={true} />
         <div 
             className="apply-button" 
