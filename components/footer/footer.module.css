@@ -36,7 +36,7 @@
 }
 
 .div{
-  margin-left: 4rem;
+  margin-left: 1rem;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -98,7 +98,7 @@
 
 .socials{
     margin-top: 2rem;
-    margin-left: -1rem;
+    margin-left: 11rem;
 }
 
 .right{
