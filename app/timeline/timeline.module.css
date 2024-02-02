@@ -162,12 +162,18 @@
     top: 3%;
 }
 
-.astroimage4:hover, .astroimage5:hover, .astroimage6:hover, .astroimage7:hover, .astroimage8:hover, .astroimage9:hover, .astroimage10:hover, .astroimage11:hover{
+.hoverglow
+{
     color: white;
-      box-shadow: 0 0 1em  #b7e7fc , 0 0 1em  #fefefe inset;
-
-
+    box-shadow: 0 0 1em  #b7e7fc , 0 0 1em  #fefefe inset;
 }
+
+
+/* .astroimage4:hover, .astroimage5:hover, .astroimage6:hover, .astroimage7:hover, .astroimage8:hover, .astroimage9:hover, .astroimage10:hover, .astroimage11:hover{
+    
+
+
+} */
 
 
 /* text css begins here */
