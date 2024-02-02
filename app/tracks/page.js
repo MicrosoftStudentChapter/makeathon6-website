@@ -26,7 +26,7 @@ export default function Page() {
         <p className={styles.para}>{description}</p>
       </div>
       <div className={styles.eventImage}>
-        <Image src={image} alt={title} height={455} width={250} style={{ borderRadius: '5px' }}/>
+        <Image className={styles.pointer} src={image} alt={title} height={455} width={250} style={{ borderRadius: '5px' }}/>
       </div>
     </div>
     );
