@@ -22,6 +22,7 @@
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    cursor: url('../../public/Medieval\ Pointer.png'),auto;
 }
 .buttons h1{
     margin: 2vh;
@@ -36,6 +37,7 @@
     position: fixed;
     left: 3vh;
     z-index: 15;
+    cursor: url('../../public/Medieval\ Pointer.png'),auto;
     
 }
 .hamburger.show {
@@ -69,4 +71,7 @@
     .menu.menu.specialPage, .HamburgerMain.specialPage{
     display: block;
    }
+}
+.pointer{
+    cursor: url('../../public/Medieval\ Pointer.png'),auto;
 }

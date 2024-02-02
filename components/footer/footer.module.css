@@ -165,6 +165,7 @@
     border-radius: 20px;
     size: 2rem;
     margin-left: 1rem;
+    cursor: url('../../public/Medieval\ Pointer.png'),auto;
 }
 .imager:hover{ 
     transform: scale(1.2);
@@ -173,6 +174,7 @@
 .image{
     aspect-ratio: 1.2;
     size: 1.7rem;
+    cursor: url('../../public/Medieval\ Pointer.png'),auto;
     /* margin-right: 4rem; */
 }   
 
@@ -197,6 +199,7 @@
     font-weight: 600;
     font-size: 1rem;
     text-decoration: none;
+    cursor: url('../../public/Medieval\ Pointer.png'),auto;
 }
 
 .a {
@@ -246,7 +249,7 @@
     .right{
         display: flex;
         flex-direction: column;
-        padding-right: 2rem;
+        padding-right: 0rem;
         justify-content: center;
         align-self: center;
         /* justify-content: flex-end; */

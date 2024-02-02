@@ -54,19 +54,19 @@ function Hamburger({isSpecialPage}) {
         <div className={`${styles.hamburger} ${isMenuOpen ? styles.show : ''}`}>
           <div className={styles.buttons}>
           <Link href="/" style={{textDecoration: "none"}}>
-            <h1>Home</h1>
+            <h1 className={styles.pointer}>Home</h1>
           </Link>
           <Link href="/about" style={{textDecoration: "none "}}>
-            <h1>About</h1>
+            <h1 className={styles.pointer}>About</h1>
           </Link>
           <Link href="#" style={{textDecoration: "none"}}>
-            <h1>Timeline</h1>
+            <h1 className={styles.pointer}>Timeline</h1>
           </Link>
           <Link href="/sponsors" style={{textDecoration: "none"}}>
-            <h1>Sponsors</h1>
+            <h1 className={styles.pointer}>Sponsors</h1>
           </Link>
           <Link href="#" style={{textDecoration: "none"}}>
-          <h1>Tracks</h1>
+          <h1 className={styles.pointer}>Tracks</h1>
           </Link>
           </div>
         </div>

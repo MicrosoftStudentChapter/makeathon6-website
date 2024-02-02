@@ -150,9 +150,8 @@
   
 
   .flex{
-    display: grid;
-    grid-template-columns: 50% 50%;
-    grid-gap: 5px;
+    display: flex;
+    justify-content: center;
   }
 }
 
@@ -192,7 +191,7 @@
 
  .more,
  .gareeb{
-  width: 190px;
+  width: 200px;
   height: 190px;
 }
 }
