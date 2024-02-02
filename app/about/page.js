@@ -152,7 +152,7 @@ export default function Page() {
           </div>  
         </div>
         <div className={styles.C}>
-          <h1 className={`${styles.thisH1} ${myFont.className}`}>FAQs</h1>
+          <h1 className={`${styles.thisH1} ${myFont.className}`}>FAQ<span className={styles.s}>s</span></h1>
           <Faq/>
         </div>
     </div>
