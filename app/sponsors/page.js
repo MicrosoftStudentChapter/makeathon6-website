@@ -34,7 +34,7 @@ export default function Page() {
   function Flag(){
     return (
     <><div className={styles.sideLine}>
-    <h1 className={`${styles.text} ${myFont.className}`}>Title Sponsors</h1>
+    <h1 className={styles.text}>Title Sponsors</h1>
     <div className={styles.flexs}>
     <FlagComponent />
     </div></div> </>
@@ -44,7 +44,7 @@ export default function Page() {
   function Power(){
     return(
       <><div className={styles.sideLine}>
-    <h2 className={`${styles.text} ${myFont.className}`}>Power Sponsors</h2>
+    <h2 className={styles.text}>Power Sponsors</h2>
     <div className={styles.flex}>
     <PowerComponent />
     </div></div> </>
@@ -66,7 +66,7 @@ export default function Page() {
     const ameer=[Dev,Poly]
     return(<>
       {
-        ameer.map((amer)=><div className={styles.overlap}>
+        ameer.map((amer, index)=><div key={index} className={styles.overlap}>
         <Image className={styles.ameer} src={flag} alt='/' />
         <Image className={styles.flaglogo} src={amer} alt='/' /></div>)
       }</>
@@ -77,7 +77,7 @@ export default function Page() {
     const gareeb=[Eth]
     return(<>
       {
-       gareeb.map((gareb)=>    <div className={styles.overlap}>
+       gareeb.map((gareb, index)=><div key={index} className={styles.overlap}>
        <Image className={styles.gareeb} src={power} alt='/' />
        <Image className={styles.flaglogo} src={gareb} alt='/' /></div>)
       }</> 
@@ -85,10 +85,10 @@ export default function Page() {
   }
 
   function AssociateComponent(){
-    const more = [Dev];
+    const more = [Dev]
     return(<>
       {
-      more.map((mor)=><div className={styles.overlap}>
+      more.map((mor, index)=><div key={index} className={styles.overlap}>
       <Image className={styles.more} src={associate} alt='/' />
       <Image className={styles.flaglogo2} src={mor} alt='/' /></div>)
       }</> 
