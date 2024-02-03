@@ -1,19 +1,24 @@
+'use client'
 import styles from './about.module.css'
 import Image from 'next/image'
 import { Footer } from '../../components/footer/Footer'
 import MLSC from '/public/About/MLSC-logo.png'
 // import Prize from './assets/prize.jpeg'
-import Faq from './components/Faq'
+// import Faq from './components/Faq'
 import Makeathon from '/public/MLSClogo.png'
 import first from '/public/About/first.png'
 import second from '/public/About/second.png'
 import third from '/public/About/third.png'
 import { myFont } from '@/components/font/myfont'
 import Hamburger from '@/components/Hamburger/Hamburger'
+import React, {useState} from "react";
+// import styles from './faq.module.css';
+import Question from './Question'
+import Data from './faqdata.json'
 
 export default function Page() {
     return (
-      <>
+    <>
     <div>
       <Hamburger/>
       {/* <div className={styles.menu}>
@@ -151,17 +156,38 @@ export default function Page() {
             </div>
           </div>  
         </div>
-        <div className={styles.C}>
-          <h1 className={`${styles.thisH1} ${myFont.className}`}>FAQ<span className={styles.s}>s</span></h1>
-          <Faq/>
+        <div className={styles.C}><div className={styles.flexbox}><div><h1 className={`${styles.thisH1} ${myFont.className}`}>FAQ</h1></div><div><h1 className={`${styles.this} ${myFont.className}`}>s</h1></div></div>
+        <div className={styles.wrapper}>
+          <div  className={styles.box1}>
+
+            {Data["data1"].map((item) => (
+              <div className={styles.card}>
+                <Question ques={item.question} ans={item.answer} exp={item.open}  />
+                <br></br>
+              </div>
+            )
+            )}
+          </div>
+          <div className={styles.box2}>
+            {Data["data2"].map((item) => (
+              <div>
+                <Question ques={item.question} ans={item.answer}  exp={item.open}/>
+                <br></br>
+              </div>
+            )
+            )}
+
+          </div>
         </div>
+        
     </div>
-      
+          {/* <Faq/> */}
+        </div>
     </div>
     <div>
       <Footer />
     </div>
-    </>
+  </>
     )
   }
 
