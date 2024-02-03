@@ -8,9 +8,10 @@ function HomeButton(props) {
                 {/* <div className={styles.top}></div> */}
                 <div className={styles.home}>
 
-                    <h3><span className= {myFont.className}>{props.title}</span></h3>
+                    <h3><span className= {`${myFont.className} ${styles.pointer}`}>{props.title}</span></h3>
 
                     <div className={styles.box}></div>
+                    {props.cs && <h6 className={styles.cs}>Coming Soon!</h6>}
 
                 </div>
 

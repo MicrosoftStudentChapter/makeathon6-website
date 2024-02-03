@@ -5,3 +5,4 @@ export const myFont = localFont({
   src: '../../public/fonts/Kingvoon.woff',
   display: 'swap',
 })
+

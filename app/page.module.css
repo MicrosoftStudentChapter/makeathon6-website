@@ -114,7 +114,7 @@
     position: fixed;
    
     object-fit: contain;
-    transform: translateX(-51.2%);
+    transform: translateX(-55%);
     top: 21.15vh;
     left: 51.2vw;
     
@@ -137,6 +137,7 @@
 
 .animation{
     transform: translateZ(8vw);
+    
     /* transform: rotateY(-45deg); */
     /* transform: rotateY(-48deg) rotateZ(-2deg); */
     

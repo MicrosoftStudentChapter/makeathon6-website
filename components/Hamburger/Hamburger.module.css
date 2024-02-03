@@ -14,6 +14,7 @@
     align-items: center;
     flex-direction: column;
     display: none;
+    font-family: 'Kingvoon';
     /* z-index: 12; */
     font-family: 'Kingvoon';
 }
@@ -22,6 +23,7 @@
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    cursor: url('../../public/Medieval\ Pointer.png'),auto;
 }
 .buttons h1{
     margin: 2vh;
@@ -31,13 +33,12 @@
 }
 
 .menu{
-    display: none;
-    top: 2vh;
+    display: block;
+    top: 3vh;
     position: fixed;
     left: 1.5vh;
     z-index: 15;
-    height: 8vh;
-    width: auto;
+    cursor: url('../../public/Medieval\ Pointer.png'),auto;
     
 }
 .hamburger.show {
@@ -56,19 +57,19 @@
     width: 100vw;
     z-index: 2;
     top: 0vh;
-    display: none;
+    display: block;
    
 }
+
+.menu.specialPage {
+    display:none;
+  }
+
+.HamburgerMain.specialPage{
+    display:none;
+}
 @media screen and (max-width : 450px){
-    .menu, .HamburgerMain{
+    .menu.menu.specialPage, .HamburgerMain.specialPage{
     display: block;
 }
-}
-@media screen and (min-height: 2560px) and (max-width: 1600px){
-    .menu, .HamburgerMain{
-        display: block;
-    }
-    .hamburger{
-        font-size: xxx-large;
-    }
 }
