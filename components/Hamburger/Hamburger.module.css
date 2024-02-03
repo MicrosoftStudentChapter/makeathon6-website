@@ -24,6 +24,10 @@
     align-items: center;
     flex-direction: column;
     cursor: url('../../public/Medieval\ Pointer.png'),auto;
+    position: fixed;
+    transform: translateX(-50%);
+    left: 50vw;
+    top: 29vh;
 }
 .buttons h1{
     margin: 2vh;
