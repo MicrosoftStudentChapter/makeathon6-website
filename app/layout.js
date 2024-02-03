@@ -1,8 +1,6 @@
 
 import './globals.css'
 
-
-
 export const metadata = {
   title: 'Makeathon 6',
   description: 'The official Makeathon website',

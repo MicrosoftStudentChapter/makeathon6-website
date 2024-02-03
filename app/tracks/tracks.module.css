@@ -1,5 +1,10 @@
+@font-face {
+  font-family: Heading;
+  src: url('./Canterbury.ttf');
+}
+
 .main {
-    background-image: url('./assets/img1.jpg');
+    background-image: url('./assets/TracksFinalbg.jpeg');
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center center;
@@ -7,6 +12,7 @@
     flex-wrap: wrap;
     position: relative;
     overflow-y: auto;
+    min-height:100vh;
   }
 
 .container{
@@ -15,7 +21,7 @@
     gap:15px;
     justify-content: space-evenly;
     align-items: center;
-    padding: 25px;
+    padding: 20px;
     height: 500px;
 }
 
@@ -27,34 +33,39 @@
     width: 300px;
     text-align: center;
     margin: auto;
-    transition: transform .2s;
-    cursor: pointer;
+    transition: transform .5s;
+    cursor: url('../../public/Medieval\ Pointer.png'),auto;
     display: flex;
     justify-content: center;
     align-items: top;
     position: relative;
+    transition: ease-in-out 0.2s;
 }
 
 .Ev:hover{
-    transform: scale(1.1);
-    box-shadow: 0 0 100px 10px black ;
+    transform: scale(1.05);
+    box-shadow: 0 0 60px 8px black ;
+    transition: box-shadow 1.5s;
     backdrop-filter: blur(5px);
+    transition: ease-in-out 0.5s;
     border-radius: 5px;
 }
 
 .heading{
     padding-top:20px;
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-family: Heading;
     text-align: center;
     color: rgb(255, 255, 255);
 }
 
 .mainheading{
-    margin:20px;
-    padding:20px;
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    margin:10px;
+    padding:10px;
+    font-family: Heading;
     text-align: center;
-    color:black;
+    color:  rgb(195, 149, 93);
+    font-size: 60px;
+    text-shadow: 5px 5px 2px black;
 }
 
 .para{
@@ -161,7 +172,7 @@
 
   .eventImage {
     object-fit: cover; 
-    border-radius: 20px; 
+    border-radius: 5px; 
     margin:20px;
   }
 
@@ -196,6 +207,9 @@
     .main {
       font-size:16px;
     }
+    .mainheading{
+      padding:50px;
+    }
     .card{
       width: 50%;
     }
@@ -212,9 +226,45 @@
       display: block;
       padding: 10px;
     }
+    .container {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 10px;
+      padding: 0px;
+    }
+    .Ev {
+      width: 45%;
+      height: 45%;
+      box-sizing: border-box;
+      background-position: center;
+      padding:0px;
+    }
+    .eventImage {
+      width: 100%;
+      max-height: 200px;
+      overflow: hidden;
+      margin: 10px;
+    }
+    .eventImage img {
+      height: 204.75px;
+      width: 112.5px; 
+      box-sizing: border-box;
+      object-fit: cover;
+      padding: 0px;
+    }
+    .eventContent {
+      width: 100%;
+    }
     .btn{
       right: 7.5%;
       margin: 0px;
+    }
+    .heading{
+      font-size: 22px;
+    }
+    .para{
+      font-size: 10px;
     }
   }
 
@@ -226,4 +276,8 @@
   .spacing2
   {
     margin-bottom: 25px;
+  }
+
+  .pointer{
+    cursor: url('../../public/Medieval\ Pointer.png'),auto;
   }

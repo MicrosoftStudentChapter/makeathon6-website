@@ -21,12 +21,23 @@
    margin-top: -70px;
 }
 
+
 .ameer,
 .gareeb,
 .more {
   width: 100%;
   object-fit: contain;
   z-index: 0;
+}
+
+.flaglogo {
+  z-index: 1;
+  position: absolute;
+  object-fit: contain;
+  max-width: 175px;
+  /* left: 50%;
+  top: 50%;
+  transform: translateX(-50%) translateY(-50%); */
 }
 
 .ameer{
@@ -43,6 +54,8 @@
   z-index: 1;
   position: absolute;
   object-fit: contain;
+  max-width: 170px;
+  transition: all 0.3s ease-in-out;
 }
 
 .overlap{
@@ -57,7 +70,7 @@
 
 .flaglogo:hover{
   /* box-shadow: 5px 5px 10px rgba(0,0,0,0.25); */
-  filter: drop-shadow(10px 10px 5px rgba(0,0,0,0.5));
+  filter: drop-shadow(10px 10px 5px rgba(0,0,0,0.2));
 }
 
 .flex,
@@ -137,9 +150,8 @@
   
 
   .flex{
-    display: grid;
-    grid-template-columns: 50% 50%;
-    grid-gap: 5px;
+    display: flex;
+    justify-content: center;
   }
 }
 
@@ -167,7 +179,7 @@
 }
 
 .ameer{
-  width: 250px;
+  width: 240px;
   height: 190px;
 }
 
@@ -177,8 +189,9 @@
   margin-left: 0px;
  }
 
- .more{
-  width: 170px;
+ .more,
+ .gareeb{
+  width: 200px;
   height: 190px;
 }
 }
