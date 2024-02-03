@@ -4,8 +4,8 @@
     height: 300px;
     color: skyblue;
     top: 49vh;
-    left: 50%;
-    transform: translateX(-50%);
+    transform: translateX(-51.2%);
+    left: 51.2vw;
     /* clip-path: polygon(47% 0%, 64% 4%, 80% 13%, 92% 26%, 99% 100%, 0% 99%, 8% 28%, 16% 15%, 29% 6%); */
 }
 
@@ -67,3 +67,9 @@
   /* @media screen and (max-width){
     
   } */
+  @media screen and (min-height: 2560px) and (max-width: 1600px){
+    .hologramThrone{
+      width: 1000px;
+      top: 75vh;
+    }
+}

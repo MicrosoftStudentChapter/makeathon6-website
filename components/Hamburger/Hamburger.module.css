@@ -15,6 +15,7 @@
     flex-direction: column;
     display: none;
     /* z-index: 12; */
+    font-family: 'Kingvoon';
 }
 .buttons{
     display: flex;
@@ -25,16 +26,18 @@
 .buttons h1{
     margin: 2vh;
     color: rgb(148 214 214);
-   
+    
     text-shadow: 0 0 75px #fff, 0 0 50px #fff, 0 0 13px rgb(72 129 187), 0 0 14px rgb(72 129 187), 0 0 36px rgb(72 129 187);
 }
- 
+
 .menu{
     display: none;
-    top: 3vh;
+    top: 2vh;
     position: fixed;
-    left: 3vh;
+    left: 1.5vh;
     z-index: 15;
+    height: 8vh;
+    width: auto;
     
 }
 .hamburger.show {
@@ -57,7 +60,15 @@
    
 }
 @media screen and (max-width : 450px){
-   .menu, .HamburgerMain{
+    .menu, .HamburgerMain{
     display: block;
-   }
+}
+}
+@media screen and (min-height: 2560px) and (max-width: 1600px){
+    .menu, .HamburgerMain{
+        display: block;
+    }
+    .hamburger{
+        font-size: xxx-large;
+    }
 }
