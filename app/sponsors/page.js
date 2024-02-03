@@ -35,18 +35,17 @@ export default function Page() {
     }
  
   function Flag(){
+    const ameer=[Dev,Poly]
     return (
     <><div className={styles.sideLine}>
     <h1 className={`${styles.text} ${myFont.className}`}>Title Sponsors</h1>
     <div className={styles.flexs}>
 
-    <div className={styles.overlap}>
-        <Image className={styles.ameer} src={flag} alt='/' />
-        <Image className={styles.flaglogo} src={Dev} alt='/' /></div>
-    <div className={styles.overlap}>
-        <Image className={styles.ameer} src={flag} alt='/' />
-        <Image className={styles.flaglogo} src={Poly} alt='/' />
-        </div>
+     {
+      ameer.map((amer)=><div className={styles.overlap}>
+      <Image className={styles.ameer} src={flag} alt='/' />
+      <Image className={styles.flaglogo} src={amer} alt='/' /></div>)
+    } 
     {/* <div className={styles.overlap}>
         <Image className={styles.ameer} src={flag} alt='/' />
         <Image className={styles.flaglogo} src={Flaglogo} alt='/' /></div>
