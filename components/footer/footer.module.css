@@ -25,6 +25,7 @@
     flex-direction: row;
     justify-content: space-between; 
     padding-top: 2rem;
+    width:100%;
 }
 
 .left{
@@ -97,7 +98,7 @@
 }
 
 .socials{
-    margin-top: 2rem;
+    margin-top: 1rem;
     margin-left: 11rem;
 }
 
@@ -106,9 +107,7 @@
     display: flex;
     flex-direction: column;
     /* width: 50vw; */
-    padding-right: 8rem;
     justify-content: flex-end;
-    padding-bottom: 2rem;
 }
 
 .boxer{
@@ -163,7 +162,8 @@
 
 .imager{
     border-radius: 20px;
-    size: 2rem;
+    height:40px;
+    width: 40px;
     margin-left: 1rem;
     cursor: url('../../public/Medieval\ Pointer.png'),auto;
 }
@@ -171,12 +171,12 @@
     transform: scale(1.2);
     transition: 0.5s;
 }
-.image{
+/* .image{
     aspect-ratio: 1.2;
     size: 1.7rem;
     cursor: url('../../public/Medieval\ Pointer.png'),auto;
-    /* margin-right: 4rem; */
-}   
+    margin-right: 4rem; 
+}    */
 
 .bleh{
     padding-top: 1rem;
@@ -361,3 +361,38 @@
         justify-content: center;
     }
   }
+
+.image1{
+    aspect-ratio: 1.2;
+    height: 30px;
+    width: 40px;
+    cursor: url('../../public/Medieval\ Pointer.png'),auto;
+}
+
+.image2{
+    aspect-ratio: 1.2;
+    height: 38px;
+    width: 33px;
+    cursor: url('../../public/Medieval\ Pointer.png'),auto;
+}
+
+.image3{
+    aspect-ratio: 1.2;
+    height: 40px;
+    width: 60px;
+    cursor: url('../../public/Medieval\ Pointer.png'),auto;
+}
+
+.image4{
+    aspect-ratio: 1.2;
+    height: 40px;
+    width: 45px;
+    cursor: url('../../public/Medieval\ Pointer.png'),auto;
+}
+
+.image5{
+    aspect-ratio: 1.2;
+    height: 40px;
+    width: 43px;
+    cursor: url('../../public/Medieval\ Pointer.png'),auto;
+}
