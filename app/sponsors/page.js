@@ -20,10 +20,7 @@ export default function Page() {
         <Hamburger/>
         <div>
           <Image className={styles.bg} src={bgImage} alt='/' />
-
-          {/* <div className={styles.marginBawa}>*/}
           <Image className={styles.Logo} src={Logo} alt='/' /><h1 className={`${styles.heading}  ${myFont.className}`}>OUR SPONSORS</h1>
-          {/* </div>*/}
           <div className={myFont.className}>
           <Flag /><Power />
           {/* <Associate /> */}
@@ -33,31 +30,13 @@ export default function Page() {
         </>
       );
     }
- 
+
   function Flag(){
-    const ameer=[Dev,Poly]
     return (
     <><div className={styles.sideLine}>
     <h1 className={`${styles.text} ${myFont.className}`}>Title Sponsors</h1>
     <div className={styles.flexs}>
-
-     {
-      ameer.map((amer)=><div className={styles.overlap}>
-      <Image className={styles.ameer} src={flag} alt='/' />
-      <Image className={styles.flaglogo} src={amer} alt='/' /></div>)
-    } 
-    {/* <div className={styles.overlap}>
-        <Image className={styles.ameer} src={flag} alt='/' />
-        <Image className={styles.flaglogo} src={Flaglogo} alt='/' /></div>
-    <div className={styles.overlap}>
-        <Image className={styles.ameer} src={flag} alt='/' />
-        <Image className={styles.flaglogo} src={Flaglogo} alt='/' /></div>
-    <div className={styles.overlap}>
-        <Image className={styles.ameer} src={flag} alt='/' />
-        <Image className={styles.flaglogo} src={Flaglogo} alt='/' /></div> */}
-    {/* <div className={styles.overlap}>
-        <Image className={styles.ameer} src={flag} alt='/' />
-        <Image className={styles.flaglogo} src={Flaglogo} alt='/' /></div> */}
+    <FlagComponent />
     </div></div> </>
      )
   }
@@ -67,56 +46,51 @@ export default function Page() {
       <><div className={styles.sideLine}>
     <h2 className={`${styles.text} ${myFont.className}`}>Power Sponsors</h2>
     <div className={styles.flex}>
-
-    <div className={styles.overlap}>
-        <Image className={styles.gareeb} src={power} alt='/' />
-        <Image className={styles.flaglogo} src={Eth} alt='/' />
-        </div>
-    {/* <div className={styles.overlap}>
-    <Image className={styles.gareeb} src={power} alt='/' />
-    <Image className={styles.flaglogo} src={Flaglogo} alt='/' /></div>
-    <div className={styles.overlap}>
-    <Image className={styles.gareeb} src={power} alt='/' />
-    <Image className={styles.flaglogo} src={Flaglogo} alt='/' /></div>
-    <div className={styles.overlap}>
-    <Image className={styles.gareeb} src={power} alt='/' />
-    <Image className={styles.flaglogo} src={Flaglogo} alt='/' /></div>
-    <div className={styles.overlap}>
-    <Image className={styles.gareeb} src={power} alt='/' />
-    <Image className={styles.flaglogo} src={Flaglogo} alt='/' /></div>
-    <div className={styles.overlap}>
-    <Image className={styles.gareeb} src={power} alt='/' />
-    <Image className={styles.flaglogo} src={Flaglogo} alt='/' /></div>
-    <div className={styles.overlap}>
-    <Image className={styles.gareeb} src={power} alt='/' />
-    <Image className={styles.flaglogo1} src={Flaglogo} alt='/' /></div> */}
+    <PowerComponent />
     </div></div> </>
     )
   }
  
   function Associate(){
+
     return(
       <><div className={styles.sideLine}>
       <h2 className={styles.text}>Associate Sponsors</h2>
      <div className={styles.flex}>
-     <div className={styles.overlap}>
-     <Image className={styles.more} src={associate} alt='/' />
-    <Image className={styles.flaglogo2} src={Eth} alt='/' /></div>
-    {/* <div className={styles.overlap}>
-     <Image className={styles.more} src={associate} alt='/' />
-    <Image className={styles.flaglogo} src={Flaglogo} alt='/' /></div>
-    <div className={styles.overlap}>
-     <Image className={styles.more} src={associate} alt='/' />
-    <Image className={styles.flaglogo} src={Flaglogo} alt='/' /></div>
-    <div className={styles.overlap}>
-     <Image className={styles.more} src={associate} alt='/' />
-    <Image className={styles.flaglogo} src={Flaglogo} alt='/' /></div>
-    <div className={styles.overlap}>
-     <Image className={styles.more} src={associate} alt='/' />
-    <Image className={styles.flaglogo} src={Flaglogo} alt='/' /></div>
-    <div className={styles.overlap}>
-     <Image className={styles.more} src={associate} alt='/' />
-    <Image className={styles.flaglogo2} src={Flaglogo} alt='/' /></div> */}
+      <AssociateComponent />
     </div></div></>
     )
   }
+
+  function FlagComponent(){
+    const ameer=[Dev,Poly]
+    return(<>
+      {
+        ameer.map((amer)=><div className={styles.overlap}>
+        <Image className={styles.ameer} src={flag} alt='/' />
+        <Image className={styles.flaglogo} src={amer} alt='/' /></div>)
+      }</>
+    )
+  }
+
+  function PowerComponent(){
+    const gareeb=[Eth]
+    return(<>
+      {
+       gareeb.map((gareb)=>    <div className={styles.overlap}>
+       <Image className={styles.gareeb} src={power} alt='/' />
+       <Image className={styles.flaglogo} src={gareb} alt='/' /></div>)
+      }</> 
+    )
+  }
+
+  function AssociateComponent(){
+    const more = [Dev];
+    return(<>
+      {
+      more.map((mor)=><div className={styles.overlap}>
+      <Image className={styles.more} src={associate} alt='/' />
+      <Image className={styles.flaglogo2} src={mor} alt='/' /></div>)
+      }</> 
+    )
+  }
