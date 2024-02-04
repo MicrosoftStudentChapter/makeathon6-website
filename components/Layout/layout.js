@@ -30,8 +30,8 @@ const Layout = ({ children }) => {
 };
 
 const LoadingFallback = () => (
-  // <p>Loading...</p>
-  <Crown />
+  <p>Loading...</p>
+  // <Crown />
   );
   
   export default Layout;
