@@ -8,7 +8,7 @@ import HomeButton from '@/components/button/button'
 import HologramThrone from '@/components/animation/animation'
 import Hamburger from '@/components/Hamburger/Hamburger'
 // import DevfolioButton from '@/components/devfolioButton/devfolio'
-// import Script from 'next/script';
+import Script from 'next/script';
 // import dynamic from 'next/dynamic';
 import Layout from '@/components/Layout/layout'
 // import Crown from '@/components/Crown/crown'
@@ -23,13 +23,14 @@ export default function Home() {
       {/* <DevfolioButton /> */}
       {/* <DynamicClientComponent /> */}
       <Hamburger isSpecialPage={true}/>
-      {/* <Script src="https://apply.devfolio.co/v2/sdk.js" async={true} defer={true} />
-        <div 
-            className="apply-button" 
-            data-hackathon-slug="makeathon5" 
-            data-button-theme="light"
-            style={{height: "44px", width: "312px"}}
-        ></div> */}
+      <div className={styles.applyButton}>
+        <Script src="https://apply.devfolio.co/v2/sdk.js" async={true} defer={true} />
+          <div 
+              className="apply-button" 
+              data-hackathon-slug="makeathon6" 
+              data-button-theme="light"
+          ></div>
+      </div>
       <HologramThrone />
       <div className={styles.home}>
         {/* <Crown/> */}
