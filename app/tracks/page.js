@@ -5,7 +5,7 @@ import Content from "./data.json";
 import Image from "next/image";
 import { Footer } from "../../components/footer/Footer";
 import Hamburger from "@/components/Hamburger/Hamburger";
-
+import Layout from "@/components/Layout/layout";
 import { motion } from "framer-motion";
 
 const variants = {
@@ -55,6 +55,8 @@ export default function Page() {
 
   return (
     <>
+        <Layout>
+
       <Hamburger />
       <div className={styles.main}>
         <h1 className={styles.mainheading}>Tracks</h1>
@@ -104,6 +106,8 @@ export default function Page() {
           </div>
         </>
       )}
+          </Layout>
+
     </>
   );
 }
