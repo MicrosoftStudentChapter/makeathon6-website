@@ -46,7 +46,7 @@ const Layout = ({ children }) => {
   useEffect(() => {
     const timer = setTimeout(() => {
       setShowContent(true);
-    }, 800); 
+    }, 1300); 
     
     return () => clearTimeout(timer);
   }, []);
