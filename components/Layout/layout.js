@@ -65,7 +65,8 @@ const Layout = ({ children }) => {
 };
 
 const LoadingFallback = () => (
-  <p>Loading...</p>
+  // <p>Loading...</p>
+  <Crown/>
 );
 
 export default Layout;
