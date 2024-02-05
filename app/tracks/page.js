@@ -7,6 +7,7 @@ import { Footer } from "../../components/footer/Footer";
 import Hamburger from "@/components/Hamburger/Hamburger";
 
 import { motion } from "framer-motion";
+import Layout from "@/components/Layout/layout";
 
 const variants = {
   hidden: {  y: 50 },
@@ -55,6 +56,7 @@ export default function Page() {
 
   return (
     <>
+    <Layout>
       <Hamburger />
       <div className={styles.main}>
         <h1 className={styles.mainheading}>Tracks</h1>
@@ -102,6 +104,7 @@ export default function Page() {
               </button>
             </div>
           </div>
+          </Layout>
         </>
       )}
     </>

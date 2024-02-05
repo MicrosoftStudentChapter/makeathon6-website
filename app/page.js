@@ -10,13 +10,14 @@ import Hamburger from '@/components/Hamburger/Hamburger'
 // import DevfolioButton from '@/components/devfolioButton/devfolio'
 import Script from 'next/script';
 // import dynamic from 'next/dynamic';
-
+import Layout from '@/components/Layout/layout'
 // const DynamicClientComponent = dynamic(() => import('../components/devfolioButton/devfolio'), {
 //   ssr: false, // Disable server-side rendering
 // });
 export default function Home() {
   return (
     <>
+    <Layout>
       {/* <DevfolioButton /> */}
       {/* <DynamicClientComponent /> */}
       <Hamburger isSpecialPage={true}/>
@@ -72,6 +73,7 @@ export default function Home() {
           </div>
         </div>
       </div>
+      </Layout>
     </>
   );
 }
