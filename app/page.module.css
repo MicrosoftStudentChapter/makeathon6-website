@@ -29,6 +29,7 @@
     /* transform: rotateY(35deg) rotateX(0deg) rotateZ(2deg);
     transform-style: preserve-3d; */
     transform: perspective(1500px) rotateY(30deg) rotateZ(2.3deg);
+    background-image: linear-gradient(to bottom right,#024a9700, #acc7e5);
 
 
    
@@ -42,7 +43,7 @@
     /* transform: rotateY(-45deg); */
     /* transform: rotateY(35deg) rotateX(0deg) rotateZ(2deg); */
     transform: perspective(1500px) rotateY(30deg);
-   
+    background-image: linear-gradient(to bottom right,#024a9700, #acc7e5);
 }
 
 .tiltHomeRight1 {
@@ -57,7 +58,8 @@
     /* transform: rotateY(-35deg) rotateX(0) rotateZ(-2deg);
     transform-style: preserve-3d; */
     transform: perspective(1500px) rotateY(-30deg) rotateZ(-2.5deg);
-
+    transform: perspective(1500px) rotateY(-30deg) rotateZ(-2.3deg);
+    background-image: linear-gradient(to bottom left,#024a9700, #acc7e5);
     
 }
 
@@ -67,8 +69,8 @@
     /* transform: rotateY(-35deg) rotateX(0) rotateZ(-2deg);
   transform-style: preserve-3d; */
   transform: perspective(1500px) rotateY(-30deg);
+  background-image: linear-gradient(to bottom left,#024a9700,#acc7e5);
 
-  
 }
 
 
@@ -303,18 +305,22 @@
         top: -3vh;
     }
 }
-/* @media  screen and (min-width: 1500px){
-    .throne{
-        top: -1vh;
+@media screen and (min-height: 2560px) and (max-width: 1600px){
+    .allButtons{
+        display:none;
     }
 }
-
-@media  screen and (min-width: 1383px){
+@media screen and (max-height: 1920px){
     .throne{
-        top: 15vh;
+        top: 1.15vh;
     }
-} */
+}
+@media screen and (max-height: 1600px){
+    .throne{
+        top: 9.9vh;
+    }
 
+} 
 .applyButton{
     position: fixed;
     bottom: 7vh;
