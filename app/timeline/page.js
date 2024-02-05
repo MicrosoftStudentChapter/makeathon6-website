@@ -14,7 +14,6 @@ import ell34 from "./assets/ell34.svg";
 import ell35 from "./assets/ell35.svg";
 import ell36 from "./assets/ell36.svg";
 import Bg from "./particles.js";
-import Layout from "@/components/Layout/layout";
 
 
 
@@ -61,8 +60,6 @@ export default function Page() {
 
   return (
     <>
-        <Layout>
-
     <Hamburger/>
     <div style={{height:'500vh'}}>
     <div style={{position:'sticky', top:'0px'}} className={styles.bgbox}>
@@ -145,8 +142,6 @@ export default function Page() {
       </div>
     </div>
     </div>
-    </Layout>
-
     </>
   );
 }
