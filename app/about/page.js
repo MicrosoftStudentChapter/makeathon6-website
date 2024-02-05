@@ -1,8 +1,14 @@
+
+"use client"
 import styles from './about.module.css'
 import Image from 'next/image'
 import { Footer } from '../../components/footer/Footer'
 import MLSC from '/public/About/MLSC-logo.png'
 // import Prize from './assets/prize.jpeg'
+import { ChuLo } from '@/components/team/team'
+
+
+
 import Faq from './components/Faq'
 import Makeathon from '/public/MLSClogo.png'
 import first from '/public/About/first.png'
@@ -160,7 +166,10 @@ export default function Page() {
     </div>
     <div>
       <Footer />
+      
+
     </div>
+    <ChuLo></ChuLo>
     </>
     )
   }

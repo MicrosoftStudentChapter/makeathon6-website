@@ -1,0 +1,73 @@
+.wrapper {
+    height: 50vh;
+    width: 100vw;
+    
+  
+    background-color: black;
+    padding-bottom: 2rem;
+  }
+  .eb{
+    text-align: center;
+    padding: 1.5rem 0;
+    font-size: 1.25rem;
+    font-family: 'Russo One';
+    word-spacing: 0.5rem;
+    line-height: 1rem;
+    text-transform: uppercase;
+    color: white;
+    margin-bottom: 2rem;
+  }
+  
+  .withLove {
+    text-align: center;
+    padding: 1.5rem 0;
+    font-size: 1.25rem;
+    font-family: 'Russo One';
+    word-spacing: 0.5rem;
+    line-height: 1rem;
+    text-transform: uppercase;
+    color: white;
+    background:local;
+    background-color: black;
+    margin-bottom: 2rem;
+  }
+  
+  .slider {
+    padding-top: 1rem;
+    margin-left: 6rem;
+    margin-right: 6rem;
+  
+    height: fit-content;
+    mask-image: linear-gradient(
+      to right,
+      transparent,
+      black,
+      black,
+      black,
+      black,
+      transparent
+    );
+    /* backdrop-filter: blur(10px); */
+  }
+  
+  .opacity {
+    display: block;
+    position: relative;
+    height: 2rem;
+    width: 3rem;
+  
+    background-color: white;
+  }
+  
+  @media screen and (max-width: 476px) {
+    .slider {
+      margin-left: 1rem;
+      margin-right: 1rem;
+    }
+   
+  
+    .withLove {
+      padding-bottom: 2.1rem;
+      font-size: 0.7rem;
+    }
+  }
