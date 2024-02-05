@@ -10,13 +10,10 @@ import second from '/public/About/second.png'
 import third from '/public/About/third.png'
 import { myFont } from '@/components/font/myfont'
 import Hamburger from '@/components/Hamburger/Hamburger'
-import Layout from '@/components/Layout/layout'
 
 export default function Page() {
     return (
       <>
-          <Layout>
-
     <div>
       <Hamburger/>
       {/* <div className={styles.menu}>
@@ -164,8 +161,6 @@ export default function Page() {
     <div>
       <Footer />
     </div>
-    </Layout>
-
     </>
     )
   }

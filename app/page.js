@@ -10,16 +10,13 @@ import Hamburger from '@/components/Hamburger/Hamburger'
 // import DevfolioButton from '@/components/devfolioButton/devfolio'
 import Script from 'next/script';
 // import dynamic from 'next/dynamic';
-import Layout from '@/components/Layout/layout'
-// import Crown from '@/components/Crown/crown'
-// import CountdownTimer from '@/components/Timer/timer'
+
 // const DynamicClientComponent = dynamic(() => import('../components/devfolioButton/devfolio'), {
 //   ssr: false, // Disable server-side rendering
 // });
 export default function Home() {
   return (
     <>
-    <Layout>
       {/* <DevfolioButton /> */}
       {/* <DynamicClientComponent /> */}
       <Hamburger isSpecialPage={true}/>
@@ -33,8 +30,6 @@ export default function Home() {
       </div>
       <HologramThrone />
       <div className={styles.home}>
-        {/* <Crown/> */}
-        {/* <CountdownTimer/> */}
         <Image src="/MLSClogo.png" height={500} width={500} alt="error" className={styles.logo} />
         <Image src="/throneFinal.png" height={500} width={500} alt="error" className={styles.throne} />
 
@@ -77,8 +72,6 @@ export default function Home() {
           </div>
         </div>
       </div>
-      </Layout>
-
     </>
   );
 }
