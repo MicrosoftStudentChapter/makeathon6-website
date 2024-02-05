@@ -14,16 +14,17 @@
     transform: translateY(-4px);
   }
 }
+
 .home {
   background-color: rgb(25 89 154 / 80%);
   text-align: center;
-  width: 23.6vw;
+  width: 21.6vw;
   border: 2px solid rgb(148 214 214);
 
   color: rgba(234, 255, 255, 1);
 
-  border-bottom-right-radius: 3px;
-  border-bottom-left-radius: 3px;
+  /* border-bottom-right-radius: 3px; */
+  /* border-bottom-left-radius: 3px; */
   height: 83px;
   display: flex;
   flex-direction: column;
@@ -35,15 +36,18 @@
   font-family: '--kingvoon';
 
   z-index: 10;
+  /* background-image: linear-gradient(to bottom right,#024a9700, #589dec); */
+  /* border-top-left-radius: 5px; */
+  border-radius: 5px;
+  letter-spacing: 0.65vh;
   cursor: url('../../public/Medieval\ Pointer.png'),auto;
 }
 
 
 .box {
   height: 0.1vh;
-  width: 22.667vw;
-  /* margin: 0.625em; */
-  margin-bottom:10px;
+  width: 19.667vw;
+  margin: 0.625em;
   border: 1px solid rgb(148 214 214);
   border-radius: 5px;
   background-color: rgb(148 214 214);

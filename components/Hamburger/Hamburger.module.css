@@ -16,6 +16,7 @@
     display: none;
     font-family: 'Kingvoon';
     /* z-index: 12; */
+    font-family: 'Kingvoon';
 }
 .buttons{
     display: flex;
@@ -23,19 +24,23 @@
     align-items: center;
     flex-direction: column;
     cursor: url('../../public/Medieval\ Pointer.png'),auto;
+    position: fixed;
+    transform: translateX(-50%);
+    left: 50vw;
+    top: 29vh;
 }
 .buttons h1{
     margin: 2vh;
     color: rgb(148 214 214);
-   
+    
     text-shadow: 0 0 75px #fff, 0 0 50px #fff, 0 0 13px rgb(72 129 187), 0 0 14px rgb(72 129 187), 0 0 36px rgb(72 129 187);
 }
- 
+
 .menu{
     display: block;
     top: 3vh;
     position: fixed;
-    left: 3vh;
+    left: 1.5vh;
     z-index: 15;
     cursor: url('../../public/Medieval\ Pointer.png'),auto;
     
@@ -70,8 +75,5 @@
 @media screen and (max-width : 450px){
     .menu.menu.specialPage, .HamburgerMain.specialPage{
     display: block;
-   }
 }
-.pointer{
-    cursor: url('../../public/Medieval\ Pointer.png'),auto;
 }
