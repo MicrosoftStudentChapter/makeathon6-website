@@ -322,4 +322,14 @@
     .throne{
         top: 9.9vh;
     }
+
+} 
+
+.applyButton{
+    position: fixed;
+    bottom: 7vh;
+    left: 50vw;
+    transform: translate(-50%);
+    z-index: 10;
+
 }
