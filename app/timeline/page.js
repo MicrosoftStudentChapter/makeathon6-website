@@ -39,8 +39,11 @@ export default function Page() {
     [0, 1, 2, 3, 4, 5, 6]
   );
 
+  
   useMotionValueEvent(changetracker, "change", (latest) => {
-    console.log(Math.round(latest * 10));
+    console.log("latest value" + Math.round(latest * 10));
+      
+    setGlowIndex( Math.round(latest))
     setCi(Math.round(latest));
     // if(Math.round(latest*10)%2===0)
     // {
@@ -52,6 +55,8 @@ export default function Page() {
 
   const [ci, setCi] = useState(0);
   date();
+
+  const [glowIndex, setGlowIndex] = useState(0);
 
   return (
     <>
@@ -77,15 +82,15 @@ export default function Page() {
                 <Image src={astroframe} className={styles.astroimage2} />
               </motion.div>
 
-            <Image src={astrotrail} className={styles.astroimage3} />
-            <Image src={ell29} className={styles.astroimage4} />
-            <Image src={ell30} className={styles.astroimage5} />
-            <Image src={ell31} className={styles.astroimage6} />
-            <Image src={ell32} className={styles.astroimage7} />
-            <Image src={ell33} className={styles.astroimage8} />
-            <Image src={ell34} className={styles.astroimage9} />
-            <Image src={ell35} className={styles.astroimage10} />
-            <Image src={ell36} className={styles.astroimage11} />
+            <Image className={styles.astroimage3} src={astrotrail}/>
+            <Image src={ell29} className={`${styles.astroimage4} ${glowIndex===0?styles.hoverglow:''}`} />
+            <Image src={ell30} className={`${styles.astroimage5} ${glowIndex===1?styles.hoverglow:''}`} />
+            <Image src={ell31} className={`${styles.astroimage6} ${glowIndex===2?styles.hoverglow:''}`} />
+            <Image src={ell32} className={`${styles.astroimage7} ${glowIndex===3?styles.hoverglow:''}`} />
+            <Image src={ell33} className={`${styles.astroimage8} ${glowIndex===4?styles.hoverglow:''}`}/>
+            <Image src={ell34} className={`${styles.astroimage9} ${glowIndex===5?styles.hoverglow:''}`} />
+            <Image src={ell35} className={`${styles.astroimage10} ${glowIndex===6?styles.hoverglow:''}`} />
+            <Image src={ell36} className={`${styles.astroimage11} ${glowIndex===7?styles.hoverglow:''}`} />
             <p className={styles.parag}>{date()}</p>
           </div>
         </div>
