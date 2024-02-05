@@ -27,7 +27,7 @@ import {
 
 import { headings } from "./data";
 import { useState } from "react";
-const rotations = [0, 12, 24, 36, 48, 60, 72];
+const rotations = [0, 13, 27, 40, 54, 66, 82, 95];
 import Hamburger from "@/components/Hamburger/Hamburger";
 
 export default function Page() {

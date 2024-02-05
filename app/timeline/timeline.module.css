@@ -228,7 +228,7 @@
 
 @keyframes rotate {
     0% {transform: rotate(0deg);}
-    100%{transform: rotate(329deg);}
+    100%{transform: rotate(326deg);}
     
 }
 
@@ -265,7 +265,7 @@
  .textbox{
     width: 80%;
 
-    overflow: scroll;
+    overflow: ;
     margin-bottom: 2rem;
  }
 
