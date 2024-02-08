@@ -1,0 +1,139 @@
+/* @font-face {
+    font-family: kingvoon;
+    src: url('/public/fonts/Kingvoon.woff');
+    src: url('/public/fonts/Kingvoon.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+  } */
+
+  @font-face {
+    font-family: "kingvoon";
+    src:
+      local("kingvoon"),
+      url("../../public/fonts/Kingvoon.woff") format("woff") tech(color-COLRv1),
+      /* url("trickster-outline.otf") format("opentype"), */
+      /* url("../../public/fonts/Kingvoon.woff") format("woff"); */
+  }
+  
+  .container {
+      color: #333;
+      margin: 0 auto;
+      text-align: center;
+      width:100vw;
+  }
+  
+  h1 {
+      font-weight: normal;
+      letter-spacing: 0.125rem;
+      text-transform: uppercase;
+  }
+  
+  li {
+      font-family: kingvoon;
+      display: inline-block;
+      font-size: 1.5em;
+      list-style-type: none;
+      padding: 1em;
+      text-transform: uppercase;
+  }
+  
+  li span {
+      display: block;
+      font-size: 4.5rem;
+  }
+  
+    
+    @media all and (max-width: 768px) {
+      h1 {
+        font-size: calc(1.5rem * var(--smaller));
+      }
+    
+      li {
+        font-size: calc(1.125rem * var(--smaller));
+      }
+    
+      li span {
+        font-size: calc(3.375rem * var(--smaller));
+      }
+    }
+  
+  .container li{
+      color:white;
+      /* background-color: white; */
+      border-radius: 20px;
+      padding:10px;
+      margin: 20px;
+      width:150px;
+      /* background: rgba(255, 255, 255, 0.19); */
+      /* border-radius: 16px; */
+      /* box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1); */
+      /* backdrop-filter: blur(5.9px); */
+      /* -webkit-backdrop-filter: blur(5.9px); */
+      /* border: 1px solid rgba(255, 255, 255, 0.47); */
+  }
+  
+  @media only screen and (max-width: 500px) {
+    .container li{
+      width:80px;
+      margin:5px; 
+      font-size:13px;
+      height:70px;
+    }
+  
+    .container{
+      margin-top: 65vw;
+    }
+  }
+  
+  @media only screen and (max-width: 390px) {
+    .container li{
+      /* display: flex; */
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      width:75px;
+      margin:5px; 
+      font-size:11px;
+      height:65px;
+    }
+  
+    .container{
+      margin-top: 65vw;
+    }
+  }
+  
+  
+  @media only screen and (max-width: 375px) {
+    .container li{
+      /* display: flex; */
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      width:70px;
+      margin:5px; 
+      font-size:10px;
+      height:60px;
+    }
+  
+    .container{
+      margin-top: 65vw;
+    }
+  }
+  
+  @media only screen and (max-width: 350px) {
+    .container li{
+      /* display: flex; */
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      width:65px;
+      margin:5px; 
+      font-size:9px;
+      height:55px;
+    }
+  
+    .container{
+      margin-top: 65vw;
+    }
+  }
+  /* 475 400 */
