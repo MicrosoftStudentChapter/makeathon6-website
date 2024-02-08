@@ -114,12 +114,12 @@ export default function Crown() {
 
   return (
     <div style={{ width: '100%', height: '100vh' }} className='loaderpage'>
-      <Canvas shadows dpr={[1, 1.5]} gl={{ antialias: false }} camera={{ position: [0, -30, -20], fov: 30 }} style={{height:"100vh"}}>
+      <Canvas shadows dpr={[1, 1.5]} gl={{ antialias: false }} camera={{ position: [0, -25, -15], fov: 30 }} style={{height:"100vh"}}>
       {/* <ambientLight intensity={0} color={0xffffff} castShadow /> */}
-      <directionalLight intensity={15} position={[0, 0, 2]} color="white" />
-      <directionalLight intensity={15} position={[0, 0, -2]} color="white" />
-
-      <RotatingModel nodes={nodes} />
+        <directionalLight intensity={15} position={[0, 0, 2]} color="white" />
+        <directionalLight intensity={15} position={[0, 0, -2]} color="white" />
+        <directionalLight intensity={15} position={[4, 4, 0]} color="golden" />
+        <RotatingModel nodes={nodes} />
       </Canvas>
     </div>
   );
