@@ -94,26 +94,27 @@ function RotatingModel({ nodes }) {
 
   useFrame((state, delta) => {
     // Update rotation here based on your requirements
-    group.current.rotation.y += 0.03;
+    // group.current.rotation.x += 0.03;
+    group.current.rotation.z += 0.018;
     // group.current.rotation.z += 0.002;
 
     // Adjust the rotation speed as needed
   });
 
-  const { materials } = useGLTF('/crown-transformed.glb');
+  const { materials } = useGLTF('/crown2-transformed.glb');
   return (
     <group ref={group}>
-      <mesh geometry={nodes.ironCrown001.geometry} material={materials['None.001']} rotation={[Math.PI / 2, 0, 0]} />
+      <mesh geometry={nodes.ironCrown001.geometry} material={materials['None.001']} rotation={[ 0, 0, 0]} />
     </group>
   );
 }
 
 export default function Crown() {
-  const { nodes, material } = useGLTF('/crown-transformed.glb');
+  const { nodes, material } = useGLTF('/crown2-transformed.glb');
 
   return (
     <div style={{ width: '100%', height: '100vh' }} className='loaderpage'>
-      <Canvas shadows dpr={[1, 1.5]} gl={{ antialias: false }} camera={{ position: [-20, 25, 22], fov: 20 }} style={{height:"100vh"}}>
+      <Canvas shadows dpr={[1, 1.5]} gl={{ antialias: false }} camera={{ position: [0, -30, -20], fov: 30 }} style={{height:"100vh"}}>
       {/* <ambientLight intensity={0} color={0xffffff} castShadow /> */}
       <directionalLight intensity={15} position={[0, 0, 2]} color="white" />
       <directionalLight intensity={15} position={[0, 0, -2]} color="white" />
