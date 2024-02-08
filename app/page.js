@@ -10,7 +10,8 @@ import Hamburger from '@/components/Hamburger/Hamburger'
 // import DevfolioButton from '@/components/devfolioButton/devfolio'
 import Script from 'next/script';
 import { Model } from '@/components/Loader/Loader'
-import { Crown } from '@/components/Loader/Crown'
+// import { Crown } from '@/components/Loader/Crown'
+import Crown from '@/components/Loader/Crown'
 // import dynamic from 'next/dynamic';
 
 // const DynamicClientComponent = dynamic(() => import('../components/devfolioButton/devfolio'), {
