@@ -1,5 +1,5 @@
 
-// "use client"
+"use client"
 
 import Link from 'next/link'
 import Image from 'next/image'
@@ -9,6 +9,8 @@ import HologramThrone from '@/components/animation/animation'
 import Hamburger from '@/components/Hamburger/Hamburger'
 // import DevfolioButton from '@/components/devfolioButton/devfolio'
 import Script from 'next/script';
+import { Model } from '@/components/Loader/Loader'
+import { Crown } from '@/components/Loader/Crown'
 // import dynamic from 'next/dynamic';
 
 // const DynamicClientComponent = dynamic(() => import('../components/devfolioButton/devfolio'), {
@@ -19,7 +21,8 @@ export default function Home() {
     <>
       {/* <DevfolioButton /> */}
       {/* <DynamicClientComponent /> */}
-      <Hamburger isSpecialPage={true}/>
+      <Crown />
+      {/* <Hamburger isSpecialPage={true}/>
       <div className={styles.applyButton}>
         <Script src="https://apply.devfolio.co/v2/sdk.js" async={true} defer={true} />
           <div 
@@ -71,7 +74,7 @@ export default function Home() {
             </div>
           </div>
         </div>
-      </div>
+      </div> */}
     </>
   );
 }
