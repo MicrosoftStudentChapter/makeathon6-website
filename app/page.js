@@ -19,7 +19,7 @@ export default function Home() {
     <>
       {/* <DevfolioButton /> */}
       {/* <DynamicClientComponent /> */}
-      <Hamburger isSpecialPage={true}/>
+      <Hamburger isSpecialPage={true} />
       <div className={styles.applyButton}>
         <Script src="https://apply.devfolio.co/v2/sdk.js" async={true} defer={true} />
           <div 
@@ -31,7 +31,9 @@ export default function Home() {
       <HologramThrone />
       <div className={styles.home}>
         <Image src="/MLSClogo.png" height={500} width={500} alt="error" className={styles.logo} />
+        <Image src="/About/MLSC-logo.png" height={500} width={500} alt="error" className={styles.logo_new} />
         <Image src="/throneFinal.png" height={500} width={500} alt="error" className={styles.throne} />
+        {/* <Image src="/throneFinal.png" height={500} width={500} alt="error" className={styles.throne} /> */}
 
         <div className={styles.allButtons}>
           <div className={styles.parallelBtns}>

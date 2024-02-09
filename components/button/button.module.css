@@ -22,8 +22,8 @@
 
   color: rgba(234, 255, 255, 1);
 
-  /* border-bottom-right-radius: 3px; */
-  /* border-bottom-left-radius: 3px; */
+  border-bottom-right-radius: 3px;
+  border-bottom-left-radius: 3px;
   height: 83px;
   display: flex;
   flex-direction: column;
@@ -35,7 +35,7 @@
   font-family: '--kingvoon';
 
   z-index: 10;
-  border-radius: 5px;
+  /* border-radius: 5px; */
   letter-spacing: 0.65vh;
   cursor: url('../../public/Medieval\ Pointer.png'),auto;
 }
@@ -54,7 +54,7 @@
 
 .top {
   height: 1vh;
-  width: 23.6vw;
+  width: 21.6vw;
   border: 2px solid rgb(148 214 214);
 
   border-top-left-radius: 5px;

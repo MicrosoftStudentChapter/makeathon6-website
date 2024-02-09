@@ -25,27 +25,67 @@
     cursor: url('../../public/Medieval\ Pointer.png'),auto;
     position: fixed;
     transform: translateX(-50%);
-    left: 50vw;
-    top: 29vh;
+    left: 77vw;
+    top: -6vh;
 }
 .buttons h1{
     margin: 2vh;
-    color: rgb(148 214 214);
+    color: rgb(191 217 217);
    
-    text-shadow: 0 0 75px #fff, 0 0 50px #fff, 0 0 13px rgb(72 129 187), 0 0 14px rgb(72 129 187), 0 0 36px rgb(72 129 187);
+    /* text-shadow: 0 0 75px #fff, 0 0 50px #fff, 0 0 13px rgb(72 129 187), 0 0 14px rgb(72 129 187), 0 0 36px rgb(72 129 187); */
 }
- 
+ .hbBtn{
+  /* border : 2px solid blue; */
+  border: 2px solid rgb(148 214 214);
+    width: 11vw;
+    /* text-align: center; */
+    margin: 1vh 0;
+    border-radius: 20px;
+    height: 8vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: rgb(148 214 214 / 27%);
+    transition: all 0.2s ease-in-out;
+ }
+ .hbBtn:hover{
+  box-shadow: 0 0 20px 10px rgb(167 202 217 / 70%);
+
+ }
 .menu{
-    display: block;
-    top: 3vh;
+    top: 4vh;
     position: fixed;
-    left: 1.5vh;
+    right: 3vh;
     z-index: 15;
     cursor: url('../../public/Medieval\ Pointer.png'),auto;
-    
+    width: 30px;
+  height: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
+.line {
+    width: 100%;
+    height: 4px;
+    background-color: white;
+    transition: transform 0.3s ease;
+  }
+
+  .open .line:nth-child(1) {
+    transform: translateY(8px) rotate(45deg);
+  }
+  
+  .open .line:nth-child(2) {
+    opacity: 0;
+  }
+  
+  .open .line:nth-child(3) {
+    transform: translateY(-8px) rotate(-45deg);
+  }
 .hamburger.show {
     display: flex;
+    transition: all o.8s ease-in-out;
+    transform: translateX(-100%);
 }
 /* .hamburger.hide{
     display: none;
@@ -61,6 +101,8 @@
     z-index: 2;
     top: 0vh;
     display: block;
+    /* transition: all 0.8s ease-in-out;
+    transform: translateX(100%); */
    
 }
 
@@ -79,3 +121,57 @@
 .pointer{
     cursor: url('../../public/Medieval\ Pointer.png'),auto;
 }
+.slideOut1 {
+    animation: slide-out 0.3s linear 0.1s both;
+  }
+  
+  .slideOut2 {
+    animation: slide-out 0.3s linear 0.2s both;
+  }
+  
+  .slideOut3 {
+    animation: slide-out 0.3s linear 0.3s both;
+  }
+  
+  .slideOut4 {
+    animation: slide-out 0.3s linear 0.4s both;
+  }
+  
+  .slideOut5 {
+    animation: slide-out 0.3s linear 0.5s both;
+  }
+  .slideOutmain{
+    animation: slide-out 0.3s linear 0.8s both;
+  }
+  
+  @keyframes slide-out {
+    from {
+        transform: translateX(-1000%);
+    }
+    to {
+      
+      transform: translateX(0);
+    }
+  }
+  @media screen and (max-width: 1024px){
+    .hbBtn{
+      width: 14vw;
+    }
+  }
+  @media screen and (max-width: 770px){
+    .hbBtn{
+      width: 18vw;
+    }
+  }
+  @media screen and (max-width: 460px){
+    .hbBtn{
+      width: 35vw;
+    }
+  }
+  
+  @media screen and (max-width: 325px){
+    .hbBtn{
+      width: 42vw;
+    }
+  }
+  

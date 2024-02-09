@@ -5,7 +5,7 @@ function HomeButton(props) {
     return (
         <>
             <div className={styles.homeButton}>
-                {/*<div className={styles.top}></div>*/}
+                <div className={styles.top}></div>
                 <div className={styles.home}>
 
                     <h3><span className= {`${myFont.className} ${styles.pointer}`}>{props.title}</span></h3>
