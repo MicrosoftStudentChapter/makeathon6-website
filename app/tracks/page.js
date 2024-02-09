@@ -3,8 +3,8 @@ import React, { useState } from "react";
 import styles from "./tracks.module.css";
 import Content from "./data.json";
 import Image from "next/image";
-import { Footer } from "../../components/footer/Footer";
-import Hamburger from "@/components/Hamburger/Hamburger";
+// import { Footer } from "../../components/footer/Footer";
+// import Hamburger from "@/components/Hamburger/Hamburger";
 
 import { motion } from "framer-motion";
 
@@ -55,7 +55,7 @@ export default function Page() {
 
   return (
     <>
-      <Hamburger />
+      {/* <Hamburger /> */}
       <div className={styles.main}>
         <h1 className={styles.mainheading}>Tracks</h1>
         <motion.div
@@ -66,9 +66,9 @@ export default function Page() {
           {Content.map((event , index) => generateEventDiv(event , index))}
         </motion.div>
       </div>
-      <div>
+      {/* <div>
         <Footer />
-      </div>
+      </div> */}
       {selectedEvent && (
         <>
           <div className={styles.overlay}>

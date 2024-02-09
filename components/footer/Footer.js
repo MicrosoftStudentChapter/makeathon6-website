@@ -92,7 +92,7 @@ export const Footer = () => {
               <div className={styles.bleh}>
                 <Image className={styles.image5} src={Fin}/> <div className={styles.side}>Utkarsh Tripathi</div><br></br>
               </div>
-              <span className={styles.gen}>(Finance Secretary)</span>
+              <span className={styles.gen2}>(Finance Secretary)</span>
             </a>
             </div>
 

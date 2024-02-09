@@ -8,16 +8,16 @@ import bgImage from '/public/sponsors/bgImg.png'
 import Logo from '/public/sponsors/mlscLogo.png'
 import Flaglogo from '/public/sponsors/flogo.png'
 import { myFont } from '@/components/font/myfont'
-import { Footer } from '../../components/footer/Footer'
+// import { Footer } from '../../components/footer/Footer'
 import Dev from '/public/sponsors/Devfolio_Logo-Colored.png'
 import Poly from '/public/sponsors/Polygon_Logo-Colored.png'
 import Eth from '/public/sponsors/ethindia-dark.png'
-import Hamburger from '@/components/Hamburger/Hamburger'
+// import Hamburger from '@/components/Hamburger/Hamburger'
 
 export default function Page() {
       return (
         <>
-        <Hamburger/>
+        {/* <Hamburger/> */}
         <div>
           <Image className={styles.bg} src={bgImage} alt='/' />
 
@@ -29,7 +29,6 @@ export default function Page() {
           {/* <Associate /> */}
           </div>
         </div>
-        <Footer />
         </>
       );
     }
