@@ -27,7 +27,7 @@ import {
 
 import { headings } from "./data";
 import { useState } from "react";
-const rotations = [0, 12, 24, 36, 48, 60, 72];
+const rotations = [0, 13, 27, 40, 54, 66, 82, 98];
 import Hamburger from "@/components/Hamburger/Hamburger";
 
 export default function Page() {
@@ -35,8 +35,8 @@ export default function Page() {
 
   const changetracker = useTransform(
     scrollYProgress,
-    [0, 0.15, 0.3, 0.45, 0.6, 0.75, 0.9],
-    [0, 1, 2, 3, 4, 5, 6]
+    [0, 0.15, 0.3, 0.45, 0.6, 0.75, 0.9, 1],
+    [0, 1, 2, 3, 4, 5, 6, 7]
   );
 
   
@@ -83,14 +83,14 @@ export default function Page() {
               </motion.div>
 
             <Image className={styles.astroimage3} src={astrotrail}/>
-            <Image src={ell29} className={`${styles.astroimage4} ${glowIndex===0?styles.hoverglow:''}`} />
-            <Image src={ell30} className={`${styles.astroimage5} ${glowIndex===1?styles.hoverglow:''}`} />
-            <Image src={ell31} className={`${styles.astroimage6} ${glowIndex===2?styles.hoverglow:''}`} />
-            <Image src={ell32} className={`${styles.astroimage7} ${glowIndex===3?styles.hoverglow:''}`} />
-            <Image src={ell33} className={`${styles.astroimage8} ${glowIndex===4?styles.hoverglow:''}`}/>
-            <Image src={ell34} className={`${styles.astroimage9} ${glowIndex===5?styles.hoverglow:''}`} />
-            <Image src={ell35} className={`${styles.astroimage10} ${glowIndex===6?styles.hoverglow:''}`} />
-            <Image src={ell36} className={`${styles.astroimage11} ${glowIndex===7?styles.hoverglow:''}`} />
+            <Image src={ell29} className={`${styles.astroimage4} ${glowIndex===0?styles.hoverglow:''} ${styles.ripple}`} />
+            <Image src={ell30} className={`${styles.astroimage5} ${glowIndex===1?styles.hoverglow:''} ${styles.ripple}`} />
+            <Image src={ell31} className={`${styles.astroimage6} ${glowIndex===2?styles.hoverglow:''} ${styles.ripple}`} />
+            <Image src={ell32} className={`${styles.astroimage7} ${glowIndex===3?styles.hoverglow:''} ${styles.ripple}`} />
+            <Image src={ell33} className={`${styles.astroimage8} ${glowIndex===4?styles.hoverglow:''} ${styles.ripple}`}/>
+            <Image src={ell34} className={`${styles.astroimage9} ${glowIndex===5?styles.hoverglow:''} ${styles.ripple}`} />
+            <Image src={ell35} className={`${styles.astroimage10} ${glowIndex===6?styles.hoverglow:''} ${styles.ripple}`} />
+            <Image src={ell36} className={`${styles.astroimage11} ${glowIndex===7?styles.hoverglow:''} ${styles.ripple}`} />
             <p className={styles.parag}>{date()}</p>
           </div>
         </div>
