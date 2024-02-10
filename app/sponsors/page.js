@@ -29,7 +29,7 @@ export default function Page() {
           {/* <Associate /> */}
           </div>
         </div>
-        <Footer />
+        <Footer/>
         </>
       );
     }

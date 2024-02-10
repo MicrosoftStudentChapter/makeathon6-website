@@ -1,14 +1,14 @@
 import styles from './footer.module.css';
-import King from './assets/King.png';
+import King from './assets/newsec.png';
+import Fin from './assets/newsec.png';
 import Mail from './assets/mail.png';
-import Location from './assets/location.png';
-import Phone from './assets/phone.png';
+import Location from './assets/locate.png';
 import LD from './assets/linkedin.png'
 import Yt from './assets/yt.png'
 import Ig from './assets/insta.png'
 import Fb from './assets/fb.png'
 import Logo from './assets/Logo.png'
-import Sr from './assets/Sponsor.png'
+import Sr from './assets/spons.png'
 
 import Image from 'next/image'
 import Link from 'next/link'
@@ -61,7 +61,7 @@ export const Footer = () => {
 
               <a href='mailto: msc@thapar.edu' target='_blank' style={{ textDecoration: 'none'}}>
                 <div className={styles.bleh}>
-                  <Image className={styles.image} src={Mail}/> <div className={styles.side}>msc@thapar.edu</div>
+                  <Image className={styles.image2} src={Mail}/> <div className={styles.side}>msc@thapar.edu</div>
                 </div>
               </a>
 
@@ -78,19 +78,24 @@ export const Footer = () => {
               </Link>
 
             </div>
-            
-              <div className={styles.rightR}>
-              <a href='tel:+917626954725' target='_blank' style={{ textDecoration: 'none'}}>
-                <div className={styles.bleh}>
-                  <Image className={styles.image} src={Phone}/> <div className={styles.side}>+91 7626954725</div>
-                </div>
-              </a>
 
+            <div className={styles.rightR}>
+            
+            <a href='https://www.linkedin.com/in/apoorva11/' target='_blank' style={{ textDecoration: 'none'}}>
               <div className={styles.bleh}>
-                <Image className={styles.image} src={King}/> <div className={styles.side}>Apoorva</div><br></br>
+                <Image className={styles.image3} src={King}/> <div className={styles.side}>Apoorva</div><br></br>
               </div>
               <span className={styles.gen}>(General Secretary)</span>
+            </a>
+
+            <a href='https://www.linkedin.com/in/utkarsh-tripathi-80a0ab192/' target='_blank' style={{ textDecoration: 'none'}}>
+              <div className={styles.bleh}>
+                <Image className={styles.image3} src={Fin}/> <div className={styles.side}>Utkarsh Tripathi</div><br></br>
+              </div>
+              <span className={styles.gen}>(Finance Secretary)</span>
+            </a>
             </div>
+
           </div>
         </div>
         
