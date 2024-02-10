@@ -107,15 +107,18 @@
 }
 
 .menu.specialPage {
-    display:none;
+    /* display:none; */
+    visibility: hidden;
   }
 
 .HamburgerMain.specialPage{
-    display:none;
+    /* display:none; */
+    visibility: hidden;
 }
 @media screen and (max-width : 450px){
     .menu.menu.specialPage, .HamburgerMain.specialPage{
-    display: block;
+    /* display: block; */
+    visibility: visible;
    }
 }
 .pointer{
