@@ -3,7 +3,7 @@ import { Footer } from '@/components/footer/Footer';
 import Hamburger from '@/components/Hamburger/Hamburger';
 import { usePathname } from 'next/navigation';
 
-export default function app({ children }) {
+export default function App({ children }) {
   const pathName = usePathname();
 
   if (pathName === '/') {
