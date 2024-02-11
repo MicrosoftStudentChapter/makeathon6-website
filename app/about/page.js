@@ -8,14 +8,14 @@ import first from '/public/About/first.png'
 import second from '/public/About/second.png'
 import third from '/public/About/third.png'
 import { myFont } from '@/components/font/myfont'
-import Hamburger from '@/components/Hamburger/Hamburger'
-import { Footer } from "../../components/footer/Footer";
+// import Hamburger from '@/components/Hamburger/Hamburger'
+// import { Footer } from "../../components/footer/Footer";
 
 export default function Page() {
     return (
       <>
     <div>
-      <Hamburger/>
+      {/* <Hamburger/> */}
       {/* <div className={styles.menu}>
         <button className={styles.navButton}>Nav</button>
         <div className={styles.menuContent}>
@@ -156,7 +156,7 @@ export default function Page() {
           <Faq/>
         </div>
     </div>
-    <Footer/>
+    {/* <Footer/> */}
 </div>
     </>
     )
