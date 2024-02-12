@@ -2,7 +2,6 @@
 "use client"
 import styles from './about.module.css'
 import Image from 'next/image'
-import { Footer } from '../../components/footer/Footer'
 import MLSC from '/public/About/MLSC-logo.png'
 // import Prize from './assets/prize.jpeg'
 import { ChuLo } from '@/components/team/team'
@@ -16,6 +15,7 @@ import second from '/public/About/second.png'
 import third from '/public/About/third.png'
 import { myFont } from '@/components/font/myfont'
 import Hamburger from '@/components/Hamburger/Hamburger'
+import { Footer } from "../../components/footer/Footer";
 
 export default function Page() {
     return (
@@ -162,6 +162,7 @@ export default function Page() {
           <Faq/>
         </div>
     </div>
+
       
     </div>
     <div>
@@ -170,6 +171,7 @@ export default function Page() {
 
     </div>
     <ChuLo></ChuLo>
+
     </>
     )
   }
