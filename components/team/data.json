@@ -1,156 +1,228 @@
 {
-    "secretaries": [
-      {
-        "name": "Anannya Singh 👉👈",
-        "img": "https://res.cloudinary.com/damjdcgak/image/upload/v1675713883/Makeathon%205%20website/MLSC%20Team%20pictures/IMG_5304_y2btmr.jpg"
-      },
-      {
-        "name": "Adamay Mann 👑",
-        "img": "https://res.cloudinary.com/damjdcgak/image/upload/v1676819476/Makeathon%205%20website/MLSC%20Team%20pictures/IMG_20230206_233859_988_-_Adamay_Mann_akiqsw.jpg"
-      },
-      {
-        "name": "Shivansh Kapoor 🐨",
-        "img": "https://res.cloudinary.com/damjdcgak/image/upload/v1676818974/Makeathon%205%20website/MLSC%20Team%20pictures/IMG_20230127_204244_784_-_Shivansh_Kapoor_sgye3i.jpg"
-      },
-      {
-        "name": "Meharamt Singh",
-        "img": "https://res.cloudinary.com/damjdcgak/image/upload/v1675713739/Makeathon%205%20website/MLSC%20Team%20pictures/IMG_5367_rg9hzh.jpg"
-      },
-      {
-        "name": "Rudransh Arora",
-        "img": "https://res.cloudinary.com/damjdcgak/image/upload/v1675714197/Makeathon%205%20website/MLSC%20Team%20pictures/IMG_5279_qvqopm.jpg"
-      }
-    ],
-    "heads": [
-      {
-        "name": "Anamika Srivastava",
-        "img": "https://res.cloudinary.com/damjdcgak/image/upload/v1675714343/Makeathon%205%20website/MLSC%20Team%20pictures/IMG_5325_gwhwj4.jpg"
-      },
-      {
-        "name": "Neha Agarwal",
-        "img": "https://res.cloudinary.com/damjdcgak/image/upload/v1675714478/Makeathon%205%20website/MLSC%20Team%20pictures/IMG_5376_xea90a.jpg"
-      },
-      {
-        "name": "Yamini Bansal",
-        "img": "https://res.cloudinary.com/damjdcgak/image/upload/v1675714591/Makeathon%205%20website/MLSC%20Team%20pictures/IMG_5330_e7g2yb.jpg"
-      },
-      {
-        "name": "Kunal Demla",
-        "img": "https://res.cloudinary.com/damjdcgak/image/upload/v1675714684/Makeathon%205%20website/MLSC%20Team%20pictures/IMG_5284_vjtjdb.jpg"
-      },
-      {
-        "name": "Mitesh Jindal 👻",
-        "img": "https://res.cloudinary.com/damjdcgak/image/upload/v1675714772/Makeathon%205%20website/MLSC%20Team%20pictures/IMG_5275_hnitxt.jpg"
-      },
-      {
-        "name": "Khushi Prasad",
-        "img": "https://res.cloudinary.com/damjdcgak/image/upload/v1675714913/Makeathon%205%20website/MLSC%20Team%20pictures/IMG_5307_mvsv8f.jpg"
-      }
-    ],
-    "coordinators": [
-      {
-        "name": "Aditya Pathak",
-        "img": "https://res.cloudinary.com/damjdcgak/image/upload/v1675711623/Makeathon%205%20website/MLSC%20Team%20pictures/IMG20230116105904_zhr7dn.jpg"
-      },
-      {
-        "name": "Chetandeep Singh",
-        "img": "https://res.cloudinary.com/damjdcgak/image/upload/v1675710784/Makeathon%205%20website/MLSC%20Team%20pictures/IMG20220908145349_-_Chetandeep_Singh_k6dhkl.jpg"
-      },
-      {
-        "name": "Mukesh Devrath",
-        "img": "https://res.cloudinary.com/damjdcgak/image/upload/v1675710640/Makeathon%205%20website/MLSC%20Team%20pictures/Mukesh_kumar_kv2a2t.jpg"
-      },
-      {
-        "name": "Dhruv Bansal",
-        "img": "https://res.cloudinary.com/damjdcgak/image/upload/v1675715245/Makeathon%205%20website/MLSC%20Team%20pictures/Dhruv_Bansal_-_Dhruv_Bansal_ojtvxv.jpg"
-      },
-      {
-        "name": "Yash Awasthi",
-        "img": "https://res.cloudinary.com/damjdcgak/image/upload/v1675711854/Makeathon%205%20website/MLSC%20Team%20pictures/IMG_20230116_164228_-_Yash_Awasthi_yjkesj.jpg"
-      },
-      {
-        "name": "Achintya Agrawal",
-        "img": "https://res.cloudinary.com/damjdcgak/image/upload/v1675705947/Makeathon%205%20website/MLSC%20Team%20pictures/IMG-20230123-WA0045_-_Achintya_Agrawal_jakrxb.jpg"
-      },
-      {
-        "name": "Navya Walia",
-        "img": "https://res.cloudinary.com/damjdcgak/image/upload/v1675705732/Makeathon%205%20website/MLSC%20Team%20pictures/20221216_171517_-_Navya_Walia_ag2lll.jpg"
-      },
-      {
-        "name": "Prakriti Garg",
-        "img": "https://res.cloudinary.com/damjdcgak/image/upload/v1675702588/Makeathon%205%20website/MLSC%20Team%20pictures/20220919_202223_-_PRAKRITI_GARG_isqjv0.jpg"
-      },
-      {
-        "name": "Vishist Bhagabati 🎸",
-        "img": "https://res.cloudinary.com/damjdcgak/image/upload/v1675703178/Makeathon%205%20website/MLSC%20Team%20pictures/PXL_20230117_030611153_zuhanx.jpg"
-      },
-      {
-        "name": "Akshat Jaimini 🥷🏻",
-        "img": "https://res.cloudinary.com/damjdcgak/image/upload/v1675712248/Makeathon%205%20website/MLSC%20Team%20pictures/WhatsApp_Image_2023-01-06_at_23.28.47_xoxp6j.jpg"
-      },
-      {
-        "name": "Uday Beswal 😉",
-        "img": "https://res.cloudinary.com/damjdcgak/image/upload/v1675693809/Makeathon%205%20website/MLSC%20Team%20pictures/IMG_20220914_094439_-_Uday_Beswal_aldgsv.jpg"
-      },
-      {
-        "name": "Nimish Medatwal 🇳🇬",
-        "img": "https://res.cloudinary.com/damjdcgak/image/upload/v1675710497/Makeathon%205%20website/MLSC%20Team%20pictures/Screenshot_2022-09-14-00-50-50-57_965bbf4d18d205f782c6b8409c5773a4_-_Nimish_Medatwal_vb1kfa.jpg"
-      },
-      {
-        "name": "Utkarsh Tripathi 🔫",
-        "img": "https://res.cloudinary.com/damjdcgak/image/upload/v1675711014/Makeathon%205%20website/MLSC%20Team%20pictures/82549425_132725501557570_1650596276177507086_n_-_Utkarsh_Tripathi_hlzacl.jpg"
-      },
-      {
-        "name": "Ikshan Bhardwaj 🥵",
-        "img": "https://res.cloudinary.com/damjdcgak/image/upload/v1675707289/Makeathon%205%20website/MLSC%20Team%20pictures/InShot_20230206_225650650_-_Ikshan_Bhardwaj_juvche.jpg"
-      },
-      {
-        "name": "Apoorva 💛",
-        "img": "https://res.cloudinary.com/damjdcgak/image/upload/v1675704371/Makeathon%205%20website/MLSC%20Team%20pictures/IMG-20221024-WA0063_-_Apoorva_Apoorva_e6aubs.jpg"
-      },
-      {
-        "name": "Aryan Garg 🫶🏻",
-        "img": "https://res.cloudinary.com/damjdcgak/image/upload/v1675699641/Makeathon%205%20website/MLSC%20Team%20pictures/IMG-20230113-WA0000_-_Aryan_Garg_kt9y1e.jpg"
-      },
-      {
-        "name": "Sukhmani Arora 🙃",
-        "img": "https://res.cloudinary.com/damjdcgak/image/upload/v1675702113/Makeathon%205%20website/MLSC%20Team%20pictures/Screenshot_20230205_012706_Gallery_-_Sukhmani_Arora_cqqjp8.jpg"
-      },
-      {
-        "name": "Yuvraj S. Chauhan",
-        "img": "https://res.cloudinary.com/damjdcgak/image/upload/v1675693789/Makeathon%205%20website/MLSC%20Team%20pictures/PXL_20221004_083903886_2-01_-_Yuvraj_Singh_Chauhan_duliik.jpg"
-      },
-      {
-        "name": "Samarjeet S. Gandhi",
-        "img": "https://res.cloudinary.com/damjdcgak/image/upload/v1675693786/Makeathon%205%20website/MLSC%20Team%20pictures/PicsArt_01-20-10.50.45_-_Samarjeet_Singh_Gandhi_ttfqj0.jpg"
-      },
-      {
-        "name": "Shambhavi Singh",
-        "img": "https://res.cloudinary.com/damjdcgak/image/upload/v1675693771/Makeathon%205%20website/MLSC%20Team%20pictures/IMG20220727194139_2_-_Shambhavi_Singh_krnaaa.jpg"
-      },
-      {
-        "name": "Tithi Shrivastava",
-        "img": "https://res.cloudinary.com/dcvqnyvvt/image/upload/v1677069113/WhatsApp_Image_2023-02-22_at_18.01.10_ym97jn.jpg"
-      },
-      {
-        "name": "Aaryaveer Gill 🪄",
-        "img": "https://res.cloudinary.com/damjdcgak/image/upload/v1675710900/Makeathon%205%20website/MLSC%20Team%20pictures/IMG-20220415-WA0012_-_Aaryaveer_Gill_derjrd.jpg"
-      },
-      {
-        "name": "Aditi Sharma 🫧",
-        "img": "https://res.cloudinary.com/damjdcgak/image/upload/v1675710300/Makeathon%205%20website/MLSC%20Team%20pictures/Aditi_Sharma_jpeg_dqix0d.jpg"
-      },
-      {
-        "name": "Samarth Paliwal",
-        "img": "https://res.cloudinary.com/damjdcgak/image/upload/v1675703393/Makeathon%205%20website/MLSC%20Team%20pictures/IMG-20230205-WA0024_-_Samarth_Paliwal_fdc8ws.jpg"
-      },
-      {
-        "name": "Sehaj J. Singh",
-        "img": "https://res.cloudinary.com/damjdcgak/image/upload/v1675693649/Makeathon%205%20website/MLSC%20Team%20pictures/IMG_20230205_132148_-_Sehaj_Jot_Singh_gxzvuu.jpg"
-      },
-      {
-        "name": "Once Kaur",
-        "img": "https://res.cloudinary.com/damjdcgak/image/upload/v1675693650/Makeathon%205%20website/MLSC%20Team%20pictures/IMG_20221208_045331_280_-_Once_kaur_jwowyj.jpg"
-      }
-    ]
-  }
+  "secretaries": [
+    {
+      "name": "Apoorva",
+      "img": ""
+    },
+    {
+      "name": "Akshat Jaimini",
+      "img": ""
+    },
+    {
+      "name": "Nimish Medatwal",
+      "img": ""
+    },
+    {
+      "name": "Utkarsh Tripathi",
+      "img": ""
+    },
+    {
+      "name": "Ikshan Bhardwaj",
+      "img": ""
+    },
+    {
+      "name": "Sukhmani Arora",
+      "img": ""
+    },
+    {
+      "name": "Aryan Garg",
+      "img": ""
+    },
+    {
+      "name": "Uday Beswal",
+      "img": ""
+    }
+  ],
+  "heads": [
+    {
+      "name": "Vishisht Bhagabati",
+      "img": ""
+    },
+    {
+      "name": "Sehaj Jot Singh",
+      "img": ""
+    },
+    {
+      "name": "Prakriti Garg",
+      "img": ""
+    },
+    {
+      "name": "Chetandeep Singh",
+      "img": ""
+    },
+    {
+      "name": "Dhruv Bansal",
+      "img": ""
+    },
+    {
+      "name": "Tithi Srivastva",
+      "img": ""
+    }
+  ],
+  "coordinators": [
+    {
+      "name": "Aditya",
+      "img": ""
+    },
+    {
+      "name": "Agrim",
+      "img": ""
+    },
+    {
+      "name": "Akhilesh",
+      "img": ""
+    },
+    {
+      "name": "Akshita",
+      "img": ""
+    },
+    {
+      "name": "Ananay",
+      "img": ""
+    },
+    {
+      "name": "Anirudh",
+      "img": ""
+    },
+    {
+      "name": "Anushka",
+      "img": ""
+    },
+    {
+      "name": "Armaan",
+      "img": ""
+    },
+    {
+      "name": "Arnav",
+      "img": ""
+    },
+    {
+      "name": "Avishi",
+      "img": ""
+    },
+    {
+      "name": "Daanish",
+      "img": ""
+    },
+    {
+      "name": "Dev",
+      "img": ""
+    },
+    {
+      "name": "Jahanvi",
+      "img": ""
+    },
+    {
+      "name": "Jatin",
+      "img": ""
+    },
+    {
+      "name": "Jayita",
+      "img": ""
+    },
+    {
+      "name": "Kavya",
+      "img": ""
+    },
+    {
+      "name": "Krishna",
+      "img": ""
+    },
+    {
+      "name": "Krishnam",
+      "img": ""
+    },
+    {
+      "name": "Mankirat",
+      "img": ""
+    },
+    {
+      "name": "Navdeep",
+      "img": ""
+    },
+    {
+      "name": "Nikhil",
+      "img": ""
+    },
+    {
+      "name": "Palak",
+      "img": ""
+    },
+    {
+      "name": "Parusha",
+      "img": ""
+    },
+    {
+      "name": "Payal",
+      "img": ""
+    },
+    {
+      "name": "Preksha",
+      "img": ""
+    },
+    {
+      "name": "Prisha",
+      "img": ""
+    },
+    {
+      "name": "Priyanshu",
+      "img": ""
+    },
+    {
+      "name": "Raghav",
+      "img": ""
+    },
+    {
+      "name": "Rahul",
+      "img": ""
+    },
+    {
+      "name": "Rajat",
+      "img": ""
+    },
+    {
+      "name": "Rakshith",
+      "img": ""
+    },
+    {
+      "name": "Rohit",
+      "img": ""
+    },
+    {
+      "name": "Saanvi",
+      "img": ""
+    },
+    {
+      "name": "Sarthak",
+      "img": ""
+    },
+    {
+      "name": "Shaurya",
+      "img": ""
+    },
+    {
+      "name": "Siddarth",
+      "img": ""
+    },
+    {
+      "name": "Sparsh",
+      "img": ""
+    },
+    {
+      "name": "Tanmay",
+      "img": ""
+    },
+    {
+      "name": "Uday",
+      "img": ""
+    },
+    {
+      "name": "Vanika",
+      "img": ""
+    },
+    {
+      "name": "Yavisht",
+      "img": ""
+    }
+  ]
+}
