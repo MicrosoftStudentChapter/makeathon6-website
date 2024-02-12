@@ -23,6 +23,7 @@
   "devDependencies": {
     "@cloudflare/next-on-pages": "^1.8.5",
     "eslint": "^8",
-    "eslint-config-next": "14.0.4"
+    "eslint-config-next": "14.0.4",
+    "file-loader": "^6.2.0"
   }
 }
