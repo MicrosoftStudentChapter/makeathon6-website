@@ -85,7 +85,7 @@ Files: crown.glb [9.88MB] > C:\Users\DELL\Downloads\crown-transformed.glb [518.9
 // }
 
 import React, { useRef } from 'react';
-import { useGLTF } from '@react-three/drei';
+import { Text3D, useGLTF } from '@react-three/drei';
 import { Canvas, useFrame } from '@react-three/fiber';
 import './Crown.css';
 import Countdown from '../countdown/Countdown';
@@ -120,11 +120,15 @@ export default function Crown() {
         <directionalLight intensity={15} position={[0, 0, 2]} color="white" />
         <directionalLight intensity={15} position={[0, 0, -2]} color="white" />
         <directionalLight intensity={15} position={[4, 4, 0]} color="golden" />
+
         <RotatingModel nodes={nodes} />
       </Canvas>
-      <div className='countdown'>
-        <Countdown />
-      </div>
+      <Text3D font="./fonts/helvetiker_regular.typeface.json">
+          <div className='countdown'>
+            <Countdown />
+          </div>      
+      </Text3D>
+
     </div>
   );
 }

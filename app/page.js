@@ -16,7 +16,7 @@ export default function Home() {
 
   setTimeout(() => {
     setLoading(false);
-  }, 500000);
+  }, 5000);
 
   return (
     <>
@@ -24,7 +24,7 @@ export default function Home() {
         <Crown />
       ) : (
         <>
-          <DevfolioButton />
+          {/* <DevfolioButton /> */}
           {/* <DynamicClientComponent /> */}
           {/* <Crown /> */}
           <Hamburger isSpecialPage={true}/>

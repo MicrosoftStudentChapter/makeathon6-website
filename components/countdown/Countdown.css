@@ -29,20 +29,68 @@
   }
   
   li {
+      
       font-family: kingvoon;
       display: inline-block;
-      font-size: 1.5em;
       list-style-type: none;
-      padding: 1em;
+      padding: 0.2em;
       text-transform: uppercase;
+      background-image: linear-gradient(
+      to right,
+      #462523 0,
+            #cb9b51 22%, 
+      #f6e27a 45%,
+      #f6f2c0 50%,
+      #f6e27a 55%,
+      #cb9b51 78%,
+      #462523 100%
+      );
+      color:transparent;
+      -webkit-background-clip:text;
   }
-  
+
+.days{
+  transform: translatey(0px);
+  animation: float 6s ease-in-out infinite;
+}
+
+.hours{
+  transform: translatey(0px);
+  animation: float 4.5s ease-in-out infinite;
+}
+
+.minutes{
+  transform: translatey(0px);
+  animation: float 8s ease-in-out infinite;
+}
+
+.seconds{
+  transform: translatey(0px);
+  animation: float 3s ease-in-out infinite;
+}
+
   li span {
       display: block;
       font-size: 4.5rem;
-  }
+      background-image: linear-gradient(
+      to right,
+      #462523 0,
+            #cb9b51 22%, 
+      #f6e27a 45%,
+      #f6f2c0 50%,
+      #f6e27a 55%,
+      #cb9b51 78%,
+      #462523 100%
+      );
+      color:transparent;
+      -webkit-background-clip:text;   
+}
+
   
-    
+.text{
+  font-size: 1.5em;
+  
+}    
     @media all and (max-width: 768px) {
       h1 {
         font-size: calc(1.5rem * var(--smaller));
@@ -61,9 +109,9 @@
       color:white;
       /* background-color: white; */
       border-radius: 20px;
-      padding:10px;
-      margin: 20px;
-      width:150px;
+      padding:0 0 10px 0;
+      margin: 0 10px 10px 10px;
+      width:140px;
       /* background: rgba(255, 255, 255, 0.19); */
       /* border-radius: 16px; */
       /* box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1); */
@@ -137,3 +185,18 @@
     }
   }
   /* 475 400 */
+
+@keyframes float {
+  0% {
+    /* box-shadow: 0 5px 15px 0px rgba(0,0,0,0.6); */
+    transform: translatey(0px);
+  }
+  50% {
+    /* box-shadow: 0 25px 15px 0px rgba(0,0,0,0.2); */
+    transform: translatey(-20px);
+  }
+  100% {
+    /* box-shadow: 0 5px 15px 0px rgba(0,0,0,0.6); */
+    transform: translatey(0px);
+  }
+}

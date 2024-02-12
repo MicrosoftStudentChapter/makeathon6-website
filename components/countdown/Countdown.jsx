@@ -13,8 +13,6 @@ const Countdown = () => {
 			hour = minute * 60,
 			day = hour * 24;
 
-		// I'm adding this section so I don't have to keep updating this pen every year :-)
-		// remove this if you don't need it
 		let today = new Date(),
 			dd = String(today.getDate()).padStart(2, '0'),
 			mm = String(today.getMonth() + 1).padStart(2, '0'),
@@ -55,28 +53,37 @@ const Countdown = () => {
 			<div id="countdown">
 				<ul>
 					<li>
-						<span id="days" className="days">
+						<span id="days text3d" className="days">
 							{days}
 						</span>
-						days
+						<span className='text'>
+							days
+						</span>
 					</li>
 					<li>
-						<span id="hours" className="hours">
+						<span id="hours text3d" className="hours">
 							{hours}
 						</span>
-						Hours
+						<span className='text'>
+							Hours
+						</span>
 					</li>
 					<li>
-						<span id="minutes" className="minutes">
+						<span id="minutes text3d" className="minutes">
 							{minutes}
 						</span>
-						Minutes
+						<span className='text'>
+							Minutes
+						</span>
+						
 					</li>
 					<li>
-						<span id="seconds" className="seconds">
+						<span id="seconds text3d" className="seconds">
 							{seconds}
 						</span>
-						Seconds
+						<span className='text'>
+							Seconds
+						</span>
 					</li>
 				</ul>
 			</div>
