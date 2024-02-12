@@ -102,7 +102,7 @@ function RotatingModel({ nodes }) {
     // Adjust the rotation speed as needed
   });
 
-  const { materials } = useGLTF('/crown2-transformed.glb');
+  const { materials } = useGLTF('/loader/crown.glb');
   return (
     <group ref={group}>
       <mesh geometry={nodes.ironCrown001.geometry} material={materials['None.001']} rotation={[ 0, 0, 0]} />
@@ -111,24 +111,19 @@ function RotatingModel({ nodes }) {
 }
 
 export default function Crown() {
-  const { nodes, material } = useGLTF('/crown2-transformed.glb');
+  const { nodes, material } = useGLTF('/loader/crown.glb');
 
   return (
     <div style={{ width: '100%', height: '100vh' }} className='loaderpage'>
       <Canvas shadows dpr={[1, 1.5]} gl={{ antialias: false }} camera={{ position: [0, -25, -15], fov: 30 }} style={{height:"100vh"}}>
-      {/* <ambientLight intensity={0} color={0xffffff} castShadow /> */}
         <directionalLight intensity={15} position={[0, 0, 2]} color="white" />
         <directionalLight intensity={15} position={[0, 0, -2]} color="white" />
         <directionalLight intensity={15} position={[4, 4, 0]} color="golden" />
-
         <RotatingModel nodes={nodes} />
       </Canvas>
-      <Text3D font="./fonts/helvetiker_regular.typeface.json">
           <div className='countdown'>
             <Countdown />
           </div>      
-      </Text3D>
-
     </div>
   );
 }
