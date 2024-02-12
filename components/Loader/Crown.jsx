@@ -83,8 +83,8 @@ Files: crown.glb [9.88MB] > C:\Users\DELL\Downloads\crown-transformed.glb [518.9
 //     </div>
 //   );
 // }
-
-import React, { useRef } from 'react';
+"use client"
+import React, { useRef, useState } from 'react';
 import { Text3D, useGLTF } from '@react-three/drei';
 import { Canvas, useFrame } from '@react-three/fiber';
 import './Crown.css';
