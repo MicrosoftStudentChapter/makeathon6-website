@@ -251,11 +251,13 @@
 
     }
     .offbtn{
-        left: 26vw !important;
+        left: 50vw !important;
+        top: 81.5vh !important;
     }
     .applybutton{
-        left: 76vw !important;
-        width: 45vw !important;
+        left: 50vw !important;
+        width: 50vw !important;
+        top: 90vh;
     }
     
 } 
@@ -327,12 +329,12 @@
         left: 55%;
     }
 }
-@media screen and (max-width : 325px){
+/* @media screen and (max-width : 325px){
     .applybutton{
         width: 43vw !important;
     }
-}
-@media screen and (max-width : 1025px){
+} */
+/* @media screen and (min-width : 1025px){
     .offbtn{
         left: 30vw !important;
 
@@ -341,7 +343,7 @@
         left: 69vw !important;
         width: 34vw !important;
     }
-}
+} */
 /* @media  screen and (min-width: 1500px){
     .throne{
         top: -1vh;
