@@ -1,6 +1,6 @@
 "use client"
-import React from 'react';
-import { Accordion, AccordionSummary, AccordionDetails, Typography, Box } from '@mui/material';
+import React, { useState } from 'react';
+import { Accordion, AccordionSummary, AccordionDetails, Typography } from '@mui/material';
 import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
 
 const faqData = [
@@ -98,20 +98,29 @@ const faqData = [
 ];
 
 export default function FAQ() {
+  const [expanded, setExpanded] = useState(false);
+
+  const handleChange = (panel) => (event, isExpanded) => {
+    setExpanded(isExpanded ? panel : false);
+  };
+
   return (
     <div style={{ width: '90%', margin: '0 auto' }}>
-      <div style={{ padding: '10 1em' }}>{faqData.map((item, index) => (
-        <Accordion
-          key={index}
-          sx={{
-            backgroundColor: 'rgba(255, 255, 255, 0.1)',
+      <h2>Frequently Asked Questions</h2>
+      {faqData.map((item, index) => (
+        <Accordion 
+          key={index} 
+          expanded={expanded === `panel${index + 1}`}
+          onChange={handleChange(`panel${index + 1}`)}
+          sx={{ 
+            backgroundColor: 'rgba(255, 255, 255, 0.1)', 
             border: '2px solid rgba(255, 255, 255, 0.8)',
             marginBottom: '10px',
             borderRadius: '10px'
           }}
         >
           <AccordionSummary
-            expandIcon={<ExpandMoreIcon sx={{ color: '#ffffff', padding: '0 1em' }} />}
+            expandIcon={<ExpandMoreIcon sx={{ color: '#ffffff' }} />}
             aria-controls={`panel${index + 1}a-content`}
             id={`panel${index + 1}a-header`}
             sx={{ color: '#ffffff', padding: '1em 0' }}
@@ -119,11 +128,10 @@ export default function FAQ() {
             <Typography sx={{ fontSize: '18px', padding: '0 1em' }}>{item.question}</Typography>
           </AccordionSummary>
           <AccordionDetails sx={{ color: '#ffffff', padding: '1em 2em' }}>
-            <Typography sx={{ fontSize: '16px', padding: '0 1em' }}>{item.answer}</Typography>
-          </AccordionDetails >
+            <Typography sx={{ fontSize: '16px' }}>{item.answer}</Typography>
+          </AccordionDetails>
         </Accordion>
       ))}
-      </div>
     </div>
   );
 }
