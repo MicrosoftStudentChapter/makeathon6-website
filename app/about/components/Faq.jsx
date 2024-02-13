@@ -120,7 +120,7 @@ export default function FAQ() {
           }}
         >
           <AccordionSummary
-            expandIcon={<ExpandMoreIcon sx={{ color: '#ffffff' }} />}
+            expandIcon={<ExpandMoreIcon sx={{ color: '#ffffff' , padding: '0 1em'}} />}
             aria-controls={`panel${index + 1}a-content`}
             id={`panel${index + 1}a-header`}
             sx={{ color: '#ffffff', padding: '1em 0' }}
