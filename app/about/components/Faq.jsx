@@ -1,7 +1,7 @@
 "use client"
 import React from 'react';
-import styles from "../about.module.css"
-import { useState } from 'react';
+import { Accordion, AccordionSummary, AccordionDetails, Typography, Box } from '@mui/material';
+import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
 
 const faqData = [
   {
@@ -32,30 +32,33 @@ const faqData = [
   
 ];
 
-const FAQ = () => {
-  const [activeIndex, setActiveIndex] = useState(null);
-
-  const toggleAccordion = (index) => {
-    setActiveIndex(activeIndex === index ? null : index);
-  };
-
+export default function FAQ() {
   return (
-    <div>
+    <div style={{ width: '90%', margin: '0 auto' }}>
+      <h2>Frequently Asked Questions</h2>
       {faqData.map((item, index) => (
-        <div key={index}>
-          <button
-            className={`${styles.accordion} ${activeIndex === index ? styles.active : ''}`}
-            onClick={() => toggleAccordion(index)}
+        <Accordion 
+          key={index} 
+          sx={{ 
+            backgroundColor: 'rgba(255, 255, 255, 0.1)', 
+            border: '2px solid rgba(255, 255, 255, 0.8)',
+            marginBottom: '10px',
+            borderRadius: '10px'
+          }}
+        >
+          <AccordionSummary
+            expandIcon={<ExpandMoreIcon sx={{ color: '#ffffff' }} />}
+            aria-controls={`panel${index + 1}a-content`}
+            id={`panel${index + 1}a-header`}
+            sx={{ color: '#ffffff', padding: '1em 0' }}
           >
-            {item.question}
-          </button>
-          <div className={styles.panel} style={{ display: activeIndex === index ? 'block' : 'none' }}>
-            <p>{item.answer}</p>
-          </div>
-        </div>
+            <Typography sx={{ fontSize: '18px', padding: '0 1em' }}>{item.question}</Typography>
+          </AccordionSummary>
+          <AccordionDetails sx={{ color: '#ffffff', padding: '1em 2em' }}>
+            <Typography sx={{ fontSize: '16px' }}>{item.answer}</Typography>
+          </AccordionDetails>
+        </Accordion>
       ))}
     </div>
   );
-};
-
-export default FAQ;
+}
