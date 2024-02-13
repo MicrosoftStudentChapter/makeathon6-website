@@ -124,18 +124,7 @@ export default function Page() {
                 esse in dolore excepteur. Deserunt magna eiusmod culpa mollit
                 duis.
               </li>
-              <li>
-                Consectetur nisi amet consectetur aute sunt ea proident
-                consectetur excepteur pariatur id sint voluptate nostrud.
-                Exercitation dolore sunt in laboris sint aute irure mollit
-                laborum. Quis do qui laborum Lorem consequat labore voluptate.
-              </li>
-              <li>
-                Consectetur nisi amet consectetur aute sunt ea proident
-                consectetur excepteur pariatur id sint voluptate nostrud.
-                Exercitation dolore sunt in laboris sint aute irure mollit
-                laborum. Quis do qui laborum Lorem consequat labore voluptate.
-              </li>
+             
             </ul>
           </motion.div>
         </div>

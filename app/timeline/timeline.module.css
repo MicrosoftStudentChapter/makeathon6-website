@@ -302,16 +302,18 @@
  }
  }  */
  @media screen and (max-width : 500px){
-    #imgbox{
-       
-        width:75vw ;
+    #imgbox{       
+    width:70vw ;
     height: auto;
-    margin-top: 25%;
+    margin-top: -20%;
     }
     .astrobox{
         overflow: visible;
         margin-top: 0vh;
         flex-direction: column;
+    }
+    .textbox{
+        margin-top: 4%;
     }
     .bgbox{
         overflow: clip;
@@ -319,22 +321,17 @@
  }
 
  @media screen and (max-width : 400px) and (max-height : 740px){
-    #imgbox{
-       
-    margin-top: 45vh;
+    #imgbox{     
+    margin-top: 5vh;
     }
  }
  .ripple {
-    
-   
-  
     animation: ripple 2s linear infinite;
   }
   
   .ripple::before,
   .ripple::after {
     content: "";
- 
     border-radius: 50%;
     animation: inherit;
     animation-delay: 0s;
