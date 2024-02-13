@@ -3,18 +3,13 @@
     color: wheat;
     /* padding: 1vh; */
     border-radius: 0.7vh;
-    width: 16vw;
+    width: 19vw;
     font-size: 2vh;
-    height: 6vh;
+    height: 7vh;
 
 }
 
-@media screen and (max-width : 450px){
-    .btn{
-        width: 50vw;
-    }
-    
-}
+
 @media screen and (max-width : 970px){
     .btn{
         width: 21vw;
@@ -22,7 +17,7 @@
 }
 @media screen and (max-width : 800px){
     .btn{
-        width: 25vw;
+        width: 46vw;
     }
     
 }
@@ -33,11 +28,22 @@
 }
 @media screen and (max-width : 450px){
     .btn{
-        width: 42vw;
+        width: 42vw !important;
+        font-size: 1.5vh !important;
     }
 }
-@media screen and (max-width : 450px){
+@media screen and (max-width : 460px){
     .btn{
         width: 50vw;
+    }
+}
+@media screen and (max-width : 325px){
+    .btn{
+        width: 50vw;
+    }
+}
+@media screen and (max-width: 1025px){
+    .btn{
+        width: 34vw;
     }
 }

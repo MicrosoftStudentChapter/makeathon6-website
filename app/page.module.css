@@ -153,7 +153,23 @@
     transform: translateY(-4px);
   }
 } */
+@media screen and (max-width : 800px) {
+    .row2 {
+        justify-content: space-between;
+        padding: 0 4.438em;
+    }
 
+    .row3 {
+        padding: 0 0.1em;
+    }
+    .offbtn{
+        left:26vw !important ; 
+    }
+    .applybutton{
+        width:42vw !important;
+        left: 76vw !important;
+    }
+}
 @media screen and (max-width : 1460px) {
     .row2 {
         padding: 0 4.438em;
@@ -179,21 +195,10 @@
         padding: 0 2.1em;
     }
 
+
 }
 
-@media screen and (max-width:775px) {
-    .row2 {
-        justify-content: space-between;
-        padding: 0 4.438em;
-    }
 
-    .row3 {
-        padding: 0 0.1em;
-    }
-    .offbtn{
-        left:38vw ;
-    }
-}
 @media screen and (max-width:640px) {
     .row2 {
         padding: 0 2.438em;
@@ -203,7 +208,14 @@
         margin: 0 0;
 
     }
-
+    .applybutton{
+        left: 71vw !important;
+        width: 31vw !important;
+        top: 84.5vh ;
+    }
+    .offbtn{
+        top: 84.5vh !important;
+    }
 }
 
 @media screen and (max-width: 571px) {
@@ -237,6 +249,13 @@
         left: 2em; 
        
 
+    }
+    .offbtn{
+        left: 26vw !important;
+    }
+    .applybutton{
+        left: 76vw !important;
+        width: 45vw !important;
     }
     
 } 
@@ -273,6 +292,7 @@
     .throne{
         top: 0.15vh;
     }
+    
 
 }
 @media screen and (max-height: 850px){
@@ -307,6 +327,21 @@
         left: 55%;
     }
 }
+@media screen and (max-width : 325px){
+    .applybutton{
+        width: 43vw !important;
+    }
+}
+@media screen and (max-width : 1025px){
+    .offbtn{
+        left: 30vw !important;
+
+    }
+    .applybutton{
+        left: 69vw !important;
+        width: 34vw !important;
+    }
+}
 /* @media  screen and (min-width: 1500px){
     .throne{
         top: -1vh;
@@ -322,18 +357,18 @@
 .applybutton{
     position: absolute;
     bottom: 7vh;
-    left: 50vw;
+    left: 60vw;
     transform: translate(-50%);
     z-index: 2;
     background-color: yellow;
-    height:44px;
-    width:312px;
-    /* display: none; */
+    height: 6.4vh;
+    width: 19vw;
+    /* display: none;*/
 }
 .offbtn{
     position: fixed;
-    top: 88vh;
-    left: 44vw;
+    top: 86.5vh;
+    left: 40vw;
     transform: translateX(-50%);
     z-index: 10;
 
