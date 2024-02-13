@@ -190,8 +190,10 @@
     .row3 {
         padding: 0 0.1em;
     }
+    .offbtn{
+        left:38vw ;
+    }
 }
-
 @media screen and (max-width:640px) {
     .row2 {
         padding: 0 2.438em;
@@ -300,6 +302,11 @@
         top: -3vh;
     }
 }
+@media screen and (max-width: 380px){
+    .throne{
+        left: 55%;
+    }
+}
 /* @media  screen and (min-width: 1500px){
     .throne{
         top: -1vh;
@@ -322,4 +329,12 @@
     height:44px;
     width:312px;
     /* display: none; */
+}
+.offbtn{
+    position: fixed;
+    top: 88vh;
+    left: 44vw;
+    transform: translateX(-50%);
+    z-index: 10;
+
 }

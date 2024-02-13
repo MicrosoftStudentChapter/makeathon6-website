@@ -1,0 +1,43 @@
+.btn{
+    background: #3838d6;
+    color: wheat;
+    /* padding: 1vh; */
+    border-radius: 0.7vh;
+    width: 16vw;
+    font-size: 2vh;
+    height: 6vh;
+
+}
+
+@media screen and (max-width : 450px){
+    .btn{
+        width: 50vw;
+    }
+    
+}
+@media screen and (max-width : 970px){
+    .btn{
+        width: 21vw;
+    }
+}
+@media screen and (max-width : 800px){
+    .btn{
+        width: 25vw;
+    }
+    
+}
+@media screen and (max-width : 620px){
+    .btn{
+        width: 33vw;
+    }
+}
+@media screen and (max-width : 450px){
+    .btn{
+        width: 42vw;
+    }
+}
+@media screen and (max-width : 450px){
+    .btn{
+        width: 50vw;
+    }
+}
