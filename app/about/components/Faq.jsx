@@ -105,7 +105,7 @@ export default function FAQ() {
   };
 
   return (
-    <div style={{ width: '90%', margin: '0 auto' }}>
+    <div style={{ width: '9%', margin: '0 auto' }}>
       <h2>Frequently Asked Questions</h2>
       {faqData.map((item, index) => (
         <Accordion 
