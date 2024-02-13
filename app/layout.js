@@ -1,5 +1,5 @@
-
 import './globals.css'
+import App from './app';
 
 export const metadata = {
   title: 'Makeathon 6',
@@ -7,9 +7,6 @@ export const metadata = {
 }
 
 export default function RootLayout({ children }) {
-  return (
-    <html lang="en">
-      <body>{children}</body>
-    </html>
-  )
+  return <App>{children}</App>;
 }
+

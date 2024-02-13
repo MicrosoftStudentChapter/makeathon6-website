@@ -30,8 +30,7 @@
   z-index: 0;
 }
 
-.flaglogo,
-.flaglogo2 {
+.flaglogo {
   z-index: 1;
   position: absolute;
   object-fit: contain;
