@@ -21,6 +21,7 @@ export const ChuLo = () => {
            
             {data["secretaries"].map((index) => (
               <Shakle
+              key={index.id}
                 changeName={setName}
                 image={index.img}
                 name={index.name}
@@ -28,6 +29,7 @@ export const ChuLo = () => {
             ))}
             {data["heads"].map((index) => (
               <Shakle
+              key={index.id}
                 changeName={setName}
                 image={index.img}
                 name={index.name}
@@ -40,6 +42,7 @@ export const ChuLo = () => {
           <Stack direction="row">
             {data["coordinators"].map((index) => (
               <Shakle
+              key={index.id}
                 changeName={setName}
                 image={index.img}
                 name={index.name}
