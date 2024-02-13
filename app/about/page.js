@@ -13,14 +13,14 @@ export default function AboutPage() {
     <div className={styles.container}>
       <div className={styles.mainbox}>
         <div className={styles.makeathon}>
-          <Image src={Makeathon} alt='#' className={styles.makeLogo}/>
+          <Image src={Makeathon} alt='#' className={styles.makeLogo} />
           <p className={styles.abText}>MLSC is poised to showcase its prowess through its upcoming mega flagship event, Makethon6, slated for the end of February. This eagerly anticipated event promises to be a showcase of ingenuity, where students will come together to ideate, innovate, and create solutions to real-world problems, cementing MLSC&apos;s reputation as a hub for budding technocrats and visionaries.</p>
         </div>
         <div className={styles.mlsc}>
-          <p className={styles.abText}>The Microsoft Learning Student Chapter (MLSC) at Thapar Institute of Engineering and Technology, Patiala, stands as a beacon of technical excellence. 
+          <p className={styles.abText}>The Microsoft Learning Student Chapter (MLSC) at Thapar Institute of Engineering and Technology, Patiala, stands as a beacon of technical excellence.
             With a dedicated team of mentors and enthusiasts, MLSC fosters an environment of collaboration and learning, where students can engage in projects, competitions, and networking events. As a vibrant society, it fosters an environment where students can delve into the realm of technology with zeal and innovation.
           </p>
-          <Image src={MLSC} className={styles.logo} alt="MLSC"/>
+          <Image src={MLSC} className={styles.logo} alt="MLSC" />
         </div>
       </div>
 
@@ -31,9 +31,12 @@ export default function AboutPage() {
         <PrizeCard title="3rd Best Hack" image={third} />
       </div>
 
-      <div className={styles.C}>
-        <h1 className={`${styles.thisH1} ${myFont.className}`}>FAQ<span className={styles.s}>s</span></h1>
-        <Faq/>
+      <div className={styles.C}  >
+        <h1 className={`${styles.thisH1} ${myFont.className} `}>FAQ<span className={styles.s}>s</span></h1>
+        <div style={{ padding: '10px' }}>
+
+          <Faq />
+        </div>
       </div>
     </div>
   );
