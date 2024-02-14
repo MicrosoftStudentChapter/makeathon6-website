@@ -15,12 +15,12 @@
         width: 21vw;
     }
 }
-@media screen and (max-width : 800px){
+/* @media screen and (max-width : 800px){
     .btn{
         width: 46vw;
     }
     
-}
+} */
 @media screen and (max-width : 620px){
     .btn{
         width: 33vw;
@@ -44,6 +44,6 @@
 } */
 @media screen and (max-width: 1025px){
     .btn{
-        width: 34vw;
+        width: 25vw;
     }
 }

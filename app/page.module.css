@@ -153,6 +153,12 @@
     transform: translateY(-4px);
   }
 } */
+@media screen and (max-width: 1025px){
+    .applybutton{
+        width:22vw !important;
+        left: 64vw  !important;
+    }
+}
 @media screen and (max-width : 800px) {
     .row2 {
         justify-content: space-between;
@@ -163,11 +169,11 @@
         padding: 0 0.1em;
     }
     .offbtn{
-        left:26vw !important ; 
+        left:35vw !important ; 
     }
     .applybutton{
-        width:42vw !important;
-        left: 76vw !important;
+        width: 25vw !important;
+    left: 67vw !important;
     }
 }
 @media screen and (max-width : 1460px) {
@@ -252,12 +258,12 @@
     }
     .offbtn{
         left: 50vw !important;
-        top: 81.5vh !important;
+        top: 78.5vh !important;
     }
     .applybutton{
         left: 50vw !important;
         width: 50vw !important;
-        top: 90vh;
+        top: 87vh;
     }
     
 } 
