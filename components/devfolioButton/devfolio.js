@@ -1,6 +1,7 @@
 "use client"
 
 import React, { useEffect } from 'react';
+import styles from './devfolio.module.css';
 
 // import Script from 'next/script';
 
@@ -20,7 +21,7 @@ export default function DevfolioButton() {
         <>
         {/* <Script src="https://apply.devfolio.co/v2/sdk.js" async={true} defer={true} /> */}
         <div 
-            className="apply-button" 
+            className={styles.applyButton}
             data-hackathon-slug="duhacks3" 
             data-button-theme="light"
             style={{height: "44px", width: "312px"}}
