@@ -28,7 +28,7 @@ import {
 import { headings } from "./data";
 import { useState } from "react";
 const rotations = [0, 12, 24, 36, 48, 60, 72];
-import Hamburger from "@/components/Hamburger/Hamburger";
+// import Hamburger from "@/components/Hamburger/Hamburger";
 
 export default function Page() {
   const { scrollYProgress } = useScroll();
@@ -60,7 +60,7 @@ export default function Page() {
 
   return (
     <>
-    <Hamburger/>
+    {/* <Hamburger/> */}
     <div style={{height:'500vh'}}>
     <div style={{position:'sticky', top:'0px'}} className={styles.bgbox}>
       <div className={styles.astrobox}>
