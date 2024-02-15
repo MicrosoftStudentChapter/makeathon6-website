@@ -11,7 +11,6 @@
     background-repeat: no-repeat;
     background-position: center center;
     margin-top: -20vh;
-    z-index:-1;
 
 
 }
@@ -68,7 +67,11 @@
     /* transform: rotateY(-35deg) rotateX(0) rotateZ(-2deg);
   transform-style: preserve-3d; */
   transform: perspective(1500px) rotateY(-30deg);
+
+  
 }
+
+
 
 
 .row2 {
@@ -312,14 +315,11 @@
     }
 } */
 
-.applybutton{
-    position: absolute;
+.applyButton{
+    position: fixed;
     bottom: 7vh;
     left: 50vw;
     transform: translate(-50%);
-    z-index: 2;
-    background-color: yellow;
-    height:44px;
-    width:312px;
+    z-index: 10;
     /* display: none; */
 }
