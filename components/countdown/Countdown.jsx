@@ -50,10 +50,10 @@ const Countdown = () => {
 	return (
 		<div className="container">
 			{/* <h1 id="headline">Countdown to my birthday</h1> */}
-			<div id="countdown">
+			<div id="countdown" className='countdown'>
 				<ul>
 					<li>
-						<span id="days text3d" className="days">
+						<span id="days" className="days time">
 							{days}
 						</span>
 						<span className='text'>
@@ -61,7 +61,7 @@ const Countdown = () => {
 						</span>
 					</li>
 					<li>
-						<span id="hours text3d" className="hours">
+						<span id="hours" className="hours time">
 							{hours}
 						</span>
 						<span className='text'>
@@ -69,7 +69,7 @@ const Countdown = () => {
 						</span>
 					</li>
 					<li>
-						<span id="minutes text3d" className="minutes">
+						<span id="minutes" className="minutes time">
 							{minutes}
 						</span>
 						<span className='text'>
@@ -78,7 +78,7 @@ const Countdown = () => {
 						
 					</li>
 					<li>
-						<span id="seconds text3d" className="seconds">
+						<span id="seconds" className="seconds time">
 							{seconds}
 						</span>
 						<span className='text'>
