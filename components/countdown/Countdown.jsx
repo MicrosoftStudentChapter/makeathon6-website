@@ -18,7 +18,7 @@ const Countdown = () => {
 			mm = String(today.getMonth() + 1).padStart(2, '0'),
 			yyyy = today.getFullYear(),
 			nextYear = yyyy + 1,
-			dayMonth = '02/02/',
+			dayMonth = '02/24/',
 			birthday = dayMonth + yyyy;
 
 		today = mm + '/' + dd + '/' + yyyy;
