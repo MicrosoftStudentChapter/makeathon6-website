@@ -101,6 +101,7 @@
     overflow-y: auto;
     display: flex;
     padding:20px;
+    border: 1px dashed white;
   }
 
   .btn {
