@@ -30,6 +30,7 @@
     /* transform: rotateY(35deg) rotateX(0deg) rotateZ(2deg);
     transform-style: preserve-3d; */
     transform: perspective(1500px) rotateY(30deg) rotateZ(2.3deg);
+    background-image: linear-gradient(to bottom right,#024a9700, #acc7e5);
 
 
    
@@ -43,7 +44,7 @@
     /* transform: rotateY(-45deg); */
     /* transform: rotateY(35deg) rotateX(0deg) rotateZ(2deg); */
     transform: perspective(1500px) rotateY(30deg);
-   
+    background-image: linear-gradient(to bottom right,#024a9700, #acc7e5);
 }
 
 .tiltHomeRight1 {
@@ -58,7 +59,8 @@
     /* transform: rotateY(-35deg) rotateX(0) rotateZ(-2deg);
     transform-style: preserve-3d; */
     transform: perspective(1500px) rotateY(-30deg) rotateZ(-2.5deg);
-
+    transform: perspective(1500px) rotateY(-30deg) rotateZ(-2.3deg);
+    background-image: linear-gradient(to bottom left,#024a9700, #acc7e5);
     
 }
 
@@ -68,6 +70,7 @@
     /* transform: rotateY(-35deg) rotateX(0) rotateZ(-2deg);
   transform-style: preserve-3d; */
   transform: perspective(1500px) rotateY(-30deg);
+  background-image: linear-gradient(to bottom left,#024a9700,#acc7e5);
 }
 
 
@@ -126,6 +129,15 @@
     transform: translateX(-50%);
     object-fit: contain;
 }
+.logo_new{
+    position: fixed;
+    top: 5vh;
+    left: 5vw;
+    height: 12vh;
+    width: auto;
+    transform: translateX(-50%);
+    object-fit: contain;
+}
 
 .animation{
     transform: translateZ(8vw);
@@ -164,7 +176,16 @@
         padding: 0 5.1em;
     }
 }
-
+@media screen and (max-width : 375px){
+    .logo_new{
+        left: 11vw;
+    height: 7vh;
+    top: 2vh;
+    }
+    .throne{
+        left : 54.5vw;
+    }
+}
 @media screen and (max-width : 1000px) {
     .throne {
         height: 67vh;
@@ -189,6 +210,9 @@
 
     .row3 {
         padding: 0 0.1em;
+    }
+    .logo_new{
+        left: 7vw;
     }
 }
 
@@ -236,10 +260,23 @@
        
 
     }
-    
+    .logo_new{
+        left: 9vw;
+    height: 9vh;
+    top: 2vh;
+    }
+    /* .hbalign{
+        position: fixed;
+
+        right: 3vh;
+    } */
 } 
 
-
+@media screen and (max-height : 642px){
+    .throne{
+        left : 55%;
+    }
+}
 @media screen and (max-height: 1368px){
    
     .row2{
@@ -300,17 +337,21 @@
         top: -3vh;
     }
 }
-/* @media  screen and (min-width: 1500px){
-    .throne{
-        top: -1vh;
+@media screen and (min-height: 2560px) and (max-width: 1600px){
+    .allButtons{
+        display:none;
     }
 }
-
-@media  screen and (min-width: 1383px){
+@media screen and (max-height: 1920px){
     .throne{
-        top: 15vh;
+        top: 1.15vh;
     }
-} */
+}
+@media screen and (max-height: 1600px){
+    .throne{
+        top: 13.9vh;
+    }
+}
 
 .applyButton{
     position: absolute;
