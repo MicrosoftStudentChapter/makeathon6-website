@@ -21,7 +21,7 @@ export default function Home() {
 
 
       <div className={styles.offbtn}>
-        <OfflineBtn />
+        {/* <OfflineBtn /> */}
 
       </div>     
        {/* <DynamicClientComponent /> */}
