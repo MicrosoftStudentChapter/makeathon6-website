@@ -1,8 +1,13 @@
+
+"use client"
 import styles from './about.module.css'
 import Image from 'next/image'
-import { Footer } from '../../components/footer/Footer'
 import MLSC from '/public/About/MLSC-logo.png'
 // import Prize from './assets/prize.jpeg'
+import { ChuLo } from '@/components/team/team'
+
+
+
 import Faq from './components/Faq'
 import Makeathon from '/public/MLSClogo.png'
 import first from '/public/About/first.png'
@@ -10,11 +15,12 @@ import second from '/public/About/second.png'
 import third from '/public/About/third.png'
 import { myFont } from '@/components/font/myfont'
 import Hamburger from '@/components/Hamburger/Hamburger'
+import { Footer } from "../../components/footer/Footer";
 
 export default function Page() {
     return (
       <>
-    <div>
+    <div className={styles.About}>
       <Hamburger/>
       {/* <div className={styles.menu}>
         <button className={styles.navButton}>Nav</button>
@@ -29,7 +35,7 @@ export default function Page() {
           <div className={styles.mainbox}>
             <div className={styles.makeathon}>
               <Image src={Makeathon} alt='#' className={styles.makeLogo}/>
-              <p className={styles.abText}>MLSC is poised to showcase its prowess through its upcoming mega flagship event, Makethon6, slated for the end of February. This eagerly anticipated event promises to be a showcase of ingenuity, where students will come together to ideate, innovate, and create solutions to real-world problems, cementing MLSC&apos;s reputation as a hub for budding technocrats and visionaries.</p>
+              <p className={styles.abText}>MLSC is poised to showcase its prowess through its upcoming mega flagship event, Makeathon6, slated for the end of February. This eagerly anticipated event promises to be a showcase of ingenuity, where students will come together to ideate, innovate, and create solutions to real-world problems, cementing MLSC&apos;s reputation as a hub for budding technocrats and visionaries.</p>
             </div>
             <div className={styles.mlsc}><p className={styles.abText}>The Microsoft Learning Student Chapter (MLSC) at Thapar Institute of Engineering and Technology, Patiala, stands as a beacon of technical excellence. 
             With a dedicated team of mentors and enthusiasts, MLSC fosters an environment of collaboration and learning, where students can engage in projects, competitions, and networking events.As a vibrant society, it fosters an environment where students can delve into the realm of technology with zeal and innovation.
@@ -74,7 +80,10 @@ export default function Page() {
             <div className={styles.actions}>
               <a className={styles.btn} href="#" target="blank">
                 <span>Know More</span>
-                <img
+                <Image
+                  width={20}
+      height={20}
+                  alt=""
                   className={styles.icon}
                   src="https://res.cloudinary.com/dcvqnyvvt/image/upload/v1677090548/right-arrow_ucify9.png"
                 />
@@ -108,7 +117,11 @@ export default function Page() {
             <div className={styles.actions}>
               <a className={styles.btn}href="#" target="blank">
                 <span>Know More</span>
-                <img
+                <Image
+                width={20}
+      height={20}
+                  
+                  alt=""
                   className={styles.icon}
                   src="https://res.cloudinary.com/dcvqnyvvt/image/upload/v1677090548/right-arrow_ucify9.png"
                 />
@@ -143,7 +156,11 @@ export default function Page() {
             <div className={styles.actions}>
               <a className={styles.btn} href="#" target="blank">
                 <span>Know More</span>
-                <img
+                <Image
+                width={20}
+      height={20}
+                  
+                  alt=""
                   className={styles.icon}
                   src="https://res.cloudinary.com/dcvqnyvvt/image/upload/v1677090548/right-arrow_ucify9.png"
                 />
@@ -152,15 +169,20 @@ export default function Page() {
           </div>  
         </div>
         <div className={styles.C}>
-          <h1 className={`${styles.thisH1} ${myFont.className}`}>FAQs</h1>
+          <h1 className={`${styles.thisH1} ${myFont.className}`}>FAQ<span className={styles.s}>s</span></h1>
           <Faq/>
         </div>
     </div>
+
       
     </div>
     <div>
       <Footer />
+      
+
     </div>
+    <ChuLo></ChuLo>
+
     </>
     )
   }

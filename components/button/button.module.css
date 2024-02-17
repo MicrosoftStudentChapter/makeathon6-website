@@ -5,7 +5,6 @@
   /* transform: rotateY(35deg) perspective(800px); */
   animation: floatAnimation 3s infinite alternate ease-in-out;
 
-
 }
 @keyframes floatAnimation {
   0% {
@@ -18,7 +17,7 @@
 .home {
   background-color: rgb(25 89 154 / 80%);
   text-align: center;
-  width: 23.6vw;
+  width: 21.6vw;
   border: 2px solid rgb(148 214 214);
 
   color: rgba(234, 255, 255, 1);
@@ -36,14 +35,17 @@
   font-family: '--kingvoon';
 
   z-index: 10;
+  /* border-radius: 5px; */
+  letter-spacing: 0.65vh;
+  cursor: url('../../public/Medieval\ Pointer.png'),auto;
 }
 
 
 .box {
   height: 0.1vh;
-  width: 22.667vw;
-  /* margin: 0.625em; */
-  margin-bottom:10px;
+  width: 19.667vw;
+  margin: 0.625em;
+  /* margin-bottom:10px; */
   border: 1px solid rgb(148 214 214);
   border-radius: 5px;
   background-color: rgb(148 214 214);
@@ -52,7 +54,7 @@
 
 .top {
   height: 1vh;
-  width: 23.6vw;
+  width: 21.6vw;
   border: 2px solid rgb(148 214 214);
 
   border-top-left-radius: 5px;
@@ -83,4 +85,8 @@
   .home {
     height: 109px;
   }
+}
+
+.pointer{
+  cursor: url('../../public/Medieval\ Pointer.png'),auto;
 }

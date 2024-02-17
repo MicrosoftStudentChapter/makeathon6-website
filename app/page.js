@@ -8,7 +8,7 @@ import HomeButton from '@/components/button/button'
 import HologramThrone from '@/components/animation/animation'
 import Hamburger from '@/components/Hamburger/Hamburger'
 // import DevfolioButton from '@/components/devfolioButton/devfolio'
-// import Script from 'next/script';
+import Script from 'next/script';
 // import dynamic from 'next/dynamic';
 
 // const DynamicClientComponent = dynamic(() => import('../components/devfolioButton/devfolio'), {
@@ -17,20 +17,49 @@ import Hamburger from '@/components/Hamburger/Hamburger'
 export default function Home() {
   return (
     <>
-      {/* <DevfolioButton /> */}
+
+
+
+      <div className={styles.offbtn}>
+        <OfflineBtn />
+
+      </div>     
+       {/* <DynamicClientComponent /> */}
+
       {/* <DynamicClientComponent /> */}
-      <Hamburger isSpecialPage={true}/>
-      {/* <Script src="https://apply.devfolio.co/v2/sdk.js" async={true} defer={true} />
-        <div 
-            className="apply-button" 
-            data-hackathon-slug="makeathon5" 
-            data-button-theme="light"
-            style={{height: "44px", width: "312px"}}
-        ></div> */}
+
+      <Hamburger isSpecialPage={true} />
+      <div className={styles.applyButton}>
+        <Link href="https://tally.so/r/3EW7yL" style={{textDecoration: "none"}}>
+        <div className={styles.offlineApply}
+        style={{height: "44px", width: "312px"}}
+        >
+          Offline Registration Form
+        </div>
+        </Link>
+        <Script src="https://apply.devfolio.co/v2/sdk.js" async={true} defer={true} />
+
+        <div
+          className={styles.applybutton}
+          data-hackathon-slug="makeathon6"
+          data-button-theme="light"
+        ></div>
+
+          <div 
+              className="apply-button"
+              data-hackathon-slug="makeathon6" 
+              data-button-theme="light"
+              style={{height: "44px", width: "312px"}}
+          ></div>
+
+
+      </div>
       <HologramThrone />
       <div className={styles.home}>
         <Image src="/MLSClogo.png" height={500} width={500} alt="error" className={styles.logo} />
+        <Image src="/About/MLSC-logo.png" height={500} width={500} alt="error" className={styles.logo_new} />
         <Image src="/throneFinal.png" height={500} width={500} alt="error" className={styles.throne} />
+        {/* <Image src="/throneFinal.png" height={500} width={500} alt="error" className={styles.throne} /> */}
 
         <div className={styles.allButtons}>
           <div className={styles.parallelBtns}>

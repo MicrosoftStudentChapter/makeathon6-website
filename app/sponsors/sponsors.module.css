@@ -98,7 +98,7 @@
   justify-content: space-around; */
   width: 117px;
   height: 158px;
-  margin-left: 90%;
+  margin-right: 90%;
 }
 
 @media screen and (max-width: 900px) {
@@ -121,7 +121,7 @@
   .Logo {
     width: 80px;
     height: 100px;
-    margin-left: 85%;
+    margin-right: 85%;
   }
 }
 
@@ -145,14 +145,13 @@
   .Logo {
     width: 80px;
     height: 100px;
-    margin-left: 85%;
+    margin-right: 85%;
   }
   
 
   .flex{
-    display: grid;
-    grid-template-columns: 50% 50%;
-    grid-gap: 5px;
+    display: flex;
+    justify-content: center;
   }
 }
 
@@ -170,7 +169,7 @@
   .Logo {
     width: 60px;
     height: 80px;
-    margin-left: 85%;
+    margin-right: 85%;
   }
 
 .flex{
@@ -192,7 +191,7 @@
 
  .more,
  .gareeb{
-  width: 190px;
+  width: 200px;
   height: 190px;
 }
 }

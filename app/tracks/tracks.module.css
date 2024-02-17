@@ -34,7 +34,7 @@
     text-align: center;
     margin: auto;
     transition: transform .5s;
-    cursor: pointer;
+    cursor: url('../../public/Medieval\ Pointer.png'),auto;
     display: flex;
     justify-content: center;
     align-items: top;
@@ -101,6 +101,7 @@
     overflow-y: auto;
     display: flex;
     padding:20px;
+    border: 1px dashed white;
   }
 
   .btn {
@@ -276,4 +277,8 @@
   .spacing2
   {
     margin-bottom: 25px;
+  }
+
+  .pointer{
+    cursor: url('../../public/Medieval\ Pointer.png'),auto;
   }
