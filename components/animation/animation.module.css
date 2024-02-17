@@ -67,3 +67,9 @@
   /* @media screen and (max-width){
     
   } */
+  @media screen and (min-height: 2560px) and (max-width: 1600px){
+    .hologramThrone{
+      width: 1000px;
+      top: 75vh;
+    }
+  }
