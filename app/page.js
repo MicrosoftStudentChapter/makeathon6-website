@@ -72,7 +72,7 @@ export default function Home() {
                 </Link>
               </div>
               <div className={styles.animation}>
-                <Link href="/sponsors" style={{textDecoration: "none"}}>
+                <Link href="#" style={{textDecoration: "none"}}>
                 <div className={styles.tiltHomeRight2}>
                   <HomeButton title="Sponsors" description="description" />
                 </div>
@@ -82,14 +82,14 @@ export default function Home() {
 
             <div className={styles.row3}>
               <div className={styles.animation}>
-                <Link href="/tracks" style={{textDecoration: "none"}}>
+                <Link href="#" style={{textDecoration: "none"}}>
                 <div className={styles.tiltHomeLeft3}>
                   <HomeButton title="Tracks" description="description" cs = {true}/>
                 </div>
                 </Link>
               </div>
               <div className={styles.animation}>
-                <Link href="/timeline" style={{textDecoration: "none"}}>
+                <Link href="#" style={{textDecoration: "none"}}>
                 <div className={styles.tiltHomeRight3}>
                   <HomeButton title="Timeline" description="description" cs = {true}/>
                 </div>
