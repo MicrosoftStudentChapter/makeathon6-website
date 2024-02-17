@@ -10,7 +10,7 @@
   },
   "dependencies": {
     "@nextui-org/react": "^2.2.9",
-    "@react-three/drei": "^9.97.3",
+    "@react-three/drei": "^9.97.6",
     "@react-three/fiber": "^8.15.16",
     "framer-motion": "^11.0.2",
     "next": "^14.0.4",
