@@ -1,0 +1,231 @@
+{
+  "secretaries": [
+    {
+      "id":1,
+      "name": "Apoorva",
+      "img": "https://res.cloudinary.com/vigkrishna/image/upload/t_Profile/v1689232312/MLSC_WEBSITE/rsz_12rsz_18_one3qy_j48pzq.png"
+    },
+    {
+      "id":2,
+      "name": "Akshat Jaimini",
+      "img": "https://res.cloudinary.com/vigkrishna/image/upload/t_Profile/v1689238650/MLSC_WEBSITE/rsz_1comapplepasteboardkzwspn_htzfch_w2cwyb.png"
+    },
+    {
+      "id":3,
+      "name": "Nimish Medatwal",
+      "img": "https://res.cloudinary.com/vigkrishna/image/upload/v1689238200/MLSC_WEBSITE/rsz_12_qww0hd_herhvu.png"
+    },
+    {"id":4,
+      "name": "Utkarsh Tripathi",
+      "img": "https://res.cloudinary.com/vigkrishna/image/upload/t_Profile/v1689237227/MLSC_WEBSITE/rsz_comapplepasteboardqfg9za_dnohww_yo5d51.png"
+    },
+    {"id":5,
+      "name": "Ikshan Bhardwaj",
+      "img": "https://res.cloudinary.com/vigkrishna/image/upload/v1689261155/MLSC_WEBSITE/ikshan-resize-preview_p5o4nf.png"
+    },
+    {"id":6,
+      "name": "Sukhmani Arora",
+      "img": "https://res.cloudinary.com/vigkrishna/image/upload/t_Profile/v1689236895/MLSC_WEBSITE/rsz_copy_of_sukhmanidi_2x_j5iwrf_t9jz2p.png"
+    },
+    {"id":7,
+      "name": "Aryan Garg",
+      "img": "https://res.cloudinary.com/vigkrishna/image/upload/t_Profile/v1689233546/MLSC_WEBSITE/rsz_1_giy5fk_m8ocby.png"
+    },
+    {"id":8,
+      "name": "Uday Beswal",
+      "img": "https://res.cloudinary.com/vigkrishna/image/upload/v1689238386/MLSC_WEBSITE/rsz_4_skkkrd_byzsna.png"
+    }
+  ],
+  "heads": [
+    {"id":1,
+      "name": "Vishisht Bhagabati",
+      "img": "https://res.cloudinary.com/vigkrishna/image/upload/v1689239306/MLSC_WEBSITE/rsz_7_d287x0_h0thic.png"
+    },
+    {"id":2,
+      "name": "Sehaj Jot Singh",
+      "img": "https://res.cloudinary.com/vigkrishna/image/upload/t_Profile/v1689437272/MLSC_WEBSITE/swipe_2_1_vqnxvq.png"
+    },
+    {"id":3,
+      "name": "Prakriti Garg",
+      "img": "https://res.cloudinary.com/vigkrishna/image/upload/t_Profile/v1689239189/MLSC_WEBSITE/rsz_img-20230615-wa0004-removebg-preview_nalcj1_kqdjak.png"
+    },
+    {"id":4,
+      "name": "Chetandeep Singh",
+      "img": "https://res.cloudinary.com/vigkrishna/image/upload/v1689322846/MLSC_WEBSITE/rsz_comapplepasteboardkzedw4_yr0x6i_d1unlh.png"
+    },
+    {"id":5,
+      "name": "Dhruv Bansal",
+      "img": "https://res.cloudinary.com/vigkrishna/image/upload/v1689239763/MLSC_WEBSITE/rsz_dhruvbhaiya_2x_as18dd_nvi6od.png"
+    },
+    {"id":6,
+      "name": "Tithi Srivastva",
+      "img": "https://res.cloudinary.com/vigkrishna/image/upload/v1689222990/MLSC_WEBSITE/2023-05-29-11-49-23-866_1-removebg-preview_bfrxud.png"
+    }
+  ],
+  "coordinators": [
+    {"id":1,
+      "name": "Aditya",
+      "img": ""
+    },
+    {"id":2,
+      "name": "Agrim",
+      "img": ""
+    },
+    {"id":3,
+      "name": "Akhilesh",
+      "img": ""
+    },
+    {"id":4,
+      "name": "Akshita",
+      "img": ""
+    },
+    {"id":5,
+      "name": "Ananay",
+      "img": ""
+    },
+    {"id":6,
+      "name": "Anirudh",
+      "img": ""
+    },
+    {"id":7,
+      "name": "Anushka",
+      "img": ""
+    },
+    {"id":8,
+      "name": "Armaan",
+      "img": ""
+    },
+    {"id":9,
+      "name": "Arnav",
+      "img": ""
+    },
+    {"id":10,
+      "name": "Avishi",
+      "img": ""
+    },
+    {"id":11,
+      "name": "Daanish",
+      "img": ""
+    },
+    {"id":12,
+      "name": "Dev",
+      "img": ""
+    },
+    {"id":13,
+      "name": "Jahanvi",
+      "img": ""
+    },
+    {"id":14,
+      "name": "Jatin",
+      "img": ""
+    },
+    {"id":15,
+      "name": "Jayita",
+      "img": ""
+    },
+    {"id":16,
+      "name": "Kavya",
+      "img": ""
+    },
+    {"id":17,
+      "name": "Krishna Vig",
+      "img": "https://res.cloudinary.com/vigkrishna/image/upload/t_Profile/v1689224251/MLSC_WEBSITE/IMG_20230421_210431_477_or1eho.png"
+    },
+    {"id":18,
+      "name": "Krishnam",
+      "img": ""
+    },
+    {"id":19,
+      "name": "Mankirat",
+      "img": ""
+    },
+    {"id":20,
+      "name": "Navdeep",
+      "img": ""
+    },
+    {"id":21,
+      "name": "Nikhil",
+      "img": ""
+    },
+    {"id":22,
+      "name": "Palak",
+      "img": ""
+    },
+    {"id":23,
+      "name": "Parusha",
+      "img": ""
+    },
+    {"id":24,
+      "name": "Payal",
+      "img": ""
+    },
+    {"id":25,
+      "name": "Preksha",
+      "img": ""
+    },
+    {"id":26,
+      "name": "Prisha",
+      "img": ""
+    },
+    {"id":27,
+      "name": "Priyanshu",
+      "img": ""
+    },
+    {"id":28,
+      "name": "Raghav",
+      "img": ""
+    },
+    {"id":29,
+      "name": "Rahul",
+      "img": ""
+    },
+    {"id":30,
+      "name": "Rajat",
+      "img": ""
+    },
+    {"id":31,
+      "name": "Rakshith",
+      "img": ""
+    },
+    {"id":32,
+      "name": "Rohit",
+      "img": ""
+    },
+    {"id":33,
+      "name": "Saanvi",
+      "img": ""
+    },
+    {"id":34,
+      "name": "Sarthak",
+      "img": ""
+    },
+    {"id":35,
+      "name": "Shaurya",
+      "img": ""
+    },
+    {"id":36,
+      "name": "Siddarth",
+      "img": ""
+    },
+    {"id":37,
+      "name": "Sparsh",
+      "img": ""
+    },
+    {"id":38,
+      "name": "Tanmay",
+      "img": ""
+    },
+    {"id":39,
+      "name": "Uday",
+      "img": ""
+    },
+    {"id":40,
+      "name": "Vanika",
+      "img": ""
+    },
+    {"id":41,
+      "name": "Yavisht",
+      "img": ""
+    }
+  ]
+}

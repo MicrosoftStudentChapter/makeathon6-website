@@ -1,0 +1,66 @@
+/* .wrapper:hover{
+    animation: bounce 1s infinite;
+} */
+/* I need to add the effect of when on hover it shows the name of banda and their position just above the card */
+
+/* .wrapperInner {
+  -webkit-filter: grayscale(100%); 
+  filter: grayscale(100%);
+}
+
+.wrapperInner:hover {
+  -webkit-filter: grayscale(0%);
+  filter: grayscale(0%);
+} */
+@import url('https://fonts.googleapis.com/css2?family=Jura:wght@300..700&display=swap');
+/* .makeMeBlack {
+  filter: grayscale(0%) !important;
+  -webkit-filter: grayscale(0%) !important;
+}
+
+.makeMeBlack:hover {
+  filter: none !important;
+  -webkit-filter: none !important;
+  background-color: black !important;
+} */
+
+/* Inside shakle.module.css */
+
+.wrapperInner {
+  position: relative;
+}
+
+.name {
+  position: absolute;
+  bottom:-4px;
+  
+  left: 50%;
+  border-radius: 2.5rem;
+  transform: translateX(-50%);
+  background-color: whitesmoke;
+  height: 4.5vh;
+  width: 4.6vw;
+  text-align: center;
+  color:black;
+  font-weight: 900;
+  padding: 10px;
+  font-size: 0.8rem;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  font-family: Jura;
+  
+}
+
+.wrapper:hover .name {
+  opacity: 1;
+}
+
+@media screen and (max-width: 1000px) {
+
+.name{
+  font-size: 0.7rem;
+  width: 8vw;
+  height:5vh;
+}
+
+}
