@@ -87,6 +87,7 @@ Files: crown.glb [9.88MB] > C:\Users\DELL\Downloads\crown-transformed.glb [518.9
 import React, { useRef, useState } from 'react';
 import { Text3D, useGLTF } from '@react-three/drei';
 import { Canvas, useFrame } from '@react-three/fiber';
+import dynamic from 'next/dynamic'
 import './Crown.css';
 import Countdown from '../countdown/Countdown';
 

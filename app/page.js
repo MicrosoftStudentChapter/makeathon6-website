@@ -11,11 +11,12 @@ import Hamburger from '@/components/Hamburger/Hamburger'
 import DevfolioButton from '@/components/devfolioButton/devfolio'
 import Script from 'next/script';
 import Crown from '@/components/Loader/Crown'
-// import dynamic from 'next/dynamic';
+import dynamic from 'next/dynamic';
 
-// const DynamicClientComponent = dynamic(() => import('../components/devfolioButton/devfolio'), {
-//   ssr: false, // Disable server-side rendering
-// });
+const DynamicCrownComponent = dynamic(() => import('../components/Loader/Crown'), {
+  ssr: false, // Disable server-side rendering
+});
+
 export default function Home() {
 
   const [loading, setLoading] = useState(true);
@@ -30,7 +31,7 @@ export default function Home() {
     <>
 
     {loading ? (
-        <Crown />
+        <DynamicCrownComponent />
         ) : (
         <>
             <Hamburger isSpecialPage={true}/>
