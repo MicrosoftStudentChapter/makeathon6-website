@@ -1,0 +1,25 @@
+/* .wrapper:hover{
+    animation: bounce 1s infinite;
+} */
+/* I need to add the effect of when on hover it shows the name of banda and their position just above the card */
+
+/* .wrapperInner {
+  -webkit-filter: grayscale(100%); 
+  filter: grayscale(100%);
+}
+
+.wrapperInner:hover {
+  -webkit-filter: grayscale(0%);
+  filter: grayscale(0%);
+} */
+
+/* .makeMeBlack {
+  filter: grayscale(0%) !important;
+  -webkit-filter: grayscale(0%) !important;
+}
+
+.makeMeBlack:hover {
+  filter: none !important;
+  -webkit-filter: none !important;
+  background-color: black !important;
+} */

@@ -1,5 +1,8 @@
+// "use client"
 import './globals.css'
-import App from './app';
+import { Footer } from '@/components/footer/Footer'
+import Hamburger from '@/components/Hamburger/Hamburger'
+import { usePathname } from 'next/navigation'
 
 export const metadata = {
   title: 'Makeathon 6',
@@ -7,6 +10,28 @@ export const metadata = {
 }
 
 export default function RootLayout({ children }) {
-  return <App>{children}</App>;
+  // const pathName = usePathname();
+  // if (pathName == "/") {
+    return (
+      <html lang="en">
+        <body>{children}</body>
+      </html>
+    );
+  // } else if(pathName=='/timeline'){
+  //   return ( 
+  //     <html lang="en">
+  //       <Hamburger/>
+  //       <body>{children}</body>
+  //     </html>
+  //   );
+  //   }else{
+  //     return(
+  //     <html lang="en">
+  //       <Hamburger/>
+  //       <body>{children}</body>
+  //       <Footer/>
+  //     </html>
+  //     );
+  // }
 }
 

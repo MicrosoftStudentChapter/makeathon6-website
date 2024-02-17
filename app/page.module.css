@@ -11,7 +11,6 @@
     background-repeat: no-repeat;
     background-position: center center;
     margin-top: -20vh;
-    z-index:-1;
 
 
 }
@@ -70,8 +69,15 @@
     /* transform: rotateY(-35deg) rotateX(0) rotateZ(-2deg);
   transform-style: preserve-3d; */
   transform: perspective(1500px) rotateY(-30deg);
+
+
+  
+
   background-image: linear-gradient(to bottom left,#024a9700,#acc7e5);
+
 }
+
+
 
 
 .row2 {
@@ -354,10 +360,13 @@
 }
 
 .applyButton{
-    position: absolute;
+
+    position: fixed;
+
     bottom: 7vh;
     left: 50vw;
     transform: translate(-50%);
+
     z-index: 2;
     /* background-color: yellow; */
     display: flex;
@@ -394,6 +403,10 @@
     cursor: pointer;
 }
 
+
+
+
+
 .offlineApply:hover {
     background-color: #2954BF !important;
 }
@@ -403,3 +416,4 @@
         flex-direction: column;
     }
 }
+

@@ -7,8 +7,7 @@ import styles from './page.module.css'
 import HomeButton from '@/components/button/button'
 import HologramThrone from '@/components/animation/animation'
 import Hamburger from '@/components/Hamburger/Hamburger'
-// import De/
-import DevfolioButton from '@/components/devfolioButton/devfolio'
+// import DevfolioButton from '@/components/devfolioButton/devfolio'
 import Script from 'next/script';
 // import dynamic from 'next/dynamic';
 
@@ -19,7 +18,16 @@ export default function Home() {
   return (
     <>
 
+
+
+      <div className={styles.offbtn}>
+        <OfflineBtn />
+
+      </div>     
+       {/* <DynamicClientComponent /> */}
+
       {/* <DynamicClientComponent /> */}
+
       <Hamburger isSpecialPage={true} />
       <div className={styles.applyButton}>
         <Link href="https://tally.so/r/3EW7yL" style={{textDecoration: "none"}}>
@@ -30,12 +38,20 @@ export default function Home() {
         </div>
         </Link>
         <Script src="https://apply.devfolio.co/v2/sdk.js" async={true} defer={true} />
+
+        <div
+          className={styles.applybutton}
+          data-hackathon-slug="makeathon6"
+          data-button-theme="light"
+        ></div>
+
           <div 
               className="apply-button"
               data-hackathon-slug="makeathon6" 
               data-button-theme="light"
               style={{height: "44px", width: "312px"}}
           ></div>
+
 
       </div>
       <HologramThrone />
