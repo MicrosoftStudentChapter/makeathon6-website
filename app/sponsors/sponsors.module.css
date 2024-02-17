@@ -98,7 +98,7 @@
   justify-content: space-around; */
   width: 117px;
   height: 158px;
-  margin-left: 90%;
+  margin-right: 90%;
 }
 
 @media screen and (max-width: 900px) {
@@ -121,7 +121,7 @@
   .Logo {
     width: 80px;
     height: 100px;
-    margin-left: 85%;
+    margin-right: 85%;
   }
 }
 
@@ -145,7 +145,7 @@
   .Logo {
     width: 80px;
     height: 100px;
-    margin-left: 85%;
+    margin-right: 85%;
   }
   
 
@@ -169,7 +169,7 @@
   .Logo {
     width: 60px;
     height: 80px;
-    margin-left: 85%;
+    margin-right: 85%;
   }
 
 .flex{
