@@ -153,29 +153,7 @@
     transform: translateY(-4px);
   }
 } */
-@media screen and (max-width: 1025px){
-    .applybutton{
-        width:22vw !important;
-        left: 64vw  !important;
-    }
-}
-@media screen and (max-width : 800px) {
-    .row2 {
-        justify-content: space-between;
-        padding: 0 4.438em;
-    }
 
-    .row3 {
-        padding: 0 0.1em;
-    }
-    .offbtn{
-        left:35vw !important ; 
-    }
-    .applybutton{
-        width: 25vw !important;
-    left: 67vw !important;
-    }
-}
 @media screen and (max-width : 1460px) {
     .row2 {
         padding: 0 4.438em;
@@ -201,9 +179,18 @@
         padding: 0 2.1em;
     }
 
-
 }
 
+@media screen and (max-width:775px) {
+    .row2 {
+        justify-content: space-between;
+        padding: 0 4.438em;
+    }
+
+    .row3 {
+        padding: 0 0.1em;
+    }
+}
 
 @media screen and (max-width:640px) {
     .row2 {
@@ -214,14 +201,7 @@
         margin: 0 0;
 
     }
-    .applybutton{
-        left: 71vw !important;
-        width: 31vw !important;
-        top: 84.5vh ;
-    }
-    .offbtn{
-        top: 84.5vh !important;
-    }
+
 }
 
 @media screen and (max-width: 571px) {
@@ -255,15 +235,6 @@
         left: 2em; 
        
 
-    }
-    .offbtn{
-        left: 50vw !important;
-        top: 78.5vh !important;
-    }
-    .applybutton{
-        left: 50vw !important;
-        width: 50vw !important;
-        top: 87vh;
     }
     
 } 
@@ -300,7 +271,6 @@
     .throne{
         top: 0.15vh;
     }
-    
 
 }
 @media screen and (max-height: 850px){
@@ -330,26 +300,6 @@
         top: -3vh;
     }
 }
-@media screen and (max-width: 380px){
-    .throne{
-        left: 55%;
-    }
-}
-/* @media screen and (max-width : 325px){
-    .applybutton{
-        width: 43vw !important;
-    }
-} */
-/* @media screen and (min-width : 1025px){
-    .offbtn{
-        left: 30vw !important;
-
-    }
-    .applybutton{
-        left: 69vw !important;
-        width: 34vw !important;
-    }
-} */
 /* @media  screen and (min-width: 1500px){
     .throne{
         top: -1vh;
@@ -365,19 +315,11 @@
 .applybutton{
     position: absolute;
     bottom: 7vh;
-    left: 60vw;
+    left: 50vw;
     transform: translate(-50%);
     z-index: 2;
     background-color: yellow;
-    height: 6.4vh;
-    width: 19vw;
-    /* display: none;*/
-}
-.offbtn{
-    position: fixed;
-    top: 86.5vh;
-    left: 40vw;
-    transform: translateX(-50%);
-    z-index: 10;
-
+    height:44px;
+    width:312px;
+    /* display: none; */
 }
