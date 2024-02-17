@@ -95,10 +95,9 @@
 }
 .HamburgerMain{
     position: fixed;
-    
     height: 100vh;
     width: 100vw;
-    z-index: 2;
+    z-index: 3;
     top: 0vh;
     display: block;
     /* transition: all 0.8s ease-in-out;

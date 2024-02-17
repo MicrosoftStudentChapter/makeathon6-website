@@ -1,0 +1,39 @@
+.loaderpage{
+    background: black;
+}
+
+.countdown{
+    position:absolute;
+    bottom:4%;
+}
+
+@media all and (max-width: 768px) {
+    .countdown{
+        top: 30%;
+    }
+}
+
+@media only screen and (max-width: 500px) {
+    .countdown{
+        top: 30%;
+    }
+}
+
+@media only screen and (max-width: 390px) {
+    .countdown{
+        top: 30%;
+    }
+}
+
+
+@media only screen and (max-width: 375px) {
+    .countdown{
+        top: 30%;
+    }
+}
+
+@media only screen and (max-width: 350px) {
+    .countdown{
+        top: 30%;
+    }
+}

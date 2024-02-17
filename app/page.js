@@ -1,26 +1,43 @@
 
-// "use client"
-
+"use client"
+import React from 'react'
+import { useState } from 'react'
 import Link from 'next/link'
 import Image from 'next/image'
 import styles from './page.module.css'
 import HomeButton from '@/components/button/button'
 import HologramThrone from '@/components/animation/animation'
 import Hamburger from '@/components/Hamburger/Hamburger'
-// import De/
 import DevfolioButton from '@/components/devfolioButton/devfolio'
 import Script from 'next/script';
-// import dynamic from 'next/dynamic';
+import Crown from '@/components/Loader/Crown'
+import dynamic from 'next/dynamic';
 
-// const DynamicClientComponent = dynamic(() => import('../components/devfolioButton/devfolio'), {
-//   ssr: false, // Disable server-side rendering
-// });
+
+//lazy loading for GLB file as Next doesn't have SSR for GLB/OBJ/GLTF files 
+// !important
+const DynamicCrownComponent = dynamic(() => import('../components/Loader/Crown'), {
+  ssr: false, // Disable server-side rendering
+});
+
 export default function Home() {
+
+  const [loading, setLoading] = useState(true);
+
+  setTimeout(() => {
+    setLoading(false);
+  }, 5000);
+
+    
   return (
+    
     <>
 
-      {/* <DynamicClientComponent /> */}
-      <Hamburger isSpecialPage={true} />
+    {loading ? (
+        <DynamicCrownComponent />
+        ) : (
+        <>
+            <Hamburger isSpecialPage={true}/>
       <div className={styles.applyButton}>
         <Link href="https://tally.so/r/3EW7yL" style={{textDecoration: "none"}}>
         <div className={styles.offlineApply}
@@ -84,7 +101,10 @@ export default function Home() {
           </div>
         </div>
       </div>
+      </>
+        )}
+      {/* <DynamicClientComponent /> */}
+      
     </>
   );
 }
-
