@@ -29,6 +29,7 @@
     /* transform: rotateY(35deg) rotateX(0deg) rotateZ(2deg);
     transform-style: preserve-3d; */
     transform: perspective(1500px) rotateY(30deg) rotateZ(2.3deg);
+    background-image: linear-gradient(to bottom right,#024a9700, #acc7e5);
 
 
    
@@ -42,7 +43,7 @@
     /* transform: rotateY(-45deg); */
     /* transform: rotateY(35deg) rotateX(0deg) rotateZ(2deg); */
     transform: perspective(1500px) rotateY(30deg);
-   
+    background-image: linear-gradient(to bottom right,#024a9700, #acc7e5);
 }
 
 .tiltHomeRight1 {
@@ -57,7 +58,8 @@
     /* transform: rotateY(-35deg) rotateX(0) rotateZ(-2deg);
     transform-style: preserve-3d; */
     transform: perspective(1500px) rotateY(-30deg) rotateZ(-2.5deg);
-
+    transform: perspective(1500px) rotateY(-30deg) rotateZ(-2.3deg);
+    background-image: linear-gradient(to bottom left,#024a9700, #acc7e5);
     
 }
 
@@ -68,7 +70,11 @@
   transform-style: preserve-3d; */
   transform: perspective(1500px) rotateY(-30deg);
 
+
   
+
+  background-image: linear-gradient(to bottom left,#024a9700,#acc7e5);
+
 }
 
 
@@ -129,6 +135,15 @@
     transform: translateX(-50%);
     object-fit: contain;
 }
+.logo_new{
+    position: fixed;
+    top: 5vh;
+    left: 5vw;
+    height: 12vh;
+    width: auto;
+    transform: translateX(-50%);
+    object-fit: contain;
+}
 
 .animation{
     transform: translateZ(8vw);
@@ -156,29 +171,7 @@
     transform: translateY(-4px);
   }
 } */
-@media screen and (max-width: 1025px){
-    .applybutton{
-        width:22vw !important;
-        left: 64vw  !important;
-    }
-}
-@media screen and (max-width : 800px) {
-    .row2 {
-        justify-content: space-between;
-        padding: 0 4.438em;
-    }
 
-    .row3 {
-        padding: 0 0.1em;
-    }
-    .offbtn{
-        left:35vw !important ; 
-    }
-    .applybutton{
-        width: 25vw !important;
-    left: 67vw !important;
-    }
-}
 @media screen and (max-width : 1460px) {
     .row2 {
         padding: 0 4.438em;
@@ -189,7 +182,16 @@
         padding: 0 5.1em;
     }
 }
-
+@media screen and (max-width : 375px){
+    .logo_new{
+        left: 11vw;
+    height: 7vh;
+    top: 2vh;
+    }
+    .throne{
+        left : 54.5vw;
+    }
+}
 @media screen and (max-width : 1000px) {
     .throne {
         height: 67vh;
@@ -204,9 +206,21 @@
         padding: 0 2.1em;
     }
 
-
 }
 
+@media screen and (max-width:775px) {
+    .row2 {
+        justify-content: space-between;
+        padding: 0 4.438em;
+    }
+
+    .row3 {
+        padding: 0 0.1em;
+    }
+    .logo_new{
+        left: 7vw;
+    }
+}
 
 @media screen and (max-width:640px) {
     .row2 {
@@ -217,14 +231,7 @@
         margin: 0 0;
 
     }
-    .applybutton{
-        left: 71vw !important;
-        width: 31vw !important;
-        top: 84.5vh ;
-    }
-    .offbtn{
-        top: 84.5vh !important;
-    }
+
 }
 
 @media screen and (max-width: 571px) {
@@ -259,19 +266,23 @@
        
 
     }
-    .offbtn{
-        left: 50vw !important;
-        top: 78.5vh !important;
+    .logo_new{
+        left: 9vw;
+    height: 9vh;
+    top: 2vh;
     }
-    .applybutton{
-        left: 50vw !important;
-        width: 50vw !important;
-        top: 87vh;
-    }
-    
+    /* .hbalign{
+        position: fixed;
+
+        right: 3vh;
+    } */
 } 
 
-
+@media screen and (max-height : 642px){
+    .throne{
+        left : 55%;
+    }
+}
 @media screen and (max-height: 1368px){
    
     .row2{
@@ -303,7 +314,6 @@
     .throne{
         top: 0.15vh;
     }
-    
 
 }
 @media screen and (max-height: 850px){
@@ -333,56 +343,77 @@
         top: -3vh;
     }
 }
-@media screen and (max-width: 380px){
-    .throne{
-        left: 55%;
+@media screen and (min-height: 2560px) and (max-width: 1600px){
+    .allButtons{
+        display:none;
     }
 }
-/* @media screen and (max-width : 325px){
-    .applybutton{
-        width: 43vw !important;
-    }
-} */
-/* @media screen and (min-width : 1025px){
-    .offbtn{
-        left: 30vw !important;
-
-    }
-    .applybutton{
-        left: 69vw !important;
-        width: 34vw !important;
-    }
-} */
-/* @media  screen and (min-width: 1500px){
+@media screen and (max-height: 1920px){
     .throne{
-        top: -1vh;
+        top: 1.15vh;
     }
 }
-
-@media  screen and (min-width: 1383px){
+@media screen and (max-height: 1600px){
     .throne{
-        top: 15vh;
+        top: 6vh;
     }
-} */
+}
 
 .applyButton{
+
     position: fixed;
+
     bottom: 7vh;
-    left: 60vw;
+    left: 50vw;
     transform: translate(-50%);
 
     z-index: 2;
-    background-color: yellow;
-    height: 6.4vh;
-    width: 19vw;
-    /* display: none;*/
+    /* background-color: yellow; */
+    display: flex;
+    gap: 5px;
+    justify-content: center;
+    align-items: center;
+    /* height:44px;
+    width:312px; */
+    /* display: none; */
 }
-.offbtn{
-    position: fixed;
-    top: 86.5vh;
-    left: 40vw;
-    transform: translateX(-50%);
-    z-index: 10;
 
 
+.offlineApply {
+    background-color: #3770FF;
+    border-radius: 6px;
+    border: none;
+    color: #FFFFFF;
+    cursor: pointer;
+    display: -ms-flexbox;
+    display: -webkit-box;
+    display: flex;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol';
+    font-size: 18px;
+    font-weight: 600;
+    justify-content: center;
+    align-items: center;
 }
+/* 
+.apply-button{
+    background-color: #0048ff;
+} */
+
+.offlineApply:not([disabled]) {
+    cursor: pointer;
+}
+
+
+
+
+
+.offlineApply:hover {
+    background-color: #2954BF !important;
+}
+
+@media screen and (max-width: 630px) {
+    .applyButton {
+        flex-direction: column;
+    }
+}
+
