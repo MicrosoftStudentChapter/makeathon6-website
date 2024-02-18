@@ -1,42 +1,53 @@
 [
   {
     "id": 1,
-    "title": "Event 1",
-    "description": "Description for Event 1",
-    "brief": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum 00.",
-    "problem_line1": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum 01.",
-    "problem_line2": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum 02.",
-    "problem_line3": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum 03.",
-    "image": "/tracks/Mask_group.png"
+    "title": "Web3 Innovations",
+    "description": "Web3 innovations, akin to ancient trade routes, pioneer a decentralized digital landscape, fostering transparency, security, and autonomy, echoing the the decentralized nature of ancient marketplaces.",
+    "brief": "Web3 innovations, akin to ancient trade routes, pioneer a decentralized digital landscape, fostering transparency, security, and autonomy, echoing the the decentralized nature of ancient marketplaces.",
+    "problem_line1": "Coming Soon!",
+    "problem_line2": "Coming Soon!",
+    "problem_line3": "Coming Soon!",
+    "image": "/tracks/web3.jpg"
+    
   },
   {
     "id": 2,
-    "title": "Event 2",
-    "description": "Description for Event 2",
-    "brief": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum 10.",
-    "problem_line1": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum 11.",
-    "problem_line2": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum 12.",
-    "problem_line3": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum 13.",
-    "image": "/tracks/Mask_group.png"
+    "title": "Fintech and Cybersec",
+    "description": "Embrace the spirit of ancient commerce with fintech and cybersecurity, modernizing financial landscapes and safeguarding digital realms, echoing the ing principles of ancient market security and trade innovation.",
+    "brief": "Embrace the spirit of ancient commerce with fintech and cybersecurity, modernizing financial landscapes and safeguarding digital realms, echoing the ing principles of ancient market security and trade innovation.",
+    "problem_line1": "Coming Soon!",
+    "problem_line2": "Coming Soon!",
+    "problem_line3": "Coming Soon!",
+    "image": "/tracks/cyber.jpg"
   },
   {
     "id": 3,
-    "title": "Event 3",
-    "description": "Description for Event 3",
-    "brief": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum 20.",
-    "problem_line1": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum 21.",
-    "problem_line2": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum 22.",
-    "problem_line3": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum 23.",
-    "image": "/tracks/Mask_group.png"
+    "title": "Revolutionsing Sustainability",
+    "description": "Make a world where sustainability is a deeply embedded reality. Find innovative solutions to redefine food production, waste management or even energy to name a few. In this sustainable world, vertical farms and waste-to-energy innovations redefine urban landscapes, ensuring efficient food production and minimal environmental impact. Al-powered recycling bins seamlessly sort waste, contributing to a circular economy where resources are continuously repurposed.",
+    "brief": "Make a world where sustainability is a deeply embedded reality. Find innovative solutions to redefine food production, waste management or even energy to name a few. In this sustainable world, vertical farms and waste-to-energy innovations redefine urban landscapes, ensuring efficient food production and minimal environmental impact. Al-powered recycling bins seamlessly sort waste, contributing to a circular economy where resources are continuously repurposed.",
+    "problem_line1": "Coming Soon!",
+    "problem_line2": "Coming Soon!",
+    "problem_line3": "Coming Soon!",
+   "image": "/tracks/sus.png"
   },
   {
     "id": 4,
-    "title": "Event 4",
-    "description": "Description for Event 4",
-    "brief": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum 30.",
-    "problem_line1": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum 31.",
-    "problem_line2": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum 32.",
-    "problem_line3": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum 33.",
-    "image": "/tracks/Mask_group.png"
+    "title": "Medieval Innovation",
+    "description": "Reimagining the groundbreaking inventions by unleashing your creativity to develop modern-day solutions inspired by the ingenious minds of the Middle Ages. You will have the opportunity to leverage technology and Push the boundaries of digital innovation to bring the thrill of discovery to life.",
+    "brief": "Reimagining the groundbreaking inventions by unleashing your creativity to develop modern-day solutions inspired by the ingenious minds of the Middle Ages. You will have the opportunity to leverage technology and Push the boundaries of digital innovation to bring the thrill of discovery to life.",
+    "problem_line1": "Coming Soon!",
+    "problem_line2": "Coming Soon!",
+    "problem_line3": "Coming Soon!",
+    "image": "/tracks/medinopng.jpg"
+  },
+  {
+    "id": 5,
+    "title": "Open Innovation",
+    "description": "Innovation knows no boundaries, unlock new possibilities by thinking outside the box fueled by the collective talent and creativity of diverse minds.",
+    "brief" : "Innovation knows no boundaries, unlock new possibilities by thinking outside the box fueled by the collective talent and creativity of diverse minds.",
+    "problem_line1": "Coming Soon!",
+    "problem_line2": "Coming Soon!",
+    "problem_line3": "Coming Soon!",
+    "image": "/tracks/openi.png"
   }
 ]

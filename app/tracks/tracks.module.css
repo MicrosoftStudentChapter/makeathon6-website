@@ -13,38 +13,51 @@
     position: relative;
     overflow-y: auto;
     min-height:100vh;
+    z-index: 0;
+   
   }
 
 .container{
+  
     display: flex;
     flex-wrap: wrap;
-    gap:15px;
+    gap: 100px;
     justify-content: space-evenly;
     align-items: center;
     padding: 20px;
     height: 500px;
+
+    overflow-y: scroll;
+    
 }
+
+.container::-webkit-scrollbar {
+  display: none; 
+}
+
 
 .Ev{
     background-image: url('./assets/Union.svg');
     background-repeat: no-repeat;
     background-size: contain;
     height: 500px;
-    width: 300px;
+    width: 350px;
     text-align: center;
     margin: auto;
     transition: transform .5s;
     cursor: url('../../public/Medieval\ Pointer.png'),auto;
     display: flex;
     justify-content: center;
-    align-items: top;
+    align-items: center;
     position: relative;
     transition: ease-in-out 0.2s;
+    
+
 }
 
 .Ev:hover{
     transform: scale(1.05);
-    box-shadow: 0 0 60px 8px black ;
+    box-shadow: 0 0 20px 8px black ;
     transition: box-shadow 1.5s;
     backdrop-filter: blur(5px);
     transition: ease-in-out 0.5s;
@@ -52,10 +65,26 @@
 }
 
 .heading{
-    padding-top:20px;
+    padding:5px;
+    /* margin-top: 50%; */
+    width: 250px;
     font-family: Heading;
-    text-align: center;
-    color: rgb(255, 255, 255);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* text-align: center; */
+    color:  rgb(57, 57, 57);
+    font-size: 33px ;
+ 
+    /* From https://css.glass */
+/* From https://css.glass */
+background: rgba(255, 255, 255, 0.2);
+border-radius: 16px;
+box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+backdrop-filter: blur(7.3px);
+-webkit-backdrop-filter: blur(7.3px);
+border: 1px solid rgba(255, 255, 255, 0.3);
+   
 }
 
 .mainheading{
@@ -68,10 +97,15 @@
     text-shadow: 5px 5px 2px black;
 }
 
-.para{
+/* .para{
     color: white;
     text-align: center;
-} 
+    padding-left: 50px;
+    padding-right: 50px;
+    padding-top: 10px;
+    
+   
+}  */
 
 .overlay {
     position: fixed;
@@ -151,15 +185,32 @@
     justify-content: center;
     align-items: center;
     flex-wrap:wrap;
-
+    position: relative;
   }
   .card{
-    background-image: url('./assets/Mask_group.png');
-    background-size: contain;
-    width: 100%;
-    height: 90%;
-    background-repeat: no-repeat;
-    background-position: center center;
+    /* background-image: url('./assets/sus.png'); */
+    /* background-size: contain; */
+    /* object-fit: cover;
+    position: absolute; */
+    /* background-repeat: no-repeat; */
+    /* background-position: center center; */
+    /* flex-shrink: 0; */
+    /* display: flex;
+    justify-content: left;
+    top: 0; */
+    /* object-fit: cover;  */
+    border-radius: 5px; 
+    
+    /* filter: blur(5px); */
+    /* z-index: -1; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* margin-left: 40px; */
+    /* height: %;
+    width: auto; */
+    
+    
 
   }
 
@@ -175,6 +226,9 @@
     object-fit: cover; 
     border-radius: 5px; 
     margin:20px;
+    /* filter: blur(5px); */
+    z-index: -1;
+   
   }
 
   .eventContent{
@@ -184,13 +238,13 @@
   @media (min-width: 1151px) {
     .main {
       font-size:large;}
-      .card{
+      /* .card{
         width: 85%;
       }
       .popupimage{
         width: 100%;
-      }  
-  }
+      }*/  
+  } 
   
   @media (min-width: 761px) and (max-width:1150px) {
     .main {
@@ -212,7 +266,8 @@
       padding:50px;
     }
     .card{
-      width: 50%;
+      width: 70%;
+      height: 90%;
     }
     .popupimage{
       width: 100%;
@@ -256,16 +311,26 @@
     }
     .eventContent {
       width: 100%;
+      display: flex;
+      justify-content: center;
     }
     .btn{
       right: 7.5%;
       margin: 0px;
     }
     .heading{
-      font-size: 22px;
+      font-size: 10px;
+      width: 100px;
     }
     .para{
-      font-size: 10px;
+
+      width: 50px;
+      height: 100px;
+      font-size: 7px;
+      padding-top: 5px;
+      padding-left: 65px;
+      padding-right: 0px;
+      
     }
   }
 
