@@ -1,3 +1,4 @@
+"use client"
 import styles from './about.module.css';
 import Image from 'next/image';
 import MLSC from '/public/About/MLSC-logo.png';
@@ -7,6 +8,7 @@ import first from '/public/About/first.png';
 import second from '/public/About/second.png';
 import third from '/public/About/third.png';
 import { myFont } from '@/components/font/myfont';
+import { ChuLo } from '@/components/team/team';
 
 export default function AboutPage() {
   return (
@@ -36,6 +38,7 @@ export default function AboutPage() {
         <div style={{ padding: '10px' }}>
 
           <Faq />
+          <ChuLo/>
         </div>
       </div>
     </div>

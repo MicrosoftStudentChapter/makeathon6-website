@@ -114,7 +114,7 @@
     
 }
 
-.astroimage4, .astroimage5, .astroimage6, .astroimage7, .astroimage8, .astroimage9, .astroimage10, .astroimage11{
+.astroimage4, .astroimage5, .astroimage6, .astroimage7, .astroimage8, .astroimage9, .astroimage10, .astroimage11, .astroimage12{
     position: absolute;
     z-index: 22;
     height: 3.2%;
@@ -163,6 +163,11 @@
 .astroimage11{
     left: 25%;
     top: 3%;
+}
+
+.astroimage12{
+    left: 40%;
+    top: -1.35%;
 }
 
 .hoverglow

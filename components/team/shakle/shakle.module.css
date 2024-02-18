@@ -1,0 +1,37 @@
+@import url('https://fonts.googleapis.com/css2?family=Jura:wght@300..700&display=swap');
+
+.wrapperInner {
+  position: relative;
+}
+
+.name {
+  position: absolute;
+  top: calc(60% + 2px); 
+  left: 50%;
+  border-radius: 2.5rem;
+  transform: translateX(-50%);
+  background-color: whitesmoke;
+  height: auto; 
+  width: 100%; 
+  text-align: center;
+  color: black;
+  font-weight: 900;
+  padding: 10px;
+  font-size: 0.8rem;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  font-family: 'Jura';
+}
+
+.wrapper:hover .name {
+  opacity: 1;
+}
+
+@media screen and (max-width: 1000px) {
+  .name {
+    font-size: 0.7rem;
+    width: auto;
+    max-width: 100%; 
+    top: calc(60% + 5px); 
+  }
+}
