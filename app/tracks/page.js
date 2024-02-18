@@ -37,7 +37,8 @@ export default function Page() {
       >
         <div className={styles.eventContent}>
           <h1 className={styles.heading}>{title}</h1>
-          <p className={styles.para}>{description}</p>
+          {/* <p className={styles.para}>{description}</p>
+           This had the description on the card face;now removed due to poor visuals */}
         </div>
         <div className={styles.eventImage}>
           <Image
@@ -45,14 +46,14 @@ export default function Page() {
             src={image}
             alt={title}
             height={455}
-            width={250}
+            width={270}
             style={{ borderRadius: "5px" }}
           />
         </div>
       </motion.div>
     );
   };
-
+  
   return (
     <>
       {/* <Hamburger /> */}
@@ -75,7 +76,15 @@ export default function Page() {
             <div className={styles.popup}>
               <div className={styles.flex}>
                 <div className={styles.popupimage}>
-                  <div className={styles.card}></div>
+                  <div className={styles.card}>
+                  <Image className={styles.card}
+                    src={selectedEvent.image}
+            height={455}
+            width={270}
+            
+            style={{ borderRadius: "5px" }}
+          />
+                  </div>
                 </div>
                 <div className={styles.content}>
                   <h1 className={styles.spacing2}>Brief:</h1>
@@ -85,7 +94,9 @@ export default function Page() {
                     <li className={styles.spacing1}>
                       {selectedEvent.problem_line1}
                     </li>
-                    <p></p>
+                    {/* Remove this comment to add more problem statements */}
+
+                    {/* <p></p>
                     <li className={styles.spacing1}>
                       {selectedEvent.problem_line2}
                     </li>
@@ -93,7 +104,7 @@ export default function Page() {
                     <li className={styles.spacing1}>
                       {selectedEvent.problem_line3}
                     </li>
-                    <p></p>
+                    <p></p> */}
                   </ul>
                 </div>
               </div>
@@ -106,4 +117,5 @@ export default function Page() {
       )}
     </>
   );
+  
 }
