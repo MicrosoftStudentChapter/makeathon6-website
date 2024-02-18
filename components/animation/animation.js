@@ -22,6 +22,7 @@ const getRandomCharacter = () => {
 //   return positions;
 // };
 useEffect(() => {
+  // console.log("useEffect")
   const interval = 100;
   const maxCharacters = 200;
 

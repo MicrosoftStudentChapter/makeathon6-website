@@ -3,7 +3,7 @@ import Link from 'next/link'
 import Image from 'next/image'
 import styles from './page.module.css'
 import HomeButton from '@/components/button/button'
-import HologramThrone from '@/components/animation/animation'
+// import HologramThrone from '@/components/animation/animation'
 import Hamburger from '@/components/Hamburger/Hamburger'
 import Script from 'next/script';
 
@@ -28,7 +28,7 @@ export default function HomePage(){
           ></div>
 
       </div>
-      <HologramThrone />
+      {/* <HologramThrone /> */}
       <div className={styles.home}>
         <div>
       <Image src="/bgFinal.png" fill style={{objectFit:"cover"}}/>
