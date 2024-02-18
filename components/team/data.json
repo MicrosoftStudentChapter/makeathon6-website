@@ -3,7 +3,7 @@
     {
       "id":1,
       "name": "Apoorva",
-      "img": "https://res.cloudinary.com/vigkrishna/image/upload/t_Profile/v1689232312/MLSC_WEBSITE/rsz_12rsz_18_one3qy_j48pzq.png"
+      "img": "https://res.cloudinary.com/vigkrishna/image/upload/t_Profile/v1689222925/MLSC_WEBSITE/8_one3qy.png"
     },
     {
       "id":2,
@@ -25,7 +25,7 @@
     },
     {"id":6,
       "name": "Sukhmani Arora",
-      "img": "https://res.cloudinary.com/vigkrishna/image/upload/t_Profile/v1689236895/MLSC_WEBSITE/rsz_copy_of_sukhmanidi_2x_j5iwrf_t9jz2p.png"
+      "img": "https://res.cloudinary.com/vigkrishna/image/upload/t_1/v1689234038/MLSC_WEBSITE/Copy_of_sukhmaniDi_2x_j5iwrf.png"
     },
     {"id":7,
       "name": "Aryan Garg",
@@ -65,167 +65,122 @@
   "coordinators": [
     {"id":1,
       "name": "Aditya",
-      "img": ""
+      "img": "https://res.cloudinary.com/vigkrishna/image/upload/t_Profile/v1708238542/MLSC_WEBSITE/zibgpfcqwcfybzlsuazo.png"
     },
     {"id":2,
       "name": "Agrim",
-      "img": ""
+      "img": "https://res.cloudinary.com/vigkrishna/image/upload/t_Profile/v1708238650/MLSC_WEBSITE/ss8wuylucarmmfpnltm5.png"
     },
-    {"id":3,
-      "name": "Akhilesh",
-      "img": ""
-    },
+   
     {"id":4,
       "name": "Akshita",
-      "img": ""
+      "img": "https://res.cloudinary.com/vigkrishna/image/upload/t_Profile/v1708238587/MLSC_WEBSITE/tf0qisca3vymmcbfvpks.png"
     },
     {"id":5,
       "name": "Ananay",
-      "img": ""
+      "img": "https://res.cloudinary.com/vigkrishna/image/upload/t_Profile/v1708239828/MLSC_WEBSITE/yftprskxyg9y6mv6jt7g.png"
     },
     {"id":6,
       "name": "Anirudh",
-      "img": ""
+      "img": "https://res.cloudinary.com/vigkrishna/image/upload/t_Profile/v1708238630/MLSC_WEBSITE/nn0mclncmoltt6wdyg6l.png"
     },
-    {"id":7,
-      "name": "Anushka",
-      "img": ""
-    },
+    
     {"id":8,
       "name": "Armaan",
-      "img": ""
+      "img": "https://res.cloudinary.com/vigkrishna/image/upload/t_Profile/v1708238432/MLSC_WEBSITE/r0aru9ek8zcblnfe0ej0.png"
     },
     {"id":9,
       "name": "Arnav",
-      "img": ""
+      "img": "https://res.cloudinary.com/vigkrishna/image/upload/t_Profile/v1708238617/MLSC_WEBSITE/jaamarae2ltkmhji9gsx.png"
     },
-    {"id":10,
-      "name": "Avishi",
-      "img": ""
-    },
-    {"id":11,
-      "name": "Daanish",
-      "img": ""
-    },
+    
     {"id":12,
       "name": "Dev",
-      "img": ""
+      "img": "https://res.cloudinary.com/vigkrishna/image/upload/t_Profile/v1708238687/MLSC_WEBSITE/ngzqf6vlclftywzk5gfd.png"
     },
     {"id":13,
       "name": "Jahanvi",
-      "img": ""
+      "img": "https://res.cloudinary.com/vigkrishna/image/upload/t_Profile/v1708238511/MLSC_WEBSITE/n39snhqhqqzhpaq4k7l5.png"
     },
     {"id":14,
       "name": "Jatin",
-      "img": ""
+      "img": "https://res.cloudinary.com/vigkrishna/image/upload/t_Profile/v1708238561/MLSC_WEBSITE/lnq2nsafk9ixvdrlwi6l.png"
     },
-    {"id":15,
-      "name": "Jayita",
-      "img": ""
-    },
-    {"id":16,
-      "name": "Kavya",
-      "img": ""
-    },
+    
     {"id":17,
       "name": "Krishna Vig",
       "img": "https://res.cloudinary.com/vigkrishna/image/upload/t_Profile/v1689224251/MLSC_WEBSITE/IMG_20230421_210431_477_or1eho.png"
     },
     {"id":18,
       "name": "Krishnam",
-      "img": ""
+      "img": "https://res.cloudinary.com/vigkrishna/image/upload/t_Profile/v1708238674/MLSC_WEBSITE/ohlidp1arjfxsus0ly3m.png"
     },
-    {"id":19,
-      "name": "Mankirat",
-      "img": ""
-    },
+    
     {"id":20,
       "name": "Navdeep",
-      "img": ""
+      "img": "https://res.cloudinary.com/vigkrishna/image/upload/t_Profile/v1708238517/MLSC_WEBSITE/fb03c4hfjrp0fa9wz7hx.png"
     },
     {"id":21,
       "name": "Nikhil",
-      "img": ""
+      "img": "https://res.cloudinary.com/vigkrishna/image/upload/t_Profile/v1708238621/MLSC_WEBSITE/mt4lkeaacu2pve8o2aup.png"
     },
     {"id":22,
       "name": "Palak",
-      "img": ""
+      "img": "https://res.cloudinary.com/vigkrishna/image/upload/t_Profile/v1708238489/MLSC_WEBSITE/mfp6gyrvnmf1zalpvtd3.png"
     },
     {"id":23,
       "name": "Parusha",
-      "img": ""
+      "img": "https://res.cloudinary.com/vigkrishna/image/upload/t_Profile/v1708238497/MLSC_WEBSITE/db50ycwosximlpmof4ua.png"
     },
     {"id":24,
       "name": "Payal",
-      "img": ""
+      "img": "https://res.cloudinary.com/vigkrishna/image/upload/t_Profile/v1708238341/MLSC_WEBSITE/htbxwbqum5p3zy3oxmay.png"
     },
     {"id":25,
       "name": "Preksha",
-      "img": ""
+      "img": "https://res.cloudinary.com/vigkrishna/image/upload/t_Profile/v1708238656/MLSC_WEBSITE/n3jojevaewqjscbeil7v.png"
     },
     {"id":26,
       "name": "Prisha",
-      "img": ""
+      "img": "https://res.cloudinary.com/vigkrishna/image/upload/t_Profile/v1708238592/MLSC_WEBSITE/v6colvfkahmxvh85mopw.png"
     },
-    {"id":27,
-      "name": "Priyanshu",
-      "img": ""
-    },
-    {"id":28,
-      "name": "Raghav",
-      "img": ""
-    },
-    {"id":29,
-      "name": "Rahul",
-      "img": ""
-    },
+    
     {"id":30,
       "name": "Rajat",
-      "img": ""
+      "img": "https://res.cloudinary.com/vigkrishna/image/upload/t_Profile/v1708238533/MLSC_WEBSITE/xzmxnxl0km3l1ilkl2ew.png"
     },
-    {"id":31,
-      "name": "Rakshith",
-      "img": ""
-    },
-    {"id":32,
-      "name": "Rohit",
-      "img": ""
-    },
-    {"id":33,
-      "name": "Saanvi",
-      "img": ""
-    },
+    
     {"id":34,
       "name": "Sarthak",
-      "img": ""
+      "img": "https://res.cloudinary.com/vigkrishna/image/upload/t_Profile/v1708238413/MLSC_WEBSITE/xlopw0onp6unltx0sici.png"
     },
     {"id":35,
       "name": "Shaurya",
-      "img": ""
+      "img": "https://res.cloudinary.com/vigkrishna/image/upload/t_Profile/v1708238390/MLSC_WEBSITE/nabhykrblqsxmyjzkvlv.png"
     },
     {"id":36,
       "name": "Siddarth",
-      "img": ""
+      "img": "https://res.cloudinary.com/vigkrishna/image/upload/t_Profile/v1708238461/MLSC_WEBSITE/tzg20ubdbdls5zut1bj0.png"
     },
     {"id":37,
       "name": "Sparsh",
-      "img": ""
+      "img": "https://res.cloudinary.com/vigkrishna/image/upload/t_Profile/v1708238571/MLSC_WEBSITE/sjkamxlrlmlvppetj6pr.png"
     },
     {"id":38,
       "name": "Tanmay",
-      "img": ""
+      "img": "https://res.cloudinary.com/vigkrishna/image/upload/t_Profile/v1708238468/MLSC_WEBSITE/otqeskpiu3ugvgddvg6g.png"
     },
     {"id":39,
       "name": "Uday",
-      "img": ""
+      "img": "https://res.cloudinary.com/vigkrishna/image/upload/t_Profile/v1708238681/MLSC_WEBSITE/aellqg81sjj9kp3pgyfp.png"
     },
     {"id":40,
       "name": "Vanika",
-      "img": ""
+      "img": "https://res.cloudinary.com/vigkrishna/image/upload/t_Profile/v1708238610/MLSC_WEBSITE/xth0perswnzrinp8bosh.png"
     },
     {"id":41,
       "name": "Yavisht",
-      "img": ""
+      "img": "https://res.cloudinary.com/vigkrishna/image/upload/t_Profile/v1708238369/MLSC_WEBSITE/zzqibzl9lmvsihb1sjml.png"
     }
   ]
 }

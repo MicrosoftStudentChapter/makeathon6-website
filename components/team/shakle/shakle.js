@@ -1,5 +1,5 @@
 // Inside Shakle.js
-
+"use client"
 import React, { useState } from "react";
 import styles from "./shakle.module.css";
 import Avatar from "@mui/material/Avatar";
@@ -37,8 +37,7 @@ export function Shakle(prop) {
             display: "flex",
     alignItems: "center",
     justifyContent: "center",
-    transform: hovered ? "scale(1.1)" : "scale(1)",
-    transition: "transform 0.1s ease",
+   
             // "&:hover": {
             //   opacity: 1,
             //   transition: "opacity 250ms ease-in-out",
@@ -52,6 +51,7 @@ export function Shakle(prop) {
             // opacity: 0.7,
             // Filter: "grayscale(100%)",
             // WebkitFilter: "grayscale(100%)",
+          
           }}
           alt="Card Photo"
           src={prop.image}
