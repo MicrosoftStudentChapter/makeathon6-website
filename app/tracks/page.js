@@ -18,10 +18,12 @@ export default function Page() {
 
   const handleEventClick = (event) => {
     setSelectedEvent(event);
+    document.body.style.overflow="hidden";//to prevent behind page from scrolling when popup is opened
   };
 
   const handleGoBack = () => {
     setSelectedEvent(null);
+    document.body.style.overflow="auto";//to revert the overflow changes when popup is closed
   };
 
   const generateEventDiv = (event , index) => {
@@ -34,6 +36,7 @@ export default function Page() {
         key={id}
         className={styles.Ev}
         onClick={() => handleEventClick(event)}
+        
       >
         <div className={styles.eventContent}>
           <h1 className={styles.heading}>{title}</h1>
@@ -53,6 +56,7 @@ export default function Page() {
       </motion.div>
     );
   };
+  
   
   return (
     <>
