@@ -27,7 +27,7 @@ import {
 
 import { headings } from "./data";
 import { useState } from "react";
-const rotations = [0, 13, 27, 40, 54, 66, 82, 98];
+const rotations = [0, 13, 27, 40, 54, 66, 82, 98, 115];
 import Hamburger from "@/components/Hamburger/Hamburger";
 
 export default function Page() {
@@ -35,8 +35,8 @@ export default function Page() {
 
   const changetracker = useTransform(
     scrollYProgress,
-    [0, 0.15, 0.3, 0.45, 0.6, 0.75, 0.9, 1],
-    [0, 1, 2, 3, 4, 5, 6, 7]
+    [0, 0.13, 0.26, 0.39, 0.52, 0.65, 0.78, 0.9, 1],
+    [0, 1, 2, 3, 4, 5, 6, 7, 8]
   );
 
   
@@ -91,6 +91,7 @@ export default function Page() {
             <Image src={ell34} className={`${styles.astroimage9} ${glowIndex===5?styles.hoverglow:''} ${styles.ripple}`} />
             <Image src={ell35} className={`${styles.astroimage10} ${glowIndex===6?styles.hoverglow:''} ${styles.ripple}`} />
             <Image src={ell36} className={`${styles.astroimage11} ${glowIndex===7?styles.hoverglow:''} ${styles.ripple}`} />
+            <Image src={ell36} className={`${styles.astroimage12} ${glowIndex===8?styles.hoverglow:''} ${styles.ripple}`} />
             <p className={styles.parag}>{date()}</p>
           </div>
         </div>
