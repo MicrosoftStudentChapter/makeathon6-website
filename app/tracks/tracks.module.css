@@ -11,7 +11,7 @@
     background-attachment: fixed;
     flex-wrap: wrap;
     position: relative;
-    overflow-y: auto;
+    overflow-y:hidden;
     min-height:100vh;
     z-index: 0;
    
@@ -25,9 +25,9 @@
     justify-content: space-evenly;
     align-items: center;
     padding: 20px;
-    height: 500px;
+    height: 100%;
+margin-bottom: 25px;
 
-    overflow-y: scroll;
     
 }
 
