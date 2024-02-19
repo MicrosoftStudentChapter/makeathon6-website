@@ -93,7 +93,12 @@
       "name": "Arnav",
       "img": "https://res.cloudinary.com/vigkrishna/image/upload/t_Profile/v1708238617/MLSC_WEBSITE/jaamarae2ltkmhji9gsx.png"
     },
-    
+    {
+      "id":10,
+      "name": "Daanish",
+      "img":"https://res.cloudinary.com/vigkrishna/image/upload/t_Profile/v1708337775/MLSC_WEBSITE/wytocwjmbc15mxsmfqf6.png"
+    }
+    ,
     {"id":12,
       "name": "Dev",
       "img": "https://res.cloudinary.com/vigkrishna/image/upload/t_Profile/v1708238687/MLSC_WEBSITE/ngzqf6vlclftywzk5gfd.png"
