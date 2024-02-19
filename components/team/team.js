@@ -10,8 +10,8 @@ const jura = Jura({ subsets: ["latin"] });
 export const ChuLo = () => {
   const [name, setName] = useState("MLSC");
   return (
-    <div className={styles.wrapper}>
-      <div className={styles.slider} style={{ fontFamily: jura.css }}>
+    <div className={`${styles.wrapper} ${jura.className}`}>
+      <div className={styles.slider}>
         {/* Apply Jura font to the slider */}
         <div className={styles.eb}>EXECUTIVE BOARD</div>
         <Marquee pauseOnHover="true" gradientWidth={0} speed={105} style={{ padding: "2.2vh" }}>
