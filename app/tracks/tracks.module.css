@@ -231,7 +231,7 @@ border: 1px solid rgba(255, 255, 255, 0.3);
        font-size:large;
       }
       .card{
-        width: 85%;
+        width: 100%;
       }
       .popupimage{
         width: 100%;
@@ -243,7 +243,7 @@ border: 1px solid rgba(255, 255, 255, 0.3);
       font-size:large;
     }
     .card{
-      width: 85%;
+      width: 100%;
     }
     .popupimage{
       width: 100%;
