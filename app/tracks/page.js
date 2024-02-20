@@ -81,13 +81,11 @@ export default function Page() {
               <div className={styles.flex}>
                 <div className={styles.popupimage}>
                   <div className={styles.card}>
-                  <Image className={styles.card}
-                    src={selectedEvent.image}
-            height={455}
-            width={270}
-            
-            style={{ borderRadius: "5px" }}
-          />
+                    <Image className={styles.ok}
+                      src={selectedEvent.image}
+                      layout="fill"
+                      objectFit="contain"
+                    />
                   </div>
                 </div>
                 <div className={styles.content}>
