@@ -75,7 +75,7 @@ margin-bottom: 25px;
     /* text-align: center; */
     color:  rgb(57, 57, 57);
     font-size: 33px ;
- 
+    cursor: url('../../public/Medieval\ Pointer.png'),auto;
     /* From https://css.glass */
 /* From https://css.glass */
 background: rgba(255, 255, 255, 0.2);
@@ -148,6 +148,7 @@ border: 1px solid rgba(255, 255, 255, 0.3);
     position: absolute;
     right: 20px;
     margin: 15px;
+    cursor: url('../../public/Medieval\ Pointer.png'),auto;
   }
   
   .btn:hover {
@@ -174,44 +175,34 @@ border: 1px solid rgba(255, 255, 255, 0.3);
     width:100%;
   }
 
-  .popupimage{
-    background-image: url('./assets/Union.svg');
-    background-size:contain;
-    height:100%;
+  .popupimage{ 
+    height:90%;
     width: 30%;
-    background-repeat: no-repeat;
-    background-position: center center;
+    max-width: 30%;
     display:flex;
     justify-content: center;
     align-items: center;
     flex-wrap:wrap;
     position: relative;
   }
-  .card{
-    /* background-image: url('./assets/sus.png'); */
-    /* background-size: contain; */
-    /* object-fit: cover;
-    position: absolute; */
-    /* background-repeat: no-repeat; */
-    /* background-position: center center; */
-    /* flex-shrink: 0; */
-    /* display: flex;
-    justify-content: left;
-    top: 0; */
-    /* object-fit: cover;  */
-    border-radius: 5px; 
-    
-    /* filter: blur(5px); */
-    /* z-index: -1; */
+  .card{    
+    background-image: url('./assets/Union.svg');
+    background-size:contain;
+    background-repeat: no-repeat;
+    background-position: center center;
     display: flex;
     align-items: center;
     justify-content: center;
-    /* margin-left: 40px; */
-    /* height: %;
-    width: auto; */
-    
-    
-
+    padding:20px;
+    width:100%;
+    height:100%;
+  }
+  .ok{
+    margin-top:20px;
+    border-radius: 5px; 
+    display: flex;
+    align-items: center;
+    justify-content: center;
   }
 
   .content{
@@ -236,14 +227,15 @@ border: 1px solid rgba(255, 255, 255, 0.3);
   }
 
   @media (min-width: 1151px) {
-    .main {
-      font-size:large;}
-      /* .card{
+      .main {
+       font-size:large;
+      }
+      .card{
         width: 85%;
       }
       .popupimage{
         width: 100%;
-      }*/  
+      }  
   } 
   
   @media (min-width: 761px) and (max-width:1150px) {
@@ -267,19 +259,24 @@ border: 1px solid rgba(255, 255, 255, 0.3);
     }
     .card{
       width: 70%;
-      height: 90%;
+      height: 100%;
     }
     .popupimage{
       width: 100%;
       height: 50%;
-      
+      max-width: 100%;
+      display: flex;
+      justify-content: center;
     }
     .content{
+      margin-top: 50px;
       max-width: max-content;
       padding: 10px;
     }
     .flex{
-      display: block;
+      display: flex;
+      justify-content: center;
+      flex-direction: column;
       padding: 10px;
     }
     .container {
