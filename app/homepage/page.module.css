@@ -250,7 +250,8 @@
       
          height: 81vh;
         top: 9vh; 
-        left: 53.65vw;
+        /* left: 53.65vw; */
+        left: 55% !important;
     } 
 
     .menu {
