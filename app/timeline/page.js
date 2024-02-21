@@ -25,7 +25,7 @@ import {
   useTransform,
 } from "framer-motion";
 
-import { headings } from "./data";
+import { headings, dt, img } from "./data";
 import { useState } from "react";
 const rotations = [0, 13, 27, 40, 54, 66, 82, 98, 115];
 import Hamburger from "@/components/Hamburger/Hamburger";
@@ -98,7 +98,7 @@ export default function Page() {
         <div className={styles.textbox}>
           <motion.div onClick={()=>{
             setCi((ci + 1) % 5)
-          }} className={styles.mikibox}>
+          }} className={styles.mikibo}>
             <motion.h1
               key = {headings[ci]}
               initial={{ y : 50}}
@@ -112,21 +112,17 @@ export default function Page() {
               animate={{ y : 0 }} 
               transition={{duration:0.3}}
               className={styles.minibox}>
-            <ul className={styles.para}>
-              <li>
-                Voluptate exercitation aliquip pariatur in voluptate duis esse
-                irure occaecat. Cillum dolore velit occaecat aute duis dolor.
-                Duis qui id aliquip cillum incididunt in. Nisi mollit do nostrud
-                sunt Lorem ullamco cillum fugiat ut sint. Aute laboris
-                incididunt elit et anim..
-              </li>
-              <li>
-                Veniam cupidatat commodo elit pariatur adipisicing. Adipisicing
-                esse in dolore excepteur. Deserunt magna eiusmod culpa mollit
-                duis.
-              </li>
+              
+              <motion.div>
+              {img[ci]}
+              </motion.div>
+              <motion.div >
+              {dt[ci]}
+              
+              </motion.div>
+              
              
-            </ul>
+            
           </motion.div>
         </div>
       </div>

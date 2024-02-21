@@ -204,15 +204,16 @@
 }
 
 
-.para{
+/* .para{
     font-family: 'Times New Roman', Times, serif;
     color: white;
     text-align:justify;
     justify-content: space-around;
     display: flex;
     flex-wrap: wrap;
+    flex-direction: row;
 
-}
+} */
 
 .parag{
     text-align:center;
@@ -223,9 +224,11 @@
 }
 
 .minibox{
+    font-family: 'Times New Roman', Times, serif;
+    color: white;
     display: flex;
-    justify-content: space-around;
-    margin-bottom: 1em;
+    flex-wrap: wrap;
+    align-items: center;
 
 }
 
@@ -241,6 +244,12 @@
 .mikibox{
     padding: 2em;
 }
+
+/* .divimg{
+    height: 30%;
+    object-fit: contain;
+    width: 30%;
+} */
 
 @keyframes rotate {
     0% {transform: rotate(0deg);}
