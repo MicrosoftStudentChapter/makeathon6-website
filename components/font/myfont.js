@@ -14,9 +14,10 @@ export const myFontBold = Jura({
   subsets: ['latin'],
   weight: '600'
 })
-// localFont({
-//   src: '../../public/fonts/Kingvoon.woff',
-//   display: 'swap',
-// })
+
+export const cantebutry = localFont({
+  src: '../../public/fonts/Canterbury.ttf',
+  display: 'swap',
+})
 
 // export const juraFont = Jura

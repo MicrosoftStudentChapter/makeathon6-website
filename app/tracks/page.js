@@ -7,6 +7,7 @@ import Image from "next/image";
 // import Hamburger from "@/components/Hamburger/Hamburger";
 
 import { motion } from "framer-motion";
+import { cantebutry } from "@/components/font/myfont";
 
 const variants = {
   hidden: {  y: 50 },
@@ -39,7 +40,7 @@ export default function Page() {
         
       >
         <div className={styles.eventContent}>
-          <h1 className={styles.heading}>{title}</h1>
+          <h1 className={`${styles.heading} ${cantebutry.className}`}>{title}</h1>
           {/* <p className={styles.para}>{description}</p>
            This had the description on the card face;now removed due to poor visuals */}
         </div>
@@ -62,10 +63,8 @@ export default function Page() {
     <>
       {/* <Hamburger /> */}
       <div className={styles.main}>
-        <h1 className={styles.mainheading}>Tracks</h1>
+        <h1 className={`${cantebutry.className} ${styles.mainheading}`}>Tracks</h1>
         <motion.div
-          
-        
           className={styles.container}
         >
           {Content.map((event , index) => generateEventDiv(event , index))}
