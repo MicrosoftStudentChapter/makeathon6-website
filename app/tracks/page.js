@@ -1,5 +1,5 @@
 "use client";
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import styles from "./tracks.module.css";
 import Content from "./data.json"; 
 import Image from "next/image";
@@ -16,7 +16,24 @@ const variants = {
 };
 
 export default function Page() {
+  
   const [selectedEvent, setSelectedEvent] = useState(null);
+
+  useEffect(() => {
+    const handleKeyPress = (event) => {
+      if (event.key === "Escape") {
+        handleGoBack();
+      }
+    };
+
+    if (selectedEvent) {
+      document.addEventListener("keydown", handleKeyPress);
+    }
+
+    return () => {
+      document.removeEventListener("keydown", handleKeyPress);
+    };
+  }, [selectedEvent]);
 
   const handleEventClick = (event) => {
     setSelectedEvent(event);
@@ -59,6 +76,49 @@ export default function Page() {
     );
   };
   
+  const ProblemStatement = ({ statement, ds, rs }) => {
+    return (
+      <li className={styles.spacing1}>
+        {statement}
+        {ds && <br />}
+        {ds && (
+          <a href={ds} target="_blank" rel="noopener noreferrer">
+            <button
+              style={{
+                fontSize: "1.1rem",
+                padding: "0.5rem 1rem",
+                borderRadius: "5px",
+                backgroundColor: "#f5f5f5",
+                border: "none",
+                cursor: "pointer",
+                marginTop: "1rem",
+              }}
+            >
+              Dataset
+            </button>
+          </a>
+        )}
+        {rs && <br />}
+        {rs && (
+          <a href={rs} target="_blank" rel="noopener noreferrer">
+            <button
+              style={{
+                fontSize: "1.1rem",
+                padding: "0.5rem 1rem",
+                borderRadius: "5px",
+                backgroundColor: "#f5f5f5",
+                border: "none",
+                cursor: "pointer",
+                marginTop: "1rem",
+              }}
+            >
+              Reference
+            </button>
+          </a>
+        )}
+      </li>
+    );
+  };
   
   return (
     <>
@@ -93,20 +153,21 @@ export default function Page() {
                   <p className={styles.spacing2}>{selectedEvent.brief}</p>
                   <h1 className={styles.spacing2}>Problem statements:</h1>
                   <ul>
-                    <li className={styles.spacing1}>
-                      {selectedEvent.problem_line1}
-                    </li>
-                    {/* Remove this comment to add more problem statements */}
-
-                    {/* <p></p>
-                    <li className={styles.spacing1}>
-                      {selectedEvent.problem_line2}
-                    </li>
-                    <p></p>
-                    <li className={styles.spacing1}>
-                      {selectedEvent.problem_line3}
-                    </li>
-                    <p></p> */}
+                    {Array.from({ length: 5 }, (_, i) => {
+                      const problemLine = selectedEvent[`problem_line${i + 1}`];
+                      const ds = selectedEvent[`ds${i + 1}`];
+                      const rs = selectedEvent[`rs${i + 1}`];
+                      return (
+                        problemLine && (
+                          <ProblemStatement
+                            statement={problemLine}
+                            ds={ds}
+                            key={i}
+                            rs={rs}
+                          />
+                        )
+                      );
+                    })}
                   </ul>
                 </div>
               </div>
