@@ -359,7 +359,7 @@
     bottom: 7vh;
     left: 50vw;
     transform: translate(-50%);
-    z-index: 2;
+    z-index: 20;
     /* background-color: yellow; */
     display: flex;
     gap: 5px;
