@@ -94,7 +94,7 @@ export default function Page() {
                   </div>
                 </div>
                 <div className={styles.content}>
-                <h1 className={styles.popupheading}>{selectedEvent.title}</h1>
+                <h1 className={styles.popupheading}>{selectedEvent.title}</h1>  {/*heading added to popup window*/}
                   <h1 className={styles.spacing2}>Brief:</h1>
                   <p className={styles.spacing2}>{selectedEvent.brief}</p>
                   <h1 className={styles.spacing2}>Problem statements:</h1>
