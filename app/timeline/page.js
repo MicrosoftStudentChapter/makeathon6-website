@@ -117,7 +117,7 @@ export default function Page() {
               {img[ci]}
               </motion.div>
               <motion.div >
-              {dt[ci]}
+              <p>{dt[ci]}</p>
               
               </motion.div>
               
