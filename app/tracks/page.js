@@ -1,13 +1,14 @@
 "use client";
 import React, { useState } from "react";
 import styles from "./tracks.module.css";
-import Content from "./data.json";
+import Content from "./data.json"; 
 import Image from "next/image";
 // import { Footer } from "../../components/footer/Footer";
 // import Hamburger from "@/components/Hamburger/Hamburger";
 
 import { motion } from "framer-motion";
-import { cantebutry } from "@/components/font/myfont";
+import { cantebutry, myFontBold } from "@/components/font/myfont";
+import { Jura } from "next/font/google";
 
 const variants = {
   hidden: {  y: 50 },

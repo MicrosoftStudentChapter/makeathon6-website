@@ -36,7 +36,7 @@
   h1 {
       font-weight: normal;
       letter-spacing: 0.125rem;
-      text-transform: uppercase;
+      /* text-transform: uppercase; */
   }
   
   li {
@@ -45,7 +45,7 @@
       display: inline-block;
       list-style-type: none;
       padding: 0.2em;
-      text-transform: uppercase;
+      /* text-transform: uppercase; */
       background-image: linear-gradient(
       to right,
       #462523 0,
