@@ -19,11 +19,14 @@ export default function Page() {
   const handleEventClick = (event) => {
     setSelectedEvent(event);
     document.body.style.overflow="hidden";//to prevent behind page from scrolling when popup is opened
+    // var temp =document.getElementById("heading").innerText;
+    document.getElementById("mainheading").innerText="";
   };
 
   const handleGoBack = () => {
     setSelectedEvent(null);
     document.body.style.overflow="auto";//to revert the overflow changes when popup is closed
+    document.getElementById("mainheading").innerText="Tracks";
   };
 
   const generateEventDiv = (event , index) => {
@@ -39,7 +42,7 @@ export default function Page() {
         
       >
         <div className={styles.eventContent}>
-          <h1 className={styles.heading}>{title}</h1>
+          <h1 className={styles.heading} id="heading">{title}</h1>
           {/* <p className={styles.para}>{description}</p>
            This had the description on the card face;now removed due to poor visuals */}
         </div>
@@ -62,7 +65,7 @@ export default function Page() {
     <>
       {/* <Hamburger /> */}
       <div className={styles.main}>
-        <h1 className={styles.mainheading}>Tracks</h1>
+        <h1 className={styles.mainheading} id="mainheading">Tracks</h1>
         <motion.div
           
         
@@ -91,6 +94,7 @@ export default function Page() {
                   </div>
                 </div>
                 <div className={styles.content}>
+                <h1 className={styles.popupheading}>{selectedEvent.title}</h1>
                   <h1 className={styles.spacing2}>Brief:</h1>
                   <p className={styles.spacing2}>{selectedEvent.brief}</p>
                   <h1 className={styles.spacing2}>Problem statements:</h1>
