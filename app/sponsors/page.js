@@ -28,35 +28,35 @@ const sponsors1 = [
 ]
   
    const sponsors2=[ { name: 'Tic Tacs', designation: 'Associate', website: '', src: '/sponsors/images/Associate/Tic Tacs.png' },
-    { name: 'Coding Ninjas', designation: 'Associate', website: 'https://www.codingninjas.com/', src: '/sponsors/images/Associate/Coding Ninjas.jpg' },
+    { name: 'Coding Ninjas', designation: 'Associate', website: 'https://www.codingninjas.com/', src: '/sponsors/images/Associate/CN.png' },
     { name: 'Interview Buddy', designation: 'Associate', website: 'https://interviewbuddy.net/', src: '/sponsors/images/Associate/Interview Buddy.png' },
     { name: '.xyz', designation: 'Associate', website: 'https://gen.xyz/',
      src: '/sponsors/images/Associate/XYZ.png' },
     // { name: 'LetsGrowMore', designation: 'Associate', website: 'https://letsgrowmore.in/', src: '/sponsors/images/Associate/LetsGrowMore.png' },
     { name: 'Fueler', designation: 'Associate', website: 'https://fueler.io/', src: '/sponsors/images/Associate/Fueler.png' },
-    { name: 'Zsecurity', designation: 'Associate', website: 'https://zsecurity.org/', src: '/sponsors/images/Associate/Z.jpg' },
+    { name: 'Zsecurity', designation: 'Associate', website: 'https://zsecurity.org/', src: '/sponsors/images/Associate/zee.png' },
     { name: 'Interview Cake', designation: 'Associate', website: 'https://www.interviewcake.com/', src: '/sponsors/images/Associate/Interview Cake.png' },
     { name: 'Rosenfeld Media', designation: 'Associate', website: 'https://rosenfeldmedia.com/', src: '/sponsors/images/Associate/Rosenfeld Media.png' },
     { name: 'Beeceptor', designation: 'Associate', website: 'https://beeceptor.com/', src: '/sponsors/images/Associate/Beeceptor.png' },
     { name: 'Axure', designation: 'Associate', website: 'https://www.axure.com/', src: '/sponsors/images/Associate/Axure.png' },
-    { name: 'Echo 3D', designation: 'Associate', website: 'https://www.echo3d.com/', src: '/sponsors/images/Associate/Echo 3D.jpg' },
-    { name: 'Let\'s Roam', designation: 'Associate', website: 'https://www.letsroam.com/', src: '/sponsors/images/Associate/Let\'s Roam.png' },
+    { name: 'Echo 3D', designation: 'Associate', website: 'https://www.echo3d.com/', src: '/sponsors/images/Associate/Echo 3D.png' },
+    { name: 'Let\'s Roam', designation: 'Associate', website: 'https://www.letsroam.com/', src: '/sponsors/images/Associate/Let\'s_Roam.png' },
     { name: 'Adventures from Scratch', designation: 'Associate', website: 'https://www.adventurebook.com/', src: '/sponsors/images/Associate/Adventures from Scratch.png' },
-    { name: 'Cybrancee', designation: 'Associate', website: 'https://cybrancee.com/', src: '/sponsors/images/Associate/Cybrancee.PNG' },
-    { name: 'StockEdge', designation: 'Associate', website: 'https://stockedge.com/', src: '/sponsors/images/Associate/StockEdge.WEBP' },
+    { name: 'Cybrancee', designation: 'Associate', website: 'https://cybrancee.com/', src: '/sponsors/images/Associate/Cybranceee.PNG' },
+    { name: 'StockEdge', designation: 'Associate', website: 'https://stockedge.com/', src: '/sponsors/images/Associate/SE.png' },
     // { name: 'StreamYard', designation: 'Associate', website: 'https://streamyard.com/', src: '/sponsors/images/Associate/StreamYard.png' },
     // { name: 'Escape Room Games iHidden Hour', designation: 'Associate', website: 'https://www.thehiddenhour.com/', src: '/sponsors/images/Associate/Escape Room Games iHidden Hour.png' },
     // { name: 'Brooklyn', designation: 'Associate', website: 'https://brooklyncentral.in/', src: '/sponsors/images/Associate/Brooklyn.png' },
     { name: 'Wolfram', designation: 'Associate', website: 'https://www.wolframalpha.com/', src: '/sponsors/images/Associate/Wolfram.png' },
-    { name: 'VerbWire', designation: 'Associate', website: 'https://www.verbwire.com/', src: '/sponsors/images/Associate/VerbWire.png' },
+    { name: 'VerbWire', designation: 'Associate', website: 'https://www.verbwire.com/', src: '/sponsors/images/Associate/VerbWiree.png' },
     { name: 'Nord VPN', designation: 'Associate', website: 'https://nordvpn.com/', src: '/sponsors/images/Associate/Nord VPN.png' },
-    { name: 'Languify', designation: 'Associate', website: 'https://www.languify.in/', src: '/sponsors/images/Associate/Languify.jpg' },
+    { name: 'Languify', designation: 'Associate', website: 'https://www.languify.in/', src: '/sponsors/images/Associate/Languifyy.png' },
     { name: 'Sybgen', designation: 'Associate', website: 'https://sybgen.com/', src: '/sponsors/images/Associate/Sybgen.jpg' },
-    { name: 'Bellrocc', designation: 'Associate', website: 'https://www.thebellrocc.com', src: '/sponsors/images/Associate/Bellrocc.jpg' },
+    { name: 'Bellrocc', designation: 'Associate', website: 'https://www.thebellrocc.com', src: '/sponsors/images/Associate/Bellrocc.png' },
     // { name: 'Ecco', designation: 'Associate', website: 'https://www.languify.in/', src: '/sponsors/images/Associate/Ecco.png' },
     // { name: 'BoxCricket', designation: 'Associate', website: '', src: '/sponsors/images/Associate/BoxCricket.png' },
     // { name: 'Cava', designation: 'Associate', website: '', src: '/sponsors/images/Associate/Cava.pdf' },
-    { name: 'BoomBird', designation: 'Associate', website: 'https://boombirds.com/', src: '/sponsors/images/Associate/BoomBird.png' },
+    { name: 'BoomBird', designation: 'Associate', website: 'https://boombirds.com/', src: '/sponsors/images/Associate/BoomBir.png' },
     // { name: 'Sudan\'s Tech', designation: 'Associate', website: 'https://www.sudanstech.com/', src: '/sponsors/images/Associate/Sudan\'s Tech.png' },
     // { name: 'Moledao', designation: 'Associate', website: 'https://moledao.io/#/home', src: '/sponsors/images/Associate/Moledao.png' },
     // { name: 'Hirelnn', designation: 'Associate', website: 'https://hireinn.com/', src: '/sponsors/images/Associate/Hirelnn.png' },
@@ -66,21 +66,28 @@ const sponsors1 = [
    ]
 
 
-  const sponsors3=[{ name: 'Coding minutes', designation: 'power', website: 'https://www.codingminutes.com/', src: '/sponsors/images/power/Coding minutes.jpg' },
-  { name: 'Reskilll', designation: 'power', website: 'https://reskilll.com/', src: '/sponsors/images/power/Reskilll.PNG' },
-  { name: 'SpaceX gym', designation: 'power', website: '', src: '/sponsors/images/power/SpaceX gym.jpg' },
+  const sponsors3=[{ name: 'Coding minutes', designation: 'power', website: 'https://www.codingminutes.com/', src: '/sponsors/images/associate/CM.png' },
+  { name: 'Reskilll', designation: 'power', website: 'https://reskilll.com/', src: '/sponsors/images/power/Reskillll.png' },
+  { name: 'SpaceX gym', designation: 'power', website: '', src: '/sponsors/images/power/SpaceX__gym.png' },
   { name: 'BharatBox', designation: 'power', website: 'https://bharatbox.sandbox.game/', src: '/sponsors/images/power/BharatBox.svg' },
-  { name: 'Internshala', designation: 'power', website: 'https://internshala.com/', src: '/sponsors/images/power/Internshala.jpg' },
+  { name: 'Internshala', designation: 'power', website: 'https://internshala.com/', src: '/sponsors/images/power/Internshalaa.png' },
   { name: 'Refections Cafe', designation: 'power', website: '', src: '/sponsors/images/power/Refections Cafe.png' },
   // { name: 'The Product House', designation: 'power', website: 'https://www.theproduct.house/', src: '/sponsors/images/power/The Product House/The Product House.png' },
   ]
 
 
 
-  const sponsors4=[{ name: 'Moledao', designation: 'Community', website: '/', src: '/sponsors/images/Community/Moledao.svg' },
+  const sponsors4=[{ name: 'Moledao', designation: 'Community', website: '/', src: '/sponsors/images/Community/Moleda.png' },
   { name: 'Navan.ai', designation: 'Community', website: '/', src: '/sponsors/images/Community/Navan.ai.png' },
   // { name: 'Sudans\'sTech', designation: 'Community', website: '/', src: '/sponsors/images/Community/Sudans\'sTech.PNG' }
 ];
+
+const sponsors5 = [
+  { name: 'AbhiBus', designation: 'title', website: '/', src: '/sponsors/images/Other/AbhiBuss.png' },
+  { name: 'Drunken Roads', designation: 'title', website: '/', src: '/sponsors/images/Other/Drunken_Roadss.png' },
+  { name: 'GiveMyCertificate', designation: 'title', website: '/', src: '/sponsors/images/Other/GiveMyCertificate.png' },
+  { name: 'SkillArena', designation: 'title', website: '/', src: '/sponsors/images/Other/SkillArena.png' }];
+
 export default function Page() {
   return (
     <>
@@ -96,6 +103,7 @@ export default function Page() {
       <Power />
       <Associate />
       <Community/>
+      <Others />
       </div>
     </div>
     {/* <Footer/> */}
@@ -157,7 +165,19 @@ export default function Page() {
     )
   }
   
+  function Others(){
 
+    return(
+      <>
+        <div className={styles.sideLine}>
+          <h2 className={styles.text}>Other Sponsors</h2>
+          <div className={styles.flex}>
+            <OtherComponent />
+          </div>
+        </div>
+      </>
+    )
+  }
   
 
 function FlagComponent(){
@@ -166,12 +186,12 @@ function FlagComponent(){
   return (
     <>
       {sponsors1.map((amer, index) => (
-        <Link href="https://drive.google.com/drive/folders/1ZXWzav6kcxkeaCtEssWDC4ZWB0nNWldN" passHref key={index} target='_blank'> 
+        // <Link href="https://drive.google.com/drive/folders/1ZXWzav6kcxkeaCtEssWDC4ZWB0nNWldN" passHref key={index} target='_blank'> 
           <div className={styles.overlap}>
             <img className={styles.ameer} src={flag} alt='/' />
             <img className={styles.flaglogo} src={amer['src']} alt='/' />
           </div>
-        </Link>
+        // </Link>
       ))}
     </>
   );
@@ -185,12 +205,12 @@ function PowerComponent(){
   return (
     <>
       {sponsors3.map((gareb, index) => (
-        <Link href="https://drive.google.com/drive/folders/1ZXWzav6kcxkeaCtEssWDC4ZWB0nNWldN" key={index} passHref target='_blank'>
+        // <Link href="https://drive.google.com/drive/folders/1ZXWzav6kcxkeaCtEssWDC4ZWB0nNWldN" key={index} passHref target='_blank'>
           <div className={styles.overlap}>
             <img className={styles.gareeb} src={flag} alt='/' />
             <img className={styles.flaglogo} src={gareb['src']} alt='/' />
           </div>
-        </Link>
+        // </Link>
       ))}
     </>
   );
@@ -203,13 +223,13 @@ function OtherComponent(){
   
   return (
     <>
-      {sponsors3.map((gareb, index) => (
-        <Link href="https://drive.google.com/drive/folders/1ZXWzav6kcxkeaCtEssWDC4ZWB0nNWldN" key={index} passHref target='_blank'>
+      {sponsors5.map((gareb, index) => (
+        // <Link href="https://drive.google.com/drive/folders/1ZXWzav6kcxkeaCtEssWDC4ZWB0nNWldN" key={index} passHref target='_blank'>
           <div className={styles.overlap}>
             <img className={styles.gareeb} src={flag} alt='/' />
             <img className={styles.flaglogo} src={gareb['src']} alt='/' />
           </div>
-        </Link>
+        // </Link>
       ))}
     </>
   );
@@ -222,12 +242,12 @@ function AssociateComponent(){
   return (
     <>
       {sponsors2.map((gareb, index) => (
-        <Link href="https://drive.google.com/drive/folders/1ZXWzav6kcxkeaCtEssWDC4ZWB0nNWldN" key={index} passHref target='_blank'>
+        // <Link href="https://drive.google.com/drive/folders/1ZXWzav6kcxkeaCtEssWDC4ZWB0nNWldN" key={index} passHref target='_blank'>
           <div className={styles.overlap}>
             <img className={styles.gareeb} src={flag} alt='/' />
             <img className={styles.flaglogo} src={gareb['src']} alt='/' />
           </div>
-        </Link>
+        // </Link>
       ))}
     </>
   );
@@ -240,12 +260,12 @@ function CommunityComponent(){
   return (
     <>
       {sponsors4.map((gareb, index) => (
-        <Link href="https://drive.google.com/drive/folders/1ZXWzav6kcxkeaCtEssWDC4ZWB0nNWldN" key={index} passHref target='_blank'>
+        // <Link href="https://drive.google.com/drive/folders/1ZXWzav6kcxkeaCtEssWDC4ZWB0nNWldN" key={index} passHref target='_blank'>
           <div className={styles.overlap}>
             <img className={styles.gareeb} src={flag} alt='/' />
             <img className={styles.flaglogo} src={gareb['src']} alt='/' />
           </div>
-        </Link>
+        // </Link>
       ))}
     </>
   );
