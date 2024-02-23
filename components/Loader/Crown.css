@@ -4,10 +4,10 @@
 
 .countdown{
     position:absolute;
-    bottom:4%;
+    bottom:10%;
 }
 
-@media all and (max-width: 768px) {
+/* @media all and (max-width: 768px) {
     .countdown{
         top: 30%;
     }
@@ -17,16 +17,16 @@
     .countdown{
         top: 30%;
     }
-}
+} */
 
-@media only screen and (max-width: 390px) {
+@media only screen and (max-width: 500px) {
     .countdown{
-        top: 30%;
+        bottom: 20%;
     }
 }
 
 
-@media only screen and (max-width: 375px) {
+/* @media only screen and (max-width: 375px) {
     .countdown{
         top: 30%;
     }
@@ -36,4 +36,4 @@
     .countdown{
         top: 30%;
     }
-}
+} */
