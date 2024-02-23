@@ -97,7 +97,7 @@
     position: fixed;
     height: 100vh;
     width: 100vw;
-    z-index: 3;
+    z-index: 30;
     top: 0vh;
     display: block;
     /* transition: all 0.8s ease-in-out;
@@ -167,7 +167,7 @@
   }
   @media screen and (max-width: 460px){
     .hbBtn{
-      width: 35vw;
+      width: 50vw;
     }
   }
   
