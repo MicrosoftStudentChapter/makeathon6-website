@@ -207,7 +207,7 @@
 .para{
     font-family: 'Times New Roman', Times, serif;
     color: white;
-    text-align:justify;
+    text-align:center;
     justify-content: space-around;
     display: flex;
     flex-wrap: wrap;

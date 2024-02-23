@@ -25,7 +25,7 @@ import {
   useTransform,
 } from "framer-motion";
 
-import { headings } from "./data";
+import { headings , content } from "./data";
 import { useState } from "react";
 const rotations = [0, 13, 27, 40, 54, 66, 82, 98, 115];
 import Hamburger from "@/components/Hamburger/Hamburger";
@@ -35,7 +35,7 @@ export default function Page() {
 
   const changetracker = useTransform(
     scrollYProgress,
-    [0, 0.13, 0.26, 0.39, 0.52, 0.65, 0.78, 0.9, 1],
+    [0, 0.13, 0.26, 0.39, 0.52, 0.65, 0.78, 0.88, 0.95],
     [0, 1, 2, 3, 4, 5, 6, 7, 8]
   );
 
@@ -112,7 +112,8 @@ export default function Page() {
               animate={{ y : 0 }} 
               transition={{duration:0.3}}
               className={styles.minibox}>
-            <ul className={styles.para}>
+            <span className={styles.para}> {content[0][ci]} <br></br> <br></br>  {content[1][ci]} </span>
+            {/* <ul className={styles.para}>
               <li>
                 Voluptate exercitation aliquip pariatur in voluptate duis esse
                 irure occaecat. Cillum dolore velit occaecat aute duis dolor.
@@ -126,7 +127,7 @@ export default function Page() {
                 duis.
               </li>
              
-            </ul>
+            </ul> */}
           </motion.div>
         </div>
       </div>
