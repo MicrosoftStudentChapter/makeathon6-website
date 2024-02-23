@@ -1,5 +1,5 @@
 "use client";
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import styles from "./tracks.module.css";
 import Content from "./data.json"; 
 import Image from "next/image";
@@ -7,7 +7,7 @@ import Image from "next/image";
 // import Hamburger from "@/components/Hamburger/Hamburger";
 
 import { motion } from "framer-motion";
-import { cantebutry, myFontBold } from "@/components/font/myfont";
+import { cantebutry, myFont, myFontBold } from "@/components/font/myfont";
 import { Jura } from "next/font/google";
 
 const variants = {
@@ -16,7 +16,24 @@ const variants = {
 };
 
 export default function Page() {
+  
   const [selectedEvent, setSelectedEvent] = useState(null);
+
+  useEffect(() => {
+    const handleKeyPress = (event) => {
+      if (event.key === "Escape") {
+        handleGoBack();
+      }
+    };
+
+    if (selectedEvent) {
+      document.addEventListener("keydown", handleKeyPress);
+    }
+
+    return () => {
+      document.removeEventListener("keydown", handleKeyPress);
+    };
+  }, [selectedEvent]);
 
   const handleEventClick = (event) => {
     setSelectedEvent(event);
@@ -41,7 +58,7 @@ export default function Page() {
         
       >
         <div className={styles.eventContent}>
-          <h1 className={`${styles.heading} ${cantebutry.className}`}>{title}</h1>
+          <h1 className={`${styles.heading} ${myFontBold.className}`}>{title}</h1>
           {/* <p className={styles.para}>{description}</p>
            This had the description on the card face;now removed due to poor visuals */}
         </div>
@@ -59,12 +76,62 @@ export default function Page() {
     );
   };
   
+  const ProblemStatement = ({ statement, ds, rs }) => {
+    return (
+      <li className={styles.spacing1}>
+        {statement}
+        {/* <br/> */}
+        {ds && ds.map((dataset, index) => (
+          <React.Fragment key={index}>
+            {index < ds.length - 1 ? <br /> : "  "}
+            {ds.length==1 && <br/>}
+            <a href={dataset} target="_blank" rel="noopener noreferrer">
+              <button
+                style={{
+                  fontSize: "1.1rem",
+                  padding: "0.5rem 1rem",
+                  borderRadius: "5px",
+                  backgroundColor: "#f5f5f5",
+                  border: "none",
+                  cursor: "pointer",
+                  marginTop: "1rem",
+                }}
+              >
+                {ds.length > 1 ? `Dataset ${index + 1}`: "Dataset"}
+              </button>
+            </a>
+          </React.Fragment>
+        ))}
+        {/* {rs && <br />} */}
+        {rs && rs.map((reference, index) => (
+          <React.Fragment key={index}>
+            {index < rs.length - 1 ? <br /> : "  "}
+            <a href={reference} target="_blank" rel="noopener noreferrer">
+              <button
+                style={{
+                  fontSize: "1.1rem",
+                  padding: "0.5rem 1rem",
+                  borderRadius: "5px",
+                  backgroundColor: "#f5f5f5",
+                  border: "none",
+                  cursor: "pointer",
+                  marginTop: "1rem",
+                }}
+              >
+                {rs.length > 1 ? `Reference ${index + 1}` : "Reference"}
+              </button>
+            </a>
+          </React.Fragment>
+        ))}
+      </li>
+    );
+  };
   
   return (
     <>
       {/* <Hamburger /> */}
       <div className={styles.main}>
-        <h1 className={`${cantebutry.className} ${styles.mainheading}`}>Tracks</h1>
+        <h1 className={`${myFontBold.className} ${styles.mainheading}`}>Tracks</h1>
         <motion.div
           className={styles.container}
         >
@@ -93,20 +160,21 @@ export default function Page() {
                   <p className={styles.spacing2}>{selectedEvent.brief}</p>
                   <h1 className={styles.spacing2}>Problem statements:</h1>
                   <ul>
-                    <li className={styles.spacing1}>
-                      {selectedEvent.problem_line1}
-                    </li>
-                    {/* Remove this comment to add more problem statements */}
-
-                    {/* <p></p>
-                    <li className={styles.spacing1}>
-                      {selectedEvent.problem_line2}
-                    </li>
-                    <p></p>
-                    <li className={styles.spacing1}>
-                      {selectedEvent.problem_line3}
-                    </li>
-                    <p></p> */}
+                    {Array.from({ length: 5 }, (_, i) => {
+                      const problemLine = selectedEvent[`problem_line${i + 1}`];
+                      const ds = selectedEvent[`ds${i + 1}`];
+                      const rs = selectedEvent[`rs${i + 1}`];
+                      return (
+                        problemLine && (
+                          <ProblemStatement
+                            statement={problemLine}
+                            ds={ds}
+                            key={i}
+                            rs={rs}
+                          />
+                        )
+                      );
+                    })}
                   </ul>
                 </div>
               </div>

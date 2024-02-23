@@ -4,30 +4,36 @@
     "title": "Web3 Innovations",
     "description": "Web3 innovations, akin to ancient trade routes, pioneer a decentralized digital landscape, fostering transparency, security, and autonomy, echoing the the decentralized nature of ancient marketplaces.",
     "brief": "Web3 innovations, akin to ancient trade routes, pioneer a decentralized digital landscape, fostering transparency, security, and autonomy, echoing the the decentralized nature of ancient marketplaces.",
-    "problem_line1": "Coming Soon!",
-    "problem_line2": "Coming Soon!",
-    "problem_line3": "Coming Soon!",
+    "problem_line1": "Develop a platform that modernises the mediaeval barter system by integrating blockchain technology, enabling a decentralised valuation and exchange of goods such as livestock, crops, and artisan goods. This digital marketplace will leverage predictive analytics on the blockchain to assign real-time currency values to bartered items, facilitating transparent and equitable transactions. The platform will support transactions across various blockchain networks, promoting secure and efficient goods trade. Incorporating cross-chain interoperability, the platform combines the essence of traditional barter with the precision of contemporary financial systems, delivering an innovative solution for asset exchange and valuation in a digitised marketplace.",
+    "ds1":["https://www.binance.com/en-IN/price-prediction"],
+    "problem_line2": "Design a secure and transparent blockchain-based voting system that ensures anonymity, tamper-proof recording of votes, and resistance to manipulation. Explore cryptographic techniques to safeguard voter privacy while providing a verifiable and auditable trail of the election process.",
+    "problem_line3": "Create a hackathon project exploring the development of digital life forms on blockchain networks. Utilise smart contracts to govern their evolution, reproduction, and interactions in a decentralised virtual ecosystem. This innovative blend of biology, economics, and computer science aims to simulate life and evolution within the blockchain space, building on successful examples like CryptoKitties and Axle Infinity.",
+    "problem_line4":"News Validity Scoring: A blockchain-based platform redefining information trust. Using the transparency of blockchain, this innovative system establishes a reputation ledger for news sources. Articles are time-stamped and recorded, providing an immutable history for users to evaluate accuracy and reliability. The platform assigns scores based on the accuracy of the news, fostering a culture of responsible news consumption and addressing concerns of misinformation and fake news in a tamper-proof environment.",
     "image": "/tracks/web3.jpg"
-    
   },
   {
     "id": 2,
     "title": "Fintech and Cybersec",
     "description": "Embrace the spirit of ancient commerce with fintech and cybersecurity, modernizing financial landscapes and safeguarding digital realms, echoing the ing principles of ancient market security and trade innovation.",
     "brief": "Embrace the spirit of ancient commerce with fintech and cybersecurity, modernizing financial landscapes and safeguarding digital realms, echoing the ing principles of ancient market security and trade innovation.",
-    "problem_line1": "Coming Soon!",
-    "problem_line2": "Coming Soon!",
-    "problem_line3": "Coming Soon!",
-    "image": "/tracks/cyber.jpg"
+    "problem_line1": "Design a personal finance assistant app tailored to the needs of gig economy workers, offering features like income fluctuation management, tax optimization, and personalised financial planning. This assistant would help users navigate the financial instability often associated with gig work, promoting better financial health and security",
+    "problem_line2": "Design a continuous authentication system that uses behavioural biometrics, such as keystroke dynamics, mouse movements, and gait analysis, to continuously verify a user's identity. This system would provide a more seamless and secure authentication method, reducing reliance on passwords or physical biometrics alone.",
+    "problem_line3": "Create a decentralised platform using blockchain technology for identity verification within a Zero Trust network. This platform should enable users to prove their identity and access rights without relying on a central authority, enhancing privacy and security in corporate environments.",
+    "problem_line4":"Develop a tool specifically designed to detect vulnerabilities in smart contracts on blockchain platforms. Given the increasing use of smart contracts in various applications, this tool would help prevent exploits and ensure the integrity of decentralised applications",
+    "image": "/tracks/cyber.jpg",
+    "rs2":["https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3958266/", "https://www.sciencedirect.com/science/article/pii/S1084804521001740"]
   },
   {
     "id": 3,
     "title": "Revolutionsing Sustainability",
     "description": "Make a world where sustainability is a deeply embedded reality. Find innovative solutions to redefine food production, waste management or even energy to name a few. In this sustainable world, vertical farms and waste-to-energy innovations redefine urban landscapes, ensuring efficient food production and minimal environmental impact. Al-powered recycling bins seamlessly sort waste, contributing to a circular economy where resources are continuously repurposed.",
     "brief": "Make a world where sustainability is a deeply embedded reality. Find innovative solutions to redefine food production, waste management or even energy to name a few. In this sustainable world, vertical farms and waste-to-energy innovations redefine urban landscapes, ensuring efficient food production and minimal environmental impact. Al-powered recycling bins seamlessly sort waste, contributing to a circular economy where resources are continuously repurposed.",
-    "problem_line1": "Coming Soon!",
-    "problem_line2": "Coming Soon!",
-    "problem_line3": "Coming Soon!",
+    "problem_line1": "Develop a decentralised platform that connects households and businesses with local waste-to-energy conversion facilities. Using blockchain technology, the platform should facilitate the exchange of organic waste for energy credits, incentivizing sustainable waste disposal and energy production",
+    "problem_line2": "Develop a system that aids the wounded by telling them the type of medicine they need to get",
+    "problem_line3": "Create an app empowering geologists to leverage Earth observation data for research.Leverage the application to efficiently identify and disseminate information regarding geological formations by analysing images, videos, or data from scanning devices. This app can provide insights on Earth materials, processes like plate tectonics, erosion, and landscape features such as mountains and rivers. Geologists can utilise it to advance research, predict disasters, and respond effectively.",
+    "problem_line4":"Create an app or game to enlighten users about worldwide scientific phenomena.The envisioned application should integrate game development features. Employ interactive 3D elements to engage users in exploring the dynamic interactions between various scientific processes. The goal is to foster a deeper understanding through an engaging and visually captivating educational experience.",
+    "problem_line5":"Create a solution to the enduring problem of food wastage: a platform    connecting those with surplus meals to individuals in need. This innovative system should tackle the historical issue of excessive food waste. Design a practical and sustainable approach to address the longstanding challenge of food wastage while making a positive impact on the lives of those facing hunger.",
+    "ds3":["https://search.earthdata.nasa.gov/search"],
    "image": "/tracks/sus.png"
   },
   {
@@ -35,19 +41,20 @@
     "title": "Medieval Innovation",
     "description": "Reimagining the groundbreaking inventions by unleashing your creativity to develop modern-day solutions inspired by the ingenious minds of the Middle Ages. You will have the opportunity to leverage technology and Push the boundaries of digital innovation to bring the thrill of discovery to life.",
     "brief": "Reimagining the groundbreaking inventions by unleashing your creativity to develop modern-day solutions inspired by the ingenious minds of the Middle Ages. You will have the opportunity to leverage technology and Push the boundaries of digital innovation to bring the thrill of discovery to life.",
-    "problem_line1": "Coming Soon!",
-    "problem_line2": "Coming Soon!",
-    "problem_line3": "Coming Soon!",
-    "image": "/tracks/medinopng.jpg"
+    "problem_line1": "Design an AI-powered companion for people in remote or isolated environments (e.g., Antarctic researchers, space station occupants) that not only monitors mental health and provides emotional support but also adapts to the user's psychological needs over time, using conversational AI and machine learning to simulate human empathy and companionship",
+    "problem_line2": "Develop a platform that will immerse native speakers and learners.This comprehensive tool should not only gather and compile audio dictionaries, but also utilise machine learning algorithms to enhance language learning experiences and retention. Integrate computer vision capabilities to facilitate written tests, enabling the platform to recognize handwritten input and printed text. Innovate on unique features such as learning paths that evolve with user progress that can provide a comprehensive learning experience.",
+    "problem_line3": "The only way that the troops agree to the instructions of their leader is by hearing the instructions, but the enemies have figured out a way to computationally generate the voice, can you figure out a device that detects if the voice is computer generated in real time",
+    "problem_line4":"Essential training for new troops is required. Create a computer vision system to instruct them in weapon usage, incorporating models, similar to those in exercise apps, to demonstrate correct posture. Additionally, explore the integration of augmented reality features to enhance the training process.",
+    "rs4":["https://medium.com/cord-tech/the-best-free-datasets-for-human-pose-estimation-4bb925973c22"],
+    "image": "/tracks/medinopng.jpg",
+    "ds2":["https://huggingface.co/datasets/mozilla-foundation/common_voice_16_1", "https://drive.google.com/file/d/1hU2Vzd5aC1eApSynyG_5PVsAKyO8Yopq/view?pli=1"]
   },
   {
     "id": 5,
     "title": "Open Innovation",
     "description": "Innovation knows no boundaries, unlock new possibilities by thinking outside the box fueled by the collective talent and creativity of diverse minds.",
     "brief" : "Innovation knows no boundaries, unlock new possibilities by thinking outside the box fueled by the collective talent and creativity of diverse minds.",
-    "problem_line1": "Coming Soon!",
-    "problem_line2": "Coming Soon!",
-    "problem_line3": "Coming Soon!",
+    "problem_line1":"Imagine at your peak :)",
     "image": "/tracks/openi.png"
   }
 ]
