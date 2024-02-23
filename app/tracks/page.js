@@ -80,10 +80,11 @@ export default function Page() {
     return (
       <li className={styles.spacing1}>
         {statement}
-        <br/>
+        {/* <br/> */}
         {ds && ds.map((dataset, index) => (
           <React.Fragment key={index}>
-            {index > 0 && <br />}
+            {index < ds.length - 1 ? <br /> : "  "}
+            {ds.length==1 && <br/>}
             <a href={dataset} target="_blank" rel="noopener noreferrer">
               <button
                 style={{
@@ -101,10 +102,10 @@ export default function Page() {
             </a>
           </React.Fragment>
         ))}
-        {rs && <br />}
+        {/* {rs && <br />} */}
         {rs && rs.map((reference, index) => (
           <React.Fragment key={index}>
-            {index > 0 && <br />}
+            {index < rs.length - 1 ? <br /> : "  "}
             <a href={reference} target="_blank" rel="noopener noreferrer">
               <button
                 style={{
