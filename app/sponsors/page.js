@@ -7,7 +7,7 @@ import Image from 'next/image'
 import bgImage from '/public/sponsors/bgImg.png'
 import Logo from '/public/sponsors/mlscLogo.png'
 import Flaglogo from '/public/sponsors/flogo.png'
-import { myFont, myFontBold } from '@/components/font/myfont'
+import { myFont } from '@/components/font/myfont'
 // import { Footer } from '../../components/footer/Footer'
 import Dev from '/public/sponsors/Devfolio_Logo-Colored.png'
 import Poly from '/public/sponsors/Polygon_Logo-Colored.png'
@@ -22,7 +22,7 @@ export default function Page() {
           <Image className={styles.bg} src={bgImage} alt='/' />
 
           {/* <div className={styles.marginBawa}>*/}
-          <Image className={styles.Logo} src={Logo} alt='/' /><h2 className={`${styles.heading}  ${myFontBold.className}`}>OUR SPONSORS</h2>
+          <Image className={styles.Logo} src={Logo} alt='/' /><h1 className={`${styles.heading}  ${myFont.className}`}>OUR SPONSORS</h1>
           {/* </div>*/}
           <div className={myFont.className}>
           <Flag /><Power />

@@ -17,18 +17,21 @@ const variants = {
 
 export default function Page() {
   const [selectedEvent, setSelectedEvent] = useState(null);
+  const [isPopupOpen, setIsPopupOpen] = useState(false);
 
   const handleEventClick = (event) => {
     setSelectedEvent(event);
-    document.body.style.overflow="hidden";//to prevent behind page from scrolling when popup is opened
-    // var temp =document.getElementById("heading").innerText;
-    document.getElementById("mainheading").innerText="";
+    setIsPopupOpen(true);
+   document.body.style.overflow="hidden";//to prevent behind page from scrolling when popup is opened
+    // // var temp =document.getElementById("heading").innerText;
+    // document.getElementById("mainheading").innerText="";
   };
 
   const handleGoBack = () => {
     setSelectedEvent(null);
-    document.body.style.overflow="auto";//to revert the overflow changes when popup is closed
-    document.getElementById("mainheading").innerText="Tracks";
+    setIsPopupOpen(false);
+     document.body.style.overflow="auto";//to revert the overflow changes when popup is closed
+    // document.getElementById("mainheading").innerText="Tracks";
   };
 
   const generateEventDiv = (event , index) => {
@@ -44,11 +47,7 @@ export default function Page() {
         
       >
         <div className={styles.eventContent}>
-<<<<<<< HEAD
-          <h1 className={styles.heading} id="heading">{title}</h1>
-=======
           <h1 className={`${styles.heading} ${cantebutry.className}`}>{title}</h1>
->>>>>>> 61af30c4b972350711a6d9a5a7ab27dc10ebe94c
           {/* <p className={styles.para}>{description}</p>
            This had the description on the card face;now removed due to poor visuals */}
         </div>
@@ -71,11 +70,7 @@ export default function Page() {
     <>
       {/* <Hamburger /> */}
       <div className={styles.main}>
-<<<<<<< HEAD
-        <h1 className={styles.mainheading} id="mainheading">Tracks</h1>
-=======
-        <h1 className={`${cantebutry.className} ${styles.mainheading}`}>Tracks</h1>
->>>>>>> 61af30c4b972350711a6d9a5a7ab27dc10ebe94c
+        {!isPopupOpen && <h1 className={`${cantebutry.className} ${styles.mainheading}`}>Tracks</h1>}
         <motion.div
           className={styles.container}
         >
@@ -100,7 +95,8 @@ export default function Page() {
                   </div>
                 </div>
                 <div className={styles.content}>
-                <h1 className={styles.popupheading}>{selectedEvent.title}</h1>  {/*heading added to popup window*/}
+                <h1 className={`${cantebutry.className} ${styles.mainheading}`}>{selectedEvent.title}</h1> {/* heading added to popup window*/}
+                
                   <h1 className={styles.spacing2}>Brief:</h1>
                   <p className={styles.spacing2}>{selectedEvent.brief}</p>
                   <h1 className={styles.spacing2}>Problem statements:</h1>
@@ -133,3 +129,4 @@ export default function Page() {
   );
   
 }
+

@@ -88,24 +88,6 @@ border: 1px solid rgba(255, 255, 255, 0.3);
 }
 
 .mainheading{
-<<<<<<< HEAD
-  margin:10px;
-  padding:10px;
-  font-family: Heading;
-  text-align: center;
-  color:  rgb(195, 149, 93);
-  font-size: 60px;
-  text-shadow: 5px 5px 2px black;
-}
-.popupheading{
-  /* margin:5px; */
-  /* padding:10px; */
-  font-family: Heading;
-  text-align: center;
-  color:  rgb(195, 149, 93);
-  font-size: 60px;
-  text-shadow: 5px 5px 2px black;
-=======
     margin:10px;
     padding:10px;
     /* font-family: Heading; */
@@ -113,9 +95,16 @@ border: 1px solid rgba(255, 255, 255, 0.3);
     color:  rgb(195, 149, 93);
     font-size: 60px;
     text-shadow: 5px 5px 2px black;
->>>>>>> 61af30c4b972350711a6d9a5a7ab27dc10ebe94c
 }
-
+.popupheading{
+   margin:5px; 
+   
+  /* font-family: Heading; */
+  text-align: center;
+  color:  rgb(195, 149, 93);
+  font-size: 60px;
+  text-shadow: 5px 5px 2px black;
+}
 /* .para{
     color: white;
     text-align: center;
