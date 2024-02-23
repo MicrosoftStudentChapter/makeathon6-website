@@ -19,7 +19,9 @@ const Countdown = () => {
 			yyyy = today.getFullYear(),
 			nextYear = yyyy + 1,
 			dayMonth = '02/24/',
-			birthday = dayMonth + yyyy;
+			hours = '11',
+			minutes = '30',
+			birthday = dayMonth + yyyy + ' ' + hours + ':' + minutes;
 
 		today = mm + '/' + dd + '/' + yyyy;
 		if (today > birthday) {
