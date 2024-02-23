@@ -13,7 +13,7 @@
     "@mui/icons-material": "^5.15.10",
     "@mui/material": "^5.15.10",
     "@nextui-org/react": "^2.2.9",
-    "@react-three/drei": "^9.97.6",
+    "@react-three/drei": "^9.99.0",
     "@react-three/fiber": "^8.15.16",
     "bootstrap": "^5.3.2",
     "framer-motion": "^11.0.5",

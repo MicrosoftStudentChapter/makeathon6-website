@@ -1,6 +1,7 @@
 "use client"
 import styles from './about.module.css';
 import Image from 'next/image';
+import { useState } from 'react'; // Import useState hook
 import MLSC from '/public/About/MLSC-logo.png';
 import Faq from './components/Faq';
 import Makeathon from '/public/MLSClogo.png';
@@ -11,6 +12,12 @@ import { myFont } from '@/components/font/myfont';
 import { ChuLo } from '@/components/team/team';
 
 export default function AboutPage() {
+  const [prizes] = useState([
+    { title: "Best Hack", image: first },
+    { title: "2nd Best Hack", image: second },
+    { title: "3rd Best Hack", image: third }
+  ]);
+
   return (
     <div className={styles.container}>
       <div className={styles.mainbox}>
@@ -28,15 +35,14 @@ export default function AboutPage() {
 
       <h1 className={`${styles.thisH1} ${myFont.className}`}>Prizes</h1>
       <div className={styles.cards}>
-        <PrizeCard title="Best Hack" image={first} />
-        <PrizeCard title="2nd Best Hack" image={second} />
-        <PrizeCard title="3rd Best Hack" image={third} />
+        {prizes.map((prize, index) => (
+          <PrizeCard key={index} title={prize.title} image={prize.image} />
+        ))}
       </div>
 
       <div className={styles.C}  >
         <h1 className={`${styles.thisH1} ${myFont.className} `}>FAQ<span className={styles.s}>s</span></h1>
         <div style={{ padding: '10px' }}>
-
           <Faq />
           <ChuLo/>
         </div>

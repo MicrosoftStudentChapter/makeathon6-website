@@ -37,7 +37,7 @@
  .hbBtn{
   /* border : 2px solid blue; */
   border: 2px solid rgb(148 214 214);
-    width: 11vw;
+    width: 14vw;
     /* text-align: center; */
     margin: 1vh 0;
     border-radius: 20px;
@@ -157,7 +157,7 @@
   }
   @media screen and (max-width: 1024px){
     .hbBtn{
-      width: 14vw;
+      width: 23vw;
     }
   }
   @media screen and (max-width: 770px){

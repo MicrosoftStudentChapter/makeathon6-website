@@ -22,7 +22,7 @@
     margin-top: 10vw;
   }
 
-  ul {
+  .ulpreload {
     width:100vw;
   }
 
@@ -33,19 +33,19 @@
       width:100vw;
   }
   
-  h1 {
+  .h1preload {
       font-weight: normal;
       letter-spacing: 0.125rem;
-      text-transform: uppercase;
+      /* text-transform: uppercase; */
   }
   
-  li {
+  .lipreload {
       
       font-family: kingvoon;
       display: inline-block;
       list-style-type: none;
       padding: 0.2em;
-      text-transform: uppercase;
+      /* text-transform: uppercase; */
       background-image: linear-gradient(
       to right,
       #462523 0,
@@ -80,9 +80,9 @@
   animation: float 3s ease-in-out infinite;
 }
 
-  li span {
+  .lipreload span {
       display: block;
-      font-size: 4.5rem;
+      /* font-size: 4.5rem; */
       background-image: linear-gradient(
       to right,
       #462523 0,
@@ -108,15 +108,15 @@
 }
 
     @media all and (max-width: 768px) {
-      h1 {
+      .h1preload {
         font-size: calc(1.5rem * var(--smaller));
       }
     
-      li {
+      .lipreload {
         font-size: calc(1.125rem * var(--smaller));
       }
     
-      li span {
+      .lipreload span {
         font-size: calc(3.375rem * var(--smaller));
       }
     }

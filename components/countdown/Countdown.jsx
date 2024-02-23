@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react';
-import './Countdown.css';
+import styles from './Countdown.module.css';
 
 const Countdown = () => {
 	const [days, setDays] = useState(0);
@@ -48,40 +48,40 @@ const Countdown = () => {
 	}, []);
 
 	return (
-		<div className="container">
+		<div className={styles.container}>
 			{/* <h1 id="headline">Countdown to my birthday</h1> */}
-			<div id="countdown" className='countdown'>
-				<ul>
-					<li>
-						<span id="days" className="days time">
+			<div id={styles['countdown']} className={styles.countdown}>
+				<ul className={styles.ulpreload}>
+					<li className={styles.lipreload}>
+						<span id={styles['days']} className={`${styles.days}  ${styles.time}`}>
 							{days}
 						</span>
-						<span className='text'>
+						<span className={styles.text}>
 							days
 						</span>
 					</li>
-					<li>
-						<span id="hours" className="hours time">
+					<li className={styles.lipreload}>
+						<span id={styles['hours']} className={`${styles.hours} ${styles.time}`}>
 							{hours}
 						</span>
-						<span className='text'>
+						<span className={styles.text}>
 							Hours
 						</span>
 					</li>
-					<li>
-						<span id="minutes" className="minutes time">
+					<li className={styles.lipreload}>
+						<span id={styles['minutes']} className={`${styles.minutes} ${styles.time}`}>
 							{minutes}
 						</span>
-						<span className='text'>
+						<span className={styles.text}>
 							Minutes
 						</span>
-						
+
 					</li>
-					<li>
-						<span id="seconds" className="seconds time">
+					<li className={styles.lipreload}>
+						<span id={styles['seconds']} className={`${styles.seconds} ${styles.time}`}>
 							{seconds}
 						</span>
-						<span className='text'>
+						<span className={styles.text}>
 							Seconds
 						</span>
 					</li>

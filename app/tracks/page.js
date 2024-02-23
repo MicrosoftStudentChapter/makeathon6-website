@@ -1,12 +1,14 @@
 "use client";
 import React, { useState } from "react";
 import styles from "./tracks.module.css";
-import Content from "./data.json";
+import Content from "./data.json"; 
 import Image from "next/image";
 // import { Footer } from "../../components/footer/Footer";
 // import Hamburger from "@/components/Hamburger/Hamburger";
 
 import { motion } from "framer-motion";
+import { cantebutry, myFontBold } from "@/components/font/myfont";
+import { Jura } from "next/font/google";
 
 const variants = {
   hidden: {  y: 50 },
@@ -42,7 +44,11 @@ export default function Page() {
         
       >
         <div className={styles.eventContent}>
+<<<<<<< HEAD
           <h1 className={styles.heading} id="heading">{title}</h1>
+=======
+          <h1 className={`${styles.heading} ${cantebutry.className}`}>{title}</h1>
+>>>>>>> 61af30c4b972350711a6d9a5a7ab27dc10ebe94c
           {/* <p className={styles.para}>{description}</p>
            This had the description on the card face;now removed due to poor visuals */}
         </div>
@@ -65,10 +71,12 @@ export default function Page() {
     <>
       {/* <Hamburger /> */}
       <div className={styles.main}>
+<<<<<<< HEAD
         <h1 className={styles.mainheading} id="mainheading">Tracks</h1>
+=======
+        <h1 className={`${cantebutry.className} ${styles.mainheading}`}>Tracks</h1>
+>>>>>>> 61af30c4b972350711a6d9a5a7ab27dc10ebe94c
         <motion.div
-          
-        
           className={styles.container}
         >
           {Content.map((event , index) => generateEventDiv(event , index))}
@@ -84,13 +92,11 @@ export default function Page() {
               <div className={styles.flex}>
                 <div className={styles.popupimage}>
                   <div className={styles.card}>
-                  <Image className={styles.card}
-                    src={selectedEvent.image}
-            height={455}
-            width={270}
-            
-            style={{ borderRadius: "5px" }}
-          />
+                    <Image className={styles.ok}
+                      src={selectedEvent.image}
+                      layout="fill"
+                      objectFit="contain"
+                    />
                   </div>
                 </div>
                 <div className={styles.content}>

@@ -250,7 +250,8 @@
       
          height: 81vh;
         top: 9vh; 
-        left: 53.65vw;
+        /* left: 53.65vw; */
+        left: 55% !important;
     } 
 
     .menu {
@@ -358,7 +359,7 @@
     bottom: 7vh;
     left: 50vw;
     transform: translate(-50%);
-    z-index: 2;
+    z-index: 20;
     /* background-color: yellow; */
     display: flex;
     gap: 5px;
@@ -367,6 +368,7 @@
     /* height:44px;
     width:312px; */
     /* display: none; */
+    cursor: url('../../public/Medieval\ Pointer.png'),auto;
 }
 
 
@@ -375,7 +377,7 @@
     border-radius: 6px;
     border: none;
     color: #FFFFFF;
-    cursor: pointer;
+    cursor: url('../../public/Medieval\ Pointer.png'),auto;
     display: -ms-flexbox;
     display: -webkit-box;
     display: flex;
@@ -391,7 +393,7 @@
 } */
 
 .offlineApply:not([disabled]) {
-    cursor: pointer;
+    cursor: url('../../public/Medieval\ Pointer.png'),auto;
 }
 
 .offlineApply:hover {
