@@ -186,12 +186,12 @@ function FlagComponent(){
   return (
     <>
       {sponsors1.map((amer, index) => (
-        // <Link href="https://drive.google.com/drive/folders/1ZXWzav6kcxkeaCtEssWDC4ZWB0nNWldN" passHref key={index} target='_blank'> 
+        <Link href="/" passHref key={index} target='_blank'> 
           <div className={styles.overlap}>
             <img className={styles.ameer} src={flag} alt='/' />
             <img className={styles.flaglogo} src={amer['src']} alt='/' />
           </div>
-        // </Link>
+         </Link>
       ))}
     </>
   );
@@ -205,12 +205,12 @@ function PowerComponent(){
   return (
     <>
       {sponsors3.map((gareb, index) => (
-        // <Link href="https://drive.google.com/drive/folders/1ZXWzav6kcxkeaCtEssWDC4ZWB0nNWldN" key={index} passHref target='_blank'>
+        <Link href="/" key={index} passHref target='_blank'>
           <div className={styles.overlap}>
             <img className={styles.gareeb} src={flag} alt='/' />
             <img className={styles.flaglogo} src={gareb['src']} alt='/' />
           </div>
-        // </Link>
+         </Link>
       ))}
     </>
   );
@@ -224,12 +224,12 @@ function OtherComponent(){
   return (
     <>
       {sponsors5.map((gareb, index) => (
-        // <Link href="https://drive.google.com/drive/folders/1ZXWzav6kcxkeaCtEssWDC4ZWB0nNWldN" key={index} passHref target='_blank'>
+        <Link href="/" key={index} passHref target='_blank'>
           <div className={styles.overlap}>
             <img className={styles.gareeb} src={flag} alt='/' />
             <img className={styles.flaglogo} src={gareb['src']} alt='/' />
           </div>
-        // </Link>
+         </Link>
       ))}
     </>
   );
@@ -242,12 +242,12 @@ function AssociateComponent(){
   return (
     <>
       {sponsors2.map((gareb, index) => (
-        // <Link href="https://drive.google.com/drive/folders/1ZXWzav6kcxkeaCtEssWDC4ZWB0nNWldN" key={index} passHref target='_blank'>
+        <Link href="/" key={index} passHref target='_blank'>
           <div className={styles.overlap}>
             <img className={styles.gareeb} src={flag} alt='/' />
             <img className={styles.flaglogo} src={gareb['src']} alt='/' />
           </div>
-        // </Link>
+         </Link>
       ))}
     </>
   );
@@ -260,12 +260,12 @@ function CommunityComponent(){
   return (
     <>
       {sponsors4.map((gareb, index) => (
-        // <Link href="https://drive.google.com/drive/folders/1ZXWzav6kcxkeaCtEssWDC4ZWB0nNWldN" key={index} passHref target='_blank'>
+        <Link href="/" key={index} passHref target='_blank'>
           <div className={styles.overlap}>
             <img className={styles.gareeb} src={flag} alt='/' />
             <img className={styles.flaglogo} src={gareb['src']} alt='/' />
           </div>
-        // </Link>
+         </Link>
       ))}
     </>
   );
