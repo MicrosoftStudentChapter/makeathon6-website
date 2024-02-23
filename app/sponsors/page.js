@@ -66,7 +66,7 @@ const sponsors1 = [
    ]
 
 
-  const sponsors3=[{ name: 'Coding minutes', designation: 'power', website: 'https://www.codingminutes.com/', src: '/sponsors/images/associate/CM.png' },
+  const sponsors3=[{ name: 'Coding minutes', designation: 'power', website: 'https://www.codingminutes.com/', src: '/sponsors/images/Associate/CM.png' },
   { name: 'Reskilll', designation: 'power', website: 'https://reskilll.com/', src: '/sponsors/images/power/Reskillll.png' },
   { name: 'SpaceX gym', designation: 'power', website: '', src: '/sponsors/images/power/SpaceX__gym.png' },
   { name: 'BharatBox', designation: 'power', website: 'https://bharatbox.sandbox.game/', src: '/sponsors/images/power/BharatBox.svg' },
