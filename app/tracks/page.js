@@ -7,7 +7,7 @@ import Image from "next/image";
 // import Hamburger from "@/components/Hamburger/Hamburger";
 
 import { motion } from "framer-motion";
-import { cantebutry, myFontBold } from "@/components/font/myfont";
+import { cantebutry, myFont, myFontBold } from "@/components/font/myfont";
 import { Jura } from "next/font/google";
 
 const variants = {
@@ -58,7 +58,7 @@ export default function Page() {
         
       >
         <div className={styles.eventContent}>
-          <h1 className={`${styles.heading} ${cantebutry.className}`}>{title}</h1>
+          <h1 className={`${styles.heading} ${myFontBold.className}`}>{title}</h1>
           {/* <p className={styles.para}>{description}</p>
            This had the description on the card face;now removed due to poor visuals */}
         </div>
@@ -80,42 +80,48 @@ export default function Page() {
     return (
       <li className={styles.spacing1}>
         {statement}
-        {ds && <br />}
-        {ds && (
-          <a href={ds} target="_blank" rel="noopener noreferrer">
-            <button
-              style={{
-                fontSize: "1.1rem",
-                padding: "0.5rem 1rem",
-                borderRadius: "5px",
-                backgroundColor: "#f5f5f5",
-                border: "none",
-                cursor: "pointer",
-                marginTop: "1rem",
-              }}
-            >
-              Dataset
-            </button>
-          </a>
-        )}
+        <br/>
+        {ds && ds.map((dataset, index) => (
+          <React.Fragment key={index}>
+            {index > 0 && <br />}
+            <a href={dataset} target="_blank" rel="noopener noreferrer">
+              <button
+                style={{
+                  fontSize: "1.1rem",
+                  padding: "0.5rem 1rem",
+                  borderRadius: "5px",
+                  backgroundColor: "#f5f5f5",
+                  border: "none",
+                  cursor: "pointer",
+                  marginTop: "1rem",
+                }}
+              >
+                {ds.length > 1 ? `Dataset ${index + 1}`: "Dataset"}
+              </button>
+            </a>
+          </React.Fragment>
+        ))}
         {rs && <br />}
-        {rs && (
-          <a href={rs} target="_blank" rel="noopener noreferrer">
-            <button
-              style={{
-                fontSize: "1.1rem",
-                padding: "0.5rem 1rem",
-                borderRadius: "5px",
-                backgroundColor: "#f5f5f5",
-                border: "none",
-                cursor: "pointer",
-                marginTop: "1rem",
-              }}
-            >
-              Reference
-            </button>
-          </a>
-        )}
+        {rs && rs.map((reference, index) => (
+          <React.Fragment key={index}>
+            {index > 0 && <br />}
+            <a href={reference} target="_blank" rel="noopener noreferrer">
+              <button
+                style={{
+                  fontSize: "1.1rem",
+                  padding: "0.5rem 1rem",
+                  borderRadius: "5px",
+                  backgroundColor: "#f5f5f5",
+                  border: "none",
+                  cursor: "pointer",
+                  marginTop: "1rem",
+                }}
+              >
+                {rs.length > 1 ? `Reference ${index + 1}` : "Reference"}
+              </button>
+            </a>
+          </React.Fragment>
+        ))}
       </li>
     );
   };
@@ -124,7 +130,7 @@ export default function Page() {
     <>
       {/* <Hamburger /> */}
       <div className={styles.main}>
-        <h1 className={`${cantebutry.className} ${styles.mainheading}`}>Tracks</h1>
+        <h1 className={`${myFontBold.className} ${styles.mainheading}`}>Tracks</h1>
         <motion.div
           className={styles.container}
         >

@@ -5,7 +5,7 @@
     "description": "Web3 innovations, akin to ancient trade routes, pioneer a decentralized digital landscape, fostering transparency, security, and autonomy, echoing the the decentralized nature of ancient marketplaces.",
     "brief": "Web3 innovations, akin to ancient trade routes, pioneer a decentralized digital landscape, fostering transparency, security, and autonomy, echoing the the decentralized nature of ancient marketplaces.",
     "problem_line1": "Develop a platform that modernises the mediaeval barter system by integrating blockchain technology, enabling a decentralised valuation and exchange of goods such as livestock, crops, and artisan goods. This digital marketplace will leverage predictive analytics on the blockchain to assign real-time currency values to bartered items, facilitating transparent and equitable transactions. The platform will support transactions across various blockchain networks, promoting secure and efficient goods trade. Incorporating cross-chain interoperability, the platform combines the essence of traditional barter with the precision of contemporary financial systems, delivering an innovative solution for asset exchange and valuation in a digitised marketplace.",
-    "ds1":"https://www.binance.com/en-IN/price-prediction",
+    "ds1":["https://www.binance.com/en-IN/price-prediction"],
     "problem_line2": "Design a secure and transparent blockchain-based voting system that ensures anonymity, tamper-proof recording of votes, and resistance to manipulation. Explore cryptographic techniques to safeguard voter privacy while providing a verifiable and auditable trail of the election process.",
     "problem_line3": "Create a hackathon project exploring the development of digital life forms on blockchain networks. Utilise smart contracts to govern their evolution, reproduction, and interactions in a decentralised virtual ecosystem. This innovative blend of biology, economics, and computer science aims to simulate life and evolution within the blockchain space, building on successful examples like CryptoKitties and Axle Infinity.",
     "problem_line4":"News Validity Scoring: A blockchain-based platform redefining information trust. Using the transparency of blockchain, this innovative system establishes a reputation ledger for news sources. Articles are time-stamped and recorded, providing an immutable history for users to evaluate accuracy and reliability. The platform assigns scores based on the accuracy of the news, fostering a culture of responsible news consumption and addressing concerns of misinformation and fake news in a tamper-proof environment.",
@@ -20,7 +20,8 @@
     "problem_line2": "Design a continuous authentication system that uses behavioural biometrics, such as keystroke dynamics, mouse movements, and gait analysis, to continuously verify a user's identity. This system would provide a more seamless and secure authentication method, reducing reliance on passwords or physical biometrics alone.",
     "problem_line3": "Create a decentralised platform using blockchain technology for identity verification within a Zero Trust network. This platform should enable users to prove their identity and access rights without relying on a central authority, enhancing privacy and security in corporate environments.",
     "problem_line4":"Develop a tool specifically designed to detect vulnerabilities in smart contracts on blockchain platforms. Given the increasing use of smart contracts in various applications, this tool would help prevent exploits and ensure the integrity of decentralised applications",
-    "image": "/tracks/cyber.jpg"
+    "image": "/tracks/cyber.jpg",
+    "rs2":["https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3958266/", "https://www.sciencedirect.com/science/article/pii/S1084804521001740"]
   },
   {
     "id": 3,
@@ -30,10 +31,10 @@
     "problem_line1": "Develop a decentralised platform that connects households and businesses with local waste-to-energy conversion facilities. Using blockchain technology, the platform should facilitate the exchange of organic waste for energy credits, incentivizing sustainable waste disposal and energy production",
     "problem_line2": "Develop a system that aids the wounded by telling them the type of medicine they need to get",
     "problem_line3": "Create an app empowering geologists to leverage Earth observation data for research.Leverage the application to efficiently identify and disseminate information regarding geological formations by analysing images, videos, or data from scanning devices. This app can provide insights on Earth materials, processes like plate tectonics, erosion, and landscape features such as mountains and rivers. Geologists can utilise it to advance research, predict disasters, and respond effectively.",
-    "ds3":"https://search.earthdata.nasa.gov/search",
     "problem_line4":"Create an app or game to enlighten users about worldwide scientific phenomena.The envisioned application should integrate game development features. Employ interactive 3D elements to engage users in exploring the dynamic interactions between various scientific processes. The goal is to foster a deeper understanding through an engaging and visually captivating educational experience.",
-   "image": "/tracks/sus.png",
-   "problem_line5":"Create a solution to the enduring problem of food wastage: a platform    connecting those with surplus meals to individuals in need. This innovative system should tackle the historical issue of excessive food waste. Design a practical and sustainable approach to address the longstanding challenge of food wastage while making a positive impact on the lives of those facing hunger."
+    "problem_line5":"Create a solution to the enduring problem of food wastage: a platform    connecting those with surplus meals to individuals in need. This innovative system should tackle the historical issue of excessive food waste. Design a practical and sustainable approach to address the longstanding challenge of food wastage while making a positive impact on the lives of those facing hunger.",
+    "ds3":["https://search.earthdata.nasa.gov/search"],
+   "image": "/tracks/sus.png"
   },
   {
     "id": 4,
@@ -44,9 +45,9 @@
     "problem_line2": "Develop a platform that will immerse native speakers and learners.This comprehensive tool should not only gather and compile audio dictionaries, but also utilise machine learning algorithms to enhance language learning experiences and retention. Integrate computer vision capabilities to facilitate written tests, enabling the platform to recognize handwritten input and printed text. Innovate on unique features such as learning paths that evolve with user progress that can provide a comprehensive learning experience.",
     "problem_line3": "The only way that the troops agree to the instructions of their leader is by hearing the instructions, but the enemies have figured out a way to computationally generate the voice, can you figure out a device that detects if the voice is computer generated in real time",
     "problem_line4":"Essential training for new troops is required. Create a computer vision system to instruct them in weapon usage, incorporating models, similar to those in exercise apps, to demonstrate correct posture. Additionally, explore the integration of augmented reality features to enhance the training process.",
-    "rs4":"https://medium.com/cord-tech/the-best-free-datasets-for-human-pose-estimation-4bb925973c22",
+    "rs4":["https://medium.com/cord-tech/the-best-free-datasets-for-human-pose-estimation-4bb925973c22"],
     "image": "/tracks/medinopng.jpg",
-    "ds2":"https://huggingface.co/datasets/mozilla-foundation/common_voice_16_1"
+    "ds2":["https://huggingface.co/datasets/mozilla-foundation/common_voice_16_1", "https://drive.google.com/file/d/1hU2Vzd5aC1eApSynyG_5PVsAKyO8Yopq/view?pli=1"]
   },
   {
     "id": 5,
