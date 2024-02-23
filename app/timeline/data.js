@@ -1,7 +1,7 @@
 export const headings = ["Speaker Session","Inauguration", "Hack Begins", "Checkpoint 1" ,"Checkpoint 2" , "Checkpoint 3" , "Hack Ends" , "Pitching Round" ,"Closing Ceremony"]
 export const content = [
     [
-        "5:30 - 23/2/24",
+        "5:30 - 23 February",
         "10:30 am - Day 1",
         "02:00 pm - Day 1",
         "07:00 pm - Day 1",

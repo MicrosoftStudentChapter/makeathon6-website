@@ -68,7 +68,7 @@ export default function HomePage(){
               <div className={styles.animation}>
                 <Link href="#" style={{textDecoration: "none"}}>
                 <div className={styles.tiltHomeRight3}>
-                  <HomeButton title="Timeline" description="description" cs = {true}/>
+                  <HomeButton title="Timeline" description="description"/>
                 </div>
                 </Link>
 
