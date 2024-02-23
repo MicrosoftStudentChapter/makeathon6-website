@@ -82,7 +82,7 @@
 
   .lipreload span {
       display: block;
-      font-size: 4.5rem;
+      /* font-size: 4.5rem; */
       background-image: linear-gradient(
       to right,
       #462523 0,
