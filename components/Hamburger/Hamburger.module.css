@@ -56,7 +56,7 @@
     top: 4vh;
     position: fixed;
     right: 3vh;
-    z-index: 15;
+    z-index: 50;
     cursor: url('../../public/Medieval\ Pointer.png'),auto;
     width: 30px;
   height: 20px;
