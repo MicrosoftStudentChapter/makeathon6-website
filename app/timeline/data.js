@@ -2,7 +2,7 @@ export const headings = ["Speaker Session","Inauguration", "Hack Begins", "Check
 export const content = [
     [
         "5:30 - 23 February",
-        "10:30 am - Day 1",
+        "12:30 am - Day 1",
         "02:00 pm - Day 1",
         "07:00 pm - Day 1",
         "02:00 am - Day 2",
