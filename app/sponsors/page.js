@@ -57,6 +57,7 @@ const sponsors1 = [
     // { name: 'BoxCricket', designation: 'Associate', website: '', src: '/sponsors/images/Associate/BoxCricket.png' },
     // { name: 'Cava', designation: 'Associate', website: '', src: '/sponsors/images/Associate/Cava.pdf' },
     { name: 'BoomBird', designation: 'Associate', website: 'https://boombirds.com/', src: '/sponsors/images/Associate/BoomBir.png' },
+    { name: 'Blue Learn', designation: 'Associate', website: 'https://www.bluelearn.in/', src: '/sponsors/images/Associate/blulern.png' },
     // { name: 'Sudan\'s Tech', designation: 'Associate', website: 'https://www.sudanstech.com/', src: '/sponsors/images/Associate/Sudan\'s Tech.png' },
     // { name: 'Moledao', designation: 'Associate', website: 'https://moledao.io/#/home', src: '/sponsors/images/Associate/Moledao.png' },
     // { name: 'Hirelnn', designation: 'Associate', website: 'https://hireinn.com/', src: '/sponsors/images/Associate/Hirelnn.png' },
@@ -229,7 +230,7 @@ function OtherComponent(){
             <img className={styles.gareeb} src={flag} alt='/' />
             <img className={styles.flaglogo} src={gareb['src']} alt='/' />
           </div>
-         </Link>
+        </Link>
       ))}
     </>
   );
