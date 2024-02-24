@@ -92,7 +92,7 @@ function Hamburger({ isSpecialPage }) {
               <div className={`${styles.slideOut4} ${styles.hbBtn}`}>
                 <h1 classname={styles.pointer}>Sponsors</h1>
               </div>            </Link>
-            <Link href="#" style={{ textDecoration: "none" }}>
+            <Link href="/timeline" style={{ textDecoration: "none" }}>
               <div className={`${styles.slideOut5} ${styles.hbBtn}`}>
                 <h1 classname={styles.pointer}>Timeline</h1>
               </div>
