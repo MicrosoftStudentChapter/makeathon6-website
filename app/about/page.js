@@ -1,5 +1,6 @@
 "use client"
 import styles from './about.module.css';
+import React, { useState } from "react";
 import Image from 'next/image';
 import MLSC from '/public/About/MLSC-logo.png';
 import Faq from './components/Faq';
@@ -28,9 +29,68 @@ export default function AboutPage() {
 
       <h1 className={`${styles.thisH1} ${myFont.className}`}>Prizes</h1>
       <div className={styles.cards}>
-        <PrizeCard title="Best Hack" image={first} />
-        <PrizeCard title="2nd Best Hack" image={second} />
-        <PrizeCard title="3rd Best Hack" image={third} />
+        <PrizeCard title="Best Hack" image={first} prize={"20,000 Cash Component"} moreprizes={[
+          "3-5 Smartwatches - Adcom (6000 x 5 = 30,000)",
+          "5 Reskill x Axure T-shirts",
+          "Free Data Science courses by Skillarena (worth Rs. 3499 each)",
+          "6 months web or bot hosting:!",
+          "5 Hidden Hour E Voucher (Worth 1000 x 5=5000) + 5 Hidden Hour E Voucher (Worth 150 x 5=750)",
+          "Zsecurity courses( worth $99 for each course)",
+          "Fueler Premium(worth $100)",
+          ".xyz free domains",
+          "Coding Interview Prep Courses (worth $50 each): Interview Cake",
+          "E-Books from Rosenfeld Media",
+          "Free courses from Coding Minutes",
+          "Async Driven intervew by Interview Buddy worth Rs. 1100",
+          "Beeceptor 1year team plan worth $240",
+          "Internship Opportunity from LetsGrowMore",
+          "Family Scavanger Hunt Six Pack (woth $140 value)",
+          "Wolfram Award worth $375",
+          "1 year long subscription of NordVPN, NordPass and Incogni"
+        ]}/>
+        <PrizeCard title="2nd Best Hack" image={second} prize={"15,000 cash component"} moreprizes={[
+          "15,000",
+          "3-5 Mobile Camera lens - Adcom (2000 x 5 = 10,000)",
+          "5 Reskill x Axure T-shirts",
+          "Free Data Science courses by Skillarena (worth Rs. 3499 each)",
+          "4 months web or bot hosting:Cybrancee",
+          "5 Hidden Hour E Voucher (Worth 1000 x 5=5000)",
+          "Fueler Premium(worth $100)",
+          ".xyz free domains",
+          "Coding Interview Prep Courses (worth $50 each): Interview Cake",
+          "E-Books from Rosenfeld Media",
+          "Free courses from Coding Minutes",
+          "Async Driven intervew by Interview Buddy worth Rs. 1100",
+          "Beeceptor 1year team plan worth $240",
+          "Internship Opportunity from LetsGrowMore",
+          "Wolfram Award worth $375",
+          "1 year long subscription of NordVPN, NordPass and Incogni"
+        ]} />
+        <PrizeCard title="3rd Best Hack" image={third} prize={"10,000 cash component"} moreprizes={[
+          "10,000",
+          "5 Reskill x Axure T-shirts",
+          "Free Data Science courses by Skillarena (worth Rs. 3499 each)",
+          "3 months web or bot hosting:Cybrancee",
+          "5 Hidden Hour E Voucher (Worth 150 x 5 = 750)",
+          "Coding Interview Prep Courses (worth $50 each): Interview Cake",
+          "Free courses from Coding Minutes",
+          "Internship Opportunity from LetsGrowMore",
+        ]} />
+        <PrizeCard title="Best First Year Hack" image={third} prize={"5,000 cash component"} moreprizes={[
+          "5,000",
+          "5 Reskill x Axure T-shirts",
+          "5 Hidden Hour E Voucher (Worth 150 x 5 = 750)",
+        ]} />
+        <PrizeCard title="Most Innovative Hack" image={third} prize={"5,000 cash component"} moreprizes={[
+          "5,000",
+          "5 Reskill x Axure T-shirts",
+          "5 Hidden Hour E Voucher (Worth 150 x 5 = 750)",
+        ]} />
+        <PrizeCard title="Mystery" image={third} prize={"5,000 cash component"} moreprizes={[
+          "5,000",
+          "5 Reskill x Axure T-shirts",
+          "5 Hidden Hour E Voucher (Worth 150 x 5 = 750)",
+        ]}/>
       </div>
 
       <div className={styles.C}  >
@@ -45,7 +105,19 @@ export default function AboutPage() {
   );
 }
 
-function PrizeCard({ title, image }) {
+function PrizeCard({ title, image, prize, moreprizes }) {
+  const [modalOpen, setModalOpen] = useState(false);
+
+  const openModal = () => {
+    setModalOpen(true);
+    document.body.style.overflow = 'hidden'; // Prevent scrolling on the body
+  };
+
+  const closeModal = () => {
+    setModalOpen(false);
+    document.body.style.overflow = ''; // Allow scrolling on the body
+  };
+
   return (
     <div className={styles.card}>
       <span className={styles.close} />
@@ -56,18 +128,36 @@ function PrizeCard({ title, image }) {
           <Image className={styles.img} src={image} alt='/' />
         </div>
         <div className={styles.desc}>
-          <span className={styles.bold}>Revealing Soon!</span>
+          <span className={styles.bold}>{prize}</span>
         </div>
       </article>
       <div className={styles.actions}>
-        <a className={styles.btn} href="#" target="blank">
+        <div className={styles.btn} onClick={openModal}>
           <span>Know More</span>
           <img
             className={styles.icon}
             src="https://res.cloudinary.com/dcvqnyvvt/image/upload/v1677090548/right-arrow_ucify9.png"
           />
-        </a>
+        </div>
       </div>
+      {modalOpen && (
+        <div className={styles.backdrop} onClick={closeModal}>
+          <div className={styles.overlay}>
+            <div className={styles.modal}>
+              <span className={styles.closeModal} onClick={closeModal}>
+                &times;
+              </span>
+              <h2>Prizes</h2>
+              <ul>
+                {moreprizes.map((prize, index) => (
+                  <li key={index}>{prize}</li>
+                ))}
+              </ul>
+            </div>
+          </div>
+        </div>
+      )}
     </div>
   );
+
 }

@@ -1,3 +1,76 @@
+
+.backdrop {
+  position: fixed;
+  z-index: 3;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  backdrop-filter: blur(5px);
+  /* Blurred background effect */
+}
+
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(150, 150, 150, 0.5);
+  /* Greyish translucent background */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.modal {
+  padding: 100px;
+  background-color: rgba(198, 197, 197, 0.788);
+  padding: 20px;
+  border-radius: 5px;
+  border: 2px dashed #555;
+  /* Dashed border with a darker color */
+}
+
+.closeModal {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  cursor: pointer;
+}
+
+.blur {
+  filter: blur(5px);
+  /* Blur effect applied to the entire body */
+}
+
+
+
+
+
+.card {
+  position: relative;
+}
+
+
+/* .modal {
+  background-color: rgba(200, 200, 200, 0.9);
+
+  padding: 20px;
+  border-radius: 5px;
+  position: relative;
+} */
+/* 
+.closeModal {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  cursor: pointer;
+}
+ */
+
+
+
 .thisH1{
     color: white;
     text-align: center;
@@ -6,6 +79,7 @@
     padding-top: 30px;
     margin-bottom: 30px;
 }
+
 /* FAQs ka s */
 .s{
   font-size: 30px;
