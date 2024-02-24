@@ -12,11 +12,11 @@ export default function HomePage(){
         <>
             <Hamburger isSpecialPage={true}/>
       <div className={styles.applyButton}>
-        <Link href="https://tally.so/r/3EW7yL" style={{textDecoration: "none"}}>
+        <Link href="https://drive.google.com/drive/folders/1uq5cZVh4UmmjikbQh-3M4khZc5t948WX?usp=drive_link" style={{textDecoration: "none"}}>
         <div className={styles.offlineApply}
         style={{height: "44px", width: "312px"}}
         >
-          Offline Registration Form
+          Download the App!
         </div>
         </Link>
         <Script src="https://apply.devfolio.co/v2/sdk.js" async={true} defer={true} />

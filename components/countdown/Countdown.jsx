@@ -32,7 +32,7 @@ const Countdown = () => {
 		const countDown = new Date(birthday).getTime();
 		const interval = setInterval(() => {
 			const now = new Date().getTime();
-			const distance = countDown - now;
+			const distance = now - now;
 
 			setDays(Math.floor(distance / day));
 			setHours(Math.floor((distance % day) / hour));
