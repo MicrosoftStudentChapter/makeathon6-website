@@ -87,7 +87,7 @@ export default function AboutPage() {
           "5 Hidden Hour E Voucher (Worth 150 x 5 = 750)",
         ]} />
         <PrizeCard title="Mystery" image={third} prize={""} moreprizes={[
-          "5,000",
+          "",
           "5 Reskill x Axure T-shirts",
           "5 Hidden Hour E Voucher (Worth 150 x 5 = 750)",
         ]}/>
