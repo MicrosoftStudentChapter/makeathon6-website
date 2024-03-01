@@ -187,7 +187,7 @@ function FlagComponent(){
   return (
     <>
       {sponsors1.map((amer, index) => (
-        <Link href="/" passHref key={index} target='_blank'> 
+        <Link href={amer.website} passHref key={index} target='_blank'> 
           <div className={styles.overlap}>
             <img className={styles.ameer} src={flag} alt='/' />
             <img className={styles.flaglogo} src={amer['src']} alt='/' />
@@ -206,7 +206,7 @@ function PowerComponent(){
   return (
     <>
       {sponsors3.map((gareb, index) => (
-        <Link href="/" key={index} passHref target='_blank'>
+        <Link href={gareb.website} key={index} passHref target='_blank'>
           <div className={styles.overlap}>
             <img className={styles.gareeb} src={flag} alt='/' />
             <img className={styles.flaglogo} src={gareb['src']} alt='/' />
@@ -225,7 +225,7 @@ function OtherComponent(){
   return (
     <>
       {sponsors5.map((gareb, index) => (
-        <Link href="/" key={index} passHref target='_blank'>
+        <Link href={gareb.website} key={index} passHref target='_blank'>
           <div className={styles.overlap}>
             <img className={styles.gareeb} src={flag} alt='/' />
             <img className={styles.flaglogo} src={gareb['src']} alt='/' />
@@ -243,7 +243,7 @@ function AssociateComponent(){
   return (
     <>
       {sponsors2.map((gareb, index) => (
-        <Link href="/" key={index} passHref target='_blank'>
+        <Link href={gareb.website} key={index} passHref target='_blank'>
           <div className={styles.overlap}>
             <img className={styles.gareeb} src={flag} alt='/' />
             <img className={styles.flaglogo} src={gareb['src']} alt='/' />
@@ -261,7 +261,7 @@ function CommunityComponent(){
   return (
     <>
       {sponsors4.map((gareb, index) => (
-        <Link href="/" key={index} passHref target='_blank'>
+        <Link href={gareb.website} key={index} passHref target='_blank'>
           <div className={styles.overlap}>
             <img className={styles.gareeb} src={flag} alt='/' />
             <img className={styles.flaglogo} src={gareb['src']} alt='/' />
