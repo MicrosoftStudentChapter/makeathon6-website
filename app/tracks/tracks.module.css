@@ -2,7 +2,11 @@
   font-family: Heading;
   src: url('./Canterbury.ttf');
 } */
-
+.soon{
+  font-size: 50px;
+  color: white;
+  
+}
 .main {
     background-image: url('./assets/TracksFinalbg.jpeg');
     background-size: cover;
