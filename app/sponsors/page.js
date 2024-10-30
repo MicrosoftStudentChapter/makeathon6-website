@@ -19,75 +19,79 @@ import Link from 'next/link'
 const flag = '/sponsors/flag.png';
 
 const sponsors1 = [
-  { name: 'Devfolio', designation: 'title', website: 'https://devfolio.co/', src: '/sponsors/images/title/Devfolio.png' },
-  { name: 'Polygon', designation: 'title', website: 'https://polygon.technology/', src: '/sponsors/images/title/Polygon.png' },
-  { name: 'ETH India', designation: 'title', website: 'https://ethindia.co/', src: '/sponsors/images/title/ETH.png' },
-  { name: 'Adcom', designation: 'title', website: 'https://www.adcomhitech.com/', src: '/sponsors/images/title/Adcom.png' },
-  { name: 'Physics Wallah', designation: 'title', website: 'https://www.pw.live/', src: '/sponsors/images/title/PhysicsWallah.png' },
-  { name: 'Tim Hortons', designation: 'title', website: 'https://timhortonsindia.com/', src: '/sponsors/images/title/TimHortons.png' },
+  // { name: 'Devfolio', designation: 'title', website: 'https://devfolio.co/', src: '/sponsors/images/title/Devfolio.png' },
+  // { name: 'Polygon', designation: 'title', website: 'https://polygon.technology/', src: '/sponsors/images/title/Polygon.png' },
+  // { name: 'ETH India', designation: 'title', website: 'https://ethindia.co/', src: '/sponsors/images/title/ETH.png' },
+  // { name: 'Adcom', designation: 'title', website: 'https://www.adcomhitech.com/', src: '/sponsors/images/title/Adcom.png' },
+  // { name: 'Physics Wallah', designation: 'title', website: 'https://www.pw.live/', src: '/sponsors/images/title/PhysicsWallah.png' },
+  // { name: 'Tim Hortons', designation: 'title', website: 'https://timhortonsindia.com/', src: '/sponsors/images/title/TimHortons.png' },
 ]
   
-   const sponsors2=[ { name: 'Tic Tacs', designation: 'Associate', website: '', src: '/sponsors/images/Associate/TicTacs.png' },
-    { name: 'Coding Ninjas', designation: 'Associate', website: 'https://www.codingninjas.com/', src: '/sponsors/images/Associate/CN.png' },
-    { name: 'Interview Buddy', designation: 'Associate', website: 'https://interviewbuddy.net/', src: '/sponsors/images/Associate/InterviewBuddy.png' },
-    { name: '.xyz', designation: 'Associate', website: 'https://gen.xyz/',
-     src: '/sponsors/images/Associate/XYZ.png' },
+   const sponsors2=[ 
+    // { name: 'Tic Tacs', designation: 'Associate', website: '', src: '/sponsors/images/Associate/TicTacs.png' },
+    // { name: 'Coding Ninjas', designation: 'Associate', website: 'https://www.codingninjas.com/', src: '/sponsors/images/Associate/CN.png' },
+    // { name: 'Interview Buddy', designation: 'Associate', website: 'https://interviewbuddy.net/', src: '/sponsors/images/Associate/InterviewBuddy.png' },
+    // { name: '.xyz', designation: 'Associate', website: 'https://gen.xyz/',
+    //  src: '/sponsors/images/Associate/XYZ.png' },
     // { name: 'LetsGrowMore', designation: 'Associate', website: 'https://letsgrowmore.in/', src: '/sponsors/images/Associate/LetsGrowMore.png' },
-    { name: 'Fueler', designation: 'Associate', website: 'https://fueler.io/', src: '/sponsors/images/Associate/Fueler.png' },
-    { name: 'Zsecurity', designation: 'Associate', website: 'https://zsecurity.org/', src: '/sponsors/images/Associate/zee.png' },
-    { name: 'Interview Cake', designation: 'Associate', website: 'https://www.interviewcake.com/', src: '/sponsors/images/Associate/InterviewCake.png' },
-    { name: 'Rosenfeld Media', designation: 'Associate', website: 'https://rosenfeldmedia.com/', src: '/sponsors/images/Associate/RosenfeldMedia.png' },
-    { name: 'Beeceptor', designation: 'Associate', website: 'https://beeceptor.com/', src: '/sponsors/images/Associate/Beeceptor.png' },
-    { name: 'Axure', designation: 'Associate', website: 'https://www.axure.com/', src: '/sponsors/images/Associate/Axure.png' },
-    { name: 'Echo 3D', designation: 'Associate', website: 'https://www.echo3d.com/', src: '/sponsors/images/Associate/Echo3D.png' },
-    { name: 'Let\'s Roam', designation: 'Associate', website: 'https://www.letsroam.com/', src: '/sponsors/images/Associate/LetsRoam.png' },
-    { name: 'Adventures from Scratch', designation: 'Associate', website: 'https://www.adventurebook.com/', src: '/sponsors/images/Associate/AdventuresfromScratch.png' },
-    { name: 'Cybrancee', designation: 'Associate', website: 'https://cybrancee.com/', src: '/sponsors/images/Associate/Cybrancee.PNG' },
-    { name: 'StockEdge', designation: 'Associate', website: 'https://stockedge.com/', src: '/sponsors/images/Associate/SE.png' },
-    // { name: 'StreamYard', designation: 'Associate', website: 'https://streamyard.com/', src: '/sponsors/images/Associate/StreamYard.png' },
-    // { name: 'Escape Room Games iHidden Hour', designation: 'Associate', website: 'https://www.thehiddenhour.com/', src: '/sponsors/images/Associate/Escape Room Games iHidden Hour.png' },
-    // { name: 'Brooklyn', designation: 'Associate', website: 'https://brooklyncentral.in/', src: '/sponsors/images/Associate/Brooklyn.png' },
-    { name: 'Wolfram', designation: 'Associate', website: 'https://www.wolframalpha.com/', src: '/sponsors/images/Associate/Wolfram.png' },
-    { name: 'VerbWire', designation: 'Associate', website: 'https://www.verbwire.com/', src: '/sponsors/images/Associate/VerbWiree.png' },
-    { name: 'Nord VPN', designation: 'Associate', website: 'https://nordvpn.com/', src: '/sponsors/images/Associate/NordVPN.png' },
-    { name: 'Languify', designation: 'Associate', website: 'https://www.languify.in/', src: '/sponsors/images/Associate/Languifyy.png' },
-    { name: 'Sybgen', designation: 'Associate', website: 'https://sybgen.com/', src: '/sponsors/images/Associate/Sybgen.jpg' },
-    { name: 'Bellrocc', designation: 'Associate', website: 'https://www.thebellrocc.com', src: '/sponsors/images/Associate/Bellrocc.png' },
-    // { name: 'Ecco', designation: 'Associate', website: 'https://www.languify.in/', src: '/sponsors/images/Associate/Ecco.png' },
-    // { name: 'BoxCricket', designation: 'Associate', website: '', src: '/sponsors/images/Associate/BoxCricket.png' },
-    // { name: 'Cava', designation: 'Associate', website: '', src: '/sponsors/images/Associate/Cava.pdf' },
-    { name: 'BoomBird', designation: 'Associate', website: 'https://boombirds.com/', src: '/sponsors/images/Associate/BoomBir.png' },
-    { name: 'Blue Learn', designation: 'Associate', website: 'https://www.bluelearn.in/', src: '/sponsors/images/Associate/blulern.png' },
-    // { name: 'Sudan\'s Tech', designation: 'Associate', website: 'https://www.sudanstech.com/', src: '/sponsors/images/Associate/Sudan\'s Tech.png' },
-    // { name: 'Moledao', designation: 'Associate', website: 'https://moledao.io/#/home', src: '/sponsors/images/Associate/Moledao.png' },
-    // { name: 'Hirelnn', designation: 'Associate', website: 'https://hireinn.com/', src: '/sponsors/images/Associate/Hirelnn.png' },
-    // { name: 'Navan.ai', designation: 'Associate', website: 'https://navan.ai/', src: '/sponsors/images/Associate/Navan.ai.png' },
-    // { name: 'NoticeBard', designation: 'Associate', website: 'https://noticebard.com/', src: '/sponsors/images/Associate/NoticeBard.png' },
-    // { name: 'Drunken Roads', designation: 'Associate', website: 'https://drunkenroads.exlyapp.com/', src: '/sponsors/images/Associate/Drunken Roads.png' }
+    // { name: 'Fueler', designation: 'Associate', website: 'https://fueler.io/', src: '/sponsors/images/Associate/Fueler.png' },
+    // { name: 'Zsecurity', designation: 'Associate', website: 'https://zsecurity.org/', src: '/sponsors/images/Associate/zee.png' },
+    // { name: 'Interview Cake', designation: 'Associate', website: 'https://www.interviewcake.com/', src: '/sponsors/images/Associate/InterviewCake.png' },
+    // { name: 'Rosenfeld Media', designation: 'Associate', website: 'https://rosenfeldmedia.com/', src: '/sponsors/images/Associate/RosenfeldMedia.png' },
+    // { name: 'Beeceptor', designation: 'Associate', website: 'https://beeceptor.com/', src: '/sponsors/images/Associate/Beeceptor.png' },
+    // { name: 'Axure', designation: 'Associate', website: 'https://www.axure.com/', src: '/sponsors/images/Associate/Axure.png' },
+    // { name: 'Echo 3D', designation: 'Associate', website: 'https://www.echo3d.com/', src: '/sponsors/images/Associate/Echo3D.png' },
+    // { name: 'Let\'s Roam', designation: 'Associate', website: 'https://www.letsroam.com/', src: '/sponsors/images/Associate/LetsRoam.png' },
+    // { name: 'Adventures from Scratch', designation: 'Associate', website: 'https://www.adventurebook.com/', src: '/sponsors/images/Associate/AdventuresfromScratch.png' },
+    // { name: 'Cybrancee', designation: 'Associate', website: 'https://cybrancee.com/', src: '/sponsors/images/Associate/Cybrancee.PNG' },
+    // { name: 'StockEdge', designation: 'Associate', website: 'https://stockedge.com/', src: '/sponsors/images/Associate/SE.png' },
+    // // { name: 'StreamYard', designation: 'Associate', website: 'https://streamyard.com/', src: '/sponsors/images/Associate/StreamYard.png' },
+    // // { name: 'Escape Room Games iHidden Hour', designation: 'Associate', website: 'https://www.thehiddenhour.com/', src: '/sponsors/images/Associate/Escape Room Games iHidden Hour.png' },
+    // // { name: 'Brooklyn', designation: 'Associate', website: 'https://brooklyncentral.in/', src: '/sponsors/images/Associate/Brooklyn.png' },
+    // { name: 'Wolfram', designation: 'Associate', website: 'https://www.wolframalpha.com/', src: '/sponsors/images/Associate/Wolfram.png' },
+    // { name: 'VerbWire', designation: 'Associate', website: 'https://www.verbwire.com/', src: '/sponsors/images/Associate/VerbWiree.png' },
+    // { name: 'Nord VPN', designation: 'Associate', website: 'https://nordvpn.com/', src: '/sponsors/images/Associate/NordVPN.png' },
+    // { name: 'Languify', designation: 'Associate', website: 'https://www.languify.in/', src: '/sponsors/images/Associate/Languifyy.png' },
+    // { name: 'Sybgen', designation: 'Associate', website: 'https://sybgen.com/', src: '/sponsors/images/Associate/Sybgen.jpg' },
+    // { name: 'Bellrocc', designation: 'Associate', website: 'https://www.thebellrocc.com', src: '/sponsors/images/Associate/Bellrocc.png' },
+    // // { name: 'Ecco', designation: 'Associate', website: 'https://www.languify.in/', src: '/sponsors/images/Associate/Ecco.png' },
+    // // { name: 'BoxCricket', designation: 'Associate', website: '', src: '/sponsors/images/Associate/BoxCricket.png' },
+    // // { name: 'Cava', designation: 'Associate', website: '', src: '/sponsors/images/Associate/Cava.pdf' },
+    // { name: 'BoomBird', designation: 'Associate', website: 'https://boombirds.com/', src: '/sponsors/images/Associate/BoomBir.png' },
+    // { name: 'Blue Learn', designation: 'Associate', website: 'https://www.bluelearn.in/', src: '/sponsors/images/Associate/blulern.png' },
+    // // { name: 'Sudan\'s Tech', designation: 'Associate', website: 'https://www.sudanstech.com/', src: '/sponsors/images/Associate/Sudan\'s Tech.png' },
+    // // { name: 'Moledao', designation: 'Associate', website: 'https://moledao.io/#/home', src: '/sponsors/images/Associate/Moledao.png' },
+    // // { name: 'Hirelnn', designation: 'Associate', website: 'https://hireinn.com/', src: '/sponsors/images/Associate/Hirelnn.png' },
+    // // { name: 'Navan.ai', designation: 'Associate', website: 'https://navan.ai/', src: '/sponsors/images/Associate/Navan.ai.png' },
+    // // { name: 'NoticeBard', designation: 'Associate', website: 'https://noticebard.com/', src: '/sponsors/images/Associate/NoticeBard.png' },
+    // // { name: 'Drunken Roads', designation: 'Associate', website: 'https://drunkenroads.exlyapp.com/', src: '/sponsors/images/Associate/Drunken Roads.png' }
    ]
 
 
-  const sponsors3=[{ name: 'Coding minutes', designation: 'power', website: 'https://www.codingminutes.com/', src: '/sponsors/images/Associate/CM.png' },
-  { name: 'Reskilll', designation: 'power', website: 'https://reskilll.com/', src: '/sponsors/images/power/Reskillll.png' },
-  { name: 'SpaceX gym', designation: 'power', website: '', src: '/sponsors/images/power/SpaceX__gym.png' },
-  { name: 'BharatBox', designation: 'power', website: 'https://bharatbox.sandbox.game/', src: '/sponsors/images/power/BharatBox.svg' },
-  { name: 'Internshala', designation: 'power', website: 'https://internshala.com/', src: '/sponsors/images/power/Internshalaa.png' },
-  { name: 'Refections Cafe', designation: 'power', website: '', src: '/sponsors/images/power/RefectionsCafe.png' },
+  const sponsors3=[
+  //{ name: 'Coding minutes', designation: 'power', website: 'https://www.codingminutes.com/', src: '/sponsors/images/Associate/CM.png' },
+  // { name: 'Reskilll', designation: 'power', website: 'https://reskilll.com/', src: '/sponsors/images/power/Reskillll.png' },
+  // { name: 'SpaceX gym', designation: 'power', website: '', src: '/sponsors/images/power/SpaceX__gym.png' },
+  // { name: 'BharatBox', designation: 'power', website: 'https://bharatbox.sandbox.game/', src: '/sponsors/images/power/BharatBox.svg' },
+  // { name: 'Internshala', designation: 'power', website: 'https://internshala.com/', src: '/sponsors/images/power/Internshalaa.png' },
+  // { name: 'Refections Cafe', designation: 'power', website: '', src: '/sponsors/images/power/RefectionsCafe.png' },
   // { name: 'The Product House', designation: 'power', website: 'https://www.theproduct.house/', src: '/sponsors/images/power/The Product House/The Product House.png' },
   ]
 
 
 
-  const sponsors4=[{ name: 'Moledao', designation: 'Community', website: '/', src: '/sponsors/images/Community/Moleda.png' },
-  { name: 'Navan.ai', designation: 'Community', website: '/', src: '/sponsors/images/Community/Navan.ai.png' },
+  const sponsors4=[
+  //   { name: 'Moledao', designation: 'Community', website: '/', src: '/sponsors/images/Community/Moleda.png' },
+  // { name: 'Navan.ai', designation: 'Community', website: '/', src: '/sponsors/images/Community/Navan.ai.png' },
   // { name: 'Sudans\'sTech', designation: 'Community', website: '/', src: '/sponsors/images/Community/Sudans\'sTech.PNG' }
 ];
 
 const sponsors5 = [
-  { name: 'AbhiBus', designation: 'title', website: '/', src: '/sponsors/images/Other/AbhiBuss.png' },
-  { name: 'Drunken Roads', designation: 'title', website: '/', src: '/sponsors/images/Other/Drunken_Roadss.png' },
-  { name: 'GiveMyCertificate', designation: 'title', website: '/', src: '/sponsors/images/Other/GiveMyCertificate.png' },
-  { name: 'SkillArena', designation: 'title', website: '/', src: '/sponsors/images/Other/SkillArena.png' }];
+  // { name: 'AbhiBus', designation: 'title', website: '/', src: '/sponsors/images/Other/AbhiBuss.png' },
+  // { name: 'Drunken Roads', designation: 'title', website: '/', src: '/sponsors/images/Other/Drunken_Roadss.png' },
+  // { name: 'GiveMyCertificate', designation: 'title', website: '/', src: '/sponsors/images/Other/GiveMyCertificate.png' },
+  // { name: 'SkillArena', designation: 'title', website: '/', src: '/sponsors/images/Other/SkillArena.png' }
+];
 
 export default function Page() {
   return (
