@@ -60,15 +60,26 @@ export default function Page() {
 
   return (
     <>
+    <div style={{width: '100vw', display:'flex', justifyContent: 'center'}}>
+      <h1 style={{zIndex:100, color:'white',position:'absolute',textAlign: 'center', marginTop: '20px'}}>
+        TimeLine Coming Soon
+      </h1>
+    </div>
     <Hamburger/>
-    <div style={{height:'500vh'}}>
+    <div style={{height:'100vh'}}>
     <div style={{position:'sticky', top:'0px'}} className={styles.bgbox}>
-      <div className={styles.astrobox}>
+      <Bg style={{zIndex:0}}/>      
+      {/* <div className={styles.astrobox}>
         <div id={styles.imgbox}>
           <Bg />
+          <div>
+            <h1>
+              TimeLine Coming Soon
+            </h1>
+          </div>
           <div className={styles.stackbox}>
             <Image src={astrolab} className={styles.astroimage} />
-            {/* <motion.img 
+            <motion.img 
             src={astroframe} 
             className={styles.astroimage2} 
             animate={{ rotate: rotations[ci] }} 
@@ -76,7 +87,7 @@ export default function Page() {
               {/ 
              <motion.div  style ={{height:'200px'}} animate={{ rotate: rotations[ci] }} >
                   <Image src={astroframe} className={styles.astroimage2} />
-                </motion.div> */}
+                </motion.div>
 
                <motion.div animate={{ rotate: rotations[ci] }} className={styles.framediv} >
                 <Image src={astroframe} className={styles.astroimage2} />
@@ -95,7 +106,7 @@ export default function Page() {
             <p className={styles.parag}>{date()}</p>
           </div>
         </div>
-        <div className={styles.textbox}>
+         <div className={styles.textbox}>
           <motion.div onClick={()=>{
             setCi((ci + 1) % 5)
           }} className={styles.mikibox}>
@@ -113,7 +124,7 @@ export default function Page() {
               transition={{duration:0.3}}
               className={styles.minibox}>
             <span className={styles.para}> {content[0][ci]} <br></br> <br></br>  {content[1][ci]} </span>
-            {/* <ul className={styles.para}>
+            <ul className={styles.para}>
               <li>
                 Voluptate exercitation aliquip pariatur in voluptate duis esse
                 irure occaecat. Cillum dolore velit occaecat aute duis dolor.
@@ -127,10 +138,10 @@ export default function Page() {
                 duis.
               </li>
              
-            </ul> */}
+            </ul>
           </motion.div>
-        </div>
-      </div>
+        </div> 
+      </div> */}
     </div>
     </div>
     </>
