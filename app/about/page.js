@@ -17,7 +17,7 @@ export default function AboutPage() {
       <div className={styles.mainbox}>
         <div className={styles.makeathon}>
           <Image src={Makeathon} alt='#' className={styles.makeLogo} />
-          <p className={styles.abText}>MLSC is poised to showcase its prowess through its upcoming mega flagship event, Makethon6, slated for the end of February. This eagerly anticipated event promises to be a showcase of ingenuity, where students will come together to ideate, innovate, and create solutions to real-world problems, cementing MLSC&apos;s reputation as a hub for budding technocrats and visionaries.</p>
+          <p className={styles.abText}>MLSC is poised to showcase its prowess through its upcoming mega flagship event, Makeathon7, slated for the end of February. This eagerly anticipated event promises to be a showcase of ingenuity, where students will come together to ideate, innovate, and create solutions to real-world problems, cementing MLSC&apos;s reputation as a hub for budding technocrats and visionaries.</p>
         </div>
         <div className={styles.mlsc}>
           <p className={styles.abText}>The Microsoft Learning Student Chapter (MLSC) at Thapar Institute of Engineering and Technology, Patiala, stands as a beacon of technical excellence.
@@ -27,8 +27,8 @@ export default function AboutPage() {
         </div>
       </div>
 
-      <h1 className={`${styles.thisH1} ${myFont.className}`}>Prizes</h1>
-      <div className={styles.cards}>
+      {/* <h1 className={`${styles.thisH1} ${myFont.className}`}>Prizes</h1> */}
+      {/* <div className={styles.cards}>
         <PrizeCard title="Best Hack" image={first} prize={"20,000 Cash Component"} moreprizes={[
           "3-5 Smartwatches - Adcom (6000 x 5 = 30,000)",
           "5 Reskill x Axure T-shirts",
@@ -91,7 +91,7 @@ export default function AboutPage() {
           "5 Reskill x Axure T-shirts",
           "5 Hidden Hour E Voucher (Worth 150 x 5 = 750)",
         ]}/>
-      </div>
+      </div> */}
 
       <div className={styles.C}  >
         <h1 className={`${styles.thisH1} ${myFont.className} `}>FAQ<span className={styles.s}>s</span></h1>

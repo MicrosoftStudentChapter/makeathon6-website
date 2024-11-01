@@ -40,9 +40,9 @@ const faqData = [
       'MAKEATHON welcomes students of all skill levels. We will have talks, mentors, and workshops to help you with your project. Just be eager to learn and excited to meet lots of awesome people.',
   },
   {
-    question: 'Q8- Can NON-TIET dtudents participate in Makeathon?',
+    question: 'Q8- Can NON-TIET students participate in Makeathon?',
     answer:
-      'Yes. MAKEATHON6 is open to students from other institutions as well. And they can join us in the campus for offline hackathon as well..',
+      'Yes. MAKEATHON7 is open to students from other institutions as well. And they can join us in the campus for offline hackathon as well..',
   },
   {
     question: 'Q9- How can we chose our teammates?',
@@ -67,12 +67,12 @@ const faqData = [
   {
     question: 'Q13- Will there be any bootcamp?',
     answer:
-      'Yes! A week-long MLSC BootCamp marks the beginning of the MAKEATHON6 starting on 19th February. You must register for bootcamp separately.',
+      'Yes! A week-long MLSC BootCamp marks the beginning of the MAKEATHON7 starting on 19th February. You must register for bootcamp separately.',
   },
   {
     question: 'Q14- Will there be prizes?',
     answer:
-      'Yes! Best performing participants will win exciting prizes. More information on the prizes is available at MAKEATHON6 official website. and MLSC social media handles.',
+      'Yes! Best performing participants will win exciting prizes. More information on the prizes is available at MAKEATHON7 official website. and MLSC social media handles.',
   },
   {
     question: 'Q15- Will there be mentors?',
@@ -82,7 +82,7 @@ const faqData = [
   {
     question: 'Q16- Do all team members need to be present in person?',
     answer:
-      'Yes, every team member should be present during various checkpoints. Since MAKEATHON6 is a HYBRID hackathon, every team member must be present in person if the team is offline or on discord channel if team is participating in online mode.',
+      'Yes, every team member should be present during various checkpoints. Since MAKEATHON7 is a HYBRID hackathon, every team member must be present in person if the team is offline or on discord channel if team is participating in online mode.',
   },
   {
     question: 'Q17- Will there be wireless net available?',
