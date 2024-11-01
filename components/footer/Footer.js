@@ -81,16 +81,16 @@ export const Footer = () => {
 
             <div className={styles.rightR}>
             
-            <a href='https://www.linkedin.com/in/apoorva11/' target='_blank' style={{ textDecoration: 'none'}}>
+            <a href='https://www.linkedin.com/in/tanmay-mann-9990ba255/' target='_blank' style={{ textDecoration: 'none'}}>
               <div className={styles.bleh}>
-                <Image className={styles.image3} src={King}/> <div className={styles.side}>Apoorva</div><br></br>
+                <Image className={styles.image3} src={King}/> <div className={styles.side}>Tanmay Mann</div><br></br>
               </div>
               <span className={styles.gen}>(General Secretary)</span>
             </a>
 
-            <a href='https://www.linkedin.com/in/utkarsh-tripathi-80a0ab192/' target='_blank' style={{ textDecoration: 'none'}}>
+            <a href='https://www.linkedin.com/in/agrimgoyal/' target='_blank' style={{ textDecoration: 'none'}}>
               <div className={styles.bleh}>
-                <Image className={styles.image3} src={Fin}/> <div className={styles.side}>Utkarsh Tripathi</div><br></br>
+                <Image className={styles.image3} src={Fin}/> <div className={styles.side}>Agrim Goyal</div><br></br>
               </div>
               <span className={styles.gen}>(Finance Secretary)</span>
             </a>
