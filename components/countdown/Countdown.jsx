@@ -18,21 +18,21 @@ const Countdown = () => {
 			mm = String(today.getMonth() + 1).padStart(2, '0'),
 			yyyy = today.getFullYear(),
 			nextYear = yyyy + 1,
-			dayMonth = '02/24/',
+			dayMonth = '02/22/',
 			hours = '11',
 			minutes = '30',
 			birthday = dayMonth + yyyy + ' ' + hours + ':' + minutes;
 
 		today = mm + '/' + dd + '/' + yyyy;
 		if (today > birthday) {
-			birthday = dayMonth + nextYear;
+			birthday = dayMonth + nextYear + ' ' + hours + ':' + minutes;
 		}
 		// end
 
 		const countDown = new Date(birthday).getTime();
 		const interval = setInterval(() => {
 			const now = new Date().getTime();
-			const distance = now - now;
+			const distance = countDown - now;
 
 			setDays(Math.floor(distance / day));
 			setHours(Math.floor((distance % day) / hour));
@@ -89,6 +89,11 @@ const Countdown = () => {
 					</li>
 				</ul>
 			</div>
+				{/* <li className={styles.lipreload}>
+				<span className={styles.text}>
+							22 Feb 2025
+						</span>
+				</li> */}
 		</div>
 	);
 };
