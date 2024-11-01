@@ -135,7 +135,9 @@ export default function Page() {
         <motion.div
           className={styles.container}
         >
-          {Content.map((event , index) => generateEventDiv(event , index))}
+          {/* {Content.map((event , index) => generateEventDiv(event , index))} */}
+          <div className={styles.soon}>Tracks Coming Soon
+            </div>
         </motion.div>
       </div>
       <div>
