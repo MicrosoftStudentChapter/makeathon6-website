@@ -123,8 +123,8 @@
 .logo{
     position: fixed;
     top: 7vh;
-    left: 50vw;
-    height: 26vh;
+    left: 51vw;
+    height: 38vh;
     width: auto;
     transform: translateX(-50%);
     object-fit: contain;

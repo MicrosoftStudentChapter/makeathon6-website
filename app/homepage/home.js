@@ -12,30 +12,30 @@ export default function HomePage(){
     return (
         <>
             <Hamburger isSpecialPage={true}/>
-      {/* <div className={styles.applyButton}> */}
+      <div className={styles.applyButton}>
         {/* <Link href="https://drive.google.com/drive/folders/1uq5cZVh4UmmjikbQh-3M4khZc5t948WX?usp=drive_link" style={{textDecoration: "none"}}> */}
-        {/* <div className={styles.offlineApply}
+        <div className={styles.offlineApply}
         style={{height: "44px", width: "312px"}}
-        onClick={DownloadApk}
+        // onClick={DownloadApk}
         >
-          Download the App!
-        </div> */}
+          App Coming Soon
+        </div>
         {/* </Link> */}
-        {/* <Script src="https://apply.devfolio.co/v2/sdk.js" async={true} defer={true} />
-          <div 
+        <Script src="https://apply.devfolio.co/v2/sdk.js" async={true} defer={true} />
+          {/* <div 
               className="apply-button"
               data-hackathon-slug="makeathon6" 
               data-button-theme="light"
               style={{height: "44px", width: "312px"}}
-          ></div>
+          ></div> */}
 
-      </div> */}
+      </div>
       {/* <HologramThrone /> */}
       <div className={styles.home}>
         <div>
       <Image src="/bgFinal.png" fill style={{objectFit:"cover"}}/>
       </div>
-        <Image src="/MLSClogo.png" height={500} width={500} alt="error" className={styles.logo} />
+        <Image src="/makeathon7logo.png" height={500} width={500} alt="error" className={styles.logo} />
         <Image src="/About/MLSC-logo.png" height={500} width={500} alt="error" className={styles.logo_new} />
         <Image src="/throneFinal.png" height={500} width={500} alt="error" className={styles.throne} />
         {/* <Image src="/throneFinal.png" height={500} width={500} alt="error" className={styles.throne} /> */}

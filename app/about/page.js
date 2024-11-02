@@ -4,7 +4,7 @@ import React, { useState } from "react";
 import Image from 'next/image';
 import MLSC from '/public/About/MLSC-logo.png';
 import Faq from './components/Faq';
-import Makeathon from '/public/MLSClogo.png';
+import Makeathon from '/public/makeathon7logo.png';
 import first from '/public/About/first.png';
 import second from '/public/About/second.png';
 import third from '/public/About/third.png';
